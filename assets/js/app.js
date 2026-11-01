@@ -37,7 +37,7 @@
     h.className = 'topo';
     h.innerHTML = `<a class="skip" href="#conteudo">Pular para o conteúdo</a>
       <div class="wrap">
-        <a class="marca" href="index.html"><b>Física UFOP</b><span>Pesquisa</span></a>
+        <a class="marca" href="index.html" aria-label="Pesquisa no Departamento de Física da UFOP — início"><span class="logo-ufop" aria-hidden="true"></span><span class="txt"><b>Física UFOP</b><span>Pesquisa</span></span></a>
         <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
         <nav class="menu" id="menu" aria-label="Seções do portal">
           ${NAV.map(([href, rot, id]) => `<a href="${href}"${id === PAGINA ? ' aria-current="page"' : ''}>${rot}</a>`).join('')}
@@ -56,7 +56,7 @@
     const f = document.createElement('footer');
     f.className = 'rodape';
     f.innerHTML = `<div class="wrap">
-      <div><b>Departamento de Física</b>Instituto de Ciências Exatas e Biológicas<br>Universidade Federal de Ouro Preto<br>
+      <div><span class="logo-ufop" role="img" aria-label="UFOP"></span><b>Departamento de Física</b>Instituto de Ciências Exatas e Biológicas<br>Universidade Federal de Ouro Preto<br>
         <a href="${esc(D.meta.dept_url)}">${esc(D.meta.dept_url.replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a></div>
       <div><b>Sobre os dados</b>Currículos Lattes processados pelo scriptLattes em ${esc(D.meta.processamento)}.
         Portal gerado em ${esc(D.meta.gerado)}. <a href="metodologia.html">Como os números são produzidos</a>.</div>

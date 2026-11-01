@@ -85,8 +85,14 @@ p { margin: 0; }
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .topo .wrap { display: flex; align-items: center; gap: 1.25rem; min-height: 64px; }
 .marca { display: flex; align-items: baseline; gap: .55rem; text-decoration: none; color: var(--ink); white-space: nowrap; }
+.logo-ufop { display: inline-block; flex: none; background: currentColor;
+  -webkit-mask: url("../img/ufop.svg") center / contain no-repeat; mask: url("../img/ufop.svg") center / contain no-repeat; }
+.marca { align-items: center; }
+.marca .logo-ufop { width: 22px; height: 52px; color: var(--wine); }
+.marca .txt { display: flex; flex-direction: column; line-height: 1.1; }
+.rodape .logo-ufop { width: 34px; height: 80px; color: #fff; margin-bottom: .75rem; }
 .marca b { font: 700 1.15rem/1 var(--f-serif); }
-.marca span { font-size: .82rem; color: var(--ink-mid); }
+.marca .txt span { font-size: .78rem; color: var(--ink-mid); }
 .menu { display: flex; gap: .15rem; margin-left: auto; flex-wrap: wrap; }
 .menu a { color: var(--ink-mid); text-decoration: none; padding: .45rem .65rem; border-radius: var(--r); font-size: .9rem; font-weight: 500; }
 .menu a:hover { color: var(--ink); background: var(--surface-2); }
