@@ -1,0 +1,563 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Orientações de outra natureza'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2001,
+1],
+[2006,
+1],
+[2009,
+1],
+[2010,
+4],
+[2011,
+2],
+[2012,
+4],
+[2013,
+9],
+[2015,
+12],
+[2016,
+7],
+[2017,
+11],
+[2018,
+16],
+[2019,
+3],
+[2020,
+5],
+[2021,
+8],
+[2022,
+23],
+[2023,
+23],
+[2024,
+19],
+[2025,
+27],
+[2026,
+13]]}]});
+        });
+        </script>
+        
+                <h3>Orientações de outra natureza</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 189<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Clara Paula Gomes Moreira. Coorientação de IC. <b>Estudo de nanotubos de carbono dopados utilizando espectroscopia Raman e microscopia de varredura por sonda</b>. (Física) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANA LUISA BARBOSA MARTINS. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ARTHUR CARNEIRO CHAVES DOS SANTOS. <b>Estágio Supervisionado em Docência - FIS108 Fundamentos de fluidos, oscilações e ondas</b>. (Física) - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BERNARDO MORAIS AVELAR LIMA. <b>Monitoria Fundamentos de Eletromagnetismo</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Graduação UFOP. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ELOISA CONSTANTINO CLAUDIO. <b>Coorientação - Propriedades Optoeletrônicas de Moléculas Aceitadores de Elétrons NãoFulerenos em Células Solares Orgânica</b>. (Quimica Industrial) - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>GABRIEL VINICIUS DOS SANTOS FERREIRA. <b>coorientação IC - Análise das Propriedades Fotofísicas de Moléculas Orgânicas para aplicação em dispositivos eletrônicos conversores de energia</b>. (Física) - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gisele Almeida Silva. <b>Supervisão de estágio docente</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Guilherme Milagres Viana. <b>Estágio Docência</b>. (Física) - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GUSTAVO SOUSA LAUAR. <b>FIS105 - Fundamentos de Fisica Experimental</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>JULIO CESAR MENEZES CAMILO ARAUJO. <b>FIS106 - Fundamentos de Mecanica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Junior Toniato. <b>Testes observacionais para generalizações da gravitação newtoniana</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Luiz Ravell André Antônio Dias. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Victor Martins de Barros. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Cláudia da Silva. <b>Simulação computacional de processos de nucleação</b>. (Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Júlia de souza Boaventura. <b>Monitoria da disciplina FIS107 - FUNDAMENTOS DE TERMODINAMICA</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0559001373784925">Juliana Caldeira Brant</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANA LUIZA DA SILVA BHERING. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Extensão UFOP. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Anderson Vital Sales. <b>Estágio Supervisionado em Docência - FIS110 Fundamentos de óptica e quântica</b>. (Física) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ARTHUR BERNARD FERREIRA DAMASCENO. <b>FIS110 Fundamentos de Óptica e Quântica</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ARTHUR FELIPE ZITO SANTOS. <b>coorientação - Estudo da Interação entre Moléculas Orgânicas Doadoras e Aceitadoras para aplicações em Dispositivos Fotovoltaicos Não-Fulerenos</b>. (Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BERNARDO MORAIS AVELAR LIMA. <b>Monitoria FIS105</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BERNARDO OLIVEIRA BARBOSA NOLASCO. <b>Bolsista de Monitoria - FIS214 - MECANICA RACIONAL (Dez 2024 a Abril 2025)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, UFOP. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BETHINA RIBEIRO RUAS. <b>Estudo Teórico e Experimental da Ressulfurização de Amostras de MoS2 Crescidas por CVD</b>. (Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CARLOS EDUARDO LIMA ESTANISLAU. <b>Bolsista de Monitoria - FIS214 - MECANICA RACIONAL (Dez 2024 a Abril 2025)</b>. (Física) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Cauã Marques Silva Sena. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DANIEL NASCIMENTO MEDEIROS. <b>FIS106 Fundamentos de Mecãnica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Fernando Herculano Pimenta. <b>Monitoria FIS105</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GIOVANA FANTONI GUIMARAES CASTRO. <b>Preparação e regência de aulas de Português, Redação e Literatura no EducaPET, cursinho pré ENEM</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Pró Reitoria de Extensão da UFOP. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Henrique Ferreira da Silva Júnior. <b>Estágio Supervisionado em Docência - FIS108 Fundamentos de fluidos, oscilações e ondas</b>. (Física) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>LAVINIA CAMILE ALVES TEIXEIRA. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Física) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LUCAS MARQUES DE FREITAS. <b>Monitoria de FIS107</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Miguel Andrade Cardodo. <b>Bolsista de Monitoria -- Mecânica Racional (FIS214)</b>. (Física) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Nayara Fernandes Ferreira. <b>Otimizando o entendimento de materiais na confecção de peças utilizando cristalografia e impressão 3D</b>. (Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>RAFAEL MATOSO ALVARENGA. <b>FIS106 Fundamentos de Mecânica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Railson Ferreira de Souza. <b>DaP Eletromagnetismo</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Pró Reitoria de Graduação UFOP. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Railson Ferreira de Souza. <b>DaP Eletromagnetismo</b>. (Física) - Universidade Federal de Ouro Preto, PROATIVA-UFOP. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>STEPHANY MARY ASSIS DE SA. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Física) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Vinícius Alessandro Silva Queiroz. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Vitória Zafalon. <b>Física das Radiações e Conservação de Alimentos</b>. (Física) - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>WENDEL MATEUS PEIXOTO. <b>FIS106 - Fundamentos de Mecanica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Wilinston da Silva Oliveira. <b>Demonstrações Experimentais em Sala de Aula</b>. (Física) - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARTHUR BERNARD FERREIRA DAMASCENO. <b>Monitoria FIS110 - FUNDAMENTOS DE OPTICA E QUANTICA</b>. (Física) - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ARTHUR FELIPE ZITO SANTOS. <b>Análise espectroscópica da interação entre moléculas orgânicas fluorescentes e materiais aceitadores de elétrons nãofulerenos em células solares</b>. (Física) - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carlos Eduardo Lima Estanislau. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Estér Bárbara Gonçalves Martins. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Fernando Herculano Pimenta. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Pró Reitoria de Extensão UFOP. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Gisele Almeida Silva. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Junio Santana Alves. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Karolaynne Dias Pereira. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Letícia Gabrielli Ribas de Souza. <b>EducaPET, atuação na regência de aulas de português e redação</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Pró reitoria de Extensão. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARCUS VINICIUS LESSA VIEIRA. <b>Monitoria FIS110</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Maria Eduarda Meira Felisberto. <b>Monitoria da disciplina FIS107 - FUNDAMENTOS DE TERMODINAMICA</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0559001373784925">Juliana Caldeira Brant</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARIA LUISA RODRIGUES. <b>Abordagem teórico-experimental do crescimento de dissulfeto de molibdênio (MoS2): simulações de dinâmica molecular e deposição química em fase vapor</b>. (Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MATHEUS DOS SANTOS BARBOSA. <b>Estágio em laboratório de FIS110 - Fundamentos de Óptica e Quântica</b>. (Física) - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Mayra Rodrigues. <b>Gestão das Redes Sociais do CCENS</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>RAFHAEL JELLICOE BRIZOTO FERREIRA. <b>FIS106 Fundamentos de Mecãnica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Railson Ferreira de Souza. <b>EDIÇÃO DE MATERIAIS PARA APOSTILA DE PRÁTICAS DE FIS336 - FÍSICA EXPERIMENTAL I</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Graduação UFOP. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Thaizy Carlos Nossa. <b>Estágio supervisionado em docência na disciplina Introdução à Física Experimental</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Victória Guimarães Portella. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial PET/FNDE/MEC. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>WILCKER CESAR SILVA OLIVEIRA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. (Física - Bacharelado) - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alessandro Ferrari. <b>Acústica do Futuro</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Cláudia da Silva. <b>USO DO SIMULADOR PhET PARA O ENSINO DE HIDROSTÁTICA À LUZ DA APRENDIZAGEM SIGNIFICATICA DE DAVID AUSUBEL</b>. (Física) - Universidade Federal de Ouro Preto, UFOP. 2023.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>, <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BRENNER MISSON MOTA DOS ANJOS. <b>FIS110 - FUNDAMENTOS DE OPTICA E QUANTICA</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Christyan Fernandes dos Santos. <b>Monitoria de Fundamentos de Física para a Biologia</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Daniel Dias. <b>Monitoria de Fundamentos de Física I e Afins</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>EDUARDO DE LIMA SILVA ASSIS. <b>Monitoria FIS109</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Elaine Cristina Amâncio Moreira. <b>Monitoria da disciplina FIS105</b>. (Engenharia Metalúrgica) - Universidade Federal de Ouro Preto, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FELIPE MARTINS BRITO AGUIAR. <b>Bolsista de Monitoria - FIS106 - FUNDAMENTOS DE MECANICA (Dez 2022 a Mar 2023)</b>. (Física) - Universidade Federal de Ouro Preto, UFOP. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FLAVIO GERMANO NASSIF. <b>Monitoria FIS214 - MECANICA RACIONAL</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GABRIELA CARVALHO DA SILVA REIS. <b>Monitoria FIS 214 - MECÂNICA RACIONAL</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GABRIELLA PINHEIRO TARDELLI. <b>TRIKI - UMA FERRAMENTA ON-LINE PARA ENSINO, APRENDIZAGEM E AVALIAÇÃO DE CONCEITOS CIENTÍFICOS</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Extensão UFOP. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>HERNANE JUNIO DE SENA DINIZ. <b>FIS106 - Fundamentos de Mecânica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Laurinda Aparecida Silva Ramos. <b>Monitoria Fundamentos de Física I e Afins - Bolsa PAEPE</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Luisa Mayra dos Anjos Caldeira. <b>Preparação e regência de aulas de Português, Literatura e redação no EducaPET, cursinho pré ENEM</b>. Orientação de outra natureza - Pró Reitoria de Extensão da UFOP, Pró Reitoria de Extensão da UFOP. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Lyvia Dalmaschio Soares. <b>Gestão das redes sociais do CCENS</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Marcus Vinicius Vieira dos Santos. <b>FIS106 - Fundamentos de Mecânica</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MARIA CLARA RODRIGUES SILVA. <b>RadiATIVE-se: com saúde</b>. (Física) - Universidade Federal de Ouro Preto, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Mariana Soares Mendes. <b>Gestão das redes sociais do CCENS</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Matheus Felipe Vieira Nestor Amelio. <b>Monitoria da disciplina FIS105</b>. (Engenharia de Controle e Automação) - Universidade Federal de Ouro Preto, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>NAYARA FERNANDES FERREIRA. <b>FIS106 - Fundamentos de Mecânica</b>. (Física) - Universidade Federal de Ouro Preto, UFOP PROGRAD. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Nayra Bento Cogo. <b>Gestão das redes sociais do CCENS</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>RAILSON FERREIRA DE SOUZA. <b>COLETA DE MATERIAIS PARA APOSTILA DE PRÁTICAS DE FIS336 - FÍSICA EXPERIMENTAL I</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Graduação UFOP. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Yan Costa de Assunção. <b>Monitoria Introdução à Física</b>. (LIcenciatura em Fìsica) - Universidade Federal do Espírito Santo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMANDA LUISE PEREIRA MURTA. <b>Triki - Uma ferramenta para estudos de conceitos científicos</b>. (Física) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Arthur Figueira Almeida Oliveira. <b>Supervisão de monitoria de FIS105 - Fundamentos de Física Experimental.</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ARTUR BERMOND TORRES. <b>Triki - Uma ferramenta para estudos de conceitos científicos</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Extensão UFOP. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BARBARA BELINTANI COELHO. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bernardo Oliveira Barbosa Nolasco. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>DIONE DA COSTA OLIVEIRA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriel Luiz de Carvalho. <b>Supervisão de monitoria de FIS105 - Fundamentos de Física Experimental</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GERSON DOS SANTOS;RAIENE BARBARA DE MATOS. <b>Camada ativa de celulose dopada com fluoróforos e fulerenos</b>. (Física) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GISELE ALMEIDA SILVA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>JONAS DE ANDRADE OLIVEIRA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>JOSE LUCAS REZENDE BANDEIRA. <b>Triki - Uma ferramenta para estudos de conceitos científicos</b>. (Física) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LEONAN RODRIGUES SENA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Lohayne Cardoso. <b>Gestão das redes sociais do CCENS</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>LUIZ RAVELL ANDRE ANTONIO DIAS. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Patrícia Tôrres Brandão. <b>Preparação e regência de aulas de Português e Literatura no EducaPET, cursinho pré ENEM</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Pró Reitoria de Extensão da UFOP. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Pedro Alledi Campos. <b>Monitoria de Disciplinas do Ciclo Profissional do Curso de Física Licenciatura.</b>. (Física Licenciatura) - Universidade Federal do Espírito Santo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Pedro Alledi de Campos. <b>Monitoria de disciplinas teóricas do ciclo profissional do Curso de Física Licenciatura.</b>. (Física Licenciatura) - Universidade Federal do Espírito Santo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Pedro Henrique Dalprá. <b>Monitoria de Fundamentos de Física I e Afins</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>RAFAEL DIAS PAIVA. <b>Triki - Uma ferramenta para estudos de conceitos científicos</b>. (Física) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>RAFAELA PEREIRA ALVARENGA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Ulisses Evangelista. <b>Monitoria de Fundamentos de Física I e Afins</b>. Orientação de outra natureza - Universidade Federal do Espírito Santo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Victória Guimarães Portella. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, FNDE/MEC - Programa de Educação Tutorial. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>WILCKER CESAR SILVA OLIVEIRA. <b>Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Educação Tutorial - MEC/FNDE. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bernardo OLIVEIRA BARBOSA Nolasco. <b>olsista de Monitoria - FIS106 - FUNDAMENTOS DE MECANICA (Junho a Agosto de 2021</b>. (Física) - Universidade Federal de Ouro Preto, UFOP. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Gabriel Antônio V. Nepomuceno. <b>Monitoria de FIS108</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Jaine Mação Lordelo. <b>Monitoria Fundamentos de Física I e Afins - Bolsa PAEPE</b>. (LIcenciatura em Fìsica) - Universidade Federal do Espírito Santo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>JULIO HENRIQUE MAROTTA. <b>ESTUDO DE PRIMEIROS PRINCÍPIOS DE MATERIAIS 2D e de Moléculas Orgânica</b>. (Engenharia Metalúrgica) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LUIS ANTONIO GUALLICHICO GUALLICHICO. <b>Estágio Docente em Mecânica Quântica I - FIS516</b>. (Física) - Universidade Federal de Ouro Preto, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Rafalela Pereira Alvarenga. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Física) - Universidade Federal de Ouro Preto, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Tamires Christine Dias. <b>Monitoria Fundamentos de Física I e Afins - Bolsa PAEPE</b>. (LIcenciatura em Fìsica) - Universidade Federal do Espírito Santo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Yuri Alves de Carvalho. <b>Projetos Especiais de Apoio ao Ensino, Pesquisa e Extensão (PaEPE I )</b>. (LIcenciatura em Fìsica) - Universidade Federal do Espírito Santo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Camilla Alexandra Lopes da Silva. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Direito) - Universidade Federal de Ouro Preto, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luiza Moreira de Carvalho. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Direito) - Universidade Federal de Ouro Preto, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PATRICK OLIVEIRA DO CARMO. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. (Ciência da Computação) - Universidade Federal de Ouro Preto, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>RICARDO ABRAHAO JUNIOR. <b>Monitoria da disciplina FIS306</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>WELLINGTON DAMACENO DE FREITAS. <b>Estágio em laboratório de Física IV</b>. (Física) - Universidade Federal de Ouro Preto, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARBARA DA SILVA LIMA. <b>Monitoria de Física IV</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Jéssica da Silva Maciel. <b>Monitoria da disciplina Física Térmica e Ondulatória</b>. (Arquitetura e Urbanismo) - Universidade Federal de Ouro Preto, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Marlene Notélio Borges L. de Morais. <b>Estágio em laboratório de Física II</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Beatriz Sanches. <b>Orientação da Tutoria da Disciplina Física I</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Flavio M. Hemerli. <b>Monitoria de Disciplinas do Ciclo Profissional</b>. (Física Licenciatura) - Universidade Federal do Espírito Santo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Gabriela Cristina Marcelino. <b>Orientação de tutoria da disciplina Física II</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Joyce Cristina Mendes de Paula. <b>Elaboração de uma base digital de materiais bibliográficos e hipermídias visando ao ensino de temas da História da Física</b>. (Física) - Universidade Federal de Ouro Preto, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7005754754925754">Cassiano Rezende Pagliarini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>João Victor Neves Alves Lopes. <b>Popularizar práticas experimentais de ciência para estudantes da comunidade próxima ao IFMG Santa Luzia</b>. Orientação de outra natureza - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Julia Ribeiro Loures. <b>Popularizar práticas experimentais de ciência para estudantes da comunidade próxima ao IFMG Santa Luzia</b>. Orientação de outra natureza - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Lucas Drumond de Magalhães Cabral. <b>Utilização de e-lixo no desenvolvimento de instrumentação para o ensino de Física por investigação</b>. (Física) - Universidade Federal de Ouro Preto, Pró-Reitoria de Graduação da UFOP. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Mariana Pimenta Adaixo de Deus. <b>Monitoria de Física IV</b>. (Engenharia de Controle e Automação) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Matheus Teles Braga de Oliveira. <b>Desenvolvimento de experimentos para o curso de Física IV (FIS 133): uso de materiais alternativos para utilização em sala de aula</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Natália Paz Neme. <b>Estágio em laboratório de Física IV</b>. (Física) - Universidade Federal de Ouro Preto, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Rodrigo Barbosa. <b>Monitoria de Mecânica Racional</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Victor Carneiro dos Santos. <b>Orientação de monitoria da disciplina de Física II (ensino médio)</b>. Orientação de outra natureza - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Victor Carneiro dos Santos. <b>Análise da aplicação de nanomateriais ao concreto para aprimoramento de suas propriedades</b>. Orientação de outra natureza - Instituto Federal Minas Gerais, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Vinicius de Assis Rocha. <b>Orientação de estágio supervisionado não obrigatório</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>VINICIUS OLIVEIRA QUEIROZ. <b>Monitoria de Física IV</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Wyara de Jesus Nascimento. <b>Monitoria de disciplinas teóricas do ciclo profissional</b>. (Física Licenciatura) - Universidade Federal do Espírito Santo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Arthur Correa Bretas. <b>Monitoria de Mecânica Racional</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Fundação Gorceix. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Cairo Gabriel Castadini Cruz. <b>Treinamento em técnicas de análise por Espectroscopia Raman, aplicado a minerais-tipo</b>. (Física) - Universidade de São Paulo - Instituto de Física de São Carlos, Fundação de Amparo à Pesquisa do Estado de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Gabriela Cristina Marcelino. <b>Orientação de tutoria das disciplinas Física I e Física III</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Jordana Costa. <b>aproximando o IFMG da comunidade através de experimentos de ciências, física e química nas escolas municipais e estaduais de Santa Luzia (PIBEX)</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Leandro Alvares Machado. <b>Microanálise por Espectroscopia Raman de espécies minerais</b>. (Fisica) - Universidade de São Paulo - Instituto de Física de São Carlos, Fundação de Amparo à Pesquisa do Estado de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Lucas Drumond de Magalhães Cabral. <b>Utilização de e-lixo no desenvolvimento de instrumentação para o ensino de Física por investigação.</b>. (Física) - Universidade Federal de Ouro Preto, Pró-Reitoria de Graduação da UFOP. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Lucas Paulo Almeida Oliveira. <b>Estágio não obrigatório</b>. Orientação de outra natureza - Instituto Federal Minas Gerais, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Ramon Dadalto Carvalho. <b>Monitoria de disciplinas teóricas do ciclo profissional</b>. (Física Licenciatura) - Universidade Federal do Espírito Santo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Rodrigo B. Caria Gabriel. <b>Monitoria de Mecânica Racional</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Romario Melquiades Resende. <b>Tutoria Física I</b>. (Física) - Universidade Federal de Ouro Preto, Pró Reitoria de Graduação UFOP. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Thiago Magalhães De Aguiar. <b>aproximando o IFMG da comunidade através de experimentos de ciências, física e química nas escolas municipais e estaduais de Santa Luzia (PIBEX Jr.)</b>. Orientação de outra natureza - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alexander Fuccio de Fraga e Silva. <b>Orientação de tutoria de Física II para Engenharia Civil e Física para Arquitetura</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BALBINO, Alexandre Cardoso. <b>Desenvolvimento de Recursos mediacionais para abordagem de ensino</b>. (Física) - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7215497120261203">Marcos Moraes Calazans</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Fabiane Pereira Bedim. <b>Coorientação de IC - Análise do rendimento escolar dos alunos cotistas do ensino médio técnico integrado do campus Santa Luzia (Coorientação)</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Karina da Silva Dias. <b>Física II (experimental) para Engenheiros</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Karina da Silva Dias. <b>Estágio Docência: Docência em prática experimental</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Luana Fidelis Marques. <b>Coorientação de IC - Análise do rendimento escolar dos alunos cotistas do ensino médio técnico integrado do campus Santa Luzia (Coorientação)</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Élder Júnior Teves dos Santos. <b>Armazenamento de Calor Latente nas Edificações Através dos Materiais de Mudança de Fase (TCC de curso técnico integrado)</b>. (Curso técnico integrado em Edificações) - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alexander Fuccio de Fraga e Silva. <b>Orientação de tutoria de Física III para Engenharia Civil</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BALBINO, Alexandre Cardoso. <b>Produção e análise de sequências didáticas e materiais de apoio para prática de ensino de Física.</b>. (Física) - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7215497120261203">Marcos Moraes Calazans</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carlos Antônio Felício Teodoro. <b>Aulas e Cia: aprimoramento de uma ferramenta online</b>. (Física) - Universidade Federal de Ouro Preto, PROATIVA-UFOP. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Carlos Eduardo T. de Magalhães. <b>Física II (experimental) para Engenheiros</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Carlos Eduardo Tavares de Magalhães. <b>Estágio Docência: Docência em prática experimental</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Gabriel da Cunha Wernek. <b>Orientação de monitoria de Física I</b>. (Curso técnico integrado em Edificações) - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais, IFMG - Fomento Interno. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>João Leno A. de Sousa. <b>Física II (experimental) para Engenheiros</b>. (Engenharia de Minas) - Universidade Federal de Ouro Preto, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>João Victor Fernandes de Oliveira. <b>Estabelecendo Correlações entre Grandezas Físicas e Conceitos Musicais: uma Proposta Multidisciplinar</b>. (Física) - Universidade Federal de Ouro Preto, Pró-Reitoria de Graduação da UFOP. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Leonardo Augusto Corinta Trinta. <b>Treinamento em técnicas de análise por espectroscopia Raman, aplicado a minerais-tipo</b>. (Física) - Universidade de São Paulo - Instituto de Física de São Carlos, Fundação de Amparo à Pesquisa do Estado de São Paulo. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Naiara Pacheco Ayres. <b>Desenvolvimento da propriedade intelectual, inovação e transferencia de tecnologia da UFOP</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Pablo dos Santos Cardoso Coelho. <b>Triki Um jogo Universitário para fixação de conceitos</b>. (Engenharia Civil) - Universidade Federal de Ouro Preto, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Tiago Rodrigues Maciel. <b>Orientação de tutoria de Física II para Engenharia Civil</b>. (Engenharia Civil) - Instituto Federal Minas Gerais, IFMG - Fomento Interno. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Antônio de Souza Braga Neto. <b>Preparação e caracterização de sensores de radiação poliméricos</b>. (Engenharia Metalúrgica) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Cesar Henrique Ferreira Coelho. <b>TREX - Um jogo para ensino, interação, avaliação</b>. (Física) - Universidade Federal de Ouro Preto, PROATIVA-UFOP. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Cláudia da Silva Ramos. <b>Desenvolvimento da Propriedade Intelectual, Inovação e Transferência de Tecnologia na UFOP</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Deilson José da Silva Arcanjo. <b>Jovens taletos: Propriedades Fotofísicas em derivados de Porfirinas</b>. (Física) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Elizabeth Berrigan. <b>Schwinger's Finite Quantum Kinematics and Aharonov's Dynamical Non-locality Concept</b>. Orientação de outra natureza - Chapman University, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6561589467060683">Augusto Cesar Lobo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Fernanda Cristina de Oliveira ferreira. <b>Sala Digital</b>. (Física) - Universidade Federal de Ouro Preto, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriel Freitas Palma Ponce. <b>Montagens de circuitos eletrônicos para fins acadêmico-científicos e tecnológico</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Lucas Figueiredo dos Reis Chaves. <b>Instrumentação ótica</b>. (Física) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Mara Luísa Ferreira Rocha. <b>Desenvolvimento da propriedade intelectual, inovação e transferencia de tecnologia na UFOP</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriano ALves de Azevedo. <b>Levantamento sobre o perfil do discente no Curso de Física/UFOP</b>. (Física) - Universidade Federal de Ouro Preto, Pró-Reitoria de Graduação da UFOP. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Maksuell Alves Nicula Faria. <b>Sala digital de Física</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Mariana Andrade Boense Tavares. <b>Desenvolvimento de Experimentação em Metrologia utilizando o Interferômetro de Michelson</b>. (Física) - Universidade Federal de Ouro Preto, Pró-Reitoria de Graduação da UFOP. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Mateus Vinícius da Costa Gomes. <b>Atividades Experimentais em Óptica Física e Geométrica</b>. (Física) - Universidade Federal de Ouro Preto, Pró-Reitoria de Graduação da UFOP. 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Lucas Samuel Barbosa Sacramento. <b>Monitoria Fisica II</b>. (Física) - Universidade Federal de Ouro Preto, UFOP. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luciano Severino Pereira Lara. <b>Monitoria Fisica II</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, UFOP. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Blenio Marco Cunha Silva. <b>Monitoria Fisica II</b>. (Física) - Universidade Federal de Ouro Preto, UFOP. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Elizane Efigenia de Moraes. <b>Monitoria Fisica II</b>. (Física) - Universidade Federal de Ouro Preto, UFOP. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Hugo Leonardo Ramos Rocha. <b>Monitoria Fisica II</b>. (Engenharia Mecânica) - Universidade Federal de Ouro Preto, UFOP. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Raphael Nasser Capistrano Reis. <b>Monitoria Fisica II</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, UFOP. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Heine Nygard Riise. <b>Alternating conductivity of solid disordered materials</b>. Orientação de outra natureza - Universidade Federal de Ouro Preto, Programa de Intercâmbio de Estágios. 2009.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Claudio Silva. <b>2º Gincana de Ciências</b>. Orientação de outra natureza - Instituto de Física de São Carlos, Fundação para o Incremento da Pesquisa e do Aperfeiçoamento Industrial. 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Jailson Francisqueto. <b>Estudo do mecanismo de formação de cachos na queima de pelotas alta-basicidade destinadas a altos-fornos</b>. (Curta Duração) - Rede Temática Em Engenharia de Materiais Redemat, . 2001.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

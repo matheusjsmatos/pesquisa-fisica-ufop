@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projetos e prêmios — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Projetos de pesquisa, financiadores, prêmios e eventos do Departamento de Física da UFOP.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="projetos">
+<main id="conteudo">
+
+<header class="cab"><div class="wrap">
+  <h1>Projetos, prêmios e eventos</h1>
+  <p class="lede">Projetos de pesquisa coordenados ou integrados pelos docentes, quem os financia e quantos estudantes envolvem.</p>
+  <dl class="numeros" id="projNumeros"></dl>
+</div></header>
+<section class="sec"><div class="wrap grade g2">
+  <div class="painel"><div class="painel-cab"><div><h3>Projetos por ano</h3><p class="sub">Iniciados no ano e ativos no ano; cada projeto conta uma vez</p></div><span class="selo selo-pre">Preliminar</span></div><div class="grafico alto"><canvas id="cProjAno" role="img" aria-label="Projetos por ano"></canvas></div></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Financiadores</h3><p class="sub">Número de projetos por financiador declarado</p></div><span class="selo selo-pre">Preliminar</span></div>
+    <form class="filtros" style="padding:.5rem .75rem;margin-bottom:1rem" onsubmit="return false"><label style="display:flex;gap:.5rem;align-items:center"><input type="checkbox" id="finAtivos" checked> Somente projetos em andamento</label></form>
+    <div id="financiadores"></div></div>
+</div></section>
+<section class="sec"><div class="wrap grade g2">
+  <div class="painel"><div class="painel-cab"><div><h3>Estudantes nos projetos em andamento</h3><p class="sub">Soma do campo "alunos envolvidos" do Lattes</p></div><span class="selo selo-pre">Preliminar</span></div><div id="alunosProj"></div>
+    <p class="nota">Um mesmo estudante pode participar de mais de um projeto.</p></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Eventos científicos</h3><p class="sub">Participação e organização por ano</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico alto"><canvas id="cEventos" role="img" aria-label="Eventos científicos"></canvas></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Lista de projetos</h2></div>
+  <form class="filtros" onsubmit="return false">
+    <label class="cresce">Buscar no título ou financiador <input type="search" id="pBusca" placeholder="Ex.: FAPEMIG, perovskita"></label>
+    <label>Situação <select id="pSit"><option value="">Todas</option><option value="a">Em andamento</option><option value="c">Concluídos ou desativados</option></select></label>
+    <label>Docente <select id="pDoc"></select></label>
+  </form>
+  <div class="resumo-busca" id="pResumo" aria-live="polite"></div>
+  <ol class="itens" id="pLista"></ol>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Prêmios e títulos</h2><p id="premiosNota"></p></div>
+  <ol class="itens" id="premios"></ol>
+</div></section>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,573 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Trabalhos técnicos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1996,
+2],
+[1998,
+2],
+[1999,
+1],
+[2002,
+1],
+[2003,
+1],
+[2004,
+1],
+[2006,
+1],
+[2008,
+1],
+[2009,
+2],
+[2010,
+3],
+[2011,
+2],
+[2012,
+1],
+[2013,
+6],
+[2014,
+9],
+[2015,
+6],
+[2016,
+13],
+[2017,
+14],
+[2018,
+9],
+[2019,
+10],
+[2020,
+28],
+[2021,
+27],
+[2022,
+9],
+[2023,
+13],
+[2024,
+11],
+[2025,
+6],
+[2026,
+8]]}]});
+        });
+        </script>
+        
+                <h3>Trabalhos técnicos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 187<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>NUNES, M. E. S. ; SAVEDRA, Ranylson Marcello Leal ; PEREIRA, K. ; ANDRADE, G. ; Siqueira, Melissa Fabíola. <b>Projeto Ciência e Sociedade. 2026; Tema: Divulgação científica. (Rede</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista ETD Educação Temática Digital</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista de Ensino, Educação e Ciências Humanas</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PIVARO, GABRIELA FASOLO. <b>Parecer de artigo científico - Revista Investigações em Ensino de Ciências</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PRADO, M. C. <b>Parecer sobre artigo científico na Soft Matter</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PRADO, M. C. <b>Parecer sobre artigo científico na Soft Matter</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PRADO, M. C. <b>Parecer sobre artigo científico na Applied Physics A</b>. 2026.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Prado, Mariana C. <b>Parecer sobre artigo científico na Langmuir</b>. 2026.</td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Arbitragem artigo revista Experiências em Ensino de Ciências</b>. 2025.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista Ensaio Pesquisa em Educação em Ciências</b>. 2025.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista Brasileira de Ensino de Física</b>. 2025.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista Brasileira de Ensino de Física</b>. 2025.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista Ensaio Pesquisa em Educação em Ciências</b>. 2025.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS, T. B. ; SANTOS, A. E. M. ; SOUZA, F. R. ; GALGANO, G. D. ; BERNARDES, A. T. ; SILVA, M. C. A. ; FREITAS, A. P. ; CANDIDO FILHO, M. ; SANTOS, L. L. R. ; SANTOS, J. G. ; OLIVEIRA, A. L. ; SILVA, M. L. ; CARDOSO, M. A. ; FAGUNDES, J. V. ; LOPES, D. H. ; MATOSO, G. C.. <b>SLOPE BREAK: METODOLOGIA DE CÁLCULO DA PROJEÇÃO E ALCANCE DE RUPTURAS EM TALUDES</b>. 2025.</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J. <b>Parecerista de projetos de extensão submetidos a PROEX/UFOP no âmbito do edital PROEX PARA REGISTRO DE AÇÕES DE EXTENSÃO 2021</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos e apresentados no Encontro de Saberes- UFOP</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J. <b>Parecerista de projetos de extensão submetidos a PROEX/UFOP no âmbito do edital PROEX PARA REGISTRO DE AÇÕES DE EXTENSÃO 2024</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Arbitragem Artigo revista Experiências em Ensino de Ciências</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MATOS, M.J.S. <b>Parecer Ad Hoc - Chamada CNPq Nº 32/2023</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XX Encontro de Pesquisa em Ensino de Física (EPEF)</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista Ensaio Pesquisa em Educação em Ciências</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PIVARO, G. F. <b>Parecer de artigo científico - Revista Investigações em Ensino de Ciências</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PIVARO, G. F. <b>1º Encontro de ex-alunos (egressos) do PECIM. 2024. (Programa de rádio ou TV/Mesa</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PIVARO, G. F. <b>Pesquisadora analisa a desinformação nas redes sociais. 2024. (Programa de rádio ou</b>. 2024.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PIVARO, G. F. <b>Tese premiada propõe reflexão sobre a desinformação no ensino de ciências. 2024. (Programa de rádio ou</b>. 2024.</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Brant, J. C. <b>Membro da comissão avaliadora dos trabalhos acadêmicos do VI Workshop da Pós-graduação do Departamento de Física da UFMG</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos e apresentados no Encontro de Saberes- UFOP</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carvalho, Edson J. <b>Parecerista de projetos de extensão submetidos a PROEX/UFOP no âmbito do edital PROEX PARA REGISTRO DE AÇÕES DE EXTENSÃO 2023</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Arbitragem de artigo para a revista Experiências em Ensino de Ciências</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Matos, M J S. <b>Encontro de Saberes 2023 - XXXI SEMINÁRIO DE INICIAÇÃO CIENTÍFICA - SEIC/UFOP</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Matos, M J S. <b>Semana do Conhecimento UFMG</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MATOS, MATHEUS J.S. <b>Parecer ad hoc EDITAL Nº 11/2023 CAPES</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XXV Simpósio Nacional de Ensino de Física (SNEF)</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Avaliador de obras didáticas da Área de Ciências da Natureza e suas Tecnologias do PNLD 2023 (objetos 1 e 2)</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PIVARO, G. F.; GIROTTO JR, GILDO. <b>Estudo esquadrinha negacionismo bolsonarista. 2023. (Programa de rádio ou</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na Brazilian Journal of Physics</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na 2D Materials</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na Brazilian Journal of Physics</b>. 2023.</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J. <b>Parecerista de projetos de extensão submetidos a PROEX/UFOP no âmbito do edital PROEX PARA REGISTRO DE AÇÕES DE EXTENSÃO 2022</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos e apresentados no Encontro de Saberes- UFOP</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Arbitragem artigo submetido revista Cadernos de Astronomia</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Arbitragem artigo submetido à Revista Cadernos de Astronomia</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LA Duarte Júnior ; T. F. Nascimento ; Bianchi, R.F.. <b>OUMLIGHT - Conheça as startups selecionadas para a 2ª Rodada do Programa de Desenvolvimento Tecnológico da Prefeitura de Belo Horizonte. 2022. (Programa de rádio ou</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LA Duarte Júnior ; T. F. Nascimento ; Bianchi, R.F.. <b>OUMLIGHT - 2ª Ed. do Programa de Desenvolvimento Tecnológico de BH. 2022. (Programa de rádio ou</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MATOS, M.J.S. <b>Parecer Ad Hoc - Chamada CNPq Nº 09/2022</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MATOS, M.J.S. <b>Parecer Ad Hoc - Chamada CNPq Nº 09/2022</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XIX Encontro de Pesquisa em Ensino de Física (EPEF)</b>. 2022.</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Brasileira cria garrafa que filtra água com energia solar e concorre a prêmio mundial. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>PESQUISADORA DA UFOP DESENVOLVE GARRAFA QUE TORNA QUALQUER ÁGUA EM POTÁVEL. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Universitária brasileira cria garrafa que torna qualquer água potável. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Pesquisadora brasileira cria garrafa que torna água potável. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Entrevista Primaz convida Bárbara Gosziniak. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Prêmio Red Bull Basement Brasil 2021. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Estudante da UFOP é finalista mundial do Red Bull Basement University. 2021; Tema: Prêmio RedBull</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Com garrafa que limpa a água, brasileira irá para final de desafio mundial. 2021; Tema: Prêmio RedBull</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Brasileira cria garrafa que limpa água e vai para desafio mundial. 2021; Tema: Prêmio RedBull</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>ALUNA DA UFOP É FINALISTA DE PROGRAMA INTERNACIONAL. 2021; Tema: Prêmio RedBull</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CARVALHO, E. J. <b>Parecerista de projetos de extensão submetidos a PROEX/UFOP no âmbito do edital PROEX PARA REGISTRO DE AÇÕES DE EXTENSÃO 2021</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos e apresentados no Encontro de Saberes- UFOP</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Florio, V. <b>Arbitragem artigo submetido à Revista Brasileira de História das Ciências em agosto</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Florio, V. <b>Arbitragem de trabalhos submetidos à I Olimpíada de Ciência e Arte em Setembro</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Florio, V. <b>Arbitragem artigo submetido à revista Investigações em Ensino de Ciências</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Florio, V. <b>Avaliação Trabalhos II Encontro Mineiro de Ensino de Física</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Matos, M J S. <b>5o Evento Científico Unificado: Jornada de Física. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MATOS, M. J. S. <b>Parecer artigo científico - Advanced Theory and Simulations</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MATOS, M.J.S. <b>Parecer Ad Hoc - Chamada CNPq Nº 04/2021</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Parecerista de artigo científico submetido à revista Experiências em Ensino de Ciências. Abril</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Parecerista de artigo científico submetido à revista Alexandria. Maio</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Parecerista de artigo científico submetido à revista RBPEC. Junho</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Avaliador de obras didáticas da Área de Ciências da Natureza e suas Tecnologias do PNLD 2021 (objetos 2 e 4)</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao II Encontro Mineiro de Ensino de Física (EMEFis)</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao Encontro de Saberes - UFOP</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PIVARO, G. F. <b>Covid-19 e Pós-verdade. 2021. (Programa de rádio ou</b>. 2021.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Siqueira, Melissa Fabíola; SIQUEIRA JUNIOR, J. R. ; RODRIGUES, P. ; SANTOS, L. F.. <b>Futuro da eletrônica Orgânica. 2021. (Programa de rádio ou TV/Mesa</b>. 2021.</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARAPIRACA, A. F. C. ; Hélio Anderson Duarte ; CLECIO DA SILVA FERREIRA ; MATOS, M. J. S. ; Luiz Antônio Sodré Costa ; José Miguel Ortega ; William Robson Schwartz ; Antônio-Carlos Guimarães de Almeida. <b>Segunda Temporada da WebSérie HPC Spotlight: 1º episódio. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Empreender por oportunidade ou por necessidade?</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F.; Ferreira, G. R.. <b>LAPPEM: laboratório de pesquisa ou de inovação?. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F.; LIBERATO, T.. <b>Joias de Bento. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, Rodrigo F. <b>Qualisticker. 2020; Tema: Mutatis Mutantis - A procura do saber, popularização da ciência</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, Rodrigo F.; FERREIRA, G. R.. <b>Desafios da Transferência de Tecnologia. 2020. (Programa de rádio ou TV/Mesa</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos ao Encontro de Saberes- UFOP</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V. <b>Arbitragem artigo submetido à Revista Caderno Brasileiro de Ensino de Física em Outubro</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V. <b>Arbitragem artigo submetido à Revista Caderno Brasileiro de Ensino de Física em julho</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FRANCO, M. R. ; Bianchi, R. F.. <b>Qualisticker. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GOLIN, A. F. ; Bianchi, R. F.. <b>Sensor de Amônia. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GOLIN, A. F. ; Bianchi, Rodrigo F.. <b>Sensor de Amônia. 2020; Tema: Mutatis Mutantis - A procura do saber, popularização da ciência</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>GOLIN, A. F. ; MURASE, M. S. W. ; LACERDA, G. ; Bianchi, Rodrigo F.. <b>Eletrônica e Ciência. 2020; Tema: Programa Mutatis Mutantis - A Procura do Saber, de popularização da ciência</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>LACERDA, G. ; Bianchi, R. F.. <b>Amarelão. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>LACERDA, G. ; Bianchi, Rodrigo F.. <b>Amarelão. 2020; Tema: Mutatis Mutantis - A procura do saber, popularização da ciência</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>LIBERATO, T. ; Bianchi, Rodrigo F.. <b>Joias de Bento. 2020; Tema: Mutatis Mutantis - A procura do saber, popularização da ciência</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MATOS, M. J. S. <b>Encontro de Saberes da UFOP 2020 - XXVIII SEMINÁRIO DE INICIAÇÃO CIENTÍFICA - REVISOR DE TRABALHOS</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MATOS, M. J. S. <b>NanoUFOP. 2020; Tema: Divulgação da Ciência e Grupos de Pesquisa. (Rede</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MATOS, MATHEUS J S. <b>Parecer em artigo científico na Journal of Molecular Structure 07/2020</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MATOS, MATHEUS J S. <b>Parecer em artigo científico na Journal of Molecular Structure 08/2020</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MATOS, MATHEUS J S. <b>Segunda Temporada da WebSérie HPC Spotlight: 5º episódio. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MURASE, M. S. W. ; Bianchi, R. F.. <b>Radisticker. 2020. (Programa de rádio ou</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MURASE, M. S. W. ; Bianchi, Rodrigo F.. <b>Radiação. 2020; Tema: Mutatis Mutantis - A procura do saber, popularização da ciência</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XVIII Encontro de Pesquisa em Ensino de Física (EPEF)</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao Encontro de Saberes - UFOP</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PRADO, M. C.; BARBOZA, A. P. M.. <b>Instagram do Laboratório de Microscopia. 2020; Tema: Microscopia de varredura por sonda, nanociência e nanotecnologia. (Rede</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na Brazilian Journal of Physics</b>. 2020.</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na Brazilian Journal of Physics</b>. 2020.</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Projeto Ser Ciência leva física para crianças durante o Campus Aberto. 2019. (Programa de rádio ou</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; LACERDA, G. ; SILVA, O. H. C. E. ; BARBOSA, M.. <b>Política de Inovação na UFOP. 2019. (Programa de rádio ou</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos ao I Encontro Mineiro de Ensino de Física</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos ao Encontro de Saberes UFOP</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LACERDA, G. <b>; MURASE, M. S. W. ; GOLIN, A. F. ; Bianchi, R. F. . Polímeros</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MATOS, M. J. S. <b>Consultor Ad Hoc no processo de julgamento das propostas submetidas na Chamada CNPQ/Finep/MCTIC//BRICS-STI Nº 03/2019</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Parecerista de artigo científico submetido à revista Caderno Brasileiro de Ensino de Física. Fevereiro</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XII Encontro Nacional de Pesquisa em Educação em Ciências (ENPEC)</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao I Encontro Mineiro de Ensino de Física (EMEFis)</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao Encontro de Saberes - UFOP</b>. 2019.</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. <b>F.; LIBERATO, T. ; RODRIGUES, O. D. ; P. Bento ; A. C. Chagas . Joias de Bento</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Programa de Ciências e Física de Materiais. 2018; Tema: Video do Curso de Pós-graduação com projetos desenvolvidos no LAPPEM</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F.; A. Furtado ; V. Falcão. <b>Politica Científica e Tecnológica. 2018. (Programa de rádio ou TV/Mesa</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MATOS, M. J. S. <b>X Encontro de Saberes da UFOP: REVISOR DE TRABALHOS</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MATOS, M.J.S. <b>Parecer artigo científico - Carbon</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MATOS, M.J.S. <b>Consultor Ad Hoc no processo de julgamento das propostas submetidas Chamada Universal MCTIC/CNPq n.º 28/2018</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XVII Encontro de Pesquisa em Ensino de Física (EPEF)</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao Encontro de Saberes - UFOP</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SIQUEIRA, M. F.; SAVEDRA, Ranylson Marcello Leal ; DIAS, K. S. ; MAGALHAES, C. E. T. ; BORGES, M. N. ; MATOS, J. H. R. ; SOUZA, J. V. O. ; SILVA, M. M.. <b>https://molsmat.wixsite.com/molsmat. 2018; Tema: Grupo de Simulação Molecular de Materiais</b>. 2018.</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Pesquisa como fator de empreendedorismo. 2017; Tema: Pesquisa e empreendedorismo gerando negócios para as cidades</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; BENINI, C. ; SILVA, F. ; AQUINO, S. F.. <b>Financiamento da Pesquisa no Brasil. 2017. (Programa de rádio ou TV/Mesa</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F.; SENNA, B. ; DRUMOND, R. ; MUNIZ, M. M. ; FIGUEIREDO, G.. <b>Desastre Tecnológico: histórias, lutas e resistências. 2017. (Programa de rádio ou TV/Mesa</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Brant, J. C. <b>Avaliadora da seção de pôster do Workshop do Departamento de Física da UFMG</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J. <b>Revisor de trabalhos submetidos ao Encontro de Saberes - UFOP</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FRANCO, M. R. ; CUNHA, L. R. ; Bianchi, R. F.. <b>Etiqueta inteligente desenvolvida na UFOP indica se carne de frango está boa para o consumo. 2017; Tema: Operação Carne Fraca da Polícia Federal. (Rede</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FRANCO, M. R. ; CUNHA, L. R. ; Ferreira, G. R. ; Bianchi, R. F.. <b>Carne estragada? Startup mineira cria mecanismo de controle de qualidade. 2017; Tema: Operação Carne Fraca</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MATOS, M. J. S. <b>IX Encontro de Saberes da UFOP: REVISOR DE TRABALHOS</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Coordenador de sessão de comunicações orais durante o XXII Simpósio Nacional de Ensino de Física (SNEF)</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Parecerista de artigo científico submetido à revista ENSAIO. Agosto</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XI Encontro Nacional de Pesquisa em Educação em Ciências (ENPEC)</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XV Evento de Educação em Química (EVEQ)</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao I Simpósio Internacional da UFOP: propostas e desafios na educação contemporânea</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao IX Encontro de Formação Continuada de Professores de Ciências (ENFOCO)</b>. 2017.</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Plano de Desenvolvimento Institucional da UFOP 2016-2025</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Gente da comunidade: entrevista com Rodrigo Fernando Bianchi / SBPMAT. 2016. (Programa de rádio ou</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BIANCHI, R. F. <b>Entrevista com Pró-reitor de Planejamento e Desenvolvimento da UFOP. 2016. (Programa de rádio ou</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BIANCHI, R. F. <b>Desastre tecnológico: histórias, lutas e resistências. 2016. (Programa de rádio ou TV/Mesa</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MATOS, M. J. S. <b>Parecer de artigo científico - Brazilian Journal of Physics</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MATOS, M. J. S. <b>Parecer artigo científico - Physical Chemistry Chemical Physics</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MATOS, M. J. S. <b>The Nanoscale Physics Group. 2016; Tema: Divulgação da Ciência e de Grupo de Pesquisa</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MATOS, M. J. S. <b>Professor Matheus J. S. Matos. 2016; Tema: Divulgação da Ciência</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XXII Simpósio Nacional de Ensino de Física (SNEF)</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao I Encontro de Ensino de Ciências e Matemática (ENECEM)</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Parecerista de artigo científico submetido à revista Ciência & Educação. Setembro</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XVI Encontro de Pesquisa em Ensino de Física (EPEF), realizado durante o Encontro de Física</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na The Journal of Physical Chemistry</b>. 2016.</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Congresso brasileiro de extensão universitária. 2015. (Programa de rádio ou TV/Mesa</b>. 2015.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Medidas de economia em 2014/2015. 2015. (Programa de rádio ou TV/Mesa</b>. 2015.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BIANCHI, R. F.; FERREIRA, G. R.. <b>Prêmio Mineiro de Inovação. 2015; Tema: Empreendedorismo aplicado a saúde pública</b>. 2015.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Brant, J. C. <b>Membro da comissão avaliadora da XXIV Semana de Iniciação Científica da UFMG</b>. 2015.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Matos, Matheus J. S. <b>Parecer Artigo Científico - Journal of Physics: Condensed Matter</b>. 2015.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Molecular Simulation of Materials - MolSMat. 2015; Tema: Molecular Simulation of Materials</b>. 2015.</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Eletrônica Orgânica. 2014. (Programa de rádio ou</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>UFOP CONHECIMENTO - EMPREENDEDORISMO</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Empreendedorismo. 2014; Tema: Empreender</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Propriedades Intelectual, Inovação e Transferência de Tecnologia. 2014; Tema: Simpósio de PI, Inovação e Transferência de Tecnologia em Materiais</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>Educação, tecnologia e curriculo. 2014; Tema: I Seminário de Educação e Tecnologia: discutindo diretrizes da educação básica, buscando novas possibilidades para a EaD</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FONSECA, A. M. T. ; Bianchi, R. F.. <b>Fonte de fototerapia multicor e direcional para tratamento da icterícia neonatal. 2014; Tema: Ciência na Web, da Universidade de São Paulo - USP, com a estudante do LAPPEM - Antônio Mauricio Tannure</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FRANCO, M. R. ; Bianchi, R. F.. <b>Selo inteligente para monitoramento do tratamento da icterícia neonatal. 2014; Tema: Ciência na Web, da Universidade de São Paulo - USP, com a estudante do LAPPEM - Marcella Franco</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Árbitro de trabalhos submetidos ao XXI Simpósio Nacional de Ensino de Física (SNEF)</b>. 2014.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Silva, M.M. ; Bianchi, R. F.. <b>Sensor multicolorido, tipo semáforo inteligente, para acompanhamento de fototerapia neonatal. 2014; Tema: Ciência na Web, da Universidade de São Paulo - USP, com a estudante do LAPPEM - Mariana Melo Silva</b>. 2014.</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. <b>F.. Educação Empreendedora</b>. 2013.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>UFOP é referência em pesquisas em Eletrônica Orgânica. 2013. (Programa de rádio ou</b>. 2013.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Eletrônica Orgânica. 2013; Tema: Eletrônica impressa e flexível</b>. 2013.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Coordenador de grupo de trabalhos durante o IX Seminário de Teses e Dissertações da FE/Unicamp</b>. 2013.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PAGLIARINI, C. R.; OLIVEIRA, J. M. L.. <b>Hora de modernizar. 2013. (Programa de rádio ou</b>. 2013.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PRADO, MARIANA C. <b>Parecer sobre artigo científico na The Journal of Physical Chemistry</b>. 2013.</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Lopes, Monique ; Florio, V.. <b>Nova ferramenta do Google aproxima internautas da astronomia.. 2012. (Programa de rádio ou</b>. 2012.</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V.; L'ASTORINA, B. L. A. ; CARAPETO, ROBSON ; ASSIS, FELIPE ; L´ASTORINA, CHARLES. <b>Olimpíada Brasileira de Linguística. 2011; Tema: Site da Olimpíada Brasileira de Linguística</b>. 2011.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MATOS, M. J. S. <b>Professor Matheus J. S. Matos. 2011; Tema: Divulgação da Ciência. (Rede</b>. 2011.</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Rede Minas exibe pesquisa do LAPPEM</b>. 2010.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V.; L" ; PEREIRA, FELIPE A. C. ; ASSIS, FELIPE ; L´ASTORINA, CHARLES. <b>CCD - OBA. 2010; Tema: Blog do curso de astronomia do CCD - Olimpíada Brasileira de Astronomia</b>. 2010.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>J. Tavares ; Bianchi, R. F.. <b>Saúde Pública, especial 20 anos do SUS</b>. 2010.</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PEREIRA, M. A. ; Florio, V.. <b>Planetários são o ponto de partida para o interesse por astronomia. 2009. (Programa de rádio ou</b>. 2009.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Avaliação dos relatórios técnicos parciais da pesquisa de iniciação científica</b>. 2009.</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MATOS, M. J. S. <b>Minha vida, meus amigos e meus amores.. 2008; Tema: Poesia</b>. 2008.</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>C. A. Ferragini ; Bianchi, R. F. ; FARIA, R. M.. <b>Desenvolvimento de impressora para materiais poliméricos</b>. 2006.</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FARIA, R. M. ; Bianchi, R. F. ; ONMORI, R. K. ; SANTOS, L. F. ; DIRANI, E. A. T. ; ANDRADE, A. M.. <b>Desenvolvimento de Dispositivos Orgânicos</b>. 2004.</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; VIEIRA, C. B. ; KRÜGER, Fernando Leopoldo Von ; KRÜGER, Paulo Von. <b>Estudo do comportamento de pelotas de minério de ferro durante processamento térmico em escala de bancada</b>. 2003.</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; OLIVEIRA, C. P.. <b>Tecnologia de Tratamento Térmico por Indução Eletromagnética de Ferramental para Aplicação em Mineração -TIEFAM</b>. 2002.</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; MENDES FILHO, A. A. ; PINTO, L. C. B. M. ; BRANCO, J. R. T.. <b>Síntese hidrotérmica de gemas de quartzo colorido</b>. 1999.</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; BERNARDES, A. T. ; CREMASCO, J. D.. <b>Projeto de Criação do Curso de Física Aplicada: Ciência dos Materiais</b>. 1998.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>OLIVEIRA, C. P. ; da Silva Araujo, F. G.. <b>Tecnologia de Tratamentos térmicos por indução eletromagnética de ferramental para aplicação em mineração</b>. 1998.</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G. <b>Obtenção de filmes finos para aplicação em eletrônica a partir de pós cerâmicos ferroelétricos</b>. 1996.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>da Silva Araujo, F. G.; OLIVEIRA, C. P. ; PANIAGO, E. B. ; CARDOSO, A. V. ; AFONSO, R. J. C. F. ; FIGUEIREDO, A. F. S. ; CÂMARA, J. J. D. ; LANA, S. L. B.. <b>Projeto de Criação da Rede Temática em Engenharia de Materiais, REDEMAT - UFOP/CETEC/UEMG</b>. 1996.</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

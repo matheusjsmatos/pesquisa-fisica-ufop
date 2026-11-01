@@ -1,0 +1,435 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Textos em jornais de notícias/revistas'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2000,
+1],
+[2006,
+1],
+[2007,
+3],
+[2008,
+7],
+[2009,
+7],
+[2010,
+1],
+[2011,
+5],
+[2012,
+2],
+[2013,
+1],
+[2014,
+18],
+[2015,
+7],
+[2016,
+9],
+[2017,
+9],
+[2018,
+23],
+[2019,
+5],
+[2020,
+2],
+[2021,
+3],
+[2022,
+5],
+[2024,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Textos em jornais de notícias/revistas</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 125<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Velten, Hermano E.S.; VON MARTTENS, RODRIGO. <b>DESI 2024: um possível indício do fim da constante cosmológica?</b>. Cadernos de Astronomia, p. 136-140, 26 set. 2024. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ZANETTI, P. ; PRADO, MARIANA C. <b>Unveiling Brazil's Potential in Graphene Nanotechnology: The Role of High-Quality Flake Graphite</b>. UNIGOU Remote 2024 Czech-Brazilian Academic Program, 01 maio 2024. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R.F.; B. G. Paiva. <b>Forber under 30 - Ciência e Tecnologia</b>. Forbes, 28 dez. 2022. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R.F.; B. G. Paiva. <b>Brasileira de 29 anos se destaca com solução para acesso a água potável</b>. Revista Galileu, 14 mar. 2022. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Um dia para a Física</b>. Ciência e Cultura, 23 maio 2022. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>LOPES, G. A. C. ; Sintra, R. ; ANDRADE, M. B.. <b>No IFSC/USP: Técnicas complementares caracterizam dois minerais raros</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 24 fev. 2022. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>QUEIROZ, A. A. A. E. ; Sintra, R. ; Andrade, M.B.. <b>Classificação de minerais raros ? Espectroscopia Raman e redes neurais artificiais</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 13 out. 2022. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Pesquisadora desenvolve garrafa que filtra água utilizando luz solar</b>. Isto é dinheiro, https://www.istoedinheiro.com, 11 dez. 2021. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Brasileira cria garrafa que limpa água e vai para desafio mundial</b>. Cláudia, 09 dez. 2021. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>N. Machado ; B. G. Paiva ; Bianchi, R.F.. <b>Engenheira da UFOP cria garrafa que filtra água e concorre a prêmio mundial</b>. Estado de Minas Gerais, https://www.em.com.br/app/noti, 22 nov. 2021. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>QUEIROZ, A. A. A. E. ; Sintra, R. ; Andrade, M.B.. <b>IFSC/USP cataloga amostras minerais do Museu de Geociências</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 13 mar. 2020. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>?Minerais em Marte? ? pesquisador do IFSC/USP fala sobre o planeta</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 16 mar. 2020. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R.F. <b>Tecnologia brasileira, os minifígados são impressos em 3D</b>. Correio Brasiliente, 16 dez. 2019. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>Raízes do estar bem</b>. Ciência e Cultura, http://cienciaecultura.bvs.br/, , v. 71, p. 17-18, 03 jun. 2019. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Sintra, R. ; ANDRADE, M. B.. <b>Em Londres: ?Security of Supply of Mineral Resources (SOS Minerals)?</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, p. 1, 20 maio 2019. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Em Londres: contribuição do IFSC/USP no estudo de terras raras</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 04 dez. 2019. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Pesquisador do IFSC/USP apresenta trabalho em Londres</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 14 nov. 2019. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Múons na Arapuca</b>. Pesquisa Fapesp, 18 out. 2018. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>Camuflagem contra as defesas do cacaueiro</b>. Pesquisa Fapesp, 18 out. 2018. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>Um matemático no mundo das vacas esféricas</b>. Blog do ICTP-SAIFR, 05 out. 2018. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>O que sabemos que não sabemos</b>. Blog ICTP SAIFR, 26 set. 2018. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V. <b>Estranhezas no mundo do muito pequeno</b>. Blog ICTP SAIFR, 26 set. 2018. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Florio, V. <b>Há lugar para a poesia e a beleza na matemática</b>. Jornal da Unesp, p. 16, 16 set. 2018. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V. <b>O intrigante recuo do mar em Trindade</b>. Pesquisa Fapesp, 20 ago. 2018. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V. <b>Amazônia Ilegal</b>. Pesquisa Fapesp, p. -------, 17 ago. 2018. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V. <b>No rastro do desconhecido</b>. Jornal Unesp, , v. 345, 31 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Florio, V. <b>Um meteorito em Serra Pelada</b>. Pesquisa Fapesp, , v. 269, 19 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Florio, V. <b>Escola de física de partículas ICTP Trieste-SAIFR</b>. Blog ICTP SAIFR, 16 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Florio, V. <b>Escola de modelos integráveis ICTP-SAIFR</b>. Blog ICTP SAIFR, 16 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Florio, V. <b>Giro do Barulho</b>. Pesquisa Fapesp, Revista Pesquisa Fapesp, , v. 268, 15 jun. 2018. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Florio, V. <b>Turbulência criativa</b>. Pesquisa Fapesp, , v. 267, 20 maio 2018. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Florio, V. <b>Brilho congelado</b>. Pesquisa Fapesp, Revista Pesquisa Fapesp, , v. 266, 20 abr. 2018. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Florio, V. <b>Um filtro diferente</b>. Pesquisa Fapesp, , v. 256, 31 mar. 2018. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Florio, V. <b>Entrevista William Bialek: Entre vivos e inanimados</b>. Pesquisa Fapesp, Revista Pesquisa Fapesp, , v. 265, 01 mar. 2018. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Florio, V. <b>Ficção, passado e futuro dos robôs</b>. Ciência & Cultura, 01 mar. 2018. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Florio, V. <b>Efeitos da turbulência quântica</b>. Pesquisa Fapesp, , v. 263, p. 65-65, 10 jan. 2018. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Sintra, R. ; ANDRADE, M. B.. <b>A Espectroscopia Raman e seu papel na nova caracterização mineral</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 23 ago. 2018. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>TV USP/CEPOF destaca descoberta de novo mineral no Brasil</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 03 ago. 2018. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Pesquisador do IFSC/USP ministra workshop na Austrália</b>. Portal IFSC USP NOTÍCIAS online, 18 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Parisita-(La) ? Reconhecido novo mineral descoberto na Chapada Diamantina (BA)</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 21 jun. 2018. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Brasil vizinho da China</b>. Pesquisa Fapesp, , v. 261, 25 nov. 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>A origem dos raios cósmicos</b>. Pesquisa Fapesp, , v. 260, 20 out. 2017. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>A provável origem dos raios cósmicos</b>. Pesquisa Fapesp, http://revistapesquisa.fapesp., , v. 260, 22 set. 2017. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Realidade ou simulação?</b>. Ciência & Cultura, 01 jun. 2017. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V.; Charles Rubin. <b>Vida de estrela</b>. Pré Univesp, 01 jan. 2017. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FRANCO, M. R. ; Bianchi, R. F.. <b>Etiqueta desenvolvida na Ufop muda de cor se a carne estiver podre</b>. O tempo, Belo Horizonte, MG, p. 1-1, 21 mar. 2017. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FRANCO, M. R. ; CUNHA, L. R. ; Ferreira, G. R. ; Bianchi, R. F.. <b>UFOP desenvolve selo que indica a qualidade da carne de frango</b>. Estado de Minas - Caderno Gerais, 21 mar. 2017. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FRANCO, M. R. ; FERREIRA, G. R. ; CUNHA, L. R. ; Bianchi, R. F.. <b>Startup lanca sensor que avalia qualidade de frango</b>. Valor Economico, p. '-1, 22 mar. 2017. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MOTTA, T. ; Bianchi, Rodrigo F.. <b>O futuro chegou para as roupas inteligentes</b>. O Tempo, Belo Horizonte, MG, p. 01-01, 25 jun. 2017. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B.; Sintra, R.. <b>Novo mineral pode ter aplicações tecnológicas</b>. Jornal da USP, São Paulo, p. 11-11, 25 abr. 2016. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>Partículas elementares: as sementes do Universo</b>. Pré-Univesp, 28 dez. 2016. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>Mineração de hélio-3 na lua</b>. Ciência & Cultura, 01 out. 2016. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Abelhas utilizam campos elétricos para identificar flores</b>. Ciência & Cultura, , v. 68, 01 jul. 2016. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V. <b>Surfando nas ondas gravitacionais</b>. Ciência e Cultura, 01 jun. 2016. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Florio, V. <b>Dificuldade de identificar e investir em pessoas com altas habilidades pode minar o talento nato</b>. Ciência e Cultura, Ciência e Cultura, , v. 68, 01 mar. 2016. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V.; Charles Rubin. <b>A química do Bioetanol de segunda geração</b>. Pré-Univesp, 01 dez. 2016. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V.; MARIUZZO, P.. <b>Entrevista com a astrofísica Sueli Viegas</b>. Pré-Univesp, 22 dez. 2016. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Descoberto novo mineral que pode inspirar novos materiais</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 07 abr. 2016. </td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Lapsos e lembranças : a memória do idoso</b>. Pré-Univesp, , v. 48, 01 ago. 2015. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>Estamos vivendo um processo de descerebramento ?</b>. Ciencia & Cutura, 15 jul. 2015. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>Reações fotoquímicas</b>. Pré-Univesp, 20 maio 2015. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>A conquista dos espaços</b>. Pre-Univesp, 25 mar. 2015. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V.; Charles Rubin. <b>Percepção visual do movimento</b>. Pré-Univesp, 20 mar. 2015. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MAGALHAES, C. E. T. ; SAVEDRA, Ranylson Marcello Leal ; DIAS, K. S. ; Ramos, R. ; Siqueira, Melissa F.. <b>Structural Dependence of Photochromism in MEH-PPV Solutions</b>. Processos Químicos - Edição Especial XVIII SBQT, Goiás, p. 57-59, 01 dez. 2015. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Prado, Mariana C. ; Nascimento, Regiane ; FARIA, BARBARA E N ; MATOS, M. J. S. ; Chacham, H ; Neves, Bernardo. <b>Molecular decoration uncovers molybdenum disulphide grain boundaries</b>. http://nanotechweb.org/, http://nanotechweb.org/cws/art, 16 nov. 2015. </td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Adesivos Inteligentes</b>. Ciência Hoje das Crianças, 24 nov. 2014. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>25 anos sem o Muro de Berlim</b>. Pré-Univesp, 12 nov. 2014. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>Descobrindo mundos: a reinvenção da sonda espacial Kepler</b>. Ciência e Cultura, 27 out. 2014. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Satélite meteorológico</b>. Pré-Univesp, 15 out. 2014. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V. <b>Transplante de rins</b>. Pré-Univesp, 24 set. 2014. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Florio, V. <b>O feio e o bonito - tráfico de marfim</b>. Pré-Univesp, 17 set. 2014. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V. <b>Máquinas a serviço da saúde</b>. Pré-Univesp, 28 ago. 2014. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V. <b>Jogando nas alturas</b>. Pré_univesp, http://pre.univesp.br/jogando-, 11 jun. 2014. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V. <b>A selva na cidade</b>. A selva na cidade, Revista Pré-Univesp, 14 maio 2014. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Florio, V. <b>Vivendo em câmera lenta</b>. Pré-Univesp, Pré-Univesp, 16 abr. 2014. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Florio, V. <b>Fuso horário: o tempo internacional</b>. Pré-Univesp, Pré-Univesp, 02 abr. 2014. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Florio, V.; Charles Rubin. <b>Armas químicas</b>. Pré-Univesp, 26 nov. 2014. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Florio, V.; Charles Rubin. <b>Spirit</b>. Pré-Univesp, 13 ago. 2014. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MATOS, MATHEUS J S; Mazzoni, Mario S. C. ; Hélio Chacham. <b>Achieving a Fermi level shift in graphene without an applied gate</b>. http://nanotechweb.org/ - Lab Talk, 28 mar. 2014. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>IFSC ? USP representou Brasil no ?OpenFactory ? 2014?</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 09 out. 2014. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Pesquisadores do IFSC no OpenFactory IUCr-UNESCO</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 14 ago. 2014. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>Pesquisadores do IFSC apresentam trabalhos no XXIII Congress ? IUCr</b>. Portal IFSC USP NOTÍCIAS online, São Carlos, SP, p. 1, 25 jul. 2014. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Sintra, R. ; Andrade, M.B.. <b>IFSC-USP acolhe Centro de Caracterização de Espécies Minerais</b>. Portal IFSC USP NOTÍCIAS online, p. 1, 01 jun. 2014. </td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>O acelerador Sirius: governo investe em tecnologia de ponta.. Cienc. Cult</b>. [online]., p. 10-11, 19 dez. 2013. </td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>J. Saragá ; Bianchi, R. F.. <b>Mentes Brilhantes</b>. Revista Minas Faz Ciência, Belo Horizonte, p. 42-44, 08 mar. 2012. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Oliveira, C K ; Matos, Matheus J. S. ; Mazzoni, Mario S. C. ; Hélio Chacham ; Neves, Bernardo. <b>Nano-ponds modify properties of hexagonal boron nitride layers</b>. http://nanotechweb.org - Lab talk, 26 abr. 2012. </td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Araújo, F.G.S.; ALMEIDA, Jr ; AIRTON, T. ; NOGUEIRA, M. S. ; SANTOS, M. A. P. ; VIEIRA, J. W.. <b>MEASSUREMENT OF THE EFFECTIVE ATOMIC NUMBERS OF COMPOUNDS UTILIZED WITH ON RADIATION SHIELDING MATERIALS</b>. World Academy of Science, Engineering and Technology., Paris, p. 816-819, 07 ago. 2011. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Araújo, F.G.S.; PINTO, L. C. B. M. ; RIGHI, A. ; LAMEIRAS, F. S. ; KRAMBROCK, K.. <b>Origin of the color in cobalt-doped quartz</b>. Springer - Verlag 2011, 15 maio 2011. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>UFOP abre mestrado em ciência dos materiais</b>. Jornal Estado de Minas, 01 abr. 2011. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>F. Marques ; Bianchi, R. F.. <b>Tecnologia Pioneira</b>. Revista Minas Faz Ciência - Especial Internacionalização, Belo Horizonte, p. 31-34, 16 nov. 2011. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V. <b>Observatório Pierre Auger Norte só no papel</b>. Ciência e Cultura, digital, p. 18-21, 10 jul. 2011. </td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. Lima ; BIANCHI, R. F.. <b>Lembra dessa?</b>. Revista Minas Faz Ciencia, Belo Horizonte - MG, p. 20-22, 01 jul. 2010. </td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. Lima ; Bianchi, R. F.. <b>Sinal verde para a saúde: dosímetro feito com material orgânico luminescente auxilia no tratamento da icterícia neonatal</b>. Minas Faz Ciência, Belo Horizonte - MG, p. 24-25, 18 set. 2009. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BIANCHI, R. F. <b>Vencedores do Prêmio Siemens</b>. Pesquisa FAPESP (Impresso), http://www.revistapesquisa.fap, p. 69-69, 01 fev. 2009. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>A cosmologia numa fronteira escura</b>. Com Ciência, 10 out. 2009. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Poluição Luminosa: O direito de contemplar o céu</b>. Ciência e Cultura, São Paulo, 01 out. 2009. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V. <b>Telescópios: Avançam as colaborações internacionais</b>. Ciência e Cultura, São Paulo, 01 out. 2009. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>L" ; Florio, V.. <b>Educação: Astronomia para o mundo em desenvolvimento</b>. Ciência e Cultura, São Paulo, 01 out. 2009. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Vasconcelos, Cláudia K. B. de ; Bianchi, Rodrigo F.. <b>Nova técnica de monitoramento da fototerapia neonatal. Boletim Informativo do Ministério da Saúde</b>. Edição 20 Anos do SUS, Brasília - DF, p. 4-4, 17 jan. 2009. </td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BIANCHI, R. F. <b>Trabalho coordenado pelo autor é tema da Questão 24 do Enade 2008 - Banho de luz preciso. Enade 2008 - Prova dos cursos de Engenharia 5, INEP</b>. Brasília DF, p. 13-13, 01 nov. 2008. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Bolsistas da Fapemig se destacam em premiações</b>. Minas Faz Ciência, Belo Horizonte - MG, p. 48-48, 01 nov. 2008. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Banho de Luz Preciso</b>. Banho de luz preciso Dispositivo eletrônico monitora dose de radiação usada no tratamento de icterícia em recém-nascidos, Revista Fapesp, p. 5, 01 jul. 2008. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>C. Andrade ; DE VASCONCELOS, C. K. B. ; Ferreira, G. R. ; Bianchi, R. F.. <b>Selo mede luz para tratar icterícia neonatal</b>. Estado de Minas, Caderno Ciência, Belo Horizonte, MG, p. 18-18, 09 dez. 2008. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>Idéia e desenvolvimento de um dosímetro indicador de acúmulo de radiação à base de semicondutores orgânicos para uso em fototerapia neonatal. Resultados do 3o</b>. Prêmio Werner von Siemens de Inovação Tecnológica - Respostas para o Brasil, São Paulo - SP, p. 07-07, 15 dez. 2008. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Marina Lavioli Henriques ; DE VASCONCELOS, C. K. B. ; Ferreira, G. R. ; D. Gomes ; A. Siqueira ; BIANCHI, R. F.. <b>Laboratório da UFOP cria aparelho para auxiliar no tratamento correto da Icterícia</b>. Informativo Andifes, http://news.andifes.org.br, 28 jul. 2008. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Yuri Vasconcelos ; DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>Banho de luz preciso: Dispositivo eletrônico monitora dose de radiação usada no tratamento de icterícia em recémnascidos</b>. Revista Fapesp, São Paulo, p. 92-93, 10 jul. 2008. </td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>e. duarte ; DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>Dosagem Correta</b>. Jornal Hoje em Dia, Belo Horizonte, p. 01-01, 26 dez. 2007. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V.; CASTELFRANCHI, Y.. <b>Entrevista Augusto Damineli Neto</b>. ComCiencia, 10 ago. 2007. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>JUTTEL, L. P. ; Florio, V.. <b>Instrumentos que aproximam o Homem do Cosmos</b>. ComCiencia, 10 ago. 2007. </td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>Virtual Journal of Biological Physics Research</b>. Quantum chemical study of electronic and structural properties of retinal and some aromatic analogs, USA, , v. 12, 15 out. 2006. </td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Rogerio Vogt ; ANDRADE, M. B.. <b>Entenda o naufrágio do submarino Kursk</b>. Portal Universo Online UOL-Educação, São Paulo, SP, p. 1, 23 ago. 2000. </td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>ALUNA DA UFOP É FINALISTA DE PROGRAMA INTERNACIONAL</b>. Fapemig, http://www.fapemig.br/pt/notic, .</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Mineira é finalista de torneio mundial ao criar garrafa que purifica água</b>. Hoje em Dia, https://www.hojeemdia.com.br/h, .</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>B. G. Paiva ; Bianchi, R.F.. <b>Brasileira se classifica para fase internacional da Red Bull Basement</b>. O Vale, https://www.ovale.com.br/vivac, .</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Doença é tratada com adesivo inteligente</b>. Minas Inova, .</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>Pesquisadoras da ufop criam adesivo que avisa a hora de sair do sol</b>. Estado de Minas, Belo HOrizonte, MG, .</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BIANCHI, R. F. <b>Trabalho coordenado pelo autor é tema da Questão 108 - Prova Amarela do ENEM 2017</b>. Exame Nacional do Ensino Médio, ENEM, .</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARVALHO, E. J.; Gutierrez-Rivera, L. ; Cescato, L.. <b>Pequenos furos de uma peneira</b>. Revista Pesquisa Fapesp, .</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V. <b>Admirável Cosmologia Nova</b>. Pré-Univesp, .</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V. <b>Oscar Sala e o diálogo da ciência</b>. Ciência e Cultura, Ciência e Cultura, p. 30-32, .</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Florio, V. <b>Memorizando e aprendendo?</b>. Pré- Univesp, .</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Florio, V. <b>Reatores Nucleares</b>. Revista Glocal, .</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Florio, V. <b>Imaginando o redondo</b>. ComCiência, .</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Florio, V.; MARIUZZO, P.. <b>Cidade das formigas</b>. Pré-Univesp, .</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FRANCO, M. R. ; BIANCHI, R. F.. <b>Pesquisadora da Ufop desenvolve adesivo capaz de avaliar a qualidade da carne de frango</b>. Globo Minas, .</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

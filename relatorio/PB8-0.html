@@ -1,0 +1,1533 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Apresentações de trabalho'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1996,
+1],
+[1997,
+5],
+[1998,
+4],
+[1999,
+3],
+[2000,
+4],
+[2001,
+9],
+[2002,
+14],
+[2003,
+11],
+[2004,
+23],
+[2005,
+22],
+[2006,
+22],
+[2007,
+21],
+[2008,
+22],
+[2009,
+35],
+[2010,
+45],
+[2011,
+25],
+[2012,
+40],
+[2013,
+22],
+[2014,
+15],
+[2015,
+28],
+[2016,
+22],
+[2017,
+38],
+[2018,
+28],
+[2019,
+25],
+[2020,
+18],
+[2021,
+32],
+[2022,
+23],
+[2023,
+20],
+[2024,
+24],
+[2025,
+27],
+[2026,
+34]]}]});
+        });
+        </script>
+        
+                <h3>Apresentações de trabalho</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 662<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, M. B. <b>Cristalografia e Materiais Inorgânicos: Minerais</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrade, M.B. <b>Cristalografia: uma ferramenta para invetigar materiais inorgânicos</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Andrade, M.B.; SILVA JUNIOR, H. F.. <b>Properties of 2D Magnets - Investigation by Spectroscopic Methods</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANDRADE, S de O ; PIVARO, G. F.. <b>Potenciais impactos da desinformação sobre a adesão da pílula de contracepção hormonal: análise comparativa entre vídeos científicos e desinformativos no YouTube</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BARROS, L. M. ; PIVARO, G. F.. <b>ESTUDO ENTRE AUTONOMIA E DEPENDÊNCIA EPISTÊMICA COM BASE EM VÍDEO DESINFORMATIVO NO YOUTUBE SOBRE RADIAÇÃO DO MICRO-ONDAS</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BARROS, L. M. ; PIVARO, G. F.. <b>Estudo de caso de limites entre autonomia e confiança epistêmica na análise de desinformação nas redes sociais</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BECHTOLD, I. H. ; CALDAS, M. J. ; SIQUEIRA, M.F. ; STADTLOBER, C. ; ECCHER, J. ; SILVA, T. J.. <b>The photophysics of columnar liquid crystal stacks: a theoretical and experimental study</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BEZZON, V. D. N. <b>Potentialities in Amorphous Drugs Characterization by Pair Distribution Function Method</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Bianchi, RF. <b>Inovação em sensores poliméricos</b>. 2026. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Bianchi, RF. <b>Polímeros para sensores e detectores colorimétricos</b>. 2026. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Bianchi, RF. <b>20 anos do Laboratório de Polímeros e Propriedades Eletrônicas de Materiais - LAPPEM</b>. 2026. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CALDAS, M. J. ; BECHTOLD, I. H. ; SIQUEIRA, M. F. ; SAVEDRA, RANYLSON M. L. ; ECCHER, J. ; STADTLOBER, C. ; SILVA, T. J.. <b>Experimental and theoretical study of columnar liquid crystal arrangements of benzoperylene diimide</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ECCHER, J. ; STADTLOBER, C. ; BECHTOLD, I. H. ; SAVEDRA, Ranylson Marcello Leal ; Savedra, M. F. S. ; SILVA, T. J. ; CALDAS, MARILIA J.. <b>Correlation between π-stacking architecture and photophysical properties in Benzoperylene Diimide liquid crystals: experimental and theoretical study</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Da vida para a academia: entre Artes, Ciências, História e Educação</b>. 2026. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>FREITAS, C. C. ; SILVA, P. F. ; SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F.. <b>Molecular modeling of arylazopyrazole surfactants: photophysical and self-assembly properties</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>FREITAS, C. C. ; SILVA, P. F. ; SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M.F.. <b>Self-assembly of E and Z arylazopyrazole photoswitches as responsive materials</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>GALGANO, G. D. <b>Acústica, a ciência dos sons e vibrações</b>. 2026. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>GALGANO, G. D.; MATOSO, G. C. ; CARDOSO, M. A. ; FAGUNDES, J. V. ; BATONI, V. H. ; SOUZA, L. A. S. C. ; BERNARDES, A. T.. <b>THE COHESION TRANSITION IN MOIST IRON ORE: QUANTIFYING WATER CONTENT EFFECTS ON ANGLE OF REPOSE FOR STOCKPILE STABILITY PREDICTION</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Kurihara, Letícia Sayuri ; GIROTTO JÚNIOR, Gildo ; PIVARO, G. F.. <b>An Analysis of Science-Related Denialist Discourses on TikTok: Perspectives for Science Education</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>LOPES ; PIRES, A. B. M. ; MANHABOSCO, TAÍSE M. ; LOPERA, A. A. ; BEZZON, V. D. N. ; ALVARENGA, E. C.. <b>IN VITRO OSTEOGENIC RESPONSE OF SAMPLES CONTAINING CALCIUM PHOSPHATE PHASE MIXTURES OBTAINED VIA HISTIDINE-ASSISTED SOLUTION COMBUSTION SYNTHESI</b>. 2026. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>LOPES, L. L. D. C. ; ANDRADE, M. B.. <b>Impactos das mudanças climáticas na conservação da cantaria em Ouro Preto: desafios no museu de ciência e Técnica da Escola de Minas- UFOP</b>. 2026. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>NOVAIS, M. P. F. ; SIQUEIRA, M. F. ; SAVEDRA, Ranylson Marcello Leal. <b>Isomerization effects on the electronic properties of Azo-PBIs chromophores</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>OLIVEIRA, DIONE DA COSTA ; POSTACCHINI, B. B. ; VIEIRA, ANDRÉ ALEXANDRE ; MANHABOSCO, TAISE MATTE ; MATOS, MATHEUS J S ; DIAZ, E. E. C. ; CAZATI, T.. <b>Investigation of Fluorescence Quenching of Benzazole Derivatives by Fullerene and Non-Fullerene Electron Acceptors for Application in Organic Solar Cells</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>OLIVEIRA, DIONE DA COSTA ; RUAS, B. R. ; BARBOSA, M. S. ; POSTACCHINI, B. B. ; MANHABOSCO, TAÍSE M. ; VIEIRA, ANDRÉ A. ; MATOS, M. J. S. ; CAZATI, T.. <b>Solvent and Solid-State Effects on the Photophysical Properties of Benzothiadiazole and Benzoselenadiazole Derivatives,</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PIVARO, G. F. <b>Desafios do Ensino de Ciências e Matemática em tempos de negacionismo científico</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PIVARO, G. F. <b>Desinformação científica, ensino de ciências e mídias sociais possibilidades e diálogo</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PIVARO, G. F. <b>O papel da Educação em Ciências no enfrentamento ao negacionismo científico</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PIVARO, G. F. <b>A Propagação e Negação da Ciência nas Redes Sociais</b>. 2026. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>POSTACCHINI, B. B.; FACUNDES, N. F. S. ; VIVAS, M. P. T. ; CAZATI, T. ; COUTINHO, D. J.. <b>Uric Acid as a Chemical Probe for Reactive Oxygen Species in Annatto (Bixa orellana)-Derived Photoactive Organic Materials,</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>PRADO, M. C. <b>Production and Quality Control of Clay Nanomaterials via Liquid Phase Exfoliation</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS, G. ; SILVESTRE, G. H. ; BARBOSA, M. S. ; MATOS, M. J. S. ; MERLO, A. A. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>Photoinduced Fluorescence Enhancement in Isoxazoline?Carbazole Derivatives</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SAVEDRA, R. M. L. ; COUTINHO, D. J. ; VIDAL, L. ; FARIA, G. ; TORRES, B. B. M. ; Siqueira, Melissa F.. <b>Heavy Electrochemical Doping of Poly(3-hexylthiophene-2,5-diyl) (P3HT) with a Chloride-Based Aqueous Electrolyte</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SAVEDRA, RANYLSON M. L. ; SIQUEIRA, M. F.. <b>Investigation of solvent-driven chain packing in the bulk of P3HT using MD simulations</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SIQUEIRA, M. F.; SAVEDRA, RANYLSON M. L. ; VIDAL, L. N. ; NHIME, H. F. C. ; COUTINHO, D. J.. <b>Anion-Dependent Electrochemical Doping of P3HT Revealed by Operando Transistor Characterization, Spectroscopy, and Molecular Simulations</b>. 2026. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, J. A. P. ; JESUS, L. E. B. ; SENA, C. M. S. ; QUEIROZ, V. A. S. ; BARROS, V. M. ; CARVALHO, E. J.. <b>GRUPO PET FÍSICA UFOP: CONECTANDO ATIVIDADES DE ENSINO, PESQUISA E EXTENSÃO PARA UMA FORMAÇÃO ABRANGENTE</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOZA, ANA PAULA M. <b>Microscopia de Varredura por Sonda Aplicada ao Estudo de Nanomateriais</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARBOZA, ANA PAULA M. <b>Microscopia de Varredura por Sonda aplicada ao estudo de nanomateriais</b>. 2025. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BATISTA, R. J. C. <b>Estudo teórico-experimental de materiais 2D</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BERNARDES, A. T. ; SENA, L. R. ; PINHEIRO, C. F. S. ; MACHADO, R. F. ; CASTRO E SILVA, A. <b>Predicting dengue outbreaks with machine learning</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CALAZANS, M. M.; Pagliarini, C. R. ; Rosa, D. D. ; LIMA, Guilherme da Silva ; OSTERMANN, F.. <b>As contribuições da psicologia marxista para a crítica à fragmentação da formação de conceitos científicos e à pseudorreforma do Novo Ensino Médio</b>. 2025. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CUNHA, L. M. B. R. ; ABREU, V. E. ; SILVA, N. A. ; CAMPOS, W. G. ; MARQUES, R. A. ; CARVALHO, E. J.. <b>EDUCAPET - ENGENHARIA GEOLÓGICA: O ENSINO DAS GEOCIÊNCIAS EM CURSOS PREPARATÓRIOS PARA O ENEM NA CIDADE DE OURO PRETO E ADJACÊNCIAS</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CUSTODIO, L. A. ; BEZERRA, M. G. A. ; CARVALHO, E. J.. <b>EDUCAPET: ABRINDO PORTAS E ESTABELECENDO CONEXÕES</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Imaginários da Astronomia: Representações dos céus entre crianças e adolescentes em contextos não formais</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Gatos fora da caixa: Uma reinvenção necessária para profissionais de física em espaços não-formais e informais</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GALGANO, G. D.; BERNARDES, A. T. ; MATOSO, G. C. ; CARDOSO, M. A. ; LOPES, D. H. ; FAGUNDES, J. V. ; SILVA, M. L.. <b>EXPERIMENTAL VALIDATION OF DEM SIMULATIONS FOR WET AND DRY GRANULAR COLUMN COLLAPSES</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Lobo, Augusto Cesar. <b>The quantum and the unusmundus</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MARRA, V. <b>A Ciência de Interstellar: Entre Ficção e Realidade</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>PIVARO, G. F. <b>Difusão de desinformação em ambiente on-line</b>. 2025. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>PIVARO, G. F. <b>Vacinas contra analfabetismo científico</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PIVARO, G. F. <b>A propagação de desinformação científica nas redes sociais</b>. 2025. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PIVARO, G. F. <b>Desinformação e negação da ciência nas redes sociais</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, M. M.. <b>A concepção de modelos na controvérsia entre materialistas mecanicistas e energetistas: Uma crítica a partir do materialismo histórico-dialético</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Fotofísica molecular aplicada à terapia fotodinâmica 18/11</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>QUEIROZ, L. D. ; BEZZON, V. D. N.. <b>Caracterização de matéria-prima dos fármacos Efavirenz e Atorvastatina por difração de raios X</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SAYURI, L. ; PIVARO, G. F. ; SANTOS, M. de C. <b>Identificando a hiperparticularização dos conceitos científicos em textos sobre a água alcalina que subsidiam desinformação</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SILVA, A. C. ; BEZZON, V. D. N. ; SILVA, A. C. E.. <b>Simulação computacional de processos de nucleação</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SILVA, D. M. ; ANDRADE, M. B. ; VD Nonato Bezzon. <b>Crescimento de monocristais e produção de modelosestruturais por impressão 3D</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Modelagem Molecular de Biomoléculas e Semicondurores Orgânicos para Commpreensão de Fenômenos Optoeletrônicos</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SIQUEIRA, M. F.; SAVEDRA, Ranylson Marcello Leal. <b>Molecular Modeling Approaches for Bulks and Interfaces of Organic Semiconductors</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Siqueira, Melissa F. <b>Modelagem molecular de biomoléculas e semicondutores orgânicos para compreensão de fenômenos optoeletrônicos</b>. 2025. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Siqueira, Melissa F.; FREITAS, C. C. ; SILVA, P. F. ; SAVEDRA, Ranylson Marcello Leal. <b>Arylazopyrazole-Based Molecular Photoswitches: Self-Assembly of Responsive Materials</b>. 2025. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARROSO, I. N. ; H.E.S. Velten. <b>Solitonic Solutions in Bose-Einstein Condensates. 2024</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BRIZOLA, A.; FERNANDO HERCULANO PIMENTA. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BRIZOLA, A.; Railson Ferreiara de Souza. <b>CONFECÇÃO DE APOSTILA ÁUDIO VISUAL DE PRÁTICAS DE FIS336 - FÍSICA EXPERIMENTAL I,</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>COELHO, B. B. ; NUNES, MARIA EUGÊNIA SILVA. <b>Modelo XY s=1/2 com Interações de Primeiros e Segundos Vizinhos em Campos Transverso e Longitudinal Correlacionados</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ESCÓRCIO, FELIPE S. ; Fabris, J. C. ; Toniato, Junior ; H.E.S. Velten. <b>COSMOLOGIA EM UMA TEORIA NEWTONIANA MODIFICADA INSPIRADA NA GRAVITAÇÃO DE BRANS-DICKE</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ESCÓRCIO, FELIPE S. ; Fabris, J. C. ; Toniato, Junior ; H.E.S. Velten. <b>A SCENARIO OF UNIVERSE EXPANSION PROMOTED BY THE VARIATION OF THE GRAVITATIONAL COUPLING CONSTANT</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARRA, V. <b>A Ciência de Interstellar: Entre Ficção e Realidade</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARRA, V. <b>Linear perturbations on a LLTB background</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARRA, VALERIO. <b>The BEHOMO project: linear perturbations on a LLTB background</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARRA, VALERIO. <b>Cosmological Tensions & Inhomogeneous Cosmology</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARRA, VALERIO. <b>Linear perturbations on a LLTB background</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARRA, VALERIO. <b>Inhomogeneous cosmology and their perturbations</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MARRA, VALERIO. <b>La Scienza di Interstellar: tra Finzione e Realtà</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MARRA, VALERIO. <b>Caçando galáxias para entender a energia escura e a matéria escura</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MATOS, MATHEUS JOSUE DE SOUZA. <b>Modelling atomically-thin van der Waals materials</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NUNES, MARIA EUGÊNIA SILVA; J. A. Plascak. <b>Influencia do acoplamento entre as interações de troca e o campo magnético externo no comportamento dinâmico de uma Ladder Ising,</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PIVARO, G. F. <b>Leitura e Escrita Científica no Ensino de Ciências</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PIVARO, G. F. <b>A Propagação de Desinformação Científica nas Redes Sociais e o Ensino de Ciências</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Caracterização Fotofísica Sistemática de Cromóforos Orgânicos para Aplicação em Dispositivos 08/2024</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>PRADO, MARIANA C. <b>Algumas aplicações de SPM no estudo de materiais 2D ? Alta resolução e metrologia</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Rocha, J. C. S.; DIAS, R. A.. <b>Estimando o Número de Estados de um Sistema Quântico via Computação Quântica</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Savedra, M. F. S. <b>ASSISTED SOLVENT EVAPORATION: AN APPROACH TO MODEL NON- CRYSTALLINE ORGANIC SEMICONDUCTORS</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa F.. <b>Supramolecular profile of bilirubin in water</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SAYURI, L. ; PIVARO, G. F. ; GIROTTO JR, GILDO. <b>Análise de desinformações envolvendo conteúdo científico como subsídios para o desenvolvimento de propostas de ensino de química</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B. <b>Difração de raios X aplicada a minerais</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BRIZOLA, A.; GABRIELLA PINHEIRO TARDELLI ; ANA CLÁUDIA DA SILVA. <b>TRIKI - UMA FERRAMENTA ON-LINE PARA ENSINO, APRENDIZAGEM E AVALIAÇÃO DE CONCEITOS CIENTÍFICOS</b>. 2023. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BRIZOLA, A.; Railson Ferreiara de Souza. <b>COLETA DE MATERIAIS PARA APOSTILA DE PRÁTICAS DE FIS336 - FÍSICA EXPERIMENTAL I</b>. 2023. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CALAZANS, M. M. <b>Uma reflexão sobre o conceito de espaço na Ciência Moderna e a concepção dialética</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J. <b>Produção e disponibilização de jogos para utilização no ensino de Física</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CARVALHO, E. J. <b>Cursinho pré ENEM, EducaPET 2023</b>. 2023. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARVALHO, E. J.; GALGANO, G. D. ; OLIVEIRA, P. V. S. ; DIAS, L. R. A. A.. <b>Física e Música alinhadas no Ensino de Ondulatória</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CLAUDIO, E. C. ; Vieira A. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>Study of the photophysical properties Benzazole derivatives blended with fullerene in solution</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ESCÓRCIO, FELIPE S. ; Fabris, J. C. ; Toniato, Junior ; Velten, Hermano E.S.. <b>PERICENTER ADVANCE AND THE ROCHE LIMIT IN NEWTONIAN-LIKE GRAVITY WITH VARIABLE G</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FIGUEROA, J. O. R. ; SAVEDRA, R. M. L. ; SIQUEIRA, M.F.. <b>Microstructure of P3HT film formation impacted by solvent polarity</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GALGANO, G. D. ; BELO, T. S. A. ; CARVALHO, E. J.. <b>A física e a guitarra elétrica</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Galgano, G. D.; CARVALHO, E. J. ; BELO, T. S. ; AVELINO, B. P. ; VALADARES, Y. M.. <b>A guitarra elétrica no ensino-aprendizagem de física e música</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Galgano, G. D.; MACIEL, A. S. ; MATOSO, G. C. ; BERNARDES, A. T.. <b>Acoustical slope stability and landslide susceptibility, a granular systems approach</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Luiz Gustavo Pimenta Martins, ; COMIN, RICCARDO ; MATOS, MATHEUS JOSUE DE SOUZA ; MAZZONI, M. S. C. ; NEVES, B. R. A. ; YANKOWITZ, M.. <b>Modelling atomically-thin van der Waals materials at high pressures</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>OLIVEIRA, D. C. ; Vieira A. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>PHOTOPHYSICAL PROPERTIES OF NEW ORGANIC FLUOROPHORESBASEDONBENZAZOLE DERIVATIVES</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>OLIVEIRA, R. E. S. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>Study of the photophysical properties Benzazole derivatives in solution and solid film</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Fotofísica Molecular na área de Biofotônica</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Rocha, J. C. S.; DIAS, R. A.. <b>Entropic Rodeo Algorithm</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SANTOS, G. ; MANHABOSCO, TAISE M. ; Vieira A. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>PHOTOPHYSICAL CHARACTERIZATION OF LIQUID CRYSTALS BASED ON BENZOXADIAZOLE</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SOUSA, SAMUEL M. ; MORAIS, H. L. O. ; SANTOS, J. C. C. ; BARBOZA, A. P. M. ; NEVES, B. R. A. ; PINTO, E. S. ; Prado, Mariana Castro. <b>PRODUCTION OF NANOTALC VIA LIQUID PHASE EXFOLIATION: EFFECT OF MEDIUM ON FLAKE SIZE AND SHAP</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Paula M Barboza. <b>Microscopia de Varredura por Sonda: princípios e aplicações</b>. 2022. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrade, M.B. <b>Minerais</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BEATO, F. R. G. ; PINTO, E. S. ; ARAUJO, F. G. S. ; NEVES, B. R. A. ; PRADO, M. C. ; BARBOZA, A. P. M.. <b>Characterization of Lead Sulfide by probe scanning microscopy for application in nanodevices</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BESSA, MAURICIO V. ; WELLINGTON DAMACENO DE FREITAS ; Natália Paz Neme ; Luiz Gustavo Pimenta Martins, ; BARBOZA, A. P. M. ; MATOS, M. J. S. ; MAZZONI, M. S. C. ; NEVES, B. R. A.. <b>Electromechanical Modulations in Transition Metal Dichalcogenide Nanosheets: Implications for Environmental Sensors</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BEZZON, VINÍCIUS D. N. <b>Encontrando ordem em compostos desordenados: potencialidades do método PDF</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BEZZON, VINÍCIUS D. N. <b>Detalhes sobre os cristais das areias monazíticas</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Brant, Juliana C.; Túlio H. L. G. Castro ; Paulo S. S. Guimarães. <b>Laser Induced Changes in WS2 Photoluminescence</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CARVALHO, E. J.; BARBOSA, M. F. N. P.. <b>Educa PET ? Cursinho Pré-ENEM</b>. 2022. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CARVALHO, E. J.; SILVA, G. A. ; ANDRADE, J.. <b>Apresentação das atividades do grupo PET-Física 2022</b>. 2022. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DE OLIVEIRA, MICHELLE ; DOS SANTOS SOARES, JAQUELINE ; ALVARENGA, E. C. ; MANHABOSCO, TAÍSE M.. <b>Development and characterization of collagen type I biocomposites reinforced with 2D nanominerals for biomedical applications</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FERNANDES, T. F. D. ; SANTOS, J. C. C. ; PRADO, M. C. ; Chacham, Helio ; Cancado, Luiz G. ; NEVES, B. R. A.. <b>Large-scale Characterization of 2D Material Flakes: Automation, Shape Parameters and a Route to Standardization</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GALGANO, G. D.; KOOTEN, S. V. ; HENRIQUES, A. B. ; RAPPL, P. H. O. ; ABRAMOF, E.. <b>DEFECT-BOUND PHOTOINDUCED GIANT SPIN POLARONS IN EUTE</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>I.Silvestre; BARBOZA, A. P. M. ; PRADO, M.C. ; SOARES, JAQUELINE S. ; MANHABOSCO, T.. <b>Trabalhos desenvolvidos nos Laboratórios Experimentais do Grupo Nano do Departamento de Física da Universidade Federal de Ouro Preto</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MATOS, A. C. L. ; CARVALHO, E. J.. <b>UMA PROPOSTA DE SEQUÊNCIA DE ENSINO INVESTIGATIVA (SEI) EM AULAS DE FÍSICA EXPERIMENTAL NO ENSINO SUPERIOR</b>. 2022. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>OLIVEIRA, R. E. S. ; POSTACCHINI, B. B. ; Cazati, Thiago. <b>MÉTODOS DE ANÁLISES DO COEFICIENTE DE ABSORÇÃO MOLAR E EFICIÊNCIA QUÂNTICA DA MOLÉCULA DIÉSTER DE BENZOPERILENO DIIMIDA (H4),</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>POSTACCHINI, B. B. <b>A Física das Cores</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PRADO, M. C.; MARQUES, S. ; MORAIS, H. L. O. ; SANTOS, J. C. C. ; BARBOZA, A. P. M. ; NEVES, B. R. A. ; PINTO, E. S.. <b>2D talc nanosheets obtained via liquid-phase exfoliation</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PRADO, M. C.; MORAIS, H. L. O. ; MARQUES, S. ; SILVA, K. ; FERNANDES, B. ; SOUZA, R. ; SANTOS, J. C. C. ; BARBOZA, A. P. M. ; ARCHANJO, B. S. ; PINTO, E. S. ; NEVES, B. R. A.. <b>PRODUÇÃO DE NANOMATERIAIS BIDIMENSIONAIS A PARTIR DE MINERAIS</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SANTOS, G. ; BARBOZA, A. P. M. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>CHARACTERIZATION LIQUID CRYSTAL DINAPHTHOPERYLENE DIIMIDE</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SANTOS, G. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>FOTOFÍSICA DE CRISTAIS LÍQUIDOS</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SAVEDRA, RANYLSON M. L. ; SIQUEIRA, M. F.. <b>NANOAGGREGATES FORMATION IN BULK OF AMORPHOUS P3HT FILMS INDUCED BY SOLVENT</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SILVA, G. A. ; CARVALHO, E. J.. <b>Produção e disponibilização de jogos para utilização no ensino de Física</b>. 2022. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Silvestre, I.; ALVES, V. F. ; MARTINS, RAFAEL. <b>Síntese e Caracterização de Dissulfeto de Molibdênio Bidimensional por Deposição Química na Fase Vapor (CVD)</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, M. B. <b>Investigación de la estructura cristalina de minerales que contienen H2O y OH por difracción de neutrones y su impacto en la caracterización de nuevas especies</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO. <b>Difratometria de raios X aplicada ao desenvolvimento de fármacos e medicamentos</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO. <b>Characterization of crystalline and amorphous materials by XRPD</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO; FERREIRA, F. F.. <b>The crystal structure of doxorubicin hydrochloride solved by powder X-ray diffraction data and a simulated annealing approach</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO; FERREIRA, F. F.. <b>DSqX: a tool to assess interactions between organic compounds by PDF method</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO; FERREIRA, F. F. ; GOMEZ, A. ; LIMA, J. C.. <b>X-ray diffraction and Reverse Monte Carlo method in combination to characterize polymeric compounds</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO; LIMA, J. C. ; FERREIRA, F. F.. <b>Combining RMC and PDF methods to characterize amorphous drug</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>C. A. Guaje ; POSTACCHINI, B. B. ; Cazati, Thiago. <b>MECANISMO DE SUPRESSÃO DE FLUORESCÊNCIA INDUZIDO POR FULERENOS EM MOLÉCULAS CONJUGADAS HETEROCÍCLICAS</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>C. A. Guaje ; Vieira A. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>Photophysical properties of a new fluorescent benzothiadiazole derivative and its interaction with fullerene in solution,</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CARVALHO, E. J. <b>Atividades 2021 do grupo PETFísica/UFOP</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CARVALHO, E. J.; PAULINO, G. S. P.. <b>Educa PET - Cursinho Pré ENEM</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CURCIO, SERGIO FERNANDO ; POSTACCHINI, B. B. ; Vieira A. ; CAZATI, T.. <b>Evidence of charge transfer between the 5,8-π-extended quinoxaline derivatives and C 60 in solution and thin films deposited by spin-coating</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>FERREIRA, F. F. ; BEZZON, VINÍCIUS DANILO NONATO ; BRITOS, T. N. ; HADDAD, PAULA SILVIA. <b>Tuning the local structure of SPIONs by PDF</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Florio, V. <b>Pluralidade de mundos habitados na história da astronomia - Universo no Parque online</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Florio, V. <b>Imaginações e representações infanto-juvenis da astronomia em exposição no Museu de Ciências</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Florio, V. <b>Vendedores de Ciências - A Ficção Científica de revista nos EUA, década de 1920</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Florio, V. <b>Os monstros nos nossos mapas</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Florio, V.; BISCH, S. M. ; Ferreira, Edileuza Domingos ; Athayde, Wagna ; Cevolani, Messias. <b>Bafo de Brilho</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Florio, V.; Queiroz, G.. <b>Conversa Virtual Ciências, Artes e Educação</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>A graduação não é o fim</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Educação e ciência para a democracia - Como a apropriação de uma cultura científica contribui para as contingências sociais e políticas da conjuntura histórica em que vivemos</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>FLÓRIO, VICTÓRIA. <b>Conversa Virtual - Ilustrações livro infantil</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MATOS, A. C. L. ; CARVALHO, E. J.. <b>ESTUDO BIBLIOGRÁFICO SOBRE METODOLOGIAS ATIVAS E ENSINO INVESTIGATIVO APLICADOS EM ATIVIDADES DE FÍSICA EXPERIMENTAL</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>MATOS, M. J. S. <b>Como manipular átomos e moléculas e construir novos materiais: uma abordagem teórica</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>MATOS, M.J.S. <b>Design de Materiais e Simulação computacional em materiais bidimensionais</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>NONATO, T. ; MATOS, J. M. V. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>FOTOFÍSICA DE CRISTAL LÍQUIDO FLUORESCENTE INCORPORADO EM MATRIZ DE CELULOSE</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>NUNES, MARIA EUGÊNIA SILVA; J. A. Plascak ; FLORENCIO, J.. <b>Dynamics of the Spin 1/2 Heisenberg-XY Ladder</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PIVARO, G. F.; GIROTTO JÚNIOR, GILDO. <b>Negacionismo científico</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>PRADO, M. C. <b>Nanociência e Nanotecnologia mudando o mundo: da biologia aos materiais</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>PRADO, M. C.; MORAIS, H. L. O. ; MARQUES, S. ; SANTOS, J. C. C. ; BARBOZA, A. P. M. ; PINTO, E. S. ; NEVES, B. R. A.. <b>2D talc nanosheets obtained via liquid phase exfoliation</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; Moura, Luciano G. ; OLIVEIRA, C. K. ; FARIA, BARBARA E N ; MATOS, MATHEUS JOSUÉ DE SOUZA ; Mazzoni, Mario S. C. ; Cancado, Luiz G. ; Chacham, Helio ; NEVES, B. R. A.. <b>Using atomic force microscopy and self-assembled monolayers to reveal crystal orientation and grain boundaries in 2D materials</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Siqueira, Melissa Fabíola. <b>'Perspectivas para Simulações de Materiais Optoeletrônicos'</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, M. B. <b>Minerais em Marte</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BRIZOLA, A.; Camilla Alexandra Lopes da Silva. <b>PESQUISAS PARA ELABORAÇÃO DE PEDIDO DE PATENTE EM PROJETO DE EXTENSÃO,</b>. 2020. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BRIZOLA, A.; Luiza Moreira de Carvalho. <b>ESTUDOS PARA ELABORAÇÃO DOS TERMOS DE USO E POLÍTICA DE PRIVACIDADE DO TRIKI,</b>. 2020. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CARVALHO, E. J. <b>GRUPO PETFÍSICA: ATIVIDADES E DESAFIOS EM 2020</b>. 2020. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J. <b>EDUCA PET - CURSO PRÉ-ENEM</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Florio, V. <b>Curso de Astronomia para visitantes - MAST</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V. <b>Vendedores de estrelas: O Grande Debate da astronomia de 1920 na imprensa norte-Americana</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V. <b>Antes das outras galáxias</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P.. <b>Roda de conversa: Museus e Experiências educativas</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P.. <b>Tem criança no Museu?</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GALGANO, G. D. <b>Espectrogramas sonoros da guitarra, do baixo e da bateria</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MATOS, M. J. S. <b>DESIGN DE MATERIAIS E SIMULAÇÃO COMPUTACIONAL: O CASO DO DIAMANTE 2D</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MATOS, MATHEUS J.S. <b>Design de Materiais e Simulação computacional: o caso do diamante 2D</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MATOS, MATHEUS J.S. <b>Compressão induzindo modificações em camadas de grafeno e nitreto de boro</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>PIVARO, G. F. <b>'Sei que a Terra é esférica mas não sei explicar por quê': uma investigação das concepções de estudantes sobre a gravidade e sua relação com o formato dos planetas</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PRADO, M. C.; MORAIS, H. L. O. ; MARQUES, S. ; SANTOS, J. C. C. ; BARBOZA, A. P. M. ; PINTO, E. S. ; NEVES, BERNARDO R A. <b>2D talc nanosheets obtained via liquid phase exfoliation</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; Moura, Luciano G. ; OLIVEIRA, C. K. ; FARIA, BARBARA E N ; MATOS, MATHEUS J S ; Mazzoni, Mario S. C. ; Cancado, Luiz G. ; CHACHAM, H. ; NEVES, BERNARDO R A. <b>Molecular decoration of two-dimensional materials: unveiling crystallographic orientation and grain boundaries</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>VALERIO, R. M. ; Cazati, Thiago ; CURCIO, S. F. ; POSTACCHINI, B. B.. <b>ESTUDO DA INTERAÇÃO DA MOLÉCULA FLUORESCENTE QUINOX COM C60 EM SOLUÇÃO DE TOLUENO</b>. 2020. Apresentação de Trabalho/Simpósio</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BATISTA, R. J. C. <b>Programa de pós-graduação em ciências: física de materiais</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, VINÍCIUS DANILO NONATO; ARAUJO, G. L. B. ; FERREIRA, F. F.. <b>Disordered structures under the ordered context: hypromellose-loaded drug for bioapplication characterized by PDF analysis</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Empreender para sobreviver</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Inovação e Tecnologia na Ciência</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>É possível empreender com rejeito?</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R. F. <b>Workshop Aprenda a Empreender</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Bianchi, R. F. <b>Empreender para sobreviver: ciência e tecnologia aplicadas aos sensores e biosensores</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Bianchi, R. F. <b>Da bancada a incubada: o papel de um laboratório de pesquisa na criação e no fechamento de startups</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BRITO, A. C. F. ; SILVA, N. C. M. ; LEMOS, R. S. S. ; MEDRADO, N. V. ; PRADO, M. C. ; ALVARENGA, E. L. C. ; NEVES, BERNARDO R A ; VIANA, M. M. ; VASCONCELOS, C. K. B. ; BARBOZA, A. P. M. ; MANHABOSCO, T. M.. <b>Analysis of the Interaction of Type I Collagen with Two-dimensional Materials for the Development of Biomedical Nanocomposites</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BRITO, A. C. F. ; SILVA, N. C. M. ; LEMOS, R. S. S. ; SOARES, J. S. ; PRADO, M. C. ; ALVARENGA, E. L. C. ; NEVES, BERNARDO R A ; BATISTA, R. J. C. ; VASCONCELOS, C. K. B. ; VIANA, M. M. ; PAULA, A. M. ; MANHABOSCO, T. M. ; MEDRADO, N. V.. <b>Analysis of the interaction of type I collagen with two-dimensional materials for the development of biomedical nanocomposites</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FILIZZOLA, A. F. ; LIMA, L F C P de ; CAZATI, T. ; POSTACCHINI, B. B. ; SOARES, J. S. ; BARBOSA, A. P. M. ; NEVES, B. R. A. ; VIANA, M. M. ; VASCONCELOS, C. C. K. B.. <b>Development and characterization of phthalocyanine ? graphene oxide hybrid for optoelectronic applications</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GALGANO, G. D.; HENRIQUES, A. B. ; VILELA, G. L. S. ; MOODERA, J. S. ; BERERA, G.. <b>Magneto-optical properties of GdN epitaxial layers</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>I.Silvestre. <b>PRODUÇÃO E PROCESSAMENTO DE GRAFENO CVD PARA APLICAÇÃO EM UMA PLATAFORMA MICROFLUÍDICA</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MATOS, M. J. S. <b>Estrutura Eletrônica de Materiais 2D</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MATOS, MATHEUS J.S.; PINTO, A.A. ; BARBOZA, ANA P. M. ; BATISTA, RONALDO C.J. ; DE OLIVEIRA, ALAN B. ; SOUZA, A. C. R. ; Chacham, Helio ; Neves, B R A ; MAZZONI, MÁRIO S.C.. <b>Modificação Induzida Por Compressão em Camadas de Nitreto de boro Hexagonal e grafeno: um estudo de primeiros princípios</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Levando a Leitura de Textos de Cientistas para a Escola</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PAGLIARINI, C. R. <b>História da Ciência e Ensino: algumas bases e relações possíveis</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PIVARO, G. F. <b>A crença numa Terra plana e os ambientes virtuais: identificando relações e construções de conhecimento</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PIVARO, G. F. <b>Uma investigação acerca das concepções de jovens mais propensos a crerem em notícias falsas de cunho científico</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>A Análise Estatística em Questionários como Forma de Identificar Concepções de Visitantes de Museus de Ciências</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Fotofísica Molecular: Dos processos naturais à biotecnologia</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Interaction of aluminum hydroxide phthalocyanine with carbon nanomaterials in ethylic solution</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>PRADO, M. C. <b>Compósitos reforçados com novos materiais nanoestruturados</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PRADO, M. C.; MORAIS, H. L. O. ; MARQUES, S. ; SANTOS, J. C. C. ; VASCONCELOS, C. K. B. ; VIANA, M. M. ; PINTO, E. S. ; BARBOZA, A. P. M. ; NEVES, BERNARDO R A. <b>PRODUÇÃO E FUNCIONALIZAÇÃO DE MATERIAIS BIDIMENSIONAIS A PARTIR DE MINERAIS</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>VIEIRA, G. C. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>LIXO ELETRÔNICO NA INSTRUMENTAÇÃO PARA O ENSINO DE FÍSICA: APLICAÇÃO E ANÁLISE DE UMA ATIVIDADE INVESTIGATIVA SOBRE CINEMÁTICA</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BATISTA, R. J. C. <b>Aplicação de cálculos de primeiros princípios na previsão das propriedades dos materiais</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BATISTA, R. J. C. <b>Uma breve introdução aos cálculos de primeiros princípios</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Empreender com rejeito?</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BIANCHI, R. F. <b>Empreender: questão de vida ou morte?</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>Condutividade alternada em sistemas poliméricos: pra que?</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BORGES, M. N. ; SAVEDRA, RANYLSON M. L. ; Siqueira, Melissa Fabíola. <b>Filmes de P3HT:PCBM - distribuição dos portadores de carga em modelos de heterojunção de volume</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BORGES, M. N. ; SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa Fabíola. <b>Solar cell active layer of PCBM:P3HT film: molecular dynamic simulations on interfacial properties</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BORGES, M. N. ; SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa Fabíola. <b>Filmes de PCBM:P3HT - análise estrutural e morfológica em modelos de heterojunção de volume</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BRITO, A. C. F. ; ALVARENGA, E. L. C. ; SOARES, J. S. ; Neves, Bernardo R. A. ; PRADO, M. C. ; VASCONCELOS, C. K. B. ; VIANA, M. M. ; BARBOZA, A. P. M. ; MANHABOSCO, T. M.. <b>DESENVOLVIMENTO DE COMPÓSITOS À BASE DE COLÁGENO REFORÇADOS POR TALCO NANOESTRUTURADO DE PEDRA SABÃO PARA FINS BIOMÉDICOS?</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CABRAL, L. D. M. ; VIEIRA, G. C. ; CARVALHO, E. J.. <b>Utilização de e-lixo no desenvolvimento de instrumentação para o ensino de Física por investigação</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CALAZANS, M. M. <b>Análisis de las concepciones de ciencia presentes en el conflicto generado por la ruptura de la presa de minería de Fundão en Mariana-MG</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CALAZANS, M. M. <b>La función restrictiva de las preguntas de un profesor de física en la dialéctica de la formación de conceptos científicos en un grado de formación de educadores de escuelas del campo</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CALAZANS, M. M. <b>Una ciencia semicolonial en el conflicto de la ruptura de la represa de Fundão (Mariana, Minas Gerais, Brasil</b>. 2018. Mariana, Minas Gerais, Brasil. 2018. (Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>CALAZANS, M. M. <b>Ciencia, cotidianidad y semicolonialismo en el conflicto de la ruptura de la presa de Fundão en Mariana-MG</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>CRUZ, A. C. ; CARVALHO, E. J. ; PAGLIARINI, C. R.. <b>PROCESSOS DE ENSINO-APRENDIZAGEM EM UMA SEQUÊNCIA DIDÁTICA SOBRE AERODINÂMICA PARA O ENSINO FUNDAMENTAL</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>CURCIO, S. F. ; C. B.Costa ; Mosqueira V. C. F. ; POSTACCHINI, B. B. ; CAZATI, T.. <b>Fluorescent H-aggregates from a non-planar AlOHPc phthalocyanine in spin-coated film,</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>CURCIO, S. F. ; C. B.Costa ; Mosqueira V. C. F. ; POSTACCHINI, B. B. ; CAZATI, T.. <b>Evidences of fluorescent H-aggregates from a non-planar AlOHPc phthalocyanine in solid thin film,</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>CURCIO, S. F. ; DUARTE, J. F. ; POSTACCHINI, B. B. ; LADEIRA, L. O. ; SOARES, J. S. ; CAZATI, T.. <b>Interaction of Aluminum Hydroxide Phthalocyanine with functionalized multi-wall carbon nanotubes in ethylic solution: A fluorescence quenching study,</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Florio, V. <b>Futuros Imaginados</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Florio, V. <b>Como era o futuro antigamente?</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>JC Brant. <b>Como fabricar heteroestruturas e dispositivos eletrônicos de materiais 2D lamelares</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>JORGE, R. A. ; CARVALHO, E. J. ; PAGLIARINI, C. R.. <b>A ROBÓTICA EDUCACIONAL COMO FERRAMENTA PARA O APRENDIZADO DE CONCEITOS DE CINEMÁTICA</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>OLIVEIRA, M. T. B. ; Siqueira, Melissa F.. <b>Desenvolvimento de experimentos para o curso de Física IV (FIS 133): uso de materiais alternativos para utilização em sala de aula</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PRADO, MARIANA C. <b>Nanociência e nanotecnologia mudando o mundo: da biologia aos materiais</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; BORGES, M. N. ; Siqueira, Melissa F.. <b>Perfil migratório do PCBM em solução de P3HT-diclorobenzeno por dinâmica molecular atomística</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Soares, J. S. <b>Palestra de abertura: 'Ciência como Profissão'</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Soares, Jaqueline S. <b>Palestra de abertura: 'Ciência como Profissão'</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>TRINDADE, I. C. ; VALERIO, R. M. ; PAULA, C. C. ; LANA, G. P. ; Mosqueira V. C. F. ; POSTACCHINI, B. B.. <b>Photophysical properties of the DiI dye used as fluorescent probe in polymeric nanocapsules</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B.; ATENCIO, D. ; AZZI, A. A.. <b>EUDIALYTE GROUP MINERALS FROM POÇOS DE CALDAS ALKALINE MASSIF, MINAS GERAIS, BRAZIL</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrade, M.B.; TRINTA, L. A. C. ; ATENCIO, D.. <b>Raman spectroscopy analysis for the mineral identification of pyrochlore supergroup</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BATISTA, R. J. C. <b>Dobras em materiais 2D: teoria e experimento</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BEZZON, V. D. N.; ARAUJO, G. L. B.. <b>PDF Pharma research team: high-energy X-ray characterization of amorphous solid drugs using synchrotron radiation</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. <b>F.. Inovação</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R. F. <b>Trajetória do Qualisticker: selo inteligente para controle do frescor de carnes</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BIANCHI, R. F. <b>Você sabe o que é empreender?</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BIANCHI, R. F. <b>Embalagens inteligentes: aplicação na indústria de alimentos</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Bianchi, R. F. <b>Entrepreneurship and Inovation in time of crisis</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Bianchi, R. F. <b>Aprender a empreender</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>BIANCHI, R. F.; LEGNANI, C.. <b>Eletrônica Orgânica na UFOP e na UFJF</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>BRIZOLA, A. <b>Elétron, um pequeno desconhecido</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CABRAL, L. D. M. ; VIEIRA, G. C. ; CARVALHO, E. J.. <b>Instrumentação e experimentação para o Ensino de Física a partir de Lixo Eletrônico</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>CARVALHO, E. J.; Souza, S. H.. <b>Celular na sala de aula: do vilão a solução</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Cazati, Thiago ; CURCIO, S. F. ; POSTACCHINI, B. B.. <b>Behavior of Aluminium Hydroxide Phthalocyanine in the presence of funtionalized multi-wall carbon nanotubes</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Cazati, Thiago ; MELO, S. G. ; RIBEIRO, T. N. ; POSTACCHINI, B. B.. <b>Static quenching of tetrasulfonated Nickel phtalocuanine fluorescence in binary water/ethanol mixture</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>DIAS, K. S. ; SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa F.. <b>Polarity effect of solvents on the fluorene-MEH-PPV backbones</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>FERREIRA, J. J. ; C. B.Costa ; Mosqueira V. C. F. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>Caracterization of the AlOHPc chromophore encapsulated in polymeric nanospheres</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>FERREIRA, J. J. ; LANA, G. P. ; Mosqueira V. C. F. ; POSTACCHINI, B. B.. <b>Coumarin derivative used as fluorescence probe in functional polylactide synthesis applied to the manufacture of drug nanocarriers</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Florio, V. <b>Vendedores de estrelas. Recepção do Grande debate da astronomia pela mídia de massa norte-americana, década de 20</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>JC Brant. <b>Como fabricar dispositivos de grafeno para estudos de transporte elétrico</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Luzzi, F. O. ; CARVALHO, E. J.. <b>Abordagem CTS sob a perspectiva da Aprendizagem Significativa</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Marcelo B Andrade. <b>O papel da cristalografia na caracterização de novos minerais brasileiros</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Marcelo B Andrade. <b>The challenge of polyoxometalate new minerals characterization</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Marcelo B Andrade; ATENCIO, D. ; ELLENA, J.. <b>Crystallochemical characterization of polyoxometalate new minerals</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>MATOS, MATHEUS J S. <b>Como estudar Nanoestruturas: abordagem teórica e abordagem com experimentos</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Textos Originais de Cientistas na escola: Planck e algumas noções teóricas acerca do problema da radiação de um corpo negro</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Embates entre relação causal e correlação casual: causalidade e aleatório numa divulgação científica com exemplos do cotidiano e da física</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Leituras de Originais de Cientistas no Ensino Médio: contribuições da discussão mediada</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M. ; BRUGLIATO, E. T.. <b>Funções e funcionamento da leitura na Educação em Ciências: a sustentação em análise de discurso</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>PAULA, C. C. ; TRINDADE, I. C. ; Mosqueira V. C. F. ; POSTACCHINI, B. B.. <b>Photophysical properties of the Dil dye used as fluorescente probe in polymeric nanoparticules</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>Os visitantes da exposição de ciências 'Cor da Luz' e suas impressões</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>Uma análise de modelos científicos e alternativos em uma exposição de ciência</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa F.. <b>Bulk heterojunction formation between P3HT and PCBM by gradual solvent removal using atomistic molecular simulations,</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>VIEIRA, G. C. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>PROPOSTA DE UTILIZAÇÃO DE EXPERIMENTOS CRIADOS COM LIXO ELETRÔNICO NO ENSINO DE FÍSICA POR INVESTIGAÇÃO</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>VIEIRA, G. C. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>Experimentos criados com e-lixo no Ensino de Física por investigação</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>VIEIRA, G. C. ; CARVALHO, E. J.. <b>Utilização de experimentos criados com lixo eletrônico no Ensino de Física por investigação</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>VIEIRA, G. C. ; CARVALHO, E. J.. <b>LIXO ELETRÔNICO NA INSTRUMENTAÇÃO PARA O ENSINO DE FÍSICA: Aplicação e análise de atividades investigativas sobre mecânica</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Da Bancada a incubada</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Da Bancada a Incubada: o papel de um laboratório de pesquisa na criação de start ups</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Sensores com materiais luminescentes para fototerapia neonatal</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Making sense of luminescent polymer-based radiation sensors</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>Qual o seu sonho? Seu não existisse impossível, até onde você conseguiria ir?</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R. F. <b>Making sense of luminescent polymer-based radiation sensors</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BRIZOLA, A. <b>O Elétron - esse velho desconhecido</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CALAZANS, M. M. <b>A neutralidade da ciência na controvérsia em torno do rompimento da barragem e a reconsideração da totalidade social no pensamento de Marx</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CALAZANS, M. M. <b>A controvérsia em torno do rompimento da barragem em Mariana e a herança positivista da nova sociologia da ciência</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CALAZANS, M. M. <b>Mesa Redonda: Ciência, Mineração e Sociedade: conflito do rompimento da barragem de Fundão em Mariana (MG)</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CARVALHO, E. J. <b>Atividades de Formação COmplementar para Membros do PETFÍSICA e Demais Discentes</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>E. Barbosa ; ARASHIRO, E. ; Pinheiro, C.F.S. ; CASTRO E SILVA, A.. <b>Cluster formation dynamics of heterogeneous agents</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>FONSECA, A. M. T. ; Ferreira, G. R. ; M. F. S. Pinto ; A. G. C. Bianchi ; Bianchi, R. F.. <b>From idea to product: organic dosimeter to promote most efficient use of neonatal phototherapy</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>LOBO, AUGUSTO C. <b>Phase Space Methods and Weak Values</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MATOS, M.J.S. <b>Teoria do Funcional da Densidade Aplicada ao Estudo de Nanoestruturas</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Textos de Cientistas no Ensino Médio</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PAGLIARINI, C. R. <b>A análise de discurso numa investigação de ensino de física no nível médio</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Production Processes of Science Based on Reading a Text on some of the Earliest Notions of Quantum Physics</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>A física da cor: uma análise dos visitantes da exposição de ciências Cor e Luz</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SOARES, J. S. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>Characterization of layer-by-layer films based on water soluble phthalocyanines and carbon nanotubes</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SOUZA, A. R. ; CARVALHO, E. J.. <b>Teoria da relatividade restrita e aplicações, uma proposta para o ensino médio</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>VIEIRA, G. C. ; CARVALHO, E. J.. <b>Utilização de e-lixo na instrumentação para o ensino de Física</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A C Batista Almeida ; CAZATI, T. ; Postacchini B.. <b>Spectral characterization of singlet excited state of Sodium Cupric Chlorophyllin (SCC): Influence of solvent, concentration and pH</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, A. C. B. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>Spectral characterization of singlet excited of sodium Cupric Chorophyllin</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BATISTA, R. J. C. <b>Investigação de materiais nanoestruturados por simulação computacional</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BATISTA, R.J.C. <b>Investigação de Materiais Nanoestruturados por Simulação Computacional</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BIANCHI, R. F. <b>Sensores poliméricos</b>. 2015. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R. F. <b>Educação e desenvolvimento - o papel das instituições de ensino superior nos processos de inovação que visam o desenvolvimento da cidade</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Bianchi, R. F. <b>Pesquisa Ciência e Inovação: Que Mistura é Essa?</b>. 2015. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>C B Costa ; Postacchini B. ; CAZATI, T.. <b>Photophysical properties of Aluminum Phthalocyanine Hydroxide (AlOHPc) at different solvent and concentration</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CARVALHO, E. J. <b>Atividades do grupo de educação tutorial PETFísica em 2015</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CASTRO E SILVA, A. <b>Apresentação do grupo multidisciplinar Ciência da Complexidade</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CAZATI, T. <b>Moléculas Macrocíclicas conjugadas orgânicas e suas Aplicações na Optoeletrônica</b>. 2015. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Cazati, Thiago ; RIBEIRO, T. N. ; CURCIO, S. F. ; POSTACCHINI, B. B. ; SILVA, M. V. C. E. ; CREMONA, M. ; Valaski R.. <b>Bilayer Organic Solar Cell with self-assembled thin films based on Nickel Tetrasulfonated Phthalocyanines</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Cazati, Thiago ; YOSHIOKA, N. A. ; POSTACCHINI, B. B. ; DOTTO, M. E. R. ; CREMONA, M. ; Valaski R.. <b>Optoelectronic properties of layer by layer films based on water-soluble chlorophyll derivative for photovoltaic applications</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>DIAS, K. S. ; SAVEDRA, Ranylson Marcello Leal ; MAGALHAES, C. E. T. ; SIQUEIRA, M. F. ; RAMOS, RODRIGO. <b>Modelagem molecular sobre o efeito de solvatação em filme de oligômeros de Fluoreno-MEH-PPV</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>J Soares ; J M A dos Santos ; S F Curcio ; E S Pinto ; Postacchini B. ; CAZATI, T.. <b>Structural, morphologycal characterization and optoeletronic properties of layer by layer films based on water soluble phthalocyanines and carbon nanotubes</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Lobo, P. H. F. ; ARASHIRO, E. ; CASTRO E SILVA, A. ; PINHEIRO, C. F. S.. <b>Stochastic foraging model for frugivorous bats</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Lobo, P. H. F. ; ARASHIRO, E. ; PINHEIRO, C. F. S.. <b>Modeling foraging of frugivorous bats by computer simulation</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Lobo, P. H. F. ; ARASHIRO, E. ; PINHEIRO, C. F. S.. <b>Simulação Computacional da Dinâmica de Forrageamento de Morcegos Frugívoros</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MAGALHAES, C. E. T. ; SAVEDRA, Ranylson Marcello Leal ; DIAS, K. S. ; RAMOS, RODRIGO ; Savedra, M. F. S.. <b>Structural Dependence of Photochromism in MEH­PPV Solutions</b>. 2015. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MATOS, J. H. R. ; SIQUEIRA, M. F. ; SAVEDRA, Ranylson Marcello Leal ; CANCADO, J. ; BIANCHI, R. F.. <b>PROTÓTIPOS DE DISPOSITIVOS OPTOELETRÔNICOS PARA MAXIMIZAR A DEGRADAÇÃO DA BILIRRUBINA</b>. 2015. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. <b>E. S. Nunes. Papel das Interações Homotipo na Difusão de Gliomas</b>. 2015. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>OLIVEIRA, J. V. F. ; CARVALHO, E. J.. <b>Estabelecendo correlações entre grandezas físicas e conceitos musicais</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Leitura de Cientistas do Início da Física Quântica no Ensino Médio: fronteiras com a física clássica</b>. 2015. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>O início da Física Quântica numa leitura de divulgação científica no ensino médio</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Sentidos Produzidos por Estudantes do Ensino Médio na Leitura de um Texto de Cientista do Início da Física Quântica</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PRADO, M. C. <b>Nanotecnologia e Nanociência: Alguns Sistemas e Técnicas</b>. 2015. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>SANTOS, C. P. S. ; Souza, S. H. ; Luzzi, F. O. ; ANDRADE, D. ; CARVALHO, E. J.. <b>O estabelecimento de um sistema de unidades de medidas, proposta de atividades para uma abordagem no ensino de física</b>. 2015. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Silvestre, I.; BARBOZA, A. P. M.. <b>Nanotecnologia aplicada ao desenvolvimento de novos materiais</b>. 2015. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, Marcelo B.; Atencio, D. ; Ellena, Javier. <b>Recent characterization of new microlite-group mineral species</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrade, Marcelo B.; Ellena, Javier ; Atencio, D.. <b>Crystallochemical aspects of two microlite-group new mineral species</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>From idea to product development: experimental design in searching smart organic dosimeters</b>. 2014. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Eletrônica Orgânica (From idea to product development: experimental design in searching smart organic dosimeters)</b>. 2014. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>Você trabalha com materiais?</b>. 2014. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R. F. <b>Programa Incentivo à inovação na UFOP</b>. 2014. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>C. B.Costa ; COSTA, M. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>Solvent and concentration effect on the fluorescence lifetimes of Chlorophyll-a</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MAGALHAES, C. E. T. ; G.R. Ferreira ; Bianchi, Rodrigo F. ; SIQUEIRA, M. F.. <b>ELECTRONIC TRANSITION CHARACTERIZATIONS OF FLUORENE-PPV AND FLUORENE-MEH-PPV COPOLYMER MODELS</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Matos, M J S; MAZZONI, M. S. C. ; Chacham, Helio. <b>SUPERREDES DE GRAFENO/hBN: O PAPEL DE DEFEITOS PONTUAIS NA CAMADA DE BN</b>. 2014. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Física Quântica numa Leitura de Divulgação Científica no início do Ensino Médio: manifestações dos estudantes</b>. 2014. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Produção de Sentidos numa Leitura de Divulgação Científica sobre Física Quântica no Ensino Médio</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>PINHEIRO, C. F. S.; Lobo, P. H. F. ; ARASHIRO, E.. <b>Simulação Computacional da Dinâmica de Forrageamento de Morcegos Frugívoros</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Ramos, R. ; SIQUEIRA, M. F. ; CALDAS, M. J. ; Faria, Roberto Mendonça. <b>Correlations between anisotropy and optical behavior in amorphous stretched PPV films</b>. 2014. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Rocha, Julio C.S. <b>Partition function zeros for elastic Lennard-Jones polymers</b>. 2014. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>T. N. Ribeiro ; Postacchini B. ; R. Valaski ; M. V. Costa e Silva ; M. Cremona ; CAZATI, T.. <b>Light absorption enlargement in solar cells based on blended water soluble porphyrins</b>. 2014. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Berrigan, E. ; Lobo, Augusto César. <b>Schwinger's Finite Quantum Kinematics and Aharonov's Dynamical Non-locality Concept</b>. 2013. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, V. D. N.; ANTONIO, S. G. ; SANTOS, C. O. P.. <b>Defining Limits for Visual Identification and Quantification of Finasteride Polymorphs by X-Ray Powder Diffraction</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Sensores de radiação à base de polímeros luminescentes: avanços em fototerapia neonatal, radioterapia e radiação de alimentos</b>. 2013. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Empreendedorismo na UFOP</b>. 2013. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CALAZANS, M. M.; AGUIAR, O. G.. <b>ESTRATÉGIAS ENUNCIATIVAS DOS DISCURSOS DIALÓGICO E DE AUTORIDADE NA FORMAÇÃO DE PROFESSORES DE CIÊNCIAS PARA A EDUCAÇÃO DO CAMPO</b>. 2013. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CARDOSO, L. C. ; SILVA, Mariana M. ; Bianchi, Rodrigo F. ; SIQUEIRA, M. F.. <b>PHOTODEGRADATION OF BILIRUBIN: THEORETICAL AND EXPERIMENTAL INVESTIGATIONS</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CASTRO E SILVA, A; KEESEN, F. ; SP Pinheiro ; E. Arashiro. <b>Computer simulation for Sapajus robustus in a fragmented environment</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Galgano, G. D.; KUZMIN, N. V. ; GROOT, M L. <b>DUAL CHANNEL HARMONIC ENDOSCOPE: CHARACTERIZATION OF HIGH- INTENSITY ULTRA-SHORT PULSES PROPAGATING IN OPTICAL FIBERS</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Galgano, G. D.; KUZMIN, N. V. ; GROOT, M L. <b>Dual Channel Harmonic Endoscopes For Label-Free Imaging of Neural Tissue</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>M. V. Costa e Silva ; T. N. Ribeiro ; B. C. Melo ; Postacchini B. ; M. Cremona ; R. Valaski ; CAZATI, T.. <b>Organic Solar Cells based on water-soluble Iron and Nickel Tetrasulfonated Phthalocyanines/C60</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MAGALHAES, C. E. T. ; G.R. Ferreira ; MARQUES, Márcio ; SIQUEIRA, M. F.. <b>MOLECULAR QUANTUM MECHANICS MODELLING ON OPTOELECTRONIC PROPERTIES OF FLUORENE-PPV COPOLYMERS</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Marques, M. ; SIQUEIRA, M. F.. <b>OPTOELETRONIC PROPERTIES OF FLUORENE-MEH-PPV COPOLYMERS</b>. 2013. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>N. A. Yoshioka ; B. Vilaça ; T. M. Manhabosco ; CAZATI, T. ; MÜLLER, IDUVIRGES L.. <b>Pulsed Electrodeposition of the PANI films used as transporting layers in Organic Photovoltaics Devices</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>YOSHIOKA, N. A. ; Ferreira, L. L ; POSTACCHINI, B. B. ; CAZATI, T.. <b>Water-soluble Chlorophyll derivative for Energy Conversion Devices</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>N. A. Yoshioka ; L. de Lazari Ferreira ; Postacchini B. ; CAZATI, T.. <b>Small molecules solar cells based on water-soluble sodium copper clorophyllin (SCC)</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Leitura de Cientistas do Início da Física Quântica no Ensino Médio: fronteiras com a física clássica</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M. ; FONTES, G. S.. <b>Leituras de Sites Relacionados à Energia Nuclear no Ensino Médio</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Pinheiro, C.F.S.; Bernardes, A.T.. <b>Hierarchies behind failure of heterogeneous media</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Rocha, J. C. S.; LANDAU, D.. <b>Event-Chain Monte Carlo for Non-Convex Potentials</b>. 2013. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SILVA, M. V. C. E. ; RIBEIRO, T. N. ; MELO, B. C. ; POSTACCHINI, B. B. ; CREMONA, M. ; Valaski R. ; Cazati, Thiago. <b>Bilayer Organic Solar Cell based on water soluble Iron and Nickel tetrasulfonated phthalocianines/C60</b>. 2013. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>TAVARES, M. A. B. ; CARVALHO, E. J.. <b>Construção de um magnetômetro a Efeito Kerr e aplicações na caracterização de materiais</b>. 2013. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Velten, Hermano. <b>Dissipation of dark matter</b>. 2013. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, Marcelo B.; ATENCIO, D. ; PERSIANO, A. I. C. ; ELLENA, J.. <b>Investigation of a microlite-group mineral species from Volta Grande pegmatite, Nazareno, Minas Gerais, Brazil</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, V. D. N.; ANTONIO, S. G. ; SANTOS, C. O. P.. <b>Limits for quantification Active Pharmaceutical Ingred ients by X - ray Diffraction</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BEZZON, V. D. N.; ANTONIO, S. G. ; SANTOS, C. O. P. ; PERRUCI, N. A. F.. <b>Quantificação de amorfo nas matérias-primas de Espironolactona forma II e forma hidratada por difratometria de raios X por policristais</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BRIZOLA, A. <b>O Grupo de Renormalização e Teorias Quânticas de Campos</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CALAZANS, M. M.; AGUIAR, O. G. ; Oliveira, M. G.. <b>As perguntas do professor de física no diálogo/confronto entre as culturas dos estudantes do campo e a cultura da ciência escolar</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CARVALHO, E. J.; AZEVEDO, A. A.. <b>Levantamento sobre o Perfil do Discente do Curso de Física da UFOP</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARVALHO, E. J.; TAVARES, M. A. B.. <b>Desenvolvimento de Experimentação em Metrologia Utilizando o Interferômetro de Michelson</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Galgano, G. D.; HENRIQUES, A.. <b>Optically Induced Magnetic Polarons in EuTe</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Galgano, G. D.; Henriques, A. B.. <b>Photoexcited magnetic polarons in EuTe</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>H.E.S. <b>Velten. Bulk Viscous Universes</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>L. de Lazari Ferreira ; Postacchini B. ; CAZATI, T.. <b>Absorção Ótica e Fluorescência da Blenda de Polímero Conjugado MDMO-PPV e Clorofila-A</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LIMA, R. B. ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>ON THE GLYCOLIC ACID OXIDATION: THEORICAL AND EXPERIMENTAL STUDY</b>. 2012. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Lucas C. Cardoso ; Mariana M. Silva ; Bianchi, Rodrigo F. ; SIQUEIRA, M. F.. <b>Theoretical and experimental study of bilirubin behavior under blue light exposure</b>. 2012. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Lucas C. Cardoso ; Mariana M. Silva ; Bianchi, Rodrigo F. ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>Physicochemical behaviors of Bilirubin under blue light exposure: theoretical and experimental investigations</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Lucas C. Cardoso ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>Investigação teórica acerca dos processos de degradação da Bilirrubina</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MAGALHAES, C. E. T. ; G.R. Ferreira ; Bianchi, Rodrigo F. ; SIQUEIRA, M. F.. <b>Photodegradation process of the light-emitting copolymer LaPPS16: theoretical and experimental investigations</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MAGALHAES, C. E. T. ; G.R. Ferreira ; Bianchi, Rodrigo F. ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>Investigação teórica e experimental dos processos de fotodegradação do copolímero LaPPS16</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MAGALHAES, C. E. T. ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>Investigação teórica das propriedades estruturais e eletrônicas em modelos de oligolímeros de fluoreno</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Marcelo B. Andrade; Atencio, D. ; Chukanov, N. V. ; PERSIANO, A. I. C. ; Ellena, Javier. <b>Hydrokenomicrolite, (,H2O)2Ta2(O,OH)6(H2O), a new microlite-group mineral from Volta Grande pegmatite, Nazareno, Minas Gerais, Brazil</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>N. A. Yoshioka ; ARAUJO, M. H. ; Postacchini B. ; CAZATI, T.. <b>Enhanced open-circuit voltage and hole conduction in multilayered photovoltaic device by the insertion of self-assembled oriented dipole layers</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Estágio Multidisciplinar nas Licenciaturas da Unicamp: diálogos na formação em ciências exatas e humanas</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>PAGLIARINI, C. R. <b>A leitura de cientistas do início da física quântica dentro da sala de aula: fronteiras e rompimentos com a física clássica</b>. 2012. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>PAGLIARINI, C. R. <b>A leitura de cientistas do início da física quântica dentro da sala de aula: fronteiras e rompimentos com a física clássica</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PAGLIARINI, C. R.; CORRER, M. A. S.. <b>Imagens (Física e Social) de si e do ambiente escolar</b>. 2012. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PAGLIARINI, C. R.; PEREIRA, A. G. ; ALMEIDA, Maria José P. M.. <b>O Efeito Fotoelétrico em Livros Didáticos do PNLD 2012</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PAGLIARINI, C. R.; PEREIRA, A. G. ; ALMEIDA, Maria José P. M.. <b>O Efeito Fotoelétrico em Livros Didáticos do PNLD 2012</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PAGLIARINI, C. R.; PEREIRA, A. G. ; ALMEIDA, Maria José P. M.. <b>O Efeito Fotoelétrico em Livros Didáticos do PNLD 2012</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Ramos, R. ; SIQUEIRA, M. F. ; Faria, Roberto Mendonça ; CALDAS, M. J.. <b>Stretching of amorphous PPV films</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Ramos, R. ; Siqueira, M. F. ; SIQUEIRA, M. F. ; CALDAS, M. J. ; FARIA, R. M.. <b>Morphological correlation functions to study amorphous polymeric systems</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>ROCHA, J. C. S.; Costa, B. V. ; COURA, P. Z. ; S.A. Leonel ; DIAS, R. A. ; Toscano, D.. <b>A Study of Magnetic Nanoparticle via Computer Simulation</b>. 2012. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SILVA, M. M. ; SIQUEIRA, M. F.. <b>Theoretical Investigations On Morphological And Optoeletronic Properties Of Fluorene Copolymers</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SILVA, M. M. ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>THEORETICAL INVESTIGATIONS ON MORPHOLOGICAL AND OPTOELETRONIC PROPERTIES OF FLUORENE COPOLYMERS</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SILVA, M. M. ; Siqueira, M. F. ; SIQUEIRA, M. F.. <b>INVESTIGAÇÕES TEÓRICAS SOBRE PROPRIEDADES OPTOELETRÔNICAS E MORFOLÓGICAS DE COPOLÍMEROS DO FLUORENO</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Silvestre, I. <b>Construção de uma plataforma para estudos de interação entre Grafeno e líquidos</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SIQUEIRA, M. <b>F.; PINTO, Melissa F. S. ; Eletrônica Orgânica - Interpretações Moleculares</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SIQUEIRA, M. <b>F.; PINTO, Melissa Fabíola S. ; Correlation between molecular conformation, packing and dynamics in oligofluorenes:</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>T. N. Ribeiro ; N. A. Yoshioka ; ARAUJO, M. H. ; Postacchini B. ; CAZATI, T.. <b>Utilização do Método Camada-por-Camada na Confecção de Camadas Transportadoras de Cargas em Dispositivos Fotovoltaicos Orgânicos</b>. 2012. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>TAVARES, M. A. B. ; CARVALHO, E. J.. <b>Experimentação em metrologia utilizando o Interferômetro de Michelson</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>TAVARES, M. A. B. ; CARVALHO, E. J.. <b>Desenvolvimento de experimentação em metrologia utilizando o Interferômetro de Michelson</b>. 2012. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Velten, H. E.S. <b>Power spectrum for the Bose-Einstein condensate dark matter</b>. 2012. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, Jr ; Araújo, F.G.S. ; NOGUEIRA, M. S. ; SANTOS, M. A. P. ; VIEIRA, J. W.. <b>Mass Attenuation Coefficients of X-Ray and Gamma of Materials Used in Radiation Protection as Shielding</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMAZONAS, J. G. ; Ramos, R. ; PINTO, M. F. S. ; SIQUEIRA, M. F. ; J. M. F. PINHEIRO Jr ; Lelis-Sousa, R. ; Alves-Santos, M. ; CALDAS, M. J.. <b>Reparametrization of the UFF Non-Bonded Energy for Conjugated Organic Crystal</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bernardinelli, O. D. ; PINTO, M. F. S. ; SIQUEIRA, M. F. ; Faria, G. C. ; FARIA, R. M. ; deAzevedo, E. R.. <b>Spectroscopic study of molecular dynamics and packing in fluorine oligomers</b>. 2011. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BEZZON, V. D. N.; SANTOS, C. O. P.. <b>Definição de limites para a identificação e quantificação de polimorfos de fármacos em matérias primas e comprimidos comercializados por meio da difração de raios X por policristais</b>. 2011. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. <b>F.. Nanotecnologia</b>. 2011. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R F. <b>Invento e inventor</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BIANCHI, R. F. <b>Polímeros e propriedades eletrônicas de Materiais</b>. 2011. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BIANCHI, R. F. <b>Invento e inventor</b>. 2011. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Brant,J.C.; J. Leon ; T. C. Barbosa ; E. N. D. Araújo ; B. S. Archanjo ; F. Plentz ; Alves, E. S.. <b>Hysteresis in the resistance of a graphene device induced by charge modulation in the substrate</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CARDOSO, L. C. ; PINTO, M. F. S. ; SIQUEIRA, M. F.. <b>Investigação teórica acerca dos processos de degradação da Bilirrubina</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CASTRO E SILVA, A; FLECHA, A. C.. <b>Medidas de centralidade como parâmetros para se avaliar os atores da rede de turismo: o caso de Ouro Preto</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CASTRO E SILVA, A; GODINHO, C. ; WEBER, G.. <b>Topolgy of small noncoding RNA similarity networks</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CASTRO E SILVA, A; Guerra-Sá R. ; PEDRONI, J.. <b>Transposable Elements and their Identity Networks in Evolutionary Characterization of Eukaryotes</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Gomes, J. F. ; Bergamaski, K. ; PINTO, M. F. S. ; SIQUEIRA, M. F. ; Miranda, P. B.. <b>Investigação dos intermediários da eletro-oxidação de etanol sobre Pt em meio ácido via espectroscopia vibracional não-linear</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MAGALHAES, C. E. T. ; Bianchi, Rodrigo F. ; PINTO, Melissa Fabíola S. ; SIQUEIRA, M. F.. <b>Estudo das propriedades estruturais e eletrônicas em modelos de oligômeros do fluoreno</b>. 2011. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. <b>E. S. Nunes. Glioma cells: coupling and motility</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>POSTACCHINI, B. B.; Cazati, Thiago ; Ferreira, L. L. <b>Photophysical properties of chlorophyll: Application to harvesting solar energy</b>. 2011. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; MATOS, MATHEUS J S ; OLIVEIRA, C. K. ; Cancado, Luiz G. ; Mazzoni, Mario S. C. ; Chacham, Helio ; NEVES, B. R. A.. <b>Decoration of Graphene and Hexagonal Boron Nitride with Phosphonic Acids</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; Moura, Luciano G. ; MATOS, MATHEUS J S ; Mazzoni, Mario S. C. ; Cancado, Luiz G. ; Chacham, Helio ; NEVES, BERNARDO R A. <b>Two-Dimensional Molecular Crystals of Phosphonic Acids on Graphene</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Ramos, R. ; AMAZONAS, J. G. ; Siqueira, M. F. ; SIQUEIRA, M. F. ; Alves-Santos, M. ; Lelis-Sousa, R. ; L. M. JORGE ; J. M. F. PINHEIRO Jr ; CALDAS, M. J.. <b>Recent advances on the UFF reparameterization: developing a new Force field for description of organic systems</b>. 2011. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Ramos, R. ; PINTO, Melissa F. S. ; SIQUEIRA, M. F. ; AMAZONAS, J. G. ; CALDAS, M. J. ; FARIA, R. M.. <b>Effects of non-bonded energy in the morphology and dynamic properties of amorphous PPV films</b>. 2011. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Rocha, J. C. S.; Costa, B. V. ; COURA, P. Z. ; S.A. Leonel ; DIAS, R. A.. <b>A Computational Study of Exchange-Bias Effect in Magnetic Nanodisc</b>. 2011. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SIQUEIRA, M. F.; PINTO, Melissa F. S. ; Ramos, R. ; AMAZONAS, J. G. ; CALDAS, M. J. ; FARIA, R. M.. <b>Theoretical investigation of the morphology and dynamical properties of amorphous PPV films</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SIQUEIRA, M. F.; Siqueira, M. F. ; Ramos, R. ; AMAZONAS, J. G. ; CALDAS, M. J. ; FARIA, R. M.. <b>Theoretical investigation of the morphology and dynamical properties of amorphous PPV films</b>. 2011. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Soares, J. S. <b>Palestra convidada na Universidade Federal de São João del Rei (UFSJ): Study of the interaction between Carbon Nanotube Serpentines and crystalline quartz substrate</b>. 2011. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. T. Souza ; L. J. D. Costa Jr. ; CAZATI, T.. <b>Studing the Optical Properties of the MEH-PPV and Alq3 films exposed to non-ionizing radiation</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, Jr ; Araújo, F.G.S. ; NOGUEIRA, M. S. ; SANTOS, M. A. P. ; VIEIRA, J. W.. <b>Attenuation Characteristics of Materials Used in Radiation Protection as Shielding Against Ionizing Radiation X and Gamma</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AMAZONAS, J. G. ; Ramos, R. ; SIQUEIRA, M. F. ; FARIA, R. M. ; CALDAS, M. J.. <b>Re-Parametrization of the UFF Non-Bonded Energy for Conjugated Systems</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANDRADE, M. B.; ATENCIO, D. ; Chukanov, N. V. ; ELLENA, J. ; Honorato, S. B. ; Ayala, A. P.. <b>Single-crystal X-ray diffraction, Raman and FT-IR investigations of pyrochlore-supergroup minerals from Sao Joao del-Rei, Minas Gerais</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BATISTA, R. J. C. <b>Investigação de Nanoestruturas por Métodos de Primeiros Princípios</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BATISTA, R.J.C. <b>Ivestigacão de Nanoestruturas por Métodos de Primeiros Princípios</b>. 2010. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BEZZON, V. D. N. <b>Estudos dos níveis de motivação de estudantes no processo de aprendizagem de física por meio de experimentos inseridos em projeto didático de pesquisa</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BEZZON, V. D. N.; M. O. Orlandi. <b>Teste de eficiência e de estabilidade mecânica para porta-amostra giratório de baixo custo para difratômetro de raios-x</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BIANCHI, R. F. <b>Oficina de Experimentação em Nanotecnologia</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Brant,J.C.; J. Leon ; T. C. Barbosa ; E. N. D. Araújo ; B. S. Archanjo ; Plentz, F. ; E. S. Alves. <b>Hysteresis in the resistance of a graphene device induced by charge modulation in the substrate</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CARVALHO, E. J.; Braga, E. S. ; Cescato, L.. <b>Overcoming the Standing Waves Limitations in the Interference Lithography over Silicon</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CAZATI, T.; REIS, F. T. ; SANTOS, L. F. ; FARIA, Roberto. <b>Efficiency of Extrinsic and Intrinsic Charge Carrier Photogeneration Process obtained from the Steady State Photocurrent Action Spectra of PPV derivatives</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CAZATI, T.; SANTOS, L. F. ; REIS, F. T. ; FARIA, Roberto. <b>Efficiency of Extrinsic and Intrinsic Charge Carrier Photogeneration Process obtained from the Steady State Photocurrent Action Spectra of PPV derivatives</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>De Araujo, M. H. ; POSTACCHINI, B. B.. <b>CHARACTERIZATION OPTICAL OF ULTRATHIN FILMS CONTAINING POLYANILINE AND METALLIC PHTHALOCYANINES</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Falcade, T. ; Manhabosco, T. M. ; MULLER, I. L.. <b>Resistência à corrosão de filmes de carbono obtidos por eletrodeposição: influência do substrato</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Florio, V. <b>Mundos Infinitos</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Galgano, G. D.; Henriques, A B. <b>Optical investigation of magnetic phases in epitaxial EuSe</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Galgano, G. D.; HENRIQUES, A. B. ; BAUER, G. ; SPRINGHOLZ, G.. <b>Optical probing of metamagnetic phases in EuSe</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>H.E.S. <b>Velten. Quartessence models in cosmology-74.Jahrestagung-DPG-Bonn/Alemanha</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>I.Silvestre. <b>Growth and fabrication of devices based on carbon nanotubes and graphene for sensor application</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>L. J. D. Costa Jr. ; A. T. Souza ; CAZATI, T.. <b>Optical Properties of the MEH-PPV and Alq3 blend Films Exposed to non-ionizing Radiation</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Manhabosco, T. M.; TAMBORIM, S. M. ; Jarenkow, A. ; Moema, Q. V. ; Ilha, M. ; Martins, L.A.M. ; MULLER, I. L. ; Guma, F.T.C.R.. <b>Biocompatibilidade e comportamento eletroquímico de titânio eletropolido com e sem filmes de DLC (DiamondLike Carbon)</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MATOS, M. J. S.; MAZZONI, M. S. C.. <b>van der Waals Interaction in the Density Functional Formalism and Applications in Nanostructures</b>. 2010. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>POSTACCHINI, B. B.; Cazati, Thiago ; DIAS, F. B. ; Monkman, A ; Oliveira jr, O. N.. <b>The influence of the poly(p-phenylene vinylene) (PPV) chains concentration on the excitation energy migration</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>POSTACCHINI, B. B.; Cazati, Thiago ; Dias, Fernando B. ; Monkman, Andy ; Oliveira jr, O. N.. <b>Evidences of inter chain excitation energy migration on conjugated poly(p-phenylene vinylene) (PPV) blend</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>POSTACCHINI, B. B.; Dias, Fernando B. ; ZUCOLOTTO, V. ; DIAS, F. B. ; Monkman, A. <b>Energy transfer in nanostructured films containing poly(p-phenylene vinylene) (PPV) and acceptor species</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>POSTACCHINI, B. B.; Oliveira jr, O. N.. <b>Migração da energia de excitação eletrônica em filme Heterostruturado de poli(p-fenilvinileno) (PPV)‏</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>POSTACCHINI, B. B.; Oliveira jr, O. N. ; Monkman, A ; Dias, Fernando B. ; Cazati, Thiago. <b>Evidences of inter chain excitation energy migration on conjugated poly(p-phenylene vinylene) (PPV) blend</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; Moura, Luciano G. ; MATOS, MATHEUS J S ; Mazzoni, Mario S. C. ; Cancado, Luiz G. ; Chacham, Helio ; NEVES, BERNARDO R A. <b>Two-dimensional molecular crystals of phosphonic acids on graphene</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; Moura, Luciano G. ; MATOS, MATHEUS J S ; Mazzoni, Mario S. C. ; Cancado, Luiz G. ; Chacham, Helio ; NEVES, BERNARDO R A. <b>Two-dimensional molecular crystals of phosphonic acids on graphene</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>PRADO, M. C.; NASCIMENTO, R. ; Moura, Luciano G. ; MATOS, MATHEUS J S ; Mazzoni, Mario S. C. ; Cancado, Luiz G. ; Chacham, Helio ; NEVES, BERNARDO R A. <b>Two-dimensional molecular crystals of phosphonic acids on graphene</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>PRADO, M. C.; NEVES, BERNARDO R A. <b>Mixed Self Assembled Layers of Phosphonic Acids</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Ramos, R. ; SIQUEIRA, M. F. ; FARIA, R. M. ; CALDAS, M. J.. <b>Study of morphology effects on stretched amorphous PPV films</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Rocha, J. C. S.; Costa, B. V. ; COURA, P. Z. ; Leonel, S. A. ; DIAS, R. A.. <b>Diagram for vortex formation in quasi-two-dimensional magnetic dots</b>. 2010. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Rosa, M. A. ; Manhabosco, T. M. ; Schroeder, R.M. ; Müller, I. L.. <b>COMPORTAMENTO À CORROSÃO E À CORROSÃO SOB TENSÃO DO AÇO INOXIDÁVEL DUPLEX AISI 318 EM MEIO CONTENDO CLORETO, CO2 E pH4</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>S. C. D. Moreira ; T. Schimitberger ; BIANCHI, R. F. ; CAZATI, T.. <b>Electrical Properties of non-ionizing Radiation Sensors Based on Semiconducting Polymer</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Silvestre, I. <b>Experimental study of electron and hole mobilities in a bilayer graphene as a function of temperature and oxygen exposure</b>. 2010. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Silvestre, I. <b>Effect of temperature on the formation of nanoribbons and nanoconstrictions in graphene, via chemical method</b>. 2010. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Molecular modeling of organic systems</b>. 2010. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>SIQUEIRA, M. F.; Bernardinelli, O. D. ; Faria, G. C. ; Nunes, L. A. O. ; FARIA, R. M. ; deAzevedo, E. R.. <b>Theoretical and experimental study of the configurational arrangement of fluorene oligomers: implications on their fuorescent emission</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SIQUEIRA, M. F.; PINTO, Melissa F. S. ; FARIA, R. M.. <b>Spectroscopic effects of stereo configurations of oligofluorenes</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SIQUEIRA, M. F.; Ramos, R. ; FARIA, R. M. ; CALDAS, M. J.. <b>Theoretical investigations on the morphological effects induced by stretching of amorphous PPV film</b>. 2010. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>Soares, Jaqueline S.; Barboza, Ana Paula M. ; Nakabayashi, Denise ; Shadmi, Nitzan ; Yarden, Tohar S. ; Geblinger, Noam ; Joselevich, Ernesto ; Vilani, Cecilia ; Canc?ado, Luiz G. ; Novotny, Lukas ; Dresselhaus, Gene ; Dresselhaus, Mildred S. ; Neves, Bernardo R. A. ; Mazzoni, Mario S. C. ; Jorio, Ado. <b>Study of carbon nanotube serpentines on a crystalline quartz</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>T. Schimitberger ; S. C. D. Moreira ; BIANCHI, R. F. ; CAZATI, T.. <b>Electrical Characterization of Non-ionizing Radiation Sensors Based on Semiconducting Polymer</b>. 2010. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>Teodoro, F. S. ; POSTACCHINI, B. B.. <b>Influence of irradiation on the eletronic structure of metal complexe tris(8-hydroxyquinoline)aluminium(III) Alq3</b>. 2010. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMAZONAS, J. G. ; Ramos, R. ; SIQUEIRA, M. F. ; CALDAS, M. J. ; FARIA, R. M.. <b>Theoretical study on the morphology of amorphous PPV films and charge effects on packing</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANDRADE, M. B.; ATENCIO, D. ; ELLENA, J.. <b>Single-crystal X-diffraction of microlite-group from Volta Grande pegmatites, Sao Joao del-Rei, Minas Gerais, Brazil</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANDRADE, M. B.; ELLENA, J. ; ATENCIO, D.. <b>Single-crystal diffraction of microlite-(NaF) from Morro Redondo, Coronel Murta, Minas Gerais, Brazil</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANDRADE, M. B.; ELLENA, J. ; ATENCIO, D.. <b>Single-crystal diffraction of microlite-(NaF) from Morro Redondo, Coronel Murta, Minas Gerais, Brazil</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bagdonas, Alexandre ; Florio, V. ; L". <b>Discussões sobre a natureza da ciência em um curso sobre a história da Astronomia</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bagdonas, Alexandre ; Florio, V. ; Silva, Cibelle. <b>Discutindo a natureza da ciência a partir de episódios da história da cosmologia: o grande debate</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BATISTA, R. J. C.; H. Chacham ; Carara S. S.. <b>Structural and electronic properties of crystals of thiolate-capped Au nanoparticles doped with donor and acceptor molecules: First-principles calculation</b>. 2009. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BEZZON, V. D. N. <b>Teste de resolução de Difratômetro Utilizando o Método de Rietveld</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BEZZON, V. D. N. <b>Desenvolvimento de porta-amostra giratório para difratômetro de raios-x</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BEZZON, V. D. N. <b>Desenvolvimento de porta-amostra de baixo custo para difratômetro de raios-x</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Bianchi, R. F. <b>Fototerapia para neonatos ictéricos: por que usamos tempo e não dose de radiação?</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CAZATI, T.; Dias, Fernando B. ; Andy Monkman. <b>TEMPERATURE-DEPENDENT OF PICOSECONDS CONFORMATIONAL RELAXATION IN POLYFLUORENE CO-POLYMERS</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CAZATI, T.; SANTOS, L. F. ; REIS, F. T. ; FARIA, Roberto. <b>Modeling the Steady-State Photocurrent Action Spectra of thick poly(2-methoxy-5-(2-ethyl-hexyloxy)-1,4-phenylene vinylene), (MEH-PPV) devices</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>A blue-light dosimeter which indicates dose accumulation by a multicoloured change of luminescent polymers</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; Ferreira, G. R. ; Bianchi, R. F.. <b>A blue-light dosimeter which indicates the dose accumulation by a multicoloured change of photo-degraded polymer</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Ferreira, G. R. ; Bianchi, R. F.. <b>A novel MEH-PPV/Alq3 radiation sensor used as smart device for neonatal phototherapy application</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Ferreira, G. R. ; DE VASCONCELOS, C. K. B. ; SANTOS, M. C. ; Bianchi, R. F.. <b>Research in the Laboratory of Polymers and Electronic Properties of Materiais - UFOP</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Florio, V. <b>O impacto da descoberta: William Herschel e a popularização da astronomia na Inglaterra Georgeana</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Hermsdorff, L.L. ; Bernardes, A.T. ; PINHEIRO, C. F. S.. <b>Monte Carlo Simulation of a mixture of carbon nanotubes and surfactants in aqueous solution</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Hermsdorff, L.L. ; Bernardes, A.T. ; Pinheiro, C.F.S.. <b>Monte Carlo Simulation of a mixture of carbon nanotubes and surfactants in aqueous solution</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Manhabosco, T. M. <b>Filmes Finos e Nanoestruturados</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Manhabosco, T. M. <b>Filmes Finos e Nanoestruturados</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MATOS, M. J. S.; MAZZONI, M. S. C.. <b>Estudo das Interações de van derWaals no Contexto da Teoria do Funcional da Densidade e Aplicações em Nanoestruturas</b>. 2009. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; ADRIANA GOMES DICKMAN. <b>MODEL FOR THE TRANSMISSION OF MALARIA: MEAN FIELD APPROXIMATION</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>POSTACCHINI, B. B.; DIAS, F. B. ; Monkman, A ; ZUCOLOTTO, V. ; Oliveira jr, O. N.. <b>Energy transfer in nanostructured films containing poly(p-phenylene vinylene) (PPV) and acceptor species</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PRADO, M. C.; NEVES, BERNARDO R A. <b>Mixed Self-Assembled Layers of Phosphonic Acids</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Rocha, J. C. S.; V., C. B. ; COURA, P. Z. ; S.A. Leonel ; DIAS, R. A.. <b>Diagram for vortex formation in quasi-two dimensional magnetic dots</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>Inversão das transições eletrônicas da primeira banda de absorção de cromóforos sintéticos em bacteriorrodopsina</b>. 2009. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Silvestre, I. <b>Growth and fabrication of devices based on carbon nanotubes and graphene for sensor application</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Modelagem molecular de materiais</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SIQUEIRA, M. F.; FARIA, R. M.. <b>Stiffness evaluation of the oligofluorene chains</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SIQUEIRA, M. F.; MACIEL, A. C. ; FARIA, R. M.. <b>Electronic structure study of coil-type PPV segments</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SIQUEIRA, M. F.; Ramos, R. ; CALDAS, M. J. ; FARIA, R. M.. <b>Theoretical study on stretching of amorphous PPV films</b>. 2009. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SIQUEIRA, M. F.; Ramos, R. ; CALDAS, M. J. ; FARIA, R. M.. <b>Molecular Dynamics simulations on stretching of amorphous PPV films</b>. 2009. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SOUZA, C. ; CAZATI, T. ; BIANCHI, R. F.. <b>INFLUENCE OF PHOTO- OXIDATION ON THE COMPLEX IMPENANCE OF THE MEH-PPV FILMS</b>. 2009. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, M. B.; ATENCIO, D.. <b>Pyrochlore-minerals from Brazil: ideas for nomenclature</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, V. D. N. <b>Teste de Resolução de Difratômetro Utilizando o Método de Rietveld</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BEZZON, V. D. N.; M. O. Orlandi. <b>Test of Resolution of XRD Equipment Using the Rietveld Method</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R.F. <b>Dispositivos eletrônicos poliméricos: dos emissores de luz aos sensores de radiação</b>. 2008. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, Rodrigo Fernando. <b>Caminhos para a pesquisa científica e a aplicação de displays luminosos: oportunidades para o Brasil?</b>. 2008. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CALAZANS, M. M.; CARDOSO, A. V. ; MARTINS, G. S. ; LIMBORÇO, M.F.. <b>EFEITO DA HIPERTERMIA SOBRE AS CURVAS DE AGREGAÇÃO</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de Oliveira, A. B. <b>Water anomalies and isotropic potentials</b>. 2008. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; Bianchi, R. F.. <b>A luminescent polymer dosimeter customized for neonatal phototherapy application</b>. 2008. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V. <b>O impacto da descoberta: William Herschel e a popularização da astronomia na Inglaterra Georgiana</b>. 2008. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Galgano, G. D.; Henriques, A B. <b>Magneto-optics and light-induced magnetism in Europium chalcogenides</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>IKUNO, Edson. Y. ; SIQUEIRA, M. F.. <b>A AÇÃO DO INIBIDOR MS-560 SOBRE A GELATINASE B</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>KETTL, J. ; Manhabosco, T. M. ; Galio, A.F. ; MULLER, I. L.. <b>Avaliação de filmes híbridos orgânico/Inorgânicos contendo inibidores de corrosão</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>Tribocorrosão da liga Ti6Al4V em solução PBS</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>Tribocorrosão da liga Ti6Al4V nitretada em meio fisiológico</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MAZZONI, M. S. C. ; Matheus Matos. <b>Emprego da Teoria do Funcional da Densidade com correcões empíricas de van der Waals no estudo de nanoestruturas</b>. 2008. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NAKAMURA FILHO, A. ; CARDOSO, A. V. ; SOUZA, V. F. ; ALVES, A. C. V. ; CALAZANS, M. M. ; JESUS, K. M. C.. <b>Análise de curvas de curvas de agregação-sedimentação-compactação do sangue obtidas por fotometria</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>OLIVEIRA, Catiane C. ; SIQUEIRA, M. F.. <b>EFEITOS QUÍMICOS E BIOQUÍMICOS DE DROGAS ANTI-REUMÁTICAS MODIFICADORAS DA DOENÇA SOBRE A ENZIMA DHODH</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PRADO, M. C.; NEVES, B. R. A.. <b>THERMAL STABILITY INVESTIGATIONS OF PURE AND MIXED PHOSPHONIC ACID SELF-ASSEMBLED MONOLAYERS</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PRADO, M. C.; Neves, B.R.A.. <b>Estudo de Estabilidade Térmica de Monocamadas Auto-Construídas de Ácidos Fosfônicos</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>PRADO, M. C.; NEVES, BERNARDO R A. <b>Estudo de Monocamadas Mistas de Ácidos Fosfônicos</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Silvestre, I. <b>Polymer bilayers parametrization by a modified Arrhenius Annalysis</b>. 2008. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Tahisa ; SIQUEIRA, M. F.. <b>RELAÇÕES ENTRE O FATOR DE NECROSE TUMORAL E A ARTRITE REUMATÓIDE</b>. 2008. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Dispositivos eletrônicos: ciência, tecnologia e inovação</b>. 2007. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Water anomalies and isotropic potentials</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Potenciais efetivos e fluidos anômalos</b>. 2007. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Manhabosco, T. M.; KETTL, J. ; MULLER, I. L.. <b>ELETRODEPOSIÇÃO DE FILMES TIPO DLC SOBRE Ti</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Manhabosco, T. M.; SANTOS, C. B. ; MULLER, I. L.. <b>RESISTÊNCIA À TRIBOCORROSÃO DE LIGA DE TI, NITRETADA OU NÃO, REVESTIDA COM DLC</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; S. E. Grynberg ; F. J. RESENDE. <b>Difusão de Gliomas</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Penha, Felipe Campos ; Cazati, Thiago ; José Roberto, Siqueira Jr ; POSTACCHINI, B. B. ; Faria, Roberto Mendonça. <b>Utilização da Metaloftalocianinas depositadas via Layer-by-Layer como camadas Adicionais Injetoras em Dispositivos Orgânicos</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PINHEIRO, C. F. S.; BERNARDES, A. T. ; Oliveira, S. S.. <b>Networks and load in fibrous materials</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PINHEIRO, C. F. S.; Oliveira, S. S. ; BERNARDES, A. T. ; Knupp, M. G. ; Flecha, A. C.. <b>Unveiling networks behind touristic flow in Ouro Preto, Brazil</b>. 2007. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Fluorescencia resolvida no tempo em heteroestruturas contendo o polimero conjugado PPV</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Fluorescencia resolvida no tempo em heteroestruturas contendo o polimero conjugado PPV</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>POSTACCHINI, B. B.; DIAS, F. B. ; Monkman, A ; ZUCOLOTTO, V. ; Oliveira jr, O. N.. <b>ENERGY TRANSFER IN NANOSTRUCTURED FILMS OF A LUMINESCENT POLYMER AND AN AZODYE</b>. 2007. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>POSTACCHINI, B. B.; DIAS, F. B. ; Oliveira jr, O. N. ; ZUCOLOTTO, V.. <b>ENERGY TRANSFER IN NANOSTRUCTURED FILMS OF A LUMINESCENT POLYMER AND AN AZODYE</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>PRADO, M. C.; Neves, B.R.A.. <b>In situ temperature study of self-assembled octadecyphosphonic acid monolayers</b>. 2007. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>Comparative study between the chomophore electronic properties of native and structurally modified bacteriorhodopsins: a QM/MM analysis</b>. 2007. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>Estudo teórico de cromóforos naturais e sintéticos da bacteriorodopsina utilizando o método de QM/MM</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Silvestre, I. <b>Caracterização elétrica e ótica de dispositivos emissores de luz poliméricos utilizando LiF entre o catodo e o meio ativo</b>. 2007. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Siqueira Junior, J. R. ; CAZATI, T.. <b>Nanostructured LBL Films containing Single-Wall Carbons Nanotubes as a Hole Injection Layer in Semiconductor Organic Devices</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>Electronic and structural properties of oligofluorenes</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>Quantum chemical study on properties of oligofluorenes</b>. 2007. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Sérgio Azevedo ; MATOS, M. J. S.. <b>Estudo por Primeiros Princípios de Nanotubos do Tipo Armchair de BCxN</b>. 2007. Apresentação de Trabalho/Comunicação</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, M. B.; ATENCIO, D.. <b>Pyrochlore-group minerals: Brazilian occurrences</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J.; ALVES, M. A. R. ; Braga, E. S. ; Cescato, L.. <b>Caracterização da emissão de elétrons por efeito de campo em arranjos de alta densidade de ponteiras de silício</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J.; ALVES, M. A. R. ; Braga, E. S. ; Cescato, L.. <b>Fabrication of high density arrays of silicon tips</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; ZANETTI, Carlos Eduardo ; FARIA, Roberto. <b>Anode Effect on the photocurrent behaviour of PPV devices</b>. 2006. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Thermodynamic and dynamic anomalies in a core-softened potential</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>The most successful effective potential for water anomalies</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Thermodynamic and Dynamics Anomalies for a Three-Dimensional Core-softened Potential</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Thermodynamic and Dynamics Anomalies for a Three-Dimensional Core-softened Potential</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Water as isotropic potentials</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Díaz, B L ; Rappl, P H O ; Abramof, E ; Galgano, G. D. ; Henriques, A B. <b>High-Resolution X-ray Diffraction Analysis of Pb1-xEuxTe (0.8 ≤ x ≤ 1.0) epitaxial layers</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Florio, V. <b>Determinação de parâmetros fundamentais de aglomerados abertos</b>. 2006. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Galgano, G. D.; Henriques, A. B.. <b>Determining the fast axis of a wave plate</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Galgano, G. D.; Henriques, A. B.. <b>Como determinar o eixo rápido de uma placa de onda</b>. 2006. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Manhabosco, T. M.; ASO, A. M. ; KETTL, J. ; MULLER, I. L.. <b>ELETRODEPOSIÇÃO DE FILMES DLC A PARTIR DE LÍQUIDOS ORGÂNICOS</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>Eletrodeposição de filmes finos de cobalto sobre Si (100) com adição de sacarina</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; S. E. Grynberg ; F. J. RESENDE. <b>Morphological Patterns of Tumor Growth</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PAGLIARINI, C. R.; SILVA, Cibelle C.. <b>A estrutura dos mitos históricos nos livros de física</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>POSTACCHINI, B. B.; Oliveira jr, O. N.. <b>Control of Photoluminescence In Layer-byLayer Films of PPV and Energy-accepting Molecules</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>POSTACCHINI, B. B.; ZUCOLOTTO, V. ; Oliveira jr, O. N.. <b>Control of Energy Transfer in Conjugated Polymer (PPV) ? Azo dye film by LBL technique</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>POSTACCHINI, B. B.; ZUCOLOTTO, V. ; Oliveira jr, O. N.. <b>Control Over Resonant Energy Transfer in PPV/Azodye LbL films</b>. 2006. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>PRADO, M. C.; NEVES, BERNARDO R A. <b>Estudos de Estruturas Orgânicas Auto-Construídas por Microscopia de Varredura por Sonda</b>. 2006. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Moléculas quirais e suas diferentes ações biológicas</b>. 2006. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; ALBUQUERQUE, E. ; RIBEIRO, L. C. ; RUIZ, R. M.. <b>National System of Innovation and Technological Differentiation: a multi-country evolutionary model</b>. 2005. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.; ALBUQUERQUE, E. ; RIBEIRO, L. C. ; RUIZ, R. M.. <b>Modelling the role of National System of Innovation in economical differentiation</b>. 2005. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BERNARDES, A. T.; RIBEIRO, L. C. ; DICKMAN, R. ; GOULART, L. F. S. ; VAZ, N. M. ; BRAGA, E. M. ; SILVA NETO, A. F. ; MACHADO, C. T.. <b>A fractal analysis of global immune response</b>. 2005. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CARVALHO, E. J.; ALVES, M. A. R. ; Braga, E. S. ; Cescato, L.. <b>Fabricação de Ponteiras Emissoras de Elétrons por Litografia Holográfica</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J.; Cescato, L.. <b>Fabrication and Replication of periodic submicrometric structures using interferometric lithography</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Anomalias dinâmica e termodinâmica em um potencial de duas escalas</b>. 2005. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Density anomaly and two liquid phases in core softened potentials</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V. <b>Vida no Universo: perspectívas históricas , científicas e ficção</b>. 2005. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V.; W.S.Dias. <b>Estudo de Aglomerados Abertos:Determinação de parâmetros cinemáticos e fundamentais</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Florio, V.; W.S.Dias. <b>Determinação de membership em aglomerados abertos</b>. 2005. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Galgano, G. D.; Henriques, A. B.. <b>Construção de um Polarizador Circular</b>. 2005. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>CARACTERIZAÇÃO MORFOLÓGICA E ESTRUTURAL DE FILMES DE Co DEPOSITADOS GALVANOSTÁTICA E POTENCIOSTÁTICAMENTE</b>. 2005. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; F. J. RESENDE. <b>MICROAMBIENTE CELULAR E CRESCIMENTO TUMORAL</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Processos fotofísicos em filmes automontados contendo polimeros conjugados e especies receptoras</b>. 2005. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>POSTACCHINI, B. B.; ZUCOLOTTO, V. ; OLIVEIRA, E. A.. <b>Fine Control over Energy Transfer in Nanostructured PPV/Phthalocyanine Photoluminescent Films</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>POSTACCHINI, B. B.; ZUCOLOTTO, V. ; OLIVEIRA, E. A.. <b>Controlede fotoluminescência em filmes nanoestruturados de PPV e ftalocianinas metáticas</b>. 2005. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>POSTACCHINI, B. B.; ZUCOLOTTO, V. ; Santos, L. F. ; Oliveira jr, O. N.. <b>PL CONTROL IN NANOSTRUCTURED FILMS COMPRISING PPV AND METALLIC PHTHALOCYANINES</b>. 2005. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; PINTO, Melissa Fabíola S. ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>THEORETICAL PROPERTIES OF RETINAL ANALOGS FOR TECHNOLOGICAL APPLICATIONS</b>. 2005. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>Estudo teórico de análogos do retinal com substituintes fluoróforos</b>. 2005. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Silvestre, I. <b>Aspectos morfológicos e ópticos das camadas constituintes de uma estrutura de diodo emissor de luz orgânico</b>. 2005. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SIQUEIRA, M. F.; PINTO, Melissa Fabíola S. ; TRSIC, Milan. <b>ROTATIONAL BARRIERS AND ELECTRONIC PROPERTIES OF THE FLUORENE DIMER THROUGH QUANTUM</b>. 2005. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>Estudo Teórico de Monômeros Derivados do Fluoreno</b>. 2005. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Propriedades elétricas de filmes e dispositivos poliméricos</b>. 2004. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Displays poliméricos</b>. 2004. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Dispositivos poliméricos: ciência e tecnologia</b>. 2004. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Tecnologia de fabricação de dispositivos orgânicos e aplicações</b>. 2004. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J.; Braga, E. S. ; Cescato, L.. <b>Optical Properties of a Polarizing Holographic Optical Element</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CARVALHO, E. J.; Braga, E. S. ; Cescato, L.. <b>Replication of Diffractive Optical Elements by Injection Molding</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARVALHO, E. J.; Braga, E. S. ; Cescato, L.. <b>Replication of Diffractive Opticals Elements</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>de Oliveira, A. B.; BARBOSA, M. C.. <b>Density Anomaly in a Competing Interactions Lattice Fluid</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>de Oliveira, A. B.; BARBOSA, M. C.. <b>Diagrama de Fases de um Gás de Rede com Interações Competitivas</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>de Oliveira, A. B.; NETZ, P. A. ; COLLA, T. ; BARBOSA, M. C.. <b>Simulações Monte Carlo para um Gás de Rede com Interações Competitivas</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>JESUS, A. D. C. ; MATOS, M. J. S.. <b>Transferências Orbitais Contínuas a Baixos Empuxos com Desvios e N Arcos de Queima</b>. 2004. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Manhabosco, T. M.; CARPENTER, D. ; ENGLERT, G. ; MULLER, I. L.. <b>CARACTERIZAÇÃO DE FILMES FINOS DE COBALTO ELETRODEPOSITADO SOBRE SILÍCIO DE DIFERENTES RESISTIVIDADES</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Manhabosco, T. M.; ENGLERT, G. ; MULLER, I. L.. <b>Eletrodeposição de Filmes Finos de Cobalto em n-Si(100)</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Manhabosco, T. M.; ENGLERT, G. ; MULLER, I. L.. <b>OBTENÇÃO E CARACTERIZAÇÃO DE FILMES FINOS DE COBALTO</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; FLORÊNCIO, João ; J. A. Plascak. <b>SPIN DYNAMICS OF THE QUANTUM HEISENBERG CHAIN AND LADDER IN A RANDOM FIELD</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>OLIVEIRA, E. A. ; POSTACCHINI, B. B. ; LIMA, L. F. C. ; Kawano, Y. <b>Effects UV irradiation on birefringence of Urethane/Urea elastomer</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>OLIVEIRA, E. A. ; POSTACCHINI, B. B. ; LIMA, L. F. C. ; Kawano, Y ; Trindade, Ana Catarina. <b>Effects of UV irradiation on optical birrefringence of urethane/urea elastomer</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PAGLIARINI, C. R.; FREITAS, L. R. ; MANSANARES, A. M. ; PIMENTEL, S. B. C. ; ELEUTERIO FILHO, S.. <b>Microscopia Fototérmica de Reflexão: caracterização de dispositivos microeletrônicos e contraste através do uso de diferentes comprimentos de onda do feixe de prova</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PAGLIARINI, C. R.; MANSANARES, A. M.. <b>Contraste na microscopia fototérmica de trilhas resistivas através do uso de diferentes comprimentos de onda do feixe de prova</b>. 2004. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>POSTACCHINI, B. B.; OLIVEIRA, E. A. ; LIMA, L. F. C. ; Kawano, Y. <b>Efeitos da radiação UV sobre a birrefringência óptica no elastômero uretano PU/</b>. 2004. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>Estudo Químico-Quântico Semi-Empírico de Propriedades Eletrônicas e Estruturais de Moléculas Análogas ao Retinal</b>. 2004. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>ANALYSIS OF STRUCTURAL, ELECTRONIC AND PHYSICO-CHEMICAL PROPERTIES OF FLUORENE-BASED MONOMERS USING QUANTUM-CHEMICAL METHODS</b>. 2004. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SIQUEIRA, M. F.; WEBER, Karen Cacilda. <b>ESTUDO PRELIMINAR DA PERCEPÇÃO DE LICENCIANDOS EM QUÍMICA SOBRE A RELEVÂNCIA DO ENSINO DE QUÍMICA</b>. 2004. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Monitores plásticos, leves e flexíveis: realidade ou ficção?</b>. 2003. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; ONMORI, R ; FARIA, R. M.. <b>Device model for polyaniline field-effect transistor</b>. 2003. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J.; Gutierrez-Rivera, L. ; Cescato, L.. <b>Gravação de Nano-Estruturas Metálicas</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de Oliveira, A. B.; BARBOSA, M. C.. <b>Phase-diagram of a competitive interactions lattice fluid</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Análise dinâmico-mecânica de um elastômero líquido cristalino</b>. 2003. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Birrefringência ótica induzida por deformação filmes de elastômeros</b>. 2003. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>POSTACCHINI, B. B.; OLIVEIRA, E. A. ; LIMA, L. F. C.. <b>Influencias do tratamento termico na microestrutura do elastômero PU/PBDO</b>. 2003. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F. ; TRSIC, Milan. <b>ESTUDO TEÓRICO DE MOLÉCULAS ESTRUTURALMENTE ANÁLOGAS AO RETINAL</b>. 2003. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>DISCUSSÃO DE UM POSSÍVEL MECANISMO DE GERAÇÃO DA INFORMAÇÃO VISUAL COM O ESTUDO DA RODOPSINA</b>. 2003. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>WEBER, Karen Cacilda ; HONÓRIO, Káthia M. ; SIQUEIRA, M. F. ; MELLO, Paula Homem de. <b>Curso de Extensão como Prática Didática Pedagogicas para Alunos de Pós-Graduação em Química</b>. 2003. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>WEBER, Karen Cacilda ; SIQUEIRA, M. F. ; HONÓRIO, Káthia M. ; MELLO, Paula Homem de. <b>QUÍMICA TEÓRICA ALÉM DA TEORIA</b>. 2003. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Aula Inaugural - Curso Licenciatura e Ciências Exatas do IFSC/USP</b>. 2002. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Dispositivos eletroluminescentes poliméricos: estado da arte, etapas de confecção e caracterizações</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Dispositivos eletroluminescentes poliméricos: estado da arte, confecção e caracterização</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Monitores plásticos, leves e flexíveis: realidade ou ficção?</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bianchi, R. F. <b>Monitores plásticos, leves e flexíveis: realidade ou ficção?</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bianchi, R. F.; Santos, Lucas Fugikawa ; BALOGH, D. T. ; Faria, R M. <b>Modelo de energia livre aleatória aplicado ao mecanismo de condução de diodos emissores de luz poliméricos</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARVALHO, E. J.; Freschi, A. A.. <b>Distorções harmônicas em interferometria de fase modulada</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CARVALHO, E. J.; GOMES, P. F. ; Cescato, L.. <b>Gravação de Microlentes em Fotorresina e Confecção de Matrizes Metálicas para Replicação</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>de Oliveira, A. B. ; VASCONCELOS, D. S. ; RIBEIRO FILHO, A.. <b>Estudo de Cristais Líquidos Ferroelétricos Esméticos e o Formalismo Simplético</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>de Oliveira, A. B.; VASCONCELOS, D. S. ; RIBEIRO FILHO, A.. <b>Potenciais Generalizados e o Estudo de Cristais Líquidos Ferroelétricos</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Acompanhamento de mudanças de morfologia de um elastômero por estudos de calorimetria e birrefrigência induzida</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>POSTACCHINI, B. B.; OLIVEIRA, E. A.. <b>Propriedades mecânicas e Líquido-Cristalinas do elastômero PU/PBDO</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SILVA, M. F. P. ; de Oliveira, A. B.. <b>Estudo da Propagação da Luz em Materiais Semicondutores</b>. 2002. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>ESTUDO QUÍMICO-QUÂNTICO SEMI-EMPÍRICO DAS MOLÉCULAS 11-CIS-RETINAL E TODO-TRANS-RETINAL</b>. 2002. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Condutividade elétrica alternada de sistemas desordenados: polímeros, cerâmicos e compósitos</b>. 2001. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Condutividade elétrica complexa de sistemas sólidos desordenados: polímeros, cerâmicos e compósitos</b>. 2001. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F. <b>Aula Inaugural - Curso de Física do IFSC/USP</b>. 2001. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F. <b>Aula Inaugural - Curso Licenciatura e Ciências Exatas do IFSC/USP</b>. 2001. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Estrutura e transição de fase em um elastômero Uretano/Uréia</b>. 2001. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Propriedades mecânicas e líquido-cristalinas de um elastômero</b>. 2001. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>POSTACCHINI, B. B.; OLIVEIRA, E. A.. <b>Optical properties and microscopic structure of liquid crystal polymer</b>. 2001. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>SEMIEMPIRICAL QUANTUM CHEMICAL STUDY OF VERTEBRATE VISUAL PIGMENT</b>. 2001. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>SEMIEMPIRICAL QUANTUM CHEMICAL STUDY OF VERTEBRATE VISUAL PIGMENTS</b>. 2001. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; Freschi, A. A.. <b>Gravação de hologramas em Montagens Ópticas Ativamente Estabilizadas</b>. 2000. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Hidalgo, Angel Alberto ; POSTACCHINI, B. B. ; OLIVEIRA, E. A.. <b>Transições de fases e estrutura de compostos anfifílicos</b>. 2000. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Manhabosco, T. M.; KLEIN, C. ; MALFATTI, C. F. ; FERREIRA, J. Z.. <b>Avaliação das Propriedades de Revestimentos de Níquel Eletrodepositado e Revestimetos Compósitos Ni-Al2O3 e Ni-SiC</b>. 2000. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Manhabosco, T. M.; MALFATTI, C. F. ; FERREIRA, J. Z.. <b>Influência da incorporação de partículas em revestimentos de níquel eletrodepositado</b>. 2000. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, M. B.; CREMA, E. ; SIMOES, R. F. ; ONO, L. K.. <b>Desenvolvimento de um detector proporcional multifilar para medir resíduos de evaporação</b>. 1999. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; FLORÊNCIO, João. <b>Dynamic Autocorrrelation Function of S=1/2 Disordered One-Dimensional XY Model</b>. 1999. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SIQUEIRA, M. F.; PINHEIRO, José Ciriaco ; ROMERO, O. A. S.. <b>RELAÇÃO ENTRE A ESTRUTURA QUÍMICA E A ATIVIDADE BIOLÓGICA DE HALOFENÓIS E HALONITROFENÓIS ANTIFÚNGICOS ATRAVÉS DE TÉCNICAS DE RECONHECIMENTO DE PADRÕES</b>. 1999. Apresentação de Trabalho/Simpósio</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Medidas elétricas ac em sistemas sólidos desordenados</b>. 1998. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; Faria, R M. <b>Ionic conduction and structural properties of organic-inorganic composite based on poly(propileneglycol)</b>. 1998. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; FLORÊNCIO, João. <b>Dynamic Autocorrelations Functions of S=1/2 Disordered Spin Chains</b>. 1998. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SIQUEIRA, M. F.; PINHEIRO, José Ciriaco. <b>ESTUDO TEÓRICO DE FENÓIS COM ATIVIDADES ANTIFÚNGICAS</b>. 1998. Apresentação de Trabalho/Seminário</td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; FARIA, R. M.. <b>Comportamento elétrico ac em filmes de polianilina</b>. 1997. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; FARIA, R. M.. <b>Condutividade de volume ac em filmes de polipropileno-glicol</b>. 1997. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F.; LEPIENSKI, C. M. ; FERREIRA, G. F. L. ; Faria, R M. <b>Alternate conductivity in polyanilines films for different temperature</b>. 1997. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; FLORÊNCIO, João. <b>Dinâmica no Modelo de Heisenberg Desordenado</b>. 1997. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SIQUEIRA, M. F.; PINHEIRO, J. C.. <b>ESTUDO COMPUTACIONAL DE COMPOSTOS HALONITROFENÓIS COM TOXIDADE CONTRA MYROTHECYUM VERRUCARI</b>. 1997. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GONCALEZ, O. L. ; ANDRADE, M. B. ; GERALDO, L. P. ; SEMMLER, R. ; Padilha, M. C.. <b>Determinação dos efeitos de distribuição de massa, em estudos de reações de fotofissão, para uma amostra de U-233</b>. 1996. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

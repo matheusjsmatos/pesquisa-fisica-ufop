@@ -1,0 +1,235 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Monografia de conclusão de curso de aperfeiçoamento/especialização'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1997,
+2],
+[1999,
+1],
+[2003,
+1],
+[2004,
+2],
+[2006,
+2],
+[2008,
+5],
+[2010,
+2],
+[2011,
+1],
+[2012,
+3],
+[2013,
+1],
+[2014,
+2],
+[2015,
+1],
+[2016,
+1],
+[2019,
+1],
+[2020,
+1],
+[2022,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Monografia de conclusão de curso de aperfeiçoamento/especialização</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 28<br>
+                    
+                    
+                    <div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Belchiolina Fávia Ferreira. <b>ESTUDO DO REJEITO MAGNÉTICO DE FOSFATO DA REGIÃO DE TAPIRA/MG VISANDO O REAPROVEITAMENTO SUSTENTÁVEL E A ECONOMIA CIRCULAR</b>. (Aperfeiçoamento/Especialização em REDEMAT) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Renata Duarte Menezes Rocha. <b>Preparação e caracterização de filmes híbridos de hexaniobato de potássio/polianilina preparados pela técnica de montagem layer by layer</b>. (Aperfeiçoamento/Especialização em Materiais) - Universidade Federal de Ouro Preto, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fernando Brandão Rodrigues da Silva. <b>CARACTERIZAÇÃO DO REJEITO MAGNÉTICO OBTIDO A PARTIR DO BENEFICIAMENTO DE ROCHA FOSFÁTICA</b>. (Aperfeiçoamento/Especialização em REDEMAT) - Universidade Federal de Ouro Preto, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Mauro Rodrigues de Araújo. <b>Fabricação e análise das propriedades mecânicas de filmes à base de PVC/PANI com potencial para sensores de pressão</b>. (Aperfeiçoamento/Especialização em Materiais) - Universidade Federal de Ouro Preto, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GONTIJO, Mariana Ferreira Assunção. <b>Abordagem do ensino do funcionamento do motor elétrico através da história da ciência e CTS</b>. (Aperfeiçoamento/Especialização em Ensino de Ciências por Investigação) - Universidade Federal de Minas Gerais, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7215497120261203">Marcos Moraes Calazans</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Clarina Pedrete de Souza Santos. <b>O estabelecimento de um Sistema de Unidades de Medidas, Proposta de Atividades para uma Abordagem no Ensino de Física</b>. (Aperfeiçoamento/Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriana Adla da Silva. <b>Uma abordagem sobre a força magnética em um fio condutor sob o ponto de vista vetorial</b>. (Aperfeiçoamento/Especialização em Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Teddy Almeida Guimarães. <b>A Física Moderna nos Livros Didáticos do Ensino Médio</b>. (Aperfeiçoamento/Especialização em Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Elizane Efigênia de Moares. <b>Tunable band gap of boron nitride interfaces under uniaxial pressure.</b>. (Aperfeiçoamento/Especialização em Física (Bacharelado)) - Universidade Federal de Ouro Preto, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Luiza Baeta Costa. <b>ESTUDO DOS EQUIPAMENTOS E SUAS FUNÇÕES EM UM FORNO DE GRELHA MÓVEL EM UMA USINA EM MINAS GERAIS</b>. (Aperfeiçoamento/Especialização em Especialização em Pelotização) - Universidade Federal de Ouro Preto, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Marcos Ribeiro Tuler. <b>IMPLANTAÇÃO DE SISTEMA DE DRENAGEM À VÁCUO PARA REDUÇÃO DO TEOR DE UMIDADE NAS PILHAS DE ESTOCAGEM DE MINÉRIO DE CARAJÁS</b>. (Aperfeiçoamento/Especialização em Esp Gestão de Negócios no Setor Mínero-Metalúrgico) - Universidade Federal de Ouro Preto, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Wilson Ferreira. <b>Uma Abordagem Teórico-Experimental sobre Hidrostática no Ensino Médio</b>. (Aperfeiçoamento/Especialização em Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Nathália Akemi Yoshioka. <b>FABRICAÇÃO E CARACTERIZAÇÃO DE DISPOSITIVOS FOTOVOLTAICOS DE MULTICAMADAS À BASE DE POLÍMEROS CONJUGADOS</b>. (Aperfeiçoamento/Especialização em Física) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fernando Luzia França. <b>A radioproteção em odontologia</b>. (Aperfeiçoamento/Especialização em Materiais) - Universidade Federal de Ouro Preto, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Lázaro Dalla Costa Jr. <b>Caracterização e Fabricação de Dispositivos Fotovoltaicos Poliméricos</b>. (Aperfeiçoamento/Especialização em Química Industrial) - Universidade Federal de Ouro Preto, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aderildo de Medeiros Dantas Filho. <b>Tratamento Térmico por Indução Eletromagnética em Hastes para Penetração no Solo Perfuração de Rocha</b>. (Aperfeiçoamento/Especialização em Especialização em Sistemas Mínero-Metalúrgicos) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alexandre de Matos Rodrigues. <b>A Física Moderna no Ensino Médio</b>. (Aperfeiçoamento/Especialização em Especialização em ensino de física) - Universidade Federal de Ouro Preto, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0147622167511467">Romuel Figueiredo Machado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Artur Frederico Fonseca da Cruz. <b>FERRAMENTA DE PENETRAÇÃO DE SOLOS:UM ESTUDO SOBRE O IMPACTO CAUSADO PELO DESGASTE ABRASIVO, AUMENTO DA RESISTÊNCIA AO DESGASTE E SELEÇÃO/CLASSIFICAÇÃO DE MATERIAIS</b>. (Aperfeiçoamento/Especialização em Especialização em Sistemas Mínero-Metalúrgicos) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Dário de Castro e Silva Neto. <b>MINERALOGIA DO MINÉRIO DE MANGANÊS DA MINA DOE AZUL ? PA</b>. (Aperfeiçoamento/Especialização em Especialização em Sistemas Mínero-Metalúrgicos) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Márcio Thompson da Cunha Gomes. <b>Ferramentas de penetração de solos: Seleção de materiais e tratamentos térmicos específicos para a otimização da vida útil da ferramenta</b>. (Aperfeiçoamento/Especialização em Especialização em Sistemas Mínero-Metalúrgicos) - Universidade Federal de Ouro Preto, Fundação Gorceix. 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Cristiano Soares de Souza. <b>Avaliação da Aplicação Direta na Sinterização de Concentrado de Minério Pelito-siltito da Mina de Manganês do Azul</b>. (Aperfeiçoamento/Especialização em Especialização em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Romário Távora Britto. <b>A influência do processamento nas microestruturas das ligas FeMnMC (M1 e M2) e FeMnAC (78, 76 e 74) e correlação com suas propriedades mecânicas</b>. (Aperfeiçoamento/Especialização em Especialização em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Paula de Oliveira da Silva. <b>História do Livro Didático de Física no Brasil</b>. (Aperfeiçoamento/Especialização em Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0088622411517649">Carlos Felipe Saraiva Pinheiro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luciana Aparecida da Silva. <b>BIOMAGNETISMO</b>. (Aperfeiçoamento/Especialização em Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2004.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0088622411517649">Carlos Felipe Saraiva Pinheiro</a>.</font></td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Pedro Renato Pereira Barros. <b>RADIAÇÃO: VERDADE CIENTÍFICA X SENSO COMUM</b>. (Aperfeiçoamento/Especialização em Especialização em Ensino de Física) - Universidade Federal de Ouro Preto, . 2003.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0088622411517649">Carlos Felipe Saraiva Pinheiro</a>.</font></td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Pedro Bernardo Dias. <b>Eletricidade Atmosférica</b>. (Aperfeiçoamento/Especialização em Especialização Em Ensino de Física) - Universidade Federal de Ouro Preto, . 1999.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Daniel da Silveira Souza. <b>Entropia e a Seta do Tempo</b>. (Aperfeiçoamento/Especialização em Especialização Em Ensino de Física) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 1997.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ineida Maria de Oliveira e Silveira. <b>Fractais</b>. (Aperfeiçoamento/Especialização em Especialização Em Ensino de Física) - Universidade Federal de Ouro Preto, . 1997.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

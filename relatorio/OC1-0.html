@@ -1,0 +1,329 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Tese de doutorado'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1998,
+1],
+[1999,
+1],
+[2001,
+2],
+[2005,
+1],
+[2006,
+2],
+[2007,
+2],
+[2008,
+1],
+[2010,
+5],
+[2011,
+1],
+[2012,
+1],
+[2013,
+3],
+[2014,
+3],
+[2015,
+1],
+[2016,
+3],
+[2017,
+3],
+[2018,
+3],
+[2019,
+4],
+[2020,
+3],
+[2021,
+4],
+[2022,
+7],
+[2023,
+3],
+[2024,
+6],
+[2025,
+1],
+[2026,
+6]]}]});
+        });
+        </script>
+        
+                <h3>Tese de doutorado</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 67<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Hamid Reza Fazlollahi. <b>Application of Energy-Momentum Square Gravity</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Hiago Maurilio Lopes Carvalho. <b>"ESTUDO DAS PROPRIEDADES ELETRÔNICAS E ÓPTICAS DE LIGAS METÁLICAS Ag1−xAux E SEMICONDUTORAS Si1−xGexO2 POR MÉTODOS DE PRIMEIROS PRINCÍPIOS</b>. Tese (Doutorado em Física) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2026.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4604543085433779">Jonas Pinheiro da Silva</a>. <b>Cosmic Acceleration and Structure Formation in Non- Conservative Trace Dependent Gravity</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, . 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8128652243210138">Luiz Tadeu Gabriel</a>. <b>Desenvolvimento de artefatos para uso na construção civil a partir da reciclagem de lixo eletrônico.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3500132049060977">Michelle de Oliveira</a>. <b>Eletrodeposição de hidroxiapatita com incorporação novos materiais 2D</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3127169151920883">Ranier Menote Lemes Silva</a>. <b>Synthetic Multi?Messenger Catalogs for Gravitational-Wave Cosmology</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Fundação de Amparo à Pesquisa do Espírito Santo. 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>WELLINGTON DAMACENO DE FREITAS. <b>Predição de Novas Fases Cristalinas de Polinitrogênio via Algoritmos Evolutivos: Potencial Aplicação como Materiais de Alta Densidade Energética</b>. Tese (Doutorado em Modelagem Matemática e Computacional) - Centro Federal de Educação Tecnológica de Minas Gerais, . 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1442167838255756">Alfredo Antonio Alencar Exposito de Queiroz</a>. <b>Classificação de minerais de ferro por espectroscopia Raman e aprendizado de máquina</b>. Tese (Doutorado em Física Computacional) - Universidade de São Paulo - Instituto de Física de São Carlos, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7007842662216007">Fernanda Ribeiro Jordão Guimarães</a>. <b>Investigação do tempo de escape em escola da Rede Pública</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8102960505841528">Fernando Brandão Rodrigues da Silva</a>. <b>Desenvolvimento e caracterização de revestimentos compósitos de poliuretano com incorporação de rejeito magnético obtido a partir do beneficiamento da rocha fosfática</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4718620132637563">Ingrid Ferreira da Costa</a>. <b>Modelos cosmológicos viscosos: uma possível solução das tensões cósmicas</b>. Tese (Doutorado em Física) - Universidade Federal do Espírito Santo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2144149959344678">Maysa Lorena Figueiredo Martins</a>. <b>Resíduo de Diatomita para Síntese de Silicato de Sódio e Produção de Materiais Álcali-Ativados</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3300030073744806">Pedro Henrique Bessa Rodrigues Dutra</a>. <b>The Redshift Drift as a New Cosmological Probe</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Fundação de Amparo à Pesquisa do Espírito Santo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Allan Kleyton Muniz Pinto. <b>COMPOSTOS DIAMONDOL TIPO B-C-N: ESTABILIDADE E PROPRIEDADES ELETRÔNICAS</b>. Tese (Doutorado em Fisica) - Universidade Federal da Paraíba, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5537666329651077">Alysson Alves Pinto</a>. <b>Investigação de Propriedades Eletrônicas, Estruturais e de Transporte com Polarização de Spins em Nanoestruturas 2D</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>, <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Eunice Monyenye. <b>An analytic study of lensing by Black Holes in Kerr-de Sitter spacetimes</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alan Custódio dos Reis Souza. <b>Ab initio investigations in two dimensional nanomaterials: electronic and structural properties</b>. Tese (Doutorado em Física) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ana Carolina Brito. <b>Nanocompósitos funcionais de colágeno tipo I e nanomateriais bidimensionais ? desenvolvimento e caracterização</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2022.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4718299492780846">Ana Carolina Ferreira de Brito</a>. <b>Nanocompósitos funcionais de colágeno tipo I e nanomateriais bidimensionais ? desenvolvimento e caracterização</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bruno Barbosa Rodrigues. <b>STUDY OF ELASTIC AND THERMODYNAMIC PROPERTIES OF POLYMERS WITH QUENCHED DISORDERED CHARGED PARTICLES</b>. Tese (Doutorado em Pós-graduação em Física - Depto de Física - ICEX - UFMG) - Universidade Federal de Minas Gerais, . 2022.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6622284509610818">Julio Cesar Siqueira Rocha</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2093261235489631">David Francisco Camarena Torres</a>. <b>Pushing the boundaries of modern cosmology: physics beyond the Copernican principle</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8335726556689191">Raquel Fazolo</a>. <b>Testing clustering dark energy models with the skewness of matter distribution</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Fundação de Amparo à Pesquisa do Espírito Santo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8524252544990557">Sérgio Fernando Curcio</a>. <b>Caracterização de Derivados de Dimetoxidicinamalacetona, Difluroboro Flavanonas e Quinoxalinas e das Interações com Buckminsterfulereno (C60) para Aplicação em Dispositivos Eletrônicos Orgânicos</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruno Henrique da Silva e Mendonça. <b>Mobilidade da água confinada em nanotubos de carbono deformados: uma análise via dinâmica molecular</b>. Tese (Doutorado em Física) - Universidade Federal do Rio Grande do Sul, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Mariane Satomi Weber Murase. <b>Obtenção e estudo de adesivo transdérmico, radioluminescente e antioxidante para potencial aplicação como dosímetro e radioprotetor no tratamento radioterápico</b>. Tese (Doutorado em Biotecnologia) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0780205870619041">Tássia Andrade Ferreira</a>. <b>Statistical tools in cosmology: model selection and covariance matrix comparison</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Fundação de Amparo à Pesquisa do Espírito Santo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Tássylla Oliveira Fonseca. <b>Diagrama de fases da água confinada: o modelo de gás de rede associativo para o confinamento</b>. Tese (Doutorado em Física) - Universidade Federal do Rio Grande do Sul, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruna Inez Carvalho de Figueiredo. Efeitos de diferentes extratos de Bidens pilosa L. <b>e da radiação luminosa no processo de isomerização da bilirrubina</b>. Tese (Doutorado em Biotecnologia) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2020.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Juliana Aparecida Gonçalves. <b>Estudo de nanofitas de H-BN e nanofitas de SIC por primeiros princípios</b>. Tese (Doutorado em Fisica) - Universidade Federal da Paraíba, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2020.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2459998306452134">Pedro Otávio Souza Baqui</a>. <b>Separação de estrelas-galáxias usando algoritmos de Machine Learning aplicados aos dados do miniJPAS</b>. Tese (Doutorado em Física) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5321215244942923">Alana Fernandes Golin</a>. <b>Estudo das propriedades elétricas de filmes finos de PANI em substrato flexível de PEAD sob deformação mecânica</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2952103784286139">Cleidinéia Cavalcante da Costa</a>. <b>Efeitos da pressão mecânica nas propriedades elétricas ac em compósitos elastoméricos a base de fibras naturais recobertas com polímero condutor</b>. Tese (Doutorado em Doutorado em Física Aplicada) - Universidade Federal de Viçosa, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0005920198522960">Eddy Giusepe Chirinos Isidro</a>. <b>Modelos e observáveis além da hipótese de homogeneidade da cosmologia padrão</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Nathalia Oliveira Braga. <b>Desenvolvimento de membranas luminescentes à base de poli[2-metoxi-5- 2-etil-heliloxi)-1,4-fenilenovinileno] - MEH-PPV em matriz de borracha natural: construção de sensores biocompatíveis para monitoramento da icterícia neonatal</b>. Tese (Doutorado em Ciência e Tecnologia de Materiais) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2019.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Carolina Martins S. Barbosa. <b>Formação de estruturas em um Universo com componente viscosa</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6906349625204095">Jefferson Januário Mendes</a>. <b>Processo de Recuperação de Ferro Contido em Rejeitos de Minério de Ferro a partir da Redução por Processamento Termoquímico</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0136576066610292">Rafael Freitas Dias</a>. <b>Investigação de bordas em materiais bidimensionais: propriedades de dobras e furos</b>. Tese (Doutorado em Pós-Graduação em Física Aplicada) - Universidade Federal de Viçosa, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5426176520250344">Fernando Luzia França</a>. <b>Biocompatibilidade de Superfícies de Implantes Dentários Tratadas com Ácido Fosfórico</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luís Peres Azevedo. <b>Logística Reversa de Equipamentos Eletroeletrônicos Pós-Consumo: Visão da Sustentabilidade</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2017.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Wiliam Algoner Jorge. <b>Novas interações em cosmologias com campos escalares</b>. Tese (Doutorado em Física) - Universidade Federal do Espírito Santo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2017.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriano Mesquita Oliveira. <b>Objetos astrofísicos compactos: um teste para as teorias alternativas da gravitação</b>. Tese (Doutorado em Física) - Universidade Federal do Espírito Santo, . 2016.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3293754381593208">Claudia Karina Barbosa de Vasconcelos</a>. <b>Modelos Efetivos para Separação Solvente-Soluto Através de Nanoestruturas: Teoria e Simulações Computacionais</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5956440060368750">Franceline Aparecida Lopes</a>. <b>Fita radiocrômica impressa de polímero luminescente para monitoramento de baixa-média doses de radiação gama (60Co) empregadas na indústria de alimentos</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0685009757826807">Mariana de Melo Silva</a>. <b>Sistemas híbridos luminescentes, tipo absorvedor-emissor de energia, para aplicação em sensores de radiação</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0556557387530209">Adriana Diniz Barbosa</a>. <b>Fabricação de filmes ultrafinos de polímeros semicondutores via sistema de injeção eletrônica</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6095774418025053">Airton Tavares de Almeida Junior</a>. <b>Caracterização de Argamassas de Barita como Blindagens Contra a Radiação X e Determinação Experimental dos Coeficientes de Atenuação desses Materiais</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Mikko Urmas Pääkkönen. <b>Spherically Symmetric Inhomogeneous Cosmological Models</b>. Tese (Doutorado em Física) - The University of Jyväskylä, Magnus Ehrnrooth Foundation. 2014.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8509705846066440">Gilslayne Elisana Gonçalves</a>. <b>Condutividade alternada de polianilina embebida com nanopartículas de óxido de estanho e índio</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0333567239874055">Giovana Ribeiro Ferreira</a>. <b>Caracterização física e química e controle cinético do efeito da luz azul em polímeros luminescentes: aplicação no desenvolvimento de sensores de radiação para uso em fototerapia neonatal</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0671607095176669">Mirela de Castro Santos</a>. <b>Análise teórica-experimental das propriedades elétricas de sensores de amônia à base de polianilina</b>. Tese (Doutorado em Doutorado em Física Aplicada) - Universidade Federal de Viçosa, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2681995239069825">Luiz Carlos Barbosa de Miranda Pinto</a>. <b>Crescimento hidrotérmico e caracterização de quartzos dopados com cobalto</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2012.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0954824992144106">Geraldo Lúcio de Faria</a>. <b>Estudo Geometalúrgico de granulados e pelota de minério de Manganês.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2011.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2682532729839545">André Carlos Silva</a>. <b>Simulação computacional da redução direta de minério de ferro em fornos MIDREX</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9603539247696546">Carlos Roberto Ferreira</a>. <b>Desenvolvimento da produção de coroas por indução eletromagnética para sondagem geológica.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2845371449942756">Henrique Silva Furtado</a>. <b>Simulação Numérica Microestrutural da Solidificação pelo Método do Campo de Fase da Liga Diluída Ferro-Carbono-Boro</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Sabrina Silva Carara. <b>Estudo da interação entre metais e nanoestruturas de carbono por primeiros princípios.</b>. Tese (Doutorado em Fisica) - Universidade Federal de Minas Gerais, . 2010.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0782455761787108">Érica Linhares Reis</a>. <b>Caracterização e tratamento de alguns minérios de Manganês utilizados para a produção de Ferro-Ligas, com ênfase no comportamento dos As, Pb, Cd, Hg e Zn.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2010.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2468073449692765">Hélio Fernando Verona de Resende</a>. <b>Formação de Padrões em meios Granulares Densos</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . 2008.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0088622411517649">Carlos Felipe Saraiva Pinheiro</a>. <b>Redes de fusíveis livres de escala para simulação de fratura em materiais compósitos</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2007.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Leonardo Costa Ribeiro. <b>Sistemas Complexos: Estudo de Problemas em Economia e Imunologia</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2007.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8477076949893458">Antônio Alves Mendes Filho</a>. <b>Síntese e Caracterização de Hidroxiapatita Produzida a partir de Matéria Prima Reciclada</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1526971719533083">Erivelto Luís de Souza</a>. <b>Estudo da Recuperação do Conteúdo Metálico Presente em Resíduos Mínero-Metalúrgicos Através do Uso do Ultra-som</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andréa Vidal Ferreira. <b>Efeito de óxidos metálicos de cromo, níquel e zinco sobre o clínquer de cimento Portland</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2005.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. CASTRO-E-SILVA. <b>Estudos sobre complexidade em dinâmica populacional e embriogênese</b>. Tese (Doutorado em Física) - Universidade Federal de Minas Gerais, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. 2001.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Beatriz Alves Ferreira. <b>Estudo Teórico de Matrizes e Eletrólitos Poliméricos Utilizando Métodos Clássicos</b>. Tese (Doutorado em Química) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2001.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>I. L. MENEZES-SOBRINHO. <b>Simulação de Fraturas em Materiais Fibrosos</b>. Tese (Doutorado em Física) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 1999.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CLAUDIO SABURO SHIDA. <b>Estudos Fisico Estatisticos e Computacionais dos Modelos de Soluçoes de Rede de Mistura Simples, de Anfifilicos de Cauda Unica e de Cauda Dupla</b>. Tese (Doutorado em Física) - Universidade de São Paulo, Fundação de Amparo à Pesquisa do Estado de São Paulo. 1998.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

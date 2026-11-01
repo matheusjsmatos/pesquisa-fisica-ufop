@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colaboração — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Rede de coautoria entre docentes e colaborações internacionais do Departamento de Física da UFOP.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="colaboracao">
+<main id="conteudo">
+
+<header class="cab"><div class="wrap">
+  <h1>Colaboração científica</h1>
+  <p class="lede">Com quem os docentes publicam: dentro do próprio departamento e com instituições de outros países.</p>
+</div></header>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Rede interna de coautoria</h2><p>Cada círculo é um docente; cada linha liga dois docentes que assinaram ao menos uma produção juntos. Dados do grafo de colaborações do scriptLattes.</p></div>
+  <dl class="numeros" id="redeNumeros" style="margin-top:0;margin-bottom:1.5rem"></dl>
+  <div class="rede">
+    <div class="rede-barra"><label>Docente <select id="redeFoco"></select></label><div class="legenda" id="redeLegenda"></div></div>
+    <svg id="rede" role="img" aria-label="Grafo de coautoria entre os docentes do departamento"></svg>
+    <div class="rede-info" id="redeInfo" aria-live="polite"></div>
+  </div>
+  <div class="grade g2" style="margin-top:1.25rem">
+    <div class="painel"><div class="painel-cab"><div><h3>Artigos com mais de um docente do departamento</h3><p class="sub">Percentual dos artigos de cada ano</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico "><canvas id="cInterna" role="img" aria-label="Artigos com mais de um docente do departamento"></canvas></div></div>
+    <div class="painel"><h3>Como ler a rede</h3><p class="sub" style="margin-top:.5rem">A rede mostra articulação, não desempenho. Docentes cujas parcerias acontecem sobretudo com grupos de outras instituições aparecem mais isolados aqui, sem que isso indique menor atividade. Docentes recém-chegados também tendem a ter poucas ligações internas.</p></div>
+  </div>
+</div></section>
+<section class="sec" id="formacao-exterior" hidden><div class="wrap">
+  <div class="sec-cab"><h2>Formação no exterior</h2><p>Onde os docentes fizeram doutorado e pós-doutorado, segundo a seção de formação acadêmica de cada currículo Lattes.</p></div>
+  <dl class="numeros" id="extNumeros" style="margin-top:0;margin-bottom:1.5rem"></dl>
+  <div class="grade g2">
+    <div class="painel"><div class="painel-cab"><div><h3>Países da formação no exterior</h3><p class="sub">Docentes com doutorado ou pós-doutorado em cada país</p></div><span class="selo selo-pre">Preliminar</span></div><div id="extPaises"></div></div>
+    <div class="painel"><h3>Instituições</h3><p class="sub">Doutorado e pós-doutorado fora do Brasil</p><div id="extInst"></div></div>
+  </div>
+  <p class="nota" id="extNota"></p>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Colaboração internacional</h2><p>Países das instituições dos coautores de cada artigo. O Brasil aparece em azul; os demais países, em tons proporcionais ao número de artigos em coautoria.</p></div>
+  <form class="filtros" onsubmit="return false">
+    <label>De <select id="gDe"></select></label><label>Até <select id="gAte"></select></label><label class="cresce">Docente <select id="gDoc"></select></label>
+  </form>
+  <dl class="numeros" id="intlNumeros" style="margin-top:0;margin-bottom:1.5rem"></dl>
+  <div class="mapa"><svg id="mapa" role="img" aria-label="Mapa-múndi com o número de artigos em coautoria por país"></svg>
+    <div class="escala"><span>1</span><span class="grad" style="background:linear-gradient(90deg,#e8d3d9,var(--wine))"></span><span id="escalaMax"></span><span>artigos</span><span style="margin-left:auto"><span class="selo selo-pre">Preliminar</span></span></div></div>
+  <p class="nota" id="intlNota"></p>
+  <div class="grade g2" style="margin-top:1.25rem">
+    <div class="painel"><h3>Países com mais artigos em coautoria</h3><p class="sub">No recorte selecionado</p><div id="paises"></div></div>
+    <div class="painel"><div class="painel-cab"><div><h3>Coautoria internacional por ano</h3><p class="sub">Percentual dos artigos localizados</p></div><span class="selo selo-pre">Preliminar</span></div><div class="grafico "><canvas id="cIntlAno" role="img" aria-label="Coautoria internacional por ano"></canvas></div></div>
+  </div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Instituições estrangeiras mais frequentes</h2><p>Todo o histórico. Grandes consórcios internacionais (como os de astrofísica e cosmologia) reúnem muitas instituições em um mesmo artigo.</p></div>
+  <div class="tabela-wrap"><table><caption class="sr-only">Instituições estrangeiras</caption><thead><tr><th scope="col">Instituição</th><th scope="col">País</th><th scope="col" class="n">Artigos</th></tr></thead><tbody id="instituicoes"></tbody></table></div>
+</div></section>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/vendor/d3.min.js"></script>
+<script src="assets/vendor/topojson-client.min.js"></script>
+<script src="assets/vendor/world-110m.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

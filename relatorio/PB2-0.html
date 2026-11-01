@@ -1,0 +1,255 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Capítulos de livros publicados'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1991,
+1],
+[1995,
+1],
+[1996,
+1],
+[2004,
+1],
+[2005,
+1],
+[2008,
+1],
+[2009,
+1],
+[2010,
+1],
+[2011,
+1],
+[2013,
+1],
+[2014,
+2],
+[2015,
+1],
+[2016,
+2],
+[2017,
+2],
+[2018,
+3],
+[2019,
+2],
+[2021,
+1],
+[2022,
+2],
+[2024,
+2],
+[2025,
+4],
+[2026,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Capítulos de livros publicados</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 33<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Kurihara, Letícia Sayuri ; PIVARO, GABRIELA FASOLO ; GIROTTO JÚNIOR, GILDO ; Santos, Mayara de Carvalho. <b>Análise das características dos discursos de desinformação envolvendo conceitos da química. Abordagens teóricas e práticas em pesquisa. Coleção Multidisciplinar. V.3. 3ed</b>. Em: . : Pimenta Cultural. 2026.p. 9-40. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PIMENTA, BRENO LUIZ ; LAGE, D. P. ; FREITAS, C. S. ; VALE, DANNIELE LUCIANA ; FALCAO, K. O. M. ; DIAS, S. S. G. ; CAMARA, R. S. B. ; PEREIRA, I. A. G. ; A. L. Quadros ; DUARTE JUNIOR, L. A. ; FUMAGALLI, M. A. C. ; Bianchi, RF ; COELHO, E. A. F. ; TALVANI, ANDRÉ. <b>Blue light-emitting diode phototherapy presents in vitro efficacy against distinct Leishmania species and is therapeutic against tegumentary leishmaniasis in BALB/c mice</b>. Em: Ramona Hurdayal, Herbert Leonel de Matos Guedes and Daniel Claudio Oliveira Gomes. (Org.). Blue light-emitting diode phototherapy reduces cerebral parasitic load and inflammation in murine congenital toxoplasmosis model. 1ed. : Frontiers Research Topics. 2026.v. 1, p. 68-80. </td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fabris, J. C. ; Velten, Hermano. <b>Introdução à perturbações cosmológicas e formação de estruturas</b>. Em: Mario Novello;Eduardo Bittencourt;Julio Fabris;Sergio Joras;Ugo Moschella;Carlos Romero. (Org.). Introdução à perturbações cosmológicas e formação de estruturas. 1ed. : Livraria da Física. 2025.p. 1. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GALGANO, G. D.; CARVALHO, E. J. ; BELO, T. S. ; AVELINO, B. P. ; VALADARES, Y. M.. <b>A guitarra elétrica no ensino-aprendizagem de Física e Música</b>. Em: João Fortunato Soares de Quadros Júnior; Marcelo Trevisan Gonçalves. (Org.). Música, cultura & educação: produção de conhecimentos no período pós-pandemia. 1ed.São Luís. : Editora Lumen Verbi. 2025.p. 251-261. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>OLIVEIRA, P. V. S. ; DIAS, L. R. A. A. ; GALGANO, G. D. ; CARVALHO, E. J.. <b>Física e Música alinhadas no ensino de ondulatória</b>. Em: João Fortunato Soares de Quadros Júnior; Marcelo Trevisan Gonçalves. (Org.). Música, cultura & educação: produção de conhecimentos no período pós-pandemia. 1ed.São Luís. : Editora Lumen Verbi. 2025.p. 387-393. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>P.D.S. Silva ; M. A. Fonseca ; F. Sales ; Bianchi, RF. <b>Mineração x Desenvolvimento: como pensar esta relação a partir da área de Ciências da Vida e da Natureza</b>. Em: Marlucy Alves Paraíso, Maria de Fátima Martins, Kamille Vaz. (Org.). Áreas do conhecimento do currículo e o trabalho com mineração, rompimento e revitalizacao. 1ed.Contagem, MG. : Escola Cidadã. 2025.v. 3, p. 17-64. </td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAMARENA, DAVID ; MARRA, VALERIO. <b>The Tension in the Absolute Magnitude of Type Ia Supernovae. Springer Series in Astrophysics and Cosmology. 1ed</b>. Em: . : Springer Nature Singapore. 2024.p. 661-674. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>Itinerário: futuro. Um passeio pelo século 20 nas viagens da ficção científica</b>. Em: Adriano de Jesus da Silva. (Org.). O tempo em perspectivas. 1ed.Brasília. : Universidade Nacional de Brasília. 2024.v. 1, p. 1-20. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>N. Ivanova ; A. L. J. Leite ; BARBOSA, M. ; SILVA, O. H. C. E. ; L. W. R. Mota ; G. P. Costa ; C. S. Azevedo ; S. A. Auharek ; R. D. Novaes ; K. M. C. Pinto ; Bianchi, R.F. ; A. T. P. da Silva. <b>New Insights Into Blue Light Phototherapy in Experimental Trypanosoma cruzi Infection</b>. Em: Giovane R. Sousa, Christophe Chevillard, Cristina Poveda and Andréa Teixeira-Carvalho. (Org.). NOVEL INSIGHTS INTO THE IMMUNE MECHANISMS ASSOCIATED WITH THE PATHOGENESIS OF CHAGAS DISEASE. 1ed. 2022.v. 1, p. 1-298. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PIVARO, G. F.; GIROTTO JR, GILDO. <b>As raízes e as características do discurso negacionista científico do governo de Jair Bolsonaro e de seus seguidores nas redes sociais</b>. Em: Sylvia Iasulaitis. (Org.). Negacionismo, desinformação e agnotologia. 21ed.Campina Grande. : EDUEPB. 2022.p. 251-272. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R.F. <b>A startup de Tokiro</b>. Em: Andre Luis Silva. (Org.). Provocações Empreendedoras 3: business no mestrado e doutorado. 1ed.Sao Paulo. : Paco. 2021.v. 3, p. 1-2. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Empreender como escolha e não como necessidade</b>. Em: André Luis Silva. (Org.). Empreendedorismo Universitário. 1ed.Belo Horizonte. : Paco Editorial. 2019.v. 01, p. 01-10. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Carvalho, G. C. ; PRADO, M. C. ; César, S. M. C. ; BEDIM, F. P. ; MARQUES, L. F.. <b>Análise do Rendimento Escolar dos Alunos Cotistas do Ensino Médio Técnico Integrado do Campus Santa Luzia</b>. Em: Tiago Simão Ferreira; Ana Paula da Silva Rodrigues. (Org.). Coletânea de Pesquisa e Extensão do IFMG Campus Santa Luzia (2014 - 2018). 1ed.Goiânia. : Editora Espaço Acadêmico. 2019.p. 161-184. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ATENCIO, D. ; ANDRADE, M. B. ; Christy, A. G. ; Giére, R. ; Kartashov, P. M.. <b>The pyrochlore supergroup of minerals</b>. Em: H.-P. Schertl; S. J. Mills; W. V. Maresch. (Org.). A Compendium of IMA-Approved Mineral Nomenclature. 01ed.Stuttgart. : Schweizerbart Science Publishers. 2018.p. 255-280. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J.; Luzzi, F. O.. <b>Abordagem CTS sob a perspectiva da Aprendizagem Significativa</b>. Em: Michele Hidemi Ueno Guimarães. (Org.). Propostas e desafios na educação contemporânea, pela Editora Appris. 1ed.Curitiba. : Editora Appris. 2018.p. 129-152. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Desafios da leitura em nível médio de textos originais de cientistas: uma perspectiva para o ensino de física moderna</b>. Em: Puentes, R. V.; Faleiro, W.. (Org.). Ensino Médio - desafios e perspectivas. 1ed.Uberlândia. : EDUFU. 2018.v. 3, p. 291-324. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, Maria José P. M. ; PAGLIARINI, C. R. ; LIMA, M. C. A.. <b>Projetos para o Ensino Médio da Física nos anos 60 no Brasil: contexto histórico e representações</b>. Em: Nunes, A. A. C.; et al.. (Org.). Conhecimentos, Saberes e Experiências na Educação Básica: práticas curriculares na educação básica. 1ed.São Luís. : EDUFMA. 2017.v. 2, p. 197-218. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.; MENDES, A. ; SOUTO, A. L. C. F. ; GRANJEIRO, J. M. ; ALVES, L. E. S. ; MENDES, M. F. A. ; COSTA-FELIX, R. P. B.. <b>ENSINO DE METROLOGIA NOS CURSOS DE ENGENHARIA</b>. Em: Adriana Maria Tonini. (Org.). DESAFIOS DA EDUCAÇÃO EM ENGENHARIA: Formação acadêmica e atuação profissional, Práticas Pedagógicas e Laboratórios Remotos. 1ed.Brasilia. : Abenge. 2017.v. 1, p. 126-158. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, Maria José P. M. ; PAGLIARINI, C. R.. <b>Alguns aspectos da História da Física na leitura de um Trecho do Tratado sobre Eletricidade e Magnetismo de Maxwell</b>. Em: Gatti, S. R. T.; Nardi, R.. (Org.). A História e a Filosofia da Ciência no Ensino de Ciências: a pesquisa e suas contribuições para a prática pedagógica em sala de aula.. 1ed.São Paulo. : Escrituras Editora. 2016.v. 1, p. 53-73. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Silva, André Carlos ; Bernardes, Américo Tristão. <b>Iron Ore Direct Reduction: Simulation of. Encyclopedia of Iron, Steel, and Their Alloys. 1ed</b>. Em: . : CRC Press. 2016.p. 1903-1909. </td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Física Quântica numa Leitura de Divulgação Científica no início do Ensino Médio: manifestações dos estudantes</b>. Em: Giordan, M.; Cunha, M. B.. (Org.). Divulgação Científica na Sala de Aula: perspectivas e possibilidades. 1ed.Ijuí. : Editora Unijuí. 2015.v. 1, p. 249-284. </td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M. ; FONTES, Georgina S.. <b>Leituras de Sites Relacionados à Energia Nuclear no Ensino Médio</b>. Em: Galieta, T.; Giraldi, P. M.. (Org.). Linguagens e Discursos na Educação em Ciências. 1ed.Rio de Janeiro. : Multifoco. 2014.v. 1, p. 105-123. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Velten, Hermano; Casarini, Luciano. <b>Numerical simulations of the dark universe</b>. Em: Júlio C. Fabris; Oliver F. Piattella; Davi C. Rodrigues; Winfried Zimdahl. (Org.). Structure Formation in an Expanding Universe. 1ed.Vitória. : EDUFES. 2014.p. 203-230. </td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; I.C. da Silva. <b>Apresentação e contextualização do Núcleo de Inovação Tecnológica e Empreendedorismo da UFOP (NITE/UFOP)</b>. Em: Rodrigo Gava, Pedro G. Vidigal. (Org.). Conquistas e desafios: os 10 anos da Rede Mineira de Propriedade Intelectual. 01ed.Viçosa MG. : Fapemig. 2013.v. 01, p. 157-163. </td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>NETZ, P. A. ; Gonzatti, G. K. ; BARBOSA, M. C. ; Paukowski, Juliana Z. ; Gavazzoni, Cristina ; de Oliveira, A. B.. <b>Phase Diagram and Waterlike Anomalies in Core-Softened Shoulder-Dumbbell Complex Fluids</b>. Em: Juan Carlos Moreno-Piraján. (Org.). Thermodynamics - Physical Chemistry of Aqueous Systems. 1ed.Rijeka. : InTech, ISBN 978-953-307-979-0. 2011.p. 391-406. </td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BATISTA, R; Chacham, Hélio. <b>Boron nitride fullerenes and nanocones</b>. Em: Klaus D. Sattler. (Org.). Handbook of Nanophysics. : CRC Press-Taylor & Francis Group. 2010.v. 2, .</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T. <b>A experiência de Ouro Preto</b>. Em: Fátima Bayma de Oliveira. (Org.). Desafios da Educação: Contribuições Estratégicas para o Ensino Superior. 1ed.Rio de Janeiro. : E-papers. 2009.p. 193-200. </td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; BIANCHI, R. F. ; A. S. DUARTE ; Ferreira, G. R. ; D. Gomes. <b>Polímeros luminescentes como sensores de radiação não ionizante: aplicação em fototerapia neonatal</b>. Em: Ministério da Saúde - Secretaria de Ciência, Tecnologia e Insumos Estratégicos - Departamento de Ciência e Tecnologia. (Org.). Prêmio de Incentivo em Ciência e Tecnologia para o SUS: Edição 20 anos do SUS 2008. 01ed.Brasília - DF. : Editora MS. 2008.v. 01, p. 124-128. </td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; RUIZ, R. M. ; RIBEIRO, L. C. ; SILVA, L. A. ; ALBUQUERQUE, E.. <b>CIÊNCIA, TECNOLOGIA E DESENVOLVIMENTO: notas sobre a retro-alimentação positiva entre ciência e tecnologia como um determinante da riqueza das nações</b>. Em: João Antônio de Paula. (Org.). ADEUS AO DESENVOLVIMENTO: A OPÇÃO DO GOVERNO LULA. Belo Horizonte. : Autêntica Ltda. 2005.p. 227-252. </td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T. <b>A Educação a Distância como instrumento de acesso à universidade Pública</b>. Em: Maria do Carmo de Lacerda Peixoto. (Org.). Universidade e Democracia - Experiências e alternativas para a ampliação do acesso à Universidade pública brasileira. Belo Horizonte. : Editora UFMG. 2004.p. 141-152. </td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T. <b>Monte Carlo Simulations of Biological Ageing</b>. Em: D. Stauffer. (Org.). ANNUAL REVIEWS OF COMPUTATIONAL PHYSICS. SINGAPORE. : WORLD SCIENTIFIC. 1996.v. IV, p. 359-395. </td></tr>
+            </table></div><div id="dv-year-1995"><h3 class="year">1995</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>WEST, J. K. ; KUNETZ, J. M. ; da Silva Araujo, F. G. ; HENCH, L. L.. <b>Silica Fracture, Part II: sol-gel silica stability to water diffusion</b>. Em: L L Hench. (Org.). SPIE: Sol-Gel Optics III. 1995.v. 2288, p. 729-735. </td></tr>
+            </table></div><div id="dv-year-1991"><h3 class="year">1991</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; MARQUES, P. V.. <b>Outros Processos de Soldagem</b>. Em: Paulo Villani Marques. (Org.). Tecnologia da Soldagem. 1ed.Belo Horizonte. : O Lutador. 1991.p. 301-315. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

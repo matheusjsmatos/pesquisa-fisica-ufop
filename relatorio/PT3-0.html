@@ -1,0 +1,185 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Processos ou técnicas'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1992,
+1],
+[1994,
+1],
+[2004,
+1],
+[2005,
+2],
+[2007,
+1],
+[2009,
+1],
+[2010,
+1],
+[2012,
+1],
+[2018,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Processos ou técnicas</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 10<br>
+                    
+                    
+                    <div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>I.J.B. Santos ; L. C. M. Neri ; C. R. da Silva ; T. A. S. CARVALHO ; BIANCHI, J. R. O. ; Bianchi, R. F.. <b>SENSOR E NANOSENSOR COLORIMÉTRICO CONSTITUÍDO DE HIDRÓXIDO DE COBALTO E NANOTUBOS DE CARBONO PARA DETECÇÃO DE GLIFOSATO</b>. 2018.</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. D. Barbosa ; R. N. dal Col ; S. A. L. da Silva ; Bianchi, R. F.. <b>Equipamento de ejeção eletrônica de líquidos para máquina de impressão</b>. 2012.</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ferreira, G. R. ; DE VASCONCELOS, C. K. B. ; T. Schimitberger ; Bianchi, R. F.. <b>PCT: Processo de preparação de selo inteligente, soluções e composições à base de polímeros conjugados, selo assim obtido, uso do mesmo e dispositivo eletrônico para monitoramento de doses de radiação</b>. 2010.</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ferreira, G. R. ; Vasconcelos, Cláudia K. B. de ; T. Schimitberger ; Bianchi, R. F.. <b>Processo de preparação de selo inteligente, soluções e composições à base de polímeros conjugados, selo assim obtido, uso do mesmo e dispositivo eletrônico para monitoramento de doses de radiação</b>. 2009.</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>Dosímetro de radiação não ionizante construído com polímeros conjugado</b>. 2007.</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; Cescato, L. ; Gutierrez-Rivera, L.. <b>Processo de Fabricação de Peneiras Sub Micrométricas e Peneiras Assim Obtidas</b>. 2005.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GRAEFF, C. F. O. ; BORIN, J. F. ; BRITO, E. S. ; BIANCHI, R. F.. <b>Dosimetro de Radiacao Ionizante de Baixa Dose Construido com Polimero Conjugado</b>. 2005.</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>OLIVEIRA JUNIOR, O. N. ; FARIA, R. M. ; CARVALHO, A. J. ; BIANCHI, R. F. ; BALOGH, D. T. ; OLIVATI, C. A. ; FERREIRA, M.. <b>Processo para fabricação de dispositivo polimérico emissor de luz, dispositivos assim obtidos e sua aplicação</b>. 2004.</td></tr>
+            </table></div><div id="dv-year-1994"><h3 class="year">1994</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; HENCH, L. L. ; CHIA, T.. <b>An improved process of making channel waveguides in gel-silica</b>. 1994.</td></tr>
+            </table></div><div id="dv-year-1992"><h3 class="year">1992</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; CHIA, T. ; HENCH, L. L.. <b>Laser Densified Optical One-to-many Channel Waveguides; patent disclosure UF-1073</b>. 1992.</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

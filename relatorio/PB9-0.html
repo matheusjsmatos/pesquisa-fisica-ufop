@@ -1,0 +1,277 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Demais tipos de produção bibliográfica'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2001,
+1],
+[2002,
+1],
+[2003,
+3],
+[2006,
+3],
+[2008,
+3],
+[2009,
+2],
+[2010,
+4],
+[2012,
+12],
+[2013,
+7],
+[2014,
+1],
+[2016,
+1],
+[2019,
+1],
+[2020,
+5],
+[2022,
+1],
+[2023,
+1],
+[2024,
+1],
+[2026,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Demais tipos de produção bibliográfica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 48<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ROCHA, J. C. S.; Dias, R. A.. <b>Qudit Implementation of the Rodeo Algorithm for Quantum Spectral Filtering</b>. 2026. Preprint</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>OLIVEIRA, L. C. A. ; CHAGAS, P. ; HEITMANN, A. P. ; GABRIEL, J. B. ; BELCHIOR, J. C. ; SOUZA, L. A. ; FERREIRA, T. H. ; MIRANDA, S. E. M. ; BARROS, A. L. B. ; PEREIRA, C. L. M. ; BEZZON, VINÍCIUS D.N. ; FERREIRA, F. F. ; OLIVEIRA, C. C.. <b>Antitumor activity and selectivity of a unique nanostructured polyoxoniobate. Research Square</b>. 2024. Preprint</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>P.D.S. Silva ; M. A. Fonseca ; F. Sales ; Bianchi, R.F.. <b>Mineração x Desenvolvimento: como pensar esta relação a partir da área de Ciências da Vida e da Natureza. Belo Horizonte, MG: UFMG</b>. 2023. Manual</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R.F. <b>Planejamento Estratégico da Região Escoteira de Minas Gerais. Juiz de Fora, MG: REMG</b>. 2022. Manual</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, Rodrigo Fernando; CAMARGO, F. A. L.. <b>Atividades Escoteiras em Situação de Pandemia: Jogos com Distanciamento. Juiz de Fora: Região Escoteira de Minas Gerais</b>. 2020. Manual</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, Rodrigo Fernando; MARTINS, R. L. S. D.. <b>UaiFi: 185 Atividades Escoteiras a Distância. Juiz de Fora, MG: Região Escoteira de Minas Gerais</b>. 2020. Manual</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, Rodrigo Fernando; MARTINS, R. L. S. D. ; CAMARGO, F. A. L. ; AGUIAR, G. R. ; VIEIRA, M. M. G. ; SANTANA, S. A. ; PENNA, T. C.. <b>Padrões de Retorno às Atividades Presenciais. Juiz de Fora, MG: Escoteiros de Minas Gerais</b>. 2020. Manual</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>Bafo de Brilho. Rio de Janeiro: Museu de Astronomia e Ciências Afins</b>. 2020. Literatura infantil - divulgação de ciências</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>GONTIJO, M. A. ; BRIZOLA, A.. <b>Arsenal Antropofágico. Belo Horizonte</b>. 2020. Revisão</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T. <b>Metrologia e Incerteza de Medição: conceitos e aplicações. rio de janeiro, 2019. (Prefácio</b>. 2019. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R.F. <b>Plano de Desenvolvimento Institucional da UFOP 2016-2025. Ouro Preto, MG: UFOP</b>. 2016. Manual</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>SATURNINO, G. B. ; GODINHO, C. ; FAGUNDES-LIMA, D. ; CASTRO E SILVA, A ; WEBER, G.. <b>Detection of construction biases in biological databases: the case of miRBase. Cornell University Library</b>. 2014. Artigo depositado no arxiv</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Atencio, D. ; CIRIOTTI, M. E. ; Marcelo B Andrade. <b>IMA No. 2012-093 Fluorcalcioromeite. Twickenham: Mineralogical Society</b>. 2013. Report</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Berrigan, E. ; Lobo, A.C.. <b>Schwinger's Finite Quantum Kinematics and Aharonov's Dynamical Non-locality concept</b>. 2013. Poster apresentado por orientanda em evento</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Luiz A. D. Menezes Filho ; ATENCIO, D. ; Marcelo B Andrade ; Downs, Robert T. ; CHAVES, M. L. S. C. ; ROMANO, A. W. ; SCHOLZ, R. ; PERSIANO, A. I. C.. <b>IMA No. 2012-090 Pauloabibite. Twickenham: Mineralogical Society</b>. 2013. Report</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Marcelo B Andrade; DOELL, DONALD ; DOWNS, R. T. ; YANG, HEXIONG. <b>ChemInform Abstract:: Redetermination of Katayamalite, KLi3Ca7Ti2(SiO3)12 (OH)2.. Weinheim: WILEY-VCH Verlag GmbH & Co. KGaA</b>. 2013. OH)2.. Weinheim: WILEY-VCH Verlag GmbH & Co. KGaA, 2013 (Report</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Marcelo B Andrade; YANG, H. ; ATENCIO, D. ; Downs, Robert T. ; Chukanov, N. V. ; LEMEE-CAILLEAU, Marie-Helene ; PERSIANO, A. I. C. ; GOETA, A. E. ; Ellena, Javier. <b>IMA No. 2013-073 Hydroxycalciomicrolite. Twickenham: Mineralogical Society</b>. 2013. Report</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SCHUMER, BENJAMIN N. ; Downs, Robert T. ; DOMANIK, KENNETH J. ; ANDRADE, M. B. ; ORIGLIERI, MARCUS J.. <b>ChemInform Abstract:: Pirquitasite, Ag2ZnSnS4. Weinheim: WILEY-VCH Verlag GmbH & Co. KGaA</b>. 2013. Report</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>YANG, HEXIONG ; Marcelo B Andrade ; Downs, Robert T. ; GIBBS, R. B. ; JENKINS, R. A.. <b>IMA No. 2013-001 Raygrantite. Twickenham: Mineralogical Society</b>. 2013. Report</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, Marcelo B.; ATENCIO, D. ; Chukanov, N. V. ; ELLENA, J.. <b>IMA No. 2011-103 Hydrokenomicrolite. Twickenham: Mineralogical Society</b>. 2012. Report</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>Indigenous Astronomy - Special Booklet. Rio de Janeiro, RJ: Observatório Nacional</b>. 2012. Livro de divulgação</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V.; L". <b>6th IOAA - Booklet. Rio de Janeiro, RJ: Observatório Nacional</b>. 2012. Livreto de Evento</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V.; L" ; PINTO, H. J. R.. <b>Jaci 2. Vassouras, Rio de Janeiro: Secretaria de Cultura e Turismo de Vassouras</b>. 2012. Newsletter</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V.; L" ; PINTO, H. J. R.. <b>Jaci 3. Vassouras, Rio de Janeiro: Secretaria de Cultura e Turismo da cidade de Vassouras</b>. 2012. Newsletter</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Florio, V.; L" ; PINTO, H. J. R.. <b>Jaci 4. Vassouras, Rio de Janeiro: Secretaria de Cultura e Turismo da cidade de Vassouras</b>. 2012. Newsletter</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V.; L" ; PINTO, H. J. R.. <b>Jaci 5. Vassouras, Rio de Janeiro: Secretaria de Cultura e Turismo da cidade de Vassouras</b>. 2012. Newsletter</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V.; L" ; PINTO, H. J. R.. <b>Jaci 6. Vassouras, Rio de Janeiro: Secretaria de Cultura e Turismo da cidade de Vassouras</b>. 2012. Newsletter</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V.; L'ASTORINA, B. L. A. ; PINTO, H. J. R.. <b>Jaci 1. Vassouras, Rio de Janeiro: Secretaria de Cultura e Turismo de Vassouras</b>. 2012. Newsletter</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Marcelo B Andrade; ATENCIO, D. ; Downs, Robert T. ; YANG, H. ; PERSIANO, A. I. C. ; Ellena, Javier. <b>IMA No. 2012-036 Fluorcalciomicrolite. Twickenham: Mineralogical Society</b>. 2012. Report</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Velten, H. E.S.; Schwarz, Dominik J. <b>Constraints on dissipative unified dark matter. Ontario/Canada: Shiny World Corp</b>. 2012. Artigo</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>WAMBA, E. ; Velten, Hermano ; MOHAMADOU, Alidou ; KOFANÉ, T. C. ; Porsezian, K.. <b>Dynamics of matter-wave solutions of Bose-Einstein condensates in a homogeneous gravitational field</b>. 2012. Artigo</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ATENCIO, D. ; ANDRADE, M. B. ; Christy, A. G. ; Giére, R. ; Kartashov, P. M.. <b>Pyrochlore Nomenclature Report. International Mineralogical Association (IMA) - (CNMNC)</b>. 2010. IMA) - (CNMNC), 2010 (Report</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Janaina F. Gomes ; Kleber Bergamaski ; SIQUEIRA, M. F. ; FARIA, R. M. ; L. Jay Deiner ; Paulo B. Miranda ; Francisco C. Nart. <b>Identification of the Reaction Intermediates in Ethanol Electro-oxidation on Platinum: Theoretical and Experimental Characterization</b>. 2010. Artigo em preparação</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SIQUEIRA, M. F. <b>Potential Energy Barriers of Bifluorene and Analogous: Considerations on Preferential Arrangements. New York: Wiley</b>. 2010. Artigo submetido para o períodico International Journal of Quantum Chemistry</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SIQUEIRA, M. F.; TRSIC, Milan. <b>Conformational Arrangements and Electronic Properties of Fluorene and Fluorene-based oligomers. New Orleans: Springer</b>. 2010. Artigo submetido para o períodico Journal of Molecular Modeling</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PLASCAK, J. A. ; BERNARDES, A. T.. <b>CCP2008 ? Modeling a better world, 2009. (Prefácio</b>. 2009. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Fotofísica em Heteroestruturas contendo o polímero emissor PPV e espécies emissoras</b>. 2009. Tese</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAZATI, T.; FARIA, Roberto. <b>Efeito da Fotocondução em Diodos com Camada Ativa de Derivados de PPV</b>. 2008. Tese</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Manhabosco, T. M. <b>Ciência dos Materiais</b>. 2008. Material didático - Apostila</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>RIBEIRO, L. C. ; RUIZ, R. M. ; BERNARDES, A. T. ; ALBUQUERQUE, E.. <b>Matrices of science and technology interactions: implications for development. Belo Horizonte: CEDEPLAR</b>. 2008. Texto para dicussão</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BATISTA, R. J. C. <b>Nanopartículas e junções moleculares por primeiros princípios</b>. 2006. Tese de Doutorado</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.; RUIZ, R. M. ; RIBEIRO, L. C. ; ALBUQUERQUE, E.. <b>Modeling economic growth fuelled by science and technology. Belo Horizonte: CEDEPLAR-UFMG</b>. 2006. Texto para dicussão</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>RIBEIRO, L. C. ; RUIZ, R. M. ; BERNARDES, A. T. ; ALBUQUERQUE, E.. <b>The curse of technological race: the red queen effect. Belo Horizonte: CEDEPLAR-UFMG</b>. 2006. Texto para discussão</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BATISTA, R. J. C. <b>Fulerenos de Nitreto de Boro Dopados com Metais de Transicão</b>. 2003. Disseracão de Mestrado</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CAZATI, T. <b>Correlação entre a polarização da luz emitida e a morfologia de filmes luminescentes de poli (fenileno vinileno) e derivados</b>. 2003. fenileno vinileno) e derivados 2003 (Dissertação</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>POSTACCHINI, B. B. <b>Birrefringencia Ótica induzida por deformação uniaxial no copolímero elastômero PU/PBDO</b>. 2003. Dissertação</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MACHADO, Romuel F.; BAPTISTA, M. S. ; GREBOGI, C.. <b>Cryptography with Chaos at The Physical Level</b>. 2002. Artigo submetido</td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALBUQUERQUE, E. ; BERNARDES, A. T.. <b>Cross-over, thresholds, and interactions between science and technology: a tentative simplified model and initial notes about statistics from 120 countries. Belo Horizonte: CEDEPLAR-UFMG</b>. 2001. Texto para discussão</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

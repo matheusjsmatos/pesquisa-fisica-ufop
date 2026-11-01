@@ -1,0 +1,295 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Resumos expandidos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2003,
+1],
+[2004,
+1],
+[2005,
+2],
+[2006,
+6],
+[2007,
+1],
+[2008,
+11],
+[2009,
+7],
+[2010,
+1],
+[2011,
+2],
+[2012,
+2],
+[2014,
+3],
+[2015,
+1],
+[2016,
+1],
+[2017,
+1],
+[2018,
+2],
+[2019,
+5],
+[2021,
+1],
+[2023,
+3],
+[2024,
+1],
+[2025,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Resumos expandidos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 54<br>
+                    (<b>A1</b>: 0, <b>A2</b>: 0, <b>A3</b>: 0, <b>A4</b>: 0, <b>B1</b>: 0, <b>B2</b>: 0, <b>B3</b>: 0, <b>B4</b>: 0, <b>B5</b>: 0, <b>C</b>: 0, <b>NP</b>: 0, <b>Qualis n&atilde;o identificado</b>: 54)<br><p><b>Legenda Qualis:</b><ul><li> Publica&ccedil;&atilde;o para a qual o nome exato do Qualis foi identificado: <font color="#254117"><b>Qualis &lt;estrato&gt;</b></font><li> Publica&ccedil;&atilde;o para a qual um nome similar (n&atilde;o exato) do Qualis foi identificado: <font color="#F88017"><b>Qualis &lt;estrato&gt;</b></font> (nome similar)<li> Publica&ccedil;&atilde;o para a qual nenhum nome do Qualis foi identificado: <font color="#FDD7E4"><b>Qualis n&atilde;o identificado</b></font> (nome usado na busca)</ul>
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, J. A. P. ; JESUS, L. E. B. ; SENA, C. M. S. ; QUEIROZ, V. A. S. ; BARROS, V. M. ; CARVALHO, E. J.. <b>GRUPO PET FÍSICA UFOP: CONECTANDO ATIVIDADES DE ENSINO, PESQUISA E EXTENSÃO PARA UMA FORMAÇÃO ABRANGENTE</b>. Em: VI Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, 2025, Diamantina (on line). Anais do Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, 2025. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VI CONGRESSO BRASILEIRO INTERDISCIPLINAR EM CIÊNCIA E TECNOLOGIA, 2025, DIAMANTINA . ANAIS DO CONGRESSO BRASILEIRO INTERDISCIPLINAR EM CIÊNCIA E TECNOLOGIA)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Carvalho, Edson J.; BEZERRA, M. G. A. ; CUSTODIO, L. A.. <b>EDUCAPET: ABRINDO PORTAS E ESTABELECENDO CONEXÕES</b>. Em: XXIV SUDESTE PET, 2025, Juiz de Fora. Anais do XXIV SUDESTEPET, 2025. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIV SUDESTE PET, 2025, JUIZ DE FORA. ANAIS DO XXIV SUDESTEPET)</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PORTELLA, V. G. ; SILVA, G. A. ; ALVES, J. S. ; ESTANISLAU, C. E. L. ; CARVALHO, E. J.. <b>JOGOS NO FORMATO QUIZ COMO FERRAMENTAS PARA O ENSINO DE FÍSICA</b>. Em: VII Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico (CIM), 2024, Ouro Preto. Anais do VII Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico, 2024. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VII CONGRESSO DE INOVAÇÃO E METODOLOGIAS NO ENSINO SUPERIOR E TECNOLÓGICO , 2024, OURO PRETO. ANAIS DO VII CONGRESSO DE INOVAÇÃO E METODOLOGIAS NO ENSINO SUPERIOR E TECNOLÓGICO)</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>COUTO, FILIPE A. ; ANDRADE, MARCELO B. ; OTUKA, ADRIANO J. G. ; PRATAVIEIRA, SEBASTIÃO ; MUNIZ, SÉRGIO R. ; MENDONÇA, CLEBER R.. <b>Microresonators With Nanodiamonds Fabricated via Two-Photon Polymerization for Quantum Photonics</b>. Em: CLEO: Applications and Technology, 2023, San Jose. CLEO 2023. Washington: Optica Publishing Group, p. JTh2A.43, 2023. <a href="http://dx.doi.org/10.1364/CLEO_AT.2023.JTh2A.43" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CLEO: APPLICATIONS AND TECHNOLOGY, 2023, SAN JOSE. CLEO 2023. WASHINGTON: OPTICA PUBLISHING GROUP)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SILVA, L. F. V. ; CALAZANS, M. M. ; PAGLIARINI, C. R.. <b>A FRAGMENTAÇÃO E FATIAMENTO DO CURRÍCULO NO ?NOVO ENSINO MÉDIO? E A PROCESSUALIDADE E SISTEMATICIDADE DA FORMAÇÃO DOS CONCEITOS CIENTÍFICOS</b>. Em: Simpósio Nacional de Ensino de Física, 2023, Juiz de Fora. Simpósio Nacional de Ensino de Física, 2023. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SIMPÓSIO NACIONAL DE ENSINO DE FÍSICA, 2023, JUIZ DE FORA. SIMPÓSIO NACIONAL DE ENSINO DE FÍSICA)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>TARDELLI, G. P. ; CALAZANS, M. M. ; PAGLIARINI, C. R. ; LOBO, A. C.. <b>A EVOLUÇÃO DA CONCEPÇÃO DIALÉTICA DO ESPAÇO NA REVOLUÇÃO CIENTÍFICA DO SÉCULO XVII</b>. Em: Simpósio Nacional de Ensino de Física, 2023, Juiz de Fora. Simpósio Nacional de Ensino de Física 2023, 2023. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SIMPÓSIO NACIONAL DE ENSINO DE FÍSICA, 2023, JUIZ DE FORA. SIMPÓSIO NACIONAL DE ENSINO DE FÍSICA 2023)</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, MARCOS MORAES. <b>INÉRCIA EM UMA ABORDAGEM HISTÓRICO MATERIALISTA DA HISTÓRIA DA CIÊNCIA</b>. Em: XXIV Simpósio Nacional de Ensino de Física, 2021, Santo André. Anais do 24º Simpósio Nacional de Ensino de Física, 2021. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIV SIMPÓSIO NACIONAL DE ENSINO DE FÍSICA, 2021, SANTO ANDRÉ. ANAIS DO 24º SIMPÓSIO NACIONAL DE ENSINO DE FÍSICA)</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BORGES, M. N. ; SAVEDRA, RANYLSON M. L. ; SIQUEIRA, M. F.. <b>Temperature and solvent effects on P3HT:PCBM bulk-heterojunctions: morphological analysis on atomistic molecular dynamics simulations</b>. Em: XVIII Brazil MRS Meeting, 2019, Balneário Camboriú. XVIII Brazil MRS Meeting, p. 2660, 2019. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII BRAZIL MRS MEETING, 2019, BALNEÁRIO CAMBORIÚ. XVIII BRAZIL MRS MEETING)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GABRIEL, L. T. ; BIANCHI, R. F. ; BERNARDES, A. T. ; GODEFROID, L. B.. <b>Characterization of an interlocking block manufactured from Electrical and Electronic Equipment Waste</b>. Em: XVIII Brazil MRS Meeting, 2019, Balneário Camboriu. Proceedings. Rio de Janeiro: SBPMat, v. 1, p. 1127-1127, 2019. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII BRAZIL MRS MEETING, 2019, BALNEÁRIO CAMBORIU. PROCEEDINGS. RIO DE JANEIRO: SBPMAT)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>I.Silvestre; LACERDA, RODRIGO G. ; FERRARI, GUSTAVO A. ; NEVES, B.R.A.. <b>Development of a microfluidic platform for probing the interface between liquids and 2D Semiconductor Membranes</b>. Em: XVIII Brazil MRS Meeting, 2019, Balneário Camboriu. Balneário Camburiu. XVIII Brazil MRS Meeting 2019, 2019, 2019. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII BRAZIL MRS MEETING, 2019, BALNEÁRIO CAMBORIU. BALNEÁRIO CAMBURIU. XVIII BRAZIL MRS MEETING 2019, 2019)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>OLIVEIRA, D. C. ; Cazati, T. <b>Ciências e Engenharia de Materiais:Tipos de materiais, aplicações, funcionalizades e materiais avançados</b>. Em: www.inicepg.univap.br, 2019, São José dos Campos, SP. Pesquisa, Ciências e os povos indígenas do Brasil, 2019. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (WWW.INICEPG.UNIVAP.BR, 2019, SÃO JOSÉ DOS CAMPOS, SP. PESQUISA, CIÊNCIAS E OS POVOS INDÍGENAS DO BRASIL)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>OLIVEIRA, D. C. ; Cazati, T. <b>A importância do ensino sobre a ciência e engenharia dos materiais nas variadas áreas do conhecimento</b>. Em: www.inicepg.univap.br, 2019, São José dos Campos, SP. Pesquisa, Ciências e os povos indígenas do Brasil, 2019. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (WWW.INICEPG.UNIVAP.BR, 2019, SÃO JOSÉ DOS CAMPOS, SP. PESQUISA, CIÊNCIAS E OS POVOS INDÍGENAS DO BRASIL)</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FRANCA, L. G. ; CABRAL, M. G. B. ; CRISTIANO, R. ; CAZATI, T. ; SANTOS, P. L. ; Monkman, Andrew P. ; BOCK, HARALD ; ECCHER, J.. <b>Investigation of processes of charge and energy transfer between two liquid crystalline semiconductors</b>. Em: XVII Brazilian MRS Meeting, 2018, Natal-RN. XVII Brazilian MRS Meeting, 2018. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVII BRAZILIAN MRS MEETING, 2018, NATAL-RN. XVII BRAZILIAN MRS MEETING)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>HENRIQUE, FRANCIELE R. ; ALMEIDA, GUSTAVO F. B. ; MARTINS, RENATO J. ; ROSA, RAMON G. T. ; SIQUEIRA, JONATHAS P. ; Andrade, Marcelo B. ; MENDONÇA, CLEBER R.. <b>Nonlinear Features of Femtosecond Laser Written Waveguides in Gorilla® Glass</b>. Em: Bragg Gratings, Photosensitivity and Poling in Glass Waveguides and Materials, 2018, Zurich. Advanced Photonics 2018 (BGPP, IPR, NP, NOMA, Sensors, Networks, SPPCom, SOF), p. JTu5A.36, 2018. <a href="http://dx.doi.org/10.1364/bgppm.2018.jtu5a.36" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (BRAGG GRATINGS, PHOTOSENSITIVITY AND POLING IN GLASS WAVEGUIDES AND MATERIALS, 2018, ZURICH. ADVANCED PHOTONICS 2018)</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Lobo, P. H. F. ; PINHEIRO, C. F. S. ; CASTRO E SILVA, A. ; KEESEN, F. ; ARASHIRO, E.. <b>Modelo de Forrageamento Estocástico para Morcegos Frugívoros</b>. Em: 16a Mostra de Produção Universitária, 2017, Rio Grande, RS. Anais MPU 2017, 2017. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (16A MOSTRA DE PRODUÇÃO UNIVERSITÁRIA, 2017, RIO GRANDE, RS. ANAIS MPU 2017)</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARBOSA, EDUARDO ; ARASHIRO, EVERALDO ; PINHEIRO, CARLOS FELIPE ; CASTRO E SILVA, ALCIDES. <b>Cluster formation dynamics of heterogeneous agents</b>. Em: 6th International Conference on Nonlinear Science and Complexity, 2016, São José dos Campos - SP, 2016. <a href="http://dx.doi.org/10.20906/cps/nsc2016-0012" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (6TH INTERNATIONAL CONFERENCE ON NONLINEAR SCIENCE AND COMPLEXITY, 2016, SÃO JOSÉ DOS CAMPOS - SP)</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARBOSA, EDUARDO ; ARASHIRO, EVERALDO ; PINHEIRO, CARLOS FELIPE ; Castro e Silva, Alcides. <b>Cluster formation dynamics of heterogeneous agents</b>. Em: 6th International Conference on Nonlinear Science and Complexity, 2015, 2015. <a href="http://dx.doi.org/10.20906/cps/nsc2016-0012" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (6TH INTERNATIONAL CONFERENCE ON NONLINEAR SCIENCE AND COMPLEXITY, 2015)</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MURASE, M. S. W. ; MANTOVANI, G. L. ; Ferreira, Giovana Ribeiro ; Bianchi, R. F.. <b>Organic luminescent material for 3D gel dosimetry</b>. Em: XXIII Brazilian MRS Meeting, 2014, João Pesso, PB. Anais do XXIII Encontro do SBPMat, v. 1, 2014. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII BRAZILIAN MRS MEETING, 2014, JOÃO PESSO, PB. ANAIS DO XXIII ENCONTRO DO SBPMAT)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Física Quântica numa Leitura de Divulgação Científica no início do Ensino Médio: manifestações dos estudantes</b>. Em: Simpósio sobre Divulgação Científica na sala de aula: perspectivas e possibilidades, 2014, São Paulo. Caderno de Resumos do Simpósio sobre Divulgação Científica na sala de aula: perspectivas e possibilidades, 2014. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SIMPÓSIO SOBRE DIVULGAÇÃO CIENTÍFICA NA SALA DE AULA: PERSPECTIVAS E POSSIBILIDADES, 2014, SÃO PAULO. CADERNO DE RESUMOS DO SIMPÓSIO SOBRE DIVULGAÇÃO CIENTÍFICA NA SALA DE AULA: PERSPECTIVAS E POSSIBILIDADES)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Silva, M.M. ; Bianchi, R. F. ; GRECO, T.. <b>New reliable synthesis of CdSe quantum dots via heating up method</b>. Em: XXIII Brazilian MRS Meeting, 2014, João Pessoa, PB. Book of Abstracts - XXIII Brazilian MRS Meeting, v. 1, p. 1, 2014. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII BRAZILIAN MRS MEETING, 2014, JOÃO PESSOA, PB. BOOK OF ABSTRACTS - XXIII BRAZILIAN MRS MEETING)</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GOMES, JANAINA F. ; BERGAMASKI, KLEBER ; Pinto, Melissa S. ; MIRANDA, PAULO B.. <b>Nonlinear Surface Spectroscopy of Ethanol-based Fuel Cells and Implications to their Power Efficiency</b>. Em: Optical Instrumentation for Energy and Environmental Applications, 2012, Eindhoven. Renewable Energy and the Environment Optics and Photonics Congress. Washington: OSA, p. ET2D.3, 2012. <a href="http://dx.doi.org/10.1364/E2.2012.ET2D.3" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (OPTICAL INSTRUMENTATION FOR ENERGY AND ENVIRONMENTAL APPLICATIONS, 2012, EINDHOVEN. RENEWABLE ENERGY AND THE ENVIRONMENT OPTICS AND PHOTONICS CONGRESS. WASHINGTON: OSA)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PAGLIARINI, C. R. <b>A leitura de cientistas do início da física quântica dentro da sala de aula: fronteiras e rompimentos com a física clássica</b>. Em: II Seminário Interno do PECIM, 2012, Campinas. Caderno de Resumos do II Seminário Interno do PECIM, 2012. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II SEMINÁRIO INTERNO DO PECIM, 2012, CAMPINAS. CADERNO DE RESUMOS DO II SEMINÁRIO INTERNO DO PECIM)</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Manhabosco, T. M.; TAMBORIM, S. M. ; MULLER, I. L.. <b>CARACTERIZAÇÃO ELETROQUÍMICA E TRIBO-ELETROQUÍMICA DA LIGA Ti6Al4V NITRETADA EM MEIO FISIOLÓGICO SIMULADO</b>. Em: XVIII SIMPÓSIO BRASILEIRO DE ELETROQUÍMICA E ELETROANALÍTICA, 2011, Bento Gonçalves. XVIII SIBEE, 2011. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII SIMPÓSIO BRASILEIRO DE ELETROQUÍMICA E ELETROANALÍTICA, 2011, BENTO GONÇALVES. XVIII SIBEE)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>TAMBORIM, S. M. ; Manhabosco, T. M. ; Ilha, M. ; Martins, L.A.M. ; Guma, F.T.C.R. ; MULLER, I. L.. <b>O uso da técnica de espectroscopia de impedância eletroquímica para elucidar a interface biocompatível do titânio revestido com DLC (Diamond like carbon)</b>. Em: XVIII SIMPÓSIO BRASILEIRO DE ELETROQUÍMICA E ELETROANALÍTICA, 2011, Bento Gonçalves. XVIII SIBEE, 2011. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII SIMPÓSIO BRASILEIRO DE ELETROQUÍMICA E ELETROANALÍTICA, 2011, BENTO GONÇALVES. XVIII SIBEE)</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Martins, L.A.M. ; Ilha, M. ; Moema, Q. V. ; Manhabosco, T. M. ; TAMBORIM, S. M. ; Jarenkow, A. ; MALFATTI, C. F. ; MULLER, I. L. ; Guma, F.T.C.R.. <b>Biocompatibility of Diamond-like Carbon Films Obtained by Electrodeposition on Titanium Substrates</b>. Em: International Microscopy Congress (IMC17), 2010, Rio de Janeiro. International Microscopy Congress, 2010. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERNATIONAL MICROSCOPY CONGRESS , 2010, RIO DE JANEIRO. INTERNATIONAL MICROSCOPY CONGRESS)</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZZON, V. D. N. <b>Desenvolvimento de porta-amostra de baixo custo para difratômetro de raios-x</b>. Em: XXI Congresso de Iniciação Científica da Unesp, 2009, São José do Rio Preto. Desenvolvimento de porta-amostra de baixo custo para difratômetro de raios-x, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXI CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP, 2009, SÃO JOSÉ DO RIO PRETO. DESENVOLVIMENTO DE PORTA-AMOSTRA DE BAIXO CUSTO PARA DIFRATÔMETRO DE RAIOS-X)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, V. D. N. <b>Desenvolvimento de porta-amostra de baixo custo para difratômetro de raios-x</b>. Em: XV Reunião de Iniciação Científica da Faculdade de Ilha Solteira, 2009, Ilha Solteira. Desenvolvimento de porta-amostra de baixo custo para difratômetro de raios-x, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV REUNIÃO DE INICIAÇÃO CIENTÍFICA DA FACULDADE DE ILHA SOLTEIRA, 2009, ILHA SOLTEIRA. DESENVOLVIMENTO DE PORTA-AMOSTRA DE BAIXO CUSTO PARA DIFRATÔMETRO DE RAIOS-X)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ferreira, G. R. ; Vasconcelos, Cláudia K. B. de ; Bianchi, R. F.. <b>Design of a versatible and low cost organic dosimeter for use in neonatal phototherapy</b>. Em: ICAM - 11th International Conference on Advanced Materials, 2009, Rio de Janeiro, RJ. Book of Abstract. RJ: ICAM, v. 01, p. 01-01, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICAM - 11TH INTERNATIONAL CONFERENCE ON ADVANCED MATERIALS, 2009, RIO DE JANEIRO, RJ. BOOK OF ABSTRACT. RJ: ICAM)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Regis, M. R ; PINHEIRO, C. F. S. ; NAGASHIMA, H. N. ; Bianchi, R. F. ; BERNARDES, A. T.. <b>Complex networks to simulate electrical properties in disordered materials</b>. Em: ICAM 2009 - 11th International Conference on Advanced Materials / VIII Encontro da SBPMat, 2009, Rio de Janeiro, RJ. Book of Abstract. ICAM: ICAM, v. 01, p. 01-01, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICAM 2009 - 11TH INTERNATIONAL CONFERENCE ON ADVANCED MATERIALS / VIII ENCONTRO DA SBPMAT, 2009, RIO DE JANEIRO, RJ. BOOK OF ABSTRACT. ICAM: ICAM)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>POSTACCHINI, B. B.; et al. <b>MIGRAÇÃO DA ENERGIA DE EXCITAÇÃO ELETRÔNICA EM FILME HETEROSTRUTURADO DE POLI(P-FENILVINILENO) (PPV)</b>. Em: ABM, 2009, Rio de Janeiro. ABM, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ABM, 2009, RIO DE JANEIRO. ABM)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS, M. C. ; Bianchi, R. F.. <b>Electrical characterization of polyaniline/poly(vinyl sulfonic acid) layer-by-layer films</b>. Em: ICAM - 11th International Conference on Advanced Materials, 2009, Rio de Janeiro, RJ. Book of Abstracts. RJ: ICAM, v. 01, p. 01-01, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICAM - 11TH INTERNATIONAL CONFERENCE ON ADVANCED MATERIALS, 2009, RIO DE JANEIRO, RJ. BOOK OF ABSTRACTS. RJ: ICAM)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Vasconcelos, Cláudia K. B. de ; Ferreira, G. R. ; P. A. S. Autreto ; M. Z. Flores ; D. S. Galvâo ; de AZEVEDO, E. R. ; Bianchi, R. F.. <b>Theoretical-study on the contribution of oxygen and chloroform to the sensibility of organic dosimeter</b>. Em: ICAM 2009 - 11th International Conference on Advanced Materials / VIII Encontro da SBPMat, 2009, Rio de Janeiro, RJ. Book of Abstract. RJ: ICAM, v. 01, p. 01-01, 2009. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICAM 2009 - 11TH INTERNATIONAL CONFERENCE ON ADVANCED MATERIALS / VIII ENCONTRO DA SBPMAT, 2009, RIO DE JANEIRO, RJ. BOOK OF ABSTRACT. RJ: ICAM)</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZZON, V. D. N. <b>Teste de Resolução de Difratômetro utilizando o Método de Rietveld</b>. Em: XIV Reunião de Iniciação Científica da Faculdade de Engenharia de Ilha Solteira, 2008, Ilha Solteira. Teste de Resolução de Difratômetro utilizando o Método de Rietveld, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV REUNIÃO DE INICIAÇÃO CIENTÍFICA DA FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA, 2008, ILHA SOLTEIRA. TESTE DE RESOLUÇÃO DE DIFRATÔMETRO UTILIZANDO O MÉTODO DE RIETVELD)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BEZZON, V. D. N. <b>Teste de Resolução de Difratômetro utilizando o Método de Rietveld</b>. Em: XX Congresso de Iniciação Científica da Unesp, 2008, São José dos Campos - SP. Teste de Resolução de Difratômetro utilizando o Método de Rietveld, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XX CONGRESSO DE INICIAÇÃO CIENTÍFICA DA UNESP, 2008, SÃO JOSÉ DOS CAMPOS - SP. TESTE DE RESOLUÇÃO DE DIFRATÔMETRO UTILIZANDO O MÉTODO DE RIETVELD)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CURY, F. R. ; FARIA, R. M. ; BIANCHI, R. F.. <b>Influence of light exposure, polymer thickness abd electrode material on the electrical properties of thin MH-PPV films</b>. Em: International Conference on Science and Technology of Synthetic Metals, 2008, Recife - PE. Book of Abstracts - International Conference on Science and Technology of Synthetic Metals, v. 01, p. 167-167, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS, 2008, RECIFE - PE. BOOK OF ABSTRACTS - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>A luminescent polymer dosimeter customized for neonatal phototherapy aplication</b>. Em: ICSM 2008 - International Conference on Science and Technology of Synthetic Metals, 2008, Recife - PE. Book of Abstracts ICSM 2008, v. 01, p. 277-278, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICSM 2008 - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS, 2008, RECIFE - PE. BOOK OF ABSTRACTS ICSM 2008)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Ferreira, G. R. ; DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>New visible radiation dosimeter based on MEH-PPV/Alq3 systems: design, development and characterization</b>. Em: International Conference on Science and Technology of Synthetic Metals, 2008, Recife - PE. Book of Abstracts - International Conference on Science and Technology of Synthetic Metals, v. 01, p. 278-279, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS, 2008, RECIFE - PE. BOOK OF ABSTRACTS - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>M. A. Salvador ; A. J. J. Silva ; A. T. Bernardes ; BIANCHI, R. F. ; A. G. C. Bianchi. <b>Effect of substrates on the drop shape of polyaniline obtained by ink jet printing: experiments and simulation</b>. Em: International Conference on Science and Technology of Synthetic Metals, 2008, Recife - PE. Book of Abstract - International Conference on Science and Technology of Synthetic Metals, v. 01, p. 166-167, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS, 2008, RECIFE - PE. BOOK OF ABSTRACT - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>M. R. Regis ; C. F. S. Pinheiro ; A. T. Bernardes ; BIANCHI, R. F. ; A. G. C. Bianchi. <b>Scale free networks to simulate ac electrical conductivity in polymers</b>. Em: ICSM 2008 - International Conference on Science and Technology of Synthetic Metals, 2008, Recife - PE. Book of Abstract - International Conference on Science and Technology of Synthetic Metals, v. 01, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICSM 2008 - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS, 2008, RECIFE - PE. BOOK OF ABSTRACT - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SANTOS, M. C. ; CURY, F. R. ; BIANCHI, R. F.. <b>Electrical properties of layer-by-layer PANI:PVS thin films: influence of electrode metals and carrier transport mechanism</b>. Em: ICSM 2008 - International Conference on Science and Technology of Synthetic Metals, 2008, Recife - PE. Book of Abstracts - International Conference on Science and Technology of Synthetic Metals, v. 01, p. 110-110, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICSM 2008 - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS, 2008, RECIFE - PE. BOOK OF ABSTRACTS - INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SILVA, M. V. C. E. ; s. s. rojas ; HERNADES, A. C. ; BIANCHI, R. F.. <b>Preparation and electrical characterization of PVDF - BaTiO3 nanocomposites</b>. Em: International Conference on Science and Technology of Synthetic Metals, v. 01, p. 214-215, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERNATIONAL CONFERENCE ON SCIENCE AND TECHNOLOGY OF SYNTHETIC METALS)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Silvestre, I.; VALADARES, M. ; CURY, L. A.. <b>Polymer bilayers parametrization by a modified Arrhenius Annalysis</b>. Em: 2nd 'French-Brazilian-Polymer' FBPOL 2008 Conference, 2008, Florianópolis. 2nd "French-Brazilian-Polymer" FBPOL 2008 Conference. Volume 29 of Materials science & engineering, v. 29, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (2ND 'FRENCH-BRAZILIAN-POLYMER' FBPOL 2008 CONFERENCE, 2008, FLORIANÓPOLIS. 2ND "FRENCH-BRAZILIAN-POLYMER" FBPOL 2008 CONFERENCE. VOLUME 29 OF MATERIALS SCIENCE & ENGINEERING)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>VALADARES, M. ; I.Silvestre ; CALADO, H.D.R. ; NEVES, B.R.A. ; GUIMARÃES, P.S.S. ; CURY, L. A.. <b>Optical Properties of BEH-PPV and P3HT blended films for light emitting devices</b>. Em: 2nd 'French-Brazilian-Polymer' FBPOL 2008 Conference, 2008, Florianópolis. 2nd, v. 29, 2008. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (2ND 'FRENCH-BRAZILIAN-POLYMER' FBPOL 2008 CONFERENCE, 2008, FLORIANÓPOLIS. 2ND)</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PINHEIRO, C. F. S.; BERNARDES, A. T. ; Oliveira, S. S.. <b>Networks and load in fibrous materials</b>. Em: VI Encontro da SBPMat, 2007, Natal - RN. VI Encontro da SBPMat, 2007. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VI ENCONTRO DA SBPMAT, 2007, NATAL - RN. VI ENCONTRO DA SBPMAT)</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BIANCHI, R. F.; BAZANI, D. L. M. ; ANDRADE, A. M.. <b>UV and Visible Radiation Detection Using Luminescent Polymers</b>. Em: Materials Research Society - Spring Meeting 2006, 2006, São Francisco. Materials Research Society - Program and Exhibit Guide. São Francisco - CA, USA: MRS, v. 01, 2006. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS RESEARCH SOCIETY - SPRING MEETING 2006, 2006, SÃO FRANCISCO. MATERIALS RESEARCH SOCIETY - PROGRAM AND EXHIBIT GUIDE. SÃO FRANCISCO - CA, USA: MRS)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BIANCHI, R. F.; FRAZATTI, A. S. ; SANTOS, H. A. ; B. F. Nowaki ; L. C. Akcelrud. <b>Surface Characterization of Thin Polyfluorene Films Prepared by Ink-jet Technique for Use in Gamma Radiation Sensors</b>. Em: Materials Research Society - Spring Meeting 2006, 2006, São Francisco - CA, USA. Materials Research Society - Program and Exhibit Guide, v. 01, 2006. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS RESEARCH SOCIETY - SPRING MEETING 2006, 2006, SÃO FRANCISCO - CA, USA. MATERIALS RESEARCH SOCIETY - PROGRAM AND EXHIBIT GUIDE)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BIANCHI, R. F.; TRAVAIN, S. A. ; GIACOMETTI, J. A.. <b>Electrical characterization of in-situ polymerized polyaniline thin films</b>. Em: Material Research Society - Spring Meeting 2006, 2006, São Francisco - CA, USA. Material Research Society Program and Exhibit Guide. São Francisco - CA, USA: MRS, v. 01, 2006. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIAL RESEARCH SOCIETY - SPRING MEETING 2006, 2006, SÃO FRANCISCO - CA, USA. MATERIAL RESEARCH SOCIETY PROGRAM AND EXHIBIT GUIDE. SÃO FRANCISCO - CA, USA: MRS)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BIANCHI, R. F.; VEGA, M. L. ; MARLETTA, A. ; FARIA, R. M.. <b>Surface morphology of poly(p-phenylenevinylene) multilayer films</b>. Em: Materials Research Society - Spring Meeting 2006, 2006, São Francisco - CA / USA. Materials Research Society - Program and Exhibit Guide. Sao Francisco-CA / USA: MRS, v. 01, 2006. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (MATERIALS RESEARCH SOCIETY - SPRING MEETING 2006, 2006, SÃO FRANCISCO - CA / USA. MATERIALS RESEARCH SOCIETY - PROGRAM AND EXHIBIT GUIDE. SAO FRANCISCO-CA / USA: MRS)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Manhabosco, T. M.; ASO, A. M. ; KETTL, J. ; MULLER, I. L.. <b>ELETRODEPOSIÇÃO DE FILMES DLC A PARTIR DE LÍQUIDOS ORGÂNICOS</b>. Em: XVII Congresso da Sociedade Ibero-Americana de Eletroquímica, 2006, La Plata. XVII Congresso da Sociedade Ibero-Americana de Eletroquímica, 2006. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVII CONGRESSO DA SOCIEDADE IBERO-AMERICANA DE ELETROQUÍMICA, 2006, LA PLATA. XVII CONGRESSO DA SOCIEDADE IBERO-AMERICANA DE ELETROQUÍMICA)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>Eletrodeposição de filmes finos de cobalto sobre Si (100) com adição de sacarina</b>. Em: XVII Congreso de la Sociedad Iberoamericana de Electroquímica, 2006, La Plata. XVII Congreso de la Sociedad Iberoamericana de Electroquímica, 2006. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVII CONGRESO DE LA SOCIEDAD IBEROAMERICANA DE ELECTROQUÍMICA, 2006, LA PLATA. XVII CONGRESO DE LA SOCIEDAD IBEROAMERICANA DE ELECTROQUÍMICA)</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALBUQUERQUE, E. ; RUIZ, R. M. ; BERNARDES, A. T. ; RIBEIRO, L. C.. <b>National System of Innovation and Technological Differentiation: a multicountry evolutionary model</b>. Em: III Workshop on Dynamics of Social and Economic Systems, 2005, Mar del Plata - AR. Proceedings. Buenos Aires - AR: Universidade de Buenos Aires, 2005. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (III WORKSHOP ON DYNAMICS OF SOCIAL AND ECONOMIC SYSTEMS, 2005, MAR DEL PLATA - AR. PROCEEDINGS. BUENOS AIRES - AR: UNIVERSIDADE DE BUENOS AIRES)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>RIBEIRO, L. C. ; DICKMAN, R. ; GOULART, L. F. S. ; VAZ, N. M. ; BRAGA, E. M. ; SILVA NETO, A. F. ; MACHADO, C. T. ; BERNARDES, A. T.. <b>A fractal analysis of global immune response</b>. Em: Genes, Genomes and Populations Evolution, 2005, Wroclaw. Book of abstracts. Wroclaw: Department ofn Genomics - Wroclaw University, 2005. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (GENES, GENOMES AND POPULATIONS EVOLUTION, 2005, WROCLAW. BOOK OF ABSTRACTS. WROCLAW: DEPARTMENT OFN GENOMICS - WROCLAW UNIVERSITY)</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAZATI, T.; SANTOS, Lucas F ; FARIA, Roberto M. <b>Estudo de Fotogeração de Portadores de Carga e de Mecanismos de Transporte em Polímeros Luminescentes</b>. Em: VII Sicem, 2004, São Carlos, 2004. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VII SICEM, 2004, SÃO CARLOS)</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAZATI, T.; VEGA, Leticia ; GUIMARÃES, Francisco G ; FARIA, Roberto Mendonça. <b>Estudo da Polarização da luz emitida por filmes estirados de poli (fenileno vinileno) -PPV</b>. Em: VI Sicem, 2003, São Carlos, 2003. <font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VI SICEM, 2003, SÃO CARLOS)</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

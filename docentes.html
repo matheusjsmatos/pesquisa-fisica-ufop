@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docentes — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Docentes do Departamento de Física da UFOP: áreas de atuação, temas de pesquisa e currículos Lattes.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="docentes">
+<main id="conteudo">
+
+<header class="cab"><div class="wrap">
+  <h1>Docentes</h1>
+  <p class="lede">Quem faz a pesquisa no departamento. Selecione um nome para ver o resumo do currículo, os temas mais frequentes e os links para a produção completa.</p>
+</div></header>
+<div class="wrap">
+  <form class="filtros" onsubmit="return false">
+    <label class="cresce">Buscar por nome ou tema <input type="search" id="dBusca" placeholder="Ex.: cosmologia, materiais 2D, ensino"></label>
+    <label>Área <select id="dArea"></select></label>
+  </form>
+  <p class="resumo-busca" id="dResumo" aria-live="polite"></p>
+  <div class="pessoas" id="pessoas"></div>
+  <p class="nota">A lista acompanha a relação de currículos usada na extração do scriptLattes. Fotos vêm do Lattes ou da pasta <code>fotos/</code> do projeto.</p>
+</div>
+<dialog id="dlg" aria-label="Perfil do docente"></dialog>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

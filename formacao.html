@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formação — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Orientações de iniciação científica, TCC, mestrado, doutorado e supervisões de pós-doutorado no Departamento de Física da UFOP.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="formacao">
+<main id="conteudo">
+
+<header class="cab"><div class="wrap">
+  <h1>Formação de pesquisadores</h1>
+  <p class="lede">Orientações concluídas e em andamento declaradas pelos docentes — da iniciação científica ao pós-doutorado, inclusive em programas de pós-graduação de outras unidades em que atuam.</p>
+  <dl class="numeros" id="formNumeros"></dl>
+</div></header>
+<section class="sec"><div class="wrap grade g2">
+  <div class="painel"><div class="painel-cab"><div><h3>Orientações concluídas por ano</h3><p class="sub">Últimos vinte anos, por nível</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico alto"><canvas id="cConcluidas" role="img" aria-label="Orientações concluídas por ano"></canvas></div></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Orientações em andamento</h3><p class="sub">Situação na data da extração</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico alto"><canvas id="cAndamento" role="img" aria-label="Orientações em andamento"></canvas></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Interação com a graduação</h2><p>Iniciação científica, trabalhos de conclusão e outras orientações (monitoria, PET, estágio em docência) mostram como a pesquisa chega aos estudantes de graduação.</p></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Orientações de graduação concluídas por ano</h3><p class="sub">Contagem por ano de conclusão</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico alto"><canvas id="cGraduacao" role="img" aria-label="Orientações de graduação concluídas por ano"></canvas></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Bolsas declaradas nas orientações</h2><p>Agência informada pelo docente em cada orientação concluída. Quando o campo está vazio no Lattes, a orientação aparece como "sem bolsa informada" — o que não significa necessariamente ausência de bolsa.</p></div>
+  <form class="filtros" onsubmit="return false"><label>Nível <select id="fNivel"></select></label><label>Concluídas a partir de <select id="fDe"></select></label></form>
+  <div class="painel"><div class="painel-cab"><div><h3>Orientações concluídas por agência</h3><p class="sub">Classificação automática do texto do Lattes</p></div><span class="selo selo-pre">Preliminar</span></div><div id="fomento"></div></div>
+  <p class="nota">Nomes de orientandos e títulos dos trabalhos estão no <a href="relatorio/index.html#orientacoes">relatório completo</a>.</p>
+</div></section>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

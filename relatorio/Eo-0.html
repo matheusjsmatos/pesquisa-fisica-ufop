@@ -1,0 +1,563 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de organização de eventos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1998,
+1],
+[1999,
+1],
+[2000,
+1],
+[2001,
+1],
+[2003,
+1],
+[2004,
+1],
+[2005,
+2],
+[2007,
+2],
+[2008,
+1],
+[2009,
+2],
+[2010,
+1],
+[2011,
+4],
+[2012,
+5],
+[2013,
+9],
+[2014,
+9],
+[2015,
+5],
+[2016,
+7],
+[2017,
+6],
+[2018,
+10],
+[2019,
+7],
+[2020,
+11],
+[2021,
+12],
+[2022,
+11],
+[2023,
+10],
+[2024,
+7],
+[2025,
+4],
+[2026,
+6]]}]});
+        });
+        </script>
+        
+                <h3>Total de organização de eventos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 181<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BECHTOLD, I. H. ; CREMONA, M. ; PERES, L. ; FUGIKAWA-SANTOS, L. ; Savedra, M. F. S. ; HIDALGO, A. A. ; NOGUEIRA, A. F. ; WESTPHAL, E. ; ECCHER, J. ; ROMAN, L. S. ; MONKMAN, A. P. ; PIANELLI, A.. <b>Organizing Commitee of the 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026)</b>. 2026. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FIGUEIREDO, R. M. ; Florio, V. ; LOPES, L. L. D. C.. <b>150 anos da Escola de Minas da UFOP</b>. 2026. Exposição</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GALGANO, G. D.; MACEDO, D. B. G. ; SILVA, A. V. C. C. E. ; GUIMARAES, G. P. ; MARCHI, R. F. ; ROCHA, R. ; RIBAS, R. A. J. ; MELO, V. S. G.. <b>Simpósio de Acústica e Vibrações no Patrimônio Histórico</b>. 2026. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GUNTHER, F. S. ; POSTACCHINI, BRUNA B. ; SEIDEL, K. F. ; AMORIM, D. R. B.. <b>XXIV B-MRS Meeting - E - Organic Electronics and Bioelectronics: Linking Material Design, Characterization, and Emerging Applications</b>. 2026. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>IORIO, L. ; Velten, Hermano ; RUBIN, S. ; BAMBA, K. ; STAVRINOS, P. ; PERACAULA, J. S. ; KHLOPOV, M.. <b>The 3rd International Online Conference on Universe (IOCU 2026)</b>. 2026. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SIQUEIRA, M.F.; PERES, L. ; HIDALGO, A. A. ; WESTPHAL, E. ; SANTOS, L. F. ; WOHNRATH, K. ; CALDAS, M. J. ; FERREIRA, M. ; FARIA, R. M. ; OLIVEIRA JUNIOR, O. N. ; CREMONA, M.. <b>Workshop do INEO 2026</b>. 2026. Congresso</td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZZON, V. D. N. ; VELTEN, H. E. S. ; ESCORCIO, F. ; CARVALHO, E. J.. <b>Semana da Física UFOP</b>. 2025. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SIQUEIRA, M. F.; WOHNRATH, K. ; OLIVEIRA, R. F. ; GUNTHER, F.. <b>XXIII B-MRS Meeting - Coordinator in the session H - Molecular and Polymer-based Materials and Devices for Next-generation Organic Electronics and Bioelectronics</b>. 2025. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Velten, Hermano; BEZZON, V. D. N. ; CARVALHO, E. J. ; ESCORCIO, F.. <b>Semana da Física ? 2025</b>. 2025. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Velten, Hermano; Fabris, Júlio C. ; GUIMARAES, L. F. ; COELHO, J. G. ; Hipólito-Ricaldi, W. ; BRAGATO, B. ; RODRIGUES, D. ; GANDA, S. V. F.. <b>Inverno Astrofísico 2025</b>. 2025. Exposição</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fabris, J. C. ; Velten, Hermano E.S. ; Lambas, Diego ; BRANDO, GUILHERME ; ALCANIZ, J. S. ; Pinto Neto, Nelson ; Piattella, O. F.. <b>VII Escola José Plínio Baptista de Cosmologia ​"Astrophysics and Cosmology in high z"</b>. 2024. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>I.Silvestre; MATOS, MATHEUS J. S. ; BARBOZA, A. P. M. ; H.E.S. Velten ; CAZATI, T.. <b>XI Semana da Física e IX Semana de Física de Materiais</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARRA, VALERIO; COELHO, J. G. ; RODRIGUES, D. C.. <b>III Workshop Antônio Brasil Batista</b>. 2024. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARRA, VALERIO; RODRIGUES, D. C. ; PANSINI, F. ; ASSAFRAO, D. ; ORLANDO, M.. <b>Física Além da Academia</b>. 2024. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Matos, M J S; BARBOZA, A. P. M. ; ALMEIDA, I. S. ; Hermano Endlich Schneider Velten ; ESCORCIO, F. S. ; M. L. Rodrigues ; OLIVEIRA, W. C. S.. <b>IX Semana de Física de Materiais e XI Semana de Estudos da Física</b>. 2024. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PERES, L. ; Siqueira, Melissa F. ; HIDALGO, A. A. ; FUGIKAWA-SANTOS, L. ; WESTPHAL, E. ; CASELI, L. ; OLIVEIRA, R. F. ; FERREIRA, M. ; CALDAS, M. J. ; FARIA, ROBERTO M.. <b>Workshop INEO 2024</b>. 2024. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Velten, Hermano; FABRIS, JÚLIO CÉSAR ; GUIMARAES, L. F. ; COELHO, J. G. ; Benincá, T. S. ; PETRI, V. ; Toniato, Junior ; Rodrigues, Denis. C.. <b>Inverno Astrofísico 2024</b>. 2024. Exposição</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CANCADO, L. G. O. L. ; LATGE, A. ; VASCONCELOS, A. J. ; MATOS, M. J. S. ; BERNARDES, AMERICO T.. <b>2023 Autumn Meeting of the Brazilian Physical Society</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CANÇADO, LUIZ GUSTAVO ; Américo Tristão Bernardes ; Matos, Matheus J. S. ; JORIO, ADO ; LATGE, A.. <b>Autumn Meeting of the Brazilian Physical Society (EOSBF-2023)</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>COSTA-FELIX, R. P. B. ; MENDES, A. ; BERNARDES, AMERICO T. ; FLATSCHART, A. V. F. ; SOUZA, C. H. S. ; LOUZADA, D. R. ; COUCEIRO, I. B. ; PEIXOTO, J. G. P. ; GRANJEIRO, J. M. ; TORRES, M. ; LANDIM, R. ; SOUZA, V.. <b>METROLOGIA 2023</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Fabris, J. C. ; Velten, Hermano E.S. ; DITO, GIUSEPPE ; Piattella, O. F. ; W. Zimdahl ; SHAPIRO, I. ; RICHARTE, M. ; GUIMARAES, L. F.. <b>Verão Quântico 2023</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FARIA, R. M. ; SIQUEIRA, M. F. ; HIDALGO, A. A. ; PHILADELPHI, L. O. P. ; SANTOS, L. F.. <b>Worshop do INEO</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MOL, L. A. S. ; Rocha, Julio C.S. <b>Brazilian Meeting on Simulational Physics</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MOL, L. A. S. ; Rocha, Julio C.S. <b>Brazilian Meeting on Simulational Physics</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAGLIARINI, C. R.; CARVALHO, E. J.. <b>XIII Mostra de Profissões da Universidade Federal de Ouro Preto</b>. 2023. Exposição</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Velten, Hermano E.S.; Fabris, J. C. ; COELHO, J. G. ; RICHARTE, M. ; TORIBIO, A. M. V. ; FALCIANO, FELIPE T. ; Toniato, Junior ; GUIMARAES, L. F. ; Pinto Neto, Nelson. <b>Inverno Astrofísico 2023</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Velten, Hermano E.S.; FERREIRA JUNIOR, M. M. ; SEGRETO, E.. <b>XXII Escola de Verão Jorge André Swieca de Partículas e Campos</b>. 2023. Outro</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BISCH, S. M. ; FERREIRA, E. M. S. D. ; CEVOLANI, M. B. ; Florio, V.. <b>O que tem dentro do Buraco Negro?</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fabris, J. C. ; Velten, Hermano E.S. ; TORIBIO, A. M. V. ; LEMOS, J. ; Piattella, O. F. ; Pinto Neto, Nelson ; RICHARTE, M. ; Toniato, Junior. <b>VI José Plínio Baptista School of Cosmology Friedmann and the LCDM model</b>. 2022. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LACERDA, R. G. ; FRAGNEAUD, B. ; MATOS, M. ; Barboza, A P M. <b>I Encontro da Rede 2D Fapemig</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARRA, V.; COELHO, JAZIEL GOULART ; RODRIGUES, D. C. ; FABRIS, J. C.. <b>II Workshop Antônio Brasil Batista</b>. 2022. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARRA, V.; QUARTIN, M. ; STURANI, R. ; FALCIANO, F. T. ; ABRAMO, R. ; MAKLER, M. ; PINTO NETO, N. ; REIS, R. L. R. ; PEREIRA, T. ; SIFFERT, B. B.. <b>COSMO22</b>. 2022. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MATOS, M.J.S.; BARBOZA, A. P. M. ; SILVESTRE, IVE ; ESCORCIO, F. S. ; M. L. Rodrigues ; Hermano Endlich Schneider Velten ; SILVA, A. D. ; PORTELLA, V. ; QUEIROZ, V. A. S. ; ALMEIDA, G. ; OLIVEIRA, W. C. S.. <b>VIII Semana de Física de Materiais e X Semana de Estudos da Física: Ciência e Tecnologia pós pandemia</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MATOS, MATHEUS J S; BARBOZA, A. P. M. ; LACERDA, R. G. ; Benjamin Fragneaud. <b>I Encontro da Rede 2D</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MATOS, MATHEUS J. S. ; BARBOZA, ANA PAULA M. ; Silvestre, I.. <b>"VIII Semana de Física de Materiais e X Semana de Estudos da Física"</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ORLANDO, MARCOS T. A. ; BEZZON, VINÍCIUS D. N. ; GALVAO, E. S.. <b>XI WORKSHOP DE CRISTALOGRAFIA APLICADA A CIÊNCIAS E ENGENHARIA DE MATERIAIS</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Siqueira, Melissa Fabíola; FARIA, ROBERTO M. ; CALDAS, MARILIA J. ; PHILADELPHI, L. O. P. ; SANTOS, L. F. ; HIDALGO, A. A.. <b>Worshop do INEO - 2022</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Velten, Hermano E.S.; Fabris, J. C. ; Toniato, Junior ; FALCIANO, FELIPE T. ; Pinto Neto, Nelson ; SHAPIRO, I.. <b>Inverno Astrofísico 2022</b>. 2022. Outro</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; COSTA-FELIX, R. P. B. ; COUCEIRO, I. B. ; ROCHA, G. ; FLATSCHART, A. V. ; SOUZA, V. ; PEIXOTO, J. G. P. ; LOUZADA, D. R.. <b>Metrologia 2021 - XI COngresso Brasileirod e Metrologia</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fabris, J. C. ; Velten, H. E.S. ; SHAPIRO, I. ; CARNEIRO, S. ; Pinto Neto, Nelson ; Mendes, Raissa ; CASALS, M.. <b>V José Plínio Baptista School of Cosmology (JPBCosmo School)</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Fabris, J. C. ; Velten, Hermano E.S. ; FALCIANO, FELIPE T. ; Oliveira, Adriano ; Toniato, Junior ; RICHARTE, M. ; CARAMÊS, T. R. P. ; Hipólito-Ricaldi, W. ; DORSCH, G.. <b>Inverno Astrofísico 2021</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P. ; MARTINS, A. D. ; BARBOSA, P. F.. <b>Os Céus dos Povos Originários (curadoria)</b>. 2021. Exposição</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P. ; MARTINS, A. D. ; Falcão, D. ; BARBOSA, P. F.. <b>Os Céus dos Povos Originários</b>. 2021. Exposição</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARRA, V.; FABRIS, J. C. ; PIATTELLA, O. F. ; VELTEN, H. E. S. ; SHAPIRO, I. ; CASALS, M. ; PINTO NETO, N. ; CARNEIRO, SAULO ; TONIATO, J. D. ; RICHARTE, M.. <b>​V José Plínio Baptista School of Cosmology</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Savedra, M. F. S.; PHILADELPHI, L. O. P. ; BECHTOLD, I. H. ; CALDAS, M. J. ; HIDALGO, A. A. ; SANTOS, L. F. ; FARIA, ROBERTO M.. <b>Minicurso 1 - INEO: Caracterização e princípios físicos de células solares de terceira geração</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SIQUEIRA, M. F.; FARIA, ROBERTO M. ; CALDAS, MARILIA J. ; PHILADELPHI, L. O. P. ; BECHTOLD, I. H. ; HIDALGO, A. A.. <b>Worshop do INEO - 2021</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Velten, H. E.S.; Yokomizo, Nelson ; Toniato, Junior ; Barros de Oliveira, Alan ; Goulart, Erico. <b>CosmoBR</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Velten, Hermano E.S.; Fabris, J. C. ; TORIBIO, A. M. V. ; Oliveira, Adriano. <b>Encontro de Astronomia 2021</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Velten, Hermano E.S.; Fabris, J. C. ; Zimdahl, W ; MELLO, E. R. B. ; SHAPIRO, I. ; DITO, GIUSEPPE ; Pinto Neto, Nelson ; CARNEIRO, S. ; SOBREIRA, F.. <b>Verão Quântico 2021</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Willian Ricardo Rocha ; Américo Tristão Bernardes ; José Rachid Mohallem ; Dalva Ester da Costa Ferreira ; Heitor Avelino de Abreu ; João Paulo de Ataíde Martins ; Antônio Francisco Cruz Arapiraca ; Gabriel Heerdt ; MATOS, M.J.S. ; GALVAO, B. R. L.. <b>XXI Simpósio Brasileiro de Quimica Teórica</b>. 2021. Outro</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bernardes, Américo T.; FERRAZ, A. ; QUEZADO, S.. <b>COVID 19 - MODELING INFECTION DYNAMICS</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CAZATI, T.; COTA, R. G. S.. <b>XXVIII Seminário da Iniciação Científica - SEIC</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CAZATI, T.; COTA, R. G. S.. <b>I Mostra de Inovação e Tecnologia ? MIT</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; COTA, R. G. S.. <b>V Mostra da Pós-Graduação - MPPG</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Costa, B. V. ; Rocha, Julio C.S ; MÓL, L.A.S.. <b>III Encontro Nacional de Física Estatística</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Falcão, D. ; Matos, C. S. ; Valiate, L. ; Florio, V.. <b>Encontro de Instrumentos Cien ficos e Educação</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V.; Falcão, D. ; SANTOS, K. K. P. ; ALBUQUERQUE, R. S. V. A. ; MARTINS, A. D. ; BASSALLO, T. ; SILVA, G. S.. <b>O Céu que Nos Conecta</b>. 2020. Exposição</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P. ; ALBUQUERQUE, R. S. V. A. ; MARTINS, A. D. ; BASSALO, T. ; SILVA, G. S.. <b>O Céu que Nos Conecta (curadoria)</b>. 2020. Exposição</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P. ; MARTINS, A. D.. <b>. Evento fotografia e astronomia. Semana de Museus. ?Mundo Digital: museus em transformação. Astroflorescências</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARRA, V.; FABRIS, J. C. ; PIATTELLA, O. F. ; RODRIGUES, DAVI C. ; RICALDI, W. S. H. ; TONIATO, J. D. ; BELICH, H.. <b>I Workshop Antônio Brasil Batista</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Velten, Hermano E.S.; Fabris, J. C. ; Oliveira, Adriano ; Toniato, Junior ; Hipólito-Ricaldi, W. ; TORIBIO, A. M. V.. <b>Encontro de Astronomia 2020</b>. 2020. Congresso</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Barboza, Ana P. M.; MATOS, MATHEUS J S ; CAZATI, T.. <b>I Workshop em Ciência de Materiais</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.; COSTA-FELIX, R. P. B. ; COUCEIRO, I. B. ; ROCHA, G. ; PEIXOTO, J. G. P. ; OLIVEIRA, J. C. V. ; SOUZA, V.. <b>Metrologia 2019</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>COSTA, B. V. ; PLASCAK, J. A. ; David P. Landau ; MÓL, L.A.S. ; MARTINS, P. H. L. ; PEREIRA, L. F. C. ; Rocha, Julio C.S ; BERNARDES, A. T.. <b>Brazilian Meeting Simulational Physics</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Fabris, J. C. ; Toniato, Junior ; Velten, Hermano E.S. ; WOJNAR, ANETA ; CARAMÊS, THIAGO R.'P. ; RICHARTE, M.. <b>Inverno Astrofisico 2019</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARRA, VALERIO; RODRIGUES, DAVI C. ; VELTEN, H. E. S. ; BELICH, H. ; FABRIS, J. C. ; PINTO NETO, N. ; CARNEIRO, S. ; ZIMDAHL, W. E. W. ; TONIATO, J. D. ; CARAMES, T. R. P.. <b>Verão Quântico 2019</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>STURANI, R. ; AGUIAR, O. ; ALCANIZ, J. S. ; DIAZ, M. ; DURRER, R. ; FERREIRA, P. G. ; GONZALEZ, G. ; HARMS, J. ; HILD, S. ; MARRA, VALERIO ; PUNTURO, M. ; REITZE, D.. <b>Gravitational Wave Challenges And Cosmology</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>T. Cazati ; Ana Paula Moreira Barboza ; MATOS, M. J. S.. <b>I Workshop em Ciência de Materiais - FIMAT</b>. 2019. Outro</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Rocha, Julio C.S; Costa, B. V. ; MOL, L. A. S. ; FIGUEIREDO, T. P. ; GUERRA, J. C. O. ; RIZZI.BOLSISTA, L. G.. <b>Encontro Mineiro de Física Estatística e Computacional</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>QUEIROZ, A. R. ; SZNAJDER, A. ; FRAGA, E. ; SHAPIRO, I. ; MACHADO, M. V. T. ; FERREIRA JR., M. M. ; VECCHI, M. ; MATHEUS, R. ; JORAS, S. E. C. E. ; MARRA, VALERIO. <b>XXXIX Encontro Nacional de Física de Partículas e Campos</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>RODRIGUES, D. C. ; VELTEN, H. E. S. ; FABRIS, J. C. ; CASALS, M. ; PIATTELLA, O. F. ; STURANI, R. ; MARRA, VALERIO ; ZIMDAHL, W. E. W.. <b>IV José Plínio Baptista School of Cosmology</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SIQUEIRA, M. F.; SAVEDRA, RANYLSON M. L. ; SOARES, J. S. ; SOUZA, T. V. A. ; SOUZA, M. C. M.. <b>VII SEMANA DE FÍSICA DE MATERIAIS DA UFOP</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SIQUEIRA, M.F.; SOARES, J. S. ; SAVEDRA, RANYLSON M. L. ; SOUZA, M. C. M. ; SOUZA, T. V. A. ; BORGES, M. N. ; Manuel A. O, Papamija ; Beato, Felipe ; NEME, N. P.. <b>VII SEFIMAT (Semana de Física de Materiais do FIMAT/DEFIS)</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Soares, J. S.; Melissa Fabíola Siqueira Savedra ; ALENCAR, T. ; Mariana Cristina M. Souza ; SAVEDRA, R. M. L.. <b>VII SEFIMAT - Semana de Física de Materiais</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>VELTEN, H. E. S. ; FABRIS, J. C. ; CARAMES, T. R. P. ; MARRA, VALERIO ; RICALDI, W. S. H.. <b>Inverno Astrofísico 2018</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>VELTEN, H. E. S. ; FABRIS, J. C. ; PIATTELLA, O. F. ; MARRA, VALERIO ; RICALDI, W. S. H. ; Von MARTTENS, R... <b>Interactions in the dark sector of the universe</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Velten, H. E. S.; Piattella, O. F. ; DITO, G.. <b>Estate Quatistica</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Velten, H.E.S.; Fabris, J. C. ; Rodrigues, Davi ; CASALS, M. ; Marra, Valerio ; STURANI, R. ; GOMES, S. ; SANTOS, F. M.. <b>IV José Plínio Baptista School on Cosmology ​ Gravitational Waves</b>. 2018. Congresso</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B.; ATENCIO, D.. <b>SOS RARE: Brazilian symposium on rare-earth elements</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GOBEL, C. ; FRAGA, E. ; SHAPIRO, I. ; TAKAHASHI, J. ; MESSIAS, M. ; MATHEUS, R. ; ROSENFELD, R. ; CARNEIRO, S. ; JORAS, S. ; MARRA, V.. <b>XXXVIII Encontro Nacional de Física de Partículas e Campos</b>. 2017. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MATOS, MATHEUS JOSUÉ DE SOUZA; Marco Cariglia ; Alan Barros de Oliveira ; Jaqueline dos Santos Soares ; Marcela Campanha Félix ; Mariana Souza ; José Flávio ; Mallú Quintão ; Bianca Fonseca Vaz ; Nhandeyara Caroline ; Italo Marques ; Gabriel Carvalho. <b>VI Semana de Física de Materiais e VIII Semana de Estudos da Física</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Velten, H E S; Fabris, J. C. ; Oliveira, Adriano. <b>Astronomia nas Montanhas Capixabas</b>. 2017. Exposição</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Velten, H E S; Piattella, O. F. ; Fabris, J. C. ; Rodrigues, Davi ; W. Zimdahl. <b>VII Verão Quântico</b>. 2017. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Velten, H. E.S.; Fabris, J. C. ; CARAMÊS, THIAGO R.'P.. <b>Primeira Escola de Ciências Físicas Brasil-Cabo Verde</b>. 2017. Congresso</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alan Barros de Oliveira ; BARBOZA, A. P. M. ; Matos, M J S. <b>V SEFIMAT - Semana de Física dos Materiais</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Barboza, Ana P. M.; SOARES, J. S. ; MATOS, M.. <b>V Semana de Física dos Materiais</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Faria, R M ; Bianchi, R. F. ; FERREIRA, R. N. B. ; GIRO, R. ; BRYANT, P. W.. <b>XV Brasil MRS Meeting - Simposio V</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>H.E.S. Velten; Fabris, J. C. ; Piattella, O. F. ; W. Zimdahl ; CASARINI, L. ; Marra, Valerio ; Toniato, Junior ; Edson Santos. <b>III Escola Plínio de Cosmologia: o setor escuro do Universo</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>HARMONY, T. E. M. ; LIU, D. ; MITCHELL, D. J. ; WILSON, B. ; Florio, V.. <b>The Third Early-Career Conference for Historians of the Physical Sciences</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARRA, V.; PIATTELLA, O. F. ; FABRIS, J. C. ; RODRIGUES, D. C.. <b>III José Plínio Baptista School of Cosmology</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>NUNES, Maria Eugênia Silva/ M. E. S. Nunes; ZAMA, U. S.. <b>IV Encontro de Pós-graduação em Ensino de Ciências"</b>. 2016. Congresso</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; Faria, R M ; CREMONA, M.. <b>XIV Encontro da Sociedade Brasileira de Pesquisa em Materiais</b>. 2015. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; MORAES, G.. <b>4o. Encontro Anual dos Pró-reitores de Planejamento e Administração (4o. FORPLAD)</b>. 2015. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>de Oliveira, A. B. ; BATISTA, R. J. C. ; Manhabosco, T. M. ; Soares, Jaqueline S ; CAZATI, T.. <b>IV Semana de Física de Materiais</b>. 2015. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Velten, H. E.S.; Piattella, O. F. ; Fabris, J. C. ; W. Zimdahl ; Pinto Neto, Nelson ; RODRIGUES, D. C. ; SHAPIRO, I. ; CARAMÊS, THIAGO R.'P.. <b>Black Holes and their Analogues: 100 years of General Relativity. A workshop in honor of Kirill Bronnikov's 70th birthday</b>. 2015. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, F. A. R. ; CALAZANS, M. M.. <b>I Seminário de Inovação Pedagógica - I SEMIPE</b>. 2015. Outro</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B.; ELLENA, J. ; Ayala, A. P.. <b>Espectroscopia Raman e estrutura cristalina</b>. 2014. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F.; CARVALHO, A. J. ; PASA, A. A. ; AUCIELLO, O. ; MAGNANI, R. ; Faria, R M. <b>XIII Encontro da SBPMat - INNOVATION AND TECHNOLOGY TRANSFER SYMPOSIUM</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bianchi, R. F.; CREMONA, M. ; Graeff, Carlos Frederico De Oliveira ; GRECO, T. ; MUCCINI, M.. <b>E-MRS: SPRING 14 DD: Functional materials and devices for organic electronics</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianchi, R. F.; I.C. da Silva ; Spezialli, M. ; L.R. Vale ; FERNANDES, I. ; M.L.F. Rocha ; Ayres, N.. <b>Encontro da Rede Mineira de Propriedade Intelectual</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Genivaldo Júlio Perpétuo ; Everaldo Arashiro ; SOARES J. S. ; Mariana Cristina M. Souza. <b>III SEFIMAT ? 3ª Semana de Física de Materiais</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SILVA, F. A. R. E. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes ; ZAMA, U. S.. <b>II Encontro do Programa de Pós Graduação em Ensino de Ciências</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>TORIBIO, A. M. V. ; RODRIGUES, D. C. ; VELTEN, HERMANO E. S. ; Fabris, J. C. ; Casarini, Luciano ; Piattella, O. F. ; STROKOV, V. ; Zimdahl, W. <b>II José Plínio Baptista School of Cosmology: The Cosmic Microwave Background Radiation</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Wesley Spalenza ; Márcio Bozan ; Velten, Hermano. <b>I Worshop de Física Teórica do IFES</b>. 2014. Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Wesley Spalenza ; Márcio Bozan ; Velten, Hermano. <b>II Workshop de Física Aplicada do IFES</b>. 2014. Congresso</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; OLIVEIRA, A. ; DARODA, R. ; MEDEIROS, T.. <b>7 Congresso Brasileiro de Metrologia</b>. 2013. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. ; CAZATI, T.. <b>VI Semana de Estudos da Física e Ciclos de Palestras</b>. 2013. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J.; Cazati, T.. <b>V SEMANA DE ESTUDOS DA FÍSICA e Ciclo de Seminários: A diversidade na atuação profissional do graduado em Física</b>. 2013. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Cazati, T; CARVALHO, E.. <b>VI SEMANA DE ESTUDOS DA FÍSICA</b>. 2013. Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V.; L'ASTORINA, B. L. A. ; CARAPETO, ROBSON. <b>Escola da Olimpíada Brasileira de Linguística - Paraplü. 2013</b>. 2013. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PAGLIARINI, C. R.; et al.. <b>IX Seminário de Teses e Dissertações em Andamento na FE</b>. 2013. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SILVA PINTO, E. ; GONÇALVES, G.E. ; DUARTE, M. ; COSTA JUNIOR, E. ; CALAZANS, M. M.. <b>Semana do Prodocência no IFMG: Licenciaturas em Física e Matemática em foco</b>. 2013. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SILVA, F. A. R. E. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes ; TRAVAIN, S. A.. <b>I Encontro do Programa de Pós Graduação em Ensino de Ciências</b>. 2013. Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SIQUEIRA, M. F.; Perpetuo, G. J. ; Gama, Bruno N.. <b>II Semana de Física de Materiais</b>. 2013. Outro</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Arashiro, E. ; Perpetuo, G. J. ; SIQUEIRA, M. F.. <b>I Semana de Física de Materiais - I SEFIMAT</b>. 2012. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DINIZ, T. M. ; Florio, V. ; L'ASTORINA, B. L. A. ; Assis, Felipe ; PEREIRA, FELIPE A. C.. <b>VI International Olympiad of Astronomy and Astrophysics - IOAA. 2012</b>. 2012. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V.; L". <b>I Fase Olimpíada Brasileira de Linguística - Noke Vana. 2012</b>. 2012. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V.; L'ASTORINA, B. L. A. ; CARAPETO, ROBSON ; L´ASTORINA, CHARLES. <b>I Fase da Olimpíada Brasileira de Linguística - Paraplü. 2012</b>. 2012. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MEGID NETO, J. ; PAGLIARINI, C. R. ; PEREIRA, A. G. ; et al.. <b>II Seminário Interno do PECIM</b>. 2012. Outro</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; Cazati, T.. <b>IV Semana de Estudos da Física</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Duarte, H. A. ; Borges, I ; de Abreu, H. A. ; SIQUEIRA, M. F.. <b>XVI Simpósio Brasileiro de Química Teórica</b>. 2011. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V.; L". <b>I Fase Olimpíada Brasileira de Linguística - Kytã. 2011</b>. 2011. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>L" ; Assis, Felipe ; Florio, V. ; CARAPETO, ROBSON. <b>Escola da Olimpíada Brasileira de Linguística - Kytã. 2011</b>. 2011. </td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>E. M. de Paula e Silva ; M. Spangler Andrade ; Bianchi, R. F.. <b>IX Brazilian MRS Meeting</b>. 2010. Congresso</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO E SILVA, A; WEBER, G.. <b>I Simpósio Interdisciplinar Física + Bioinformática</b>. 2009. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SIQUEIRA, M. F.; Ibaldo, Adriana P.. <b>Ciclo de seminários do GPBG - IFSC/USP</b>. 2009. Outro</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PLASCAK, J. A. ; BERNARDES, A. T.. <b>Conference on Computational Physics 2008</b>. 2008. Congresso</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERREIRA, P. H. D. ; Florio, V. ; FACETO, A. D. ; FARO, A. R. ; DEURYDICE, M. N. ; RAMOS, E. R. F. ; RAMOS, B. D. L. P. ; Luz, F. H. P.. <b>XI Workshop da Pós-Graduação IFSC</b>. 2007. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PLASCAK, J. A. ; BERNARDES, A. T. ; DICKMAN, R. ; COSTA, B. V.. <b>V Brazilian Meeting on Simulational Physics</b>. 2007. Congresso</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; COSTA, B. V. ; PLASCAK, J. A. ; DICKMAN, R.. <b>IV Brazilian Meeting on Simulational Physics</b>. 2005. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SANTOS, R. M. Z. ; DOMANY, E. ; BERNARDES, A. T.. <b>Physics-based approaches to Immunology and Gene Expression Analysis</b>. 2005. Congresso</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PEREIRA, Viviann Hermógenes ; SIQUEIRA, M. F. ; DWARKASING, Anandsing ; SILVA, Mariana Beatriz dos Reis ; JUNQUEIRA, Roberta ; LENCO, Frederico Augusto ; PRANDO, Rodrigo ; SOARES, Taila ; SPINA, Antonio Lourenço Siqueira. <b>Embarque nas letras - Projeto de incentivo à leitura</b>. 2004. Outro</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; DICKMAN, R. ; PLASCAK, J. A. ; COSTA, B. V.. <b>III Brazilian Meeting on Simulational Physics</b>. 2003. Congresso</td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PAGLIARINI, C. R.; et al.. <b>I Semana da Física</b>. 2001. Outro</td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; HERNADES, A. C. ; R. H. P. Francisco. <b>III Simpósio em Ciência e Engenharia de Materiais</b>. 2000. Congresso</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>HERNADES, A. C. ; Bianchi, R. F. ; S. C. Zílio. <b>II Simpósio em Ciência e Engenharia de Materiais</b>. 1999. Congresso</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; HERNADES, A. C. ; R. M. Torresi ; V. Bose Filho. <b>I Simpósio em Ciência e Engenharia de Materiais</b>. 1998. Congresso</td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BATISTA, R. J. C.. II semana de física de materiais. 2013. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.. 8º Congresso Brasileiro de Metrologia. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BERNARDES, A. T.. 9º Congresso Brasileiro de Metrologia. 2017. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BERNARDES, A. T.. I Brazilian Meeting on Simulational Physics. 1997. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BERNARDES, A. T.. I Escola Jorge André Swieca em Simulação Computacional. 1997. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BERNARDES, A. T.. II Brazilian Meeting on Simulational Physics. 1999. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BERNARDES, A. T.. III Encontro Regional da Sociedade Brasileira de Física em Minas Gerais. 2001. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BERNARDES, A. T.. Ising Centennial Colloquium. 2000. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BERNARDES, A. T.. School on Computational Physics. 2001. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BERNARDES, A. T.. XXIV Encontro Nacional de Física da Matéria. 2001. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>BEZZON, V. D. N.. V ENPEFIS ? Encontro de Prática de Ensino. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>BEZZON, V. D. N.. VI Pré-ENPEFIS Encontro de Prática de Ensino de Física de Ilha Solteira (SP).. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>BEZZON, V. D. N.. VI Semana da Física da Faculdade de Engenharia de Ilha Solteira. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Bianchi, R. F.. 64a. Congresso Anual da Associação Brasileira de Metalurgia, Materiais e Mineração. 2009. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>BIANCHI, R. F.. 65o ABM International Congress. 2010. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Bianchi, R. F.. Estação Ciência 2013 - Semana C&T. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>BIANCHI, R. F.. II Simpósio Mineiro em Ciência dos Materiais. 2007. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Bianchi, R. F.. III Semana da Física da UFOP. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>BIANCHI, R. F.. NT07: Eighth International Conference on the Science and Application of Nanotubes. 2007. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Bianchi, R. F.. Programa de Incentivo à Inovação - PII na UFOP. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Bianchi, R. F.. XII Encontro da SBPMat. 2013. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>CALAZANS, M. M.. I Simpósio Nacional Educação, Marxismo e Socialismo. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>CALAZANS, M. M.. O desastre da Samarco: Balanço de seis meses de impactos e ações. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>CALAZANS, M. M.. VIII Mostra de Profissões da UFOP. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>CARVALHO, E. J.. Membro da Comissão Científica do I Encontro Mineiro de Ensino de Física. 2019. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>CARVALHO, E. J.. Mostra da Profissões da UFOP. 2010. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>CARVALHO, E. J.. Mostra de Profissões da UFOP. 2012. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>CARVALHO, E. J.. Mostra de Profissões da UFOP. 2013. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>CARVALHO, E. J.. X Mostra de Profissões da Universidade Federal de Ouro Preto. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>CARVALHO, E. J.. XI Mostra de Profissões da Universidade Federal de Ouro Preto. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>CARVALHO, E. J.. XIII Mostra de Profissões da Universidade Federal de Ouro Preto. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>CARVALHO, E. J.. XVII Semana de Estudos da Física. 1997. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>CARVALHO, E. J.. XVIII Semana de Estudos da Física. 1998. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>CAZATI, T.. 1º Gincana de Ciências na Escola Prof. Sebastião de Oliveira Rocha. 2006. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>de Oliveira, A. B.. II Mostra de Trabalhos de Pós-Graduação do IF-UFRGS. 2003. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Florio, V.. Escola Olimpíada Brasileira de Linguística - Noke Vana. 2012. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>L" ; CAMPAGNOLO, Júlio ; ASSIS, FELIPE ; PEREIRA, FELIPE A. C. ; SOARES, DANIEL de B. ; MENEZES, OTÁVIO M. ; VILLAS DA ROCHA, J. F. ; Florio, V.. <b>XI Escola de Astronomia - Olimpíada Brasileira de Astronomia</b>. 0. OBA</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>MARRA, V.. Fifth TRR33 Winter School. 2011. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>MARRA, V.. NEXT. 2021. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>MARRA, V.. Seventh TRR33 Winter School. 2013. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>MARRA, V.. Sixth TRR33 Winter School. 2012. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>MARRA, VALERIO. Workshop: Inhomogeneous Cosmology. 2011. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SIQUEIRA, M.F.. Comitê de programação - Sessão "Soft Matter" / Encontro de Outono da SBF. 2023. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>SIQUEIRA, M.F.. Encontro de Outono da SBF. 2023. (Congresso).. <b></b>. 0. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

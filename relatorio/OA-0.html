@@ -1,0 +1,559 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de orientações em andamento'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2006,
+1],
+[2011,
+3],
+[2013,
+1],
+[2014,
+2],
+[2015,
+1],
+[2016,
+1],
+[2017,
+2],
+[2018,
+3],
+[2019,
+4],
+[2021,
+3],
+[2022,
+6],
+[2023,
+11],
+[2024,
+11],
+[2025,
+38],
+[2026,
+104]]}]});
+        });
+        </script>
+        
+                <h3>Total de orientações em andamento</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 191<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adrielle Nascimento de Souza Rocha. <b>Desenvolvimento de roteiro didático sobre o crescimento de monocristal de sulfato de cobre pentahidratado para aulas do ensino médio</b>. Iniciação científica (Graduando em Ensino médio) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALESSA BRAZ DE MENDONCA. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALICE DA CONCEICAO SILVA MEDEIROS. <b>Desenvolvimento de membranas plasmônicas de nanocelulose TEMPO-oxidada para concentração de analitos e desenvolvimento de substratos SERS</b>. Iniciação científica (Graduando em Engenharia Mecânica) - Universidade Federal de Ouro Preto, UFOP. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ALICE LIMA MARIA. <b>Objetos arqueológicos metálicos - revelando as fases estruturais por difração de raios X</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Altieres Douglas da Silva. <b>"Desafísica" - Vinculado ao projeto de extensão "Pode Desenhar".</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>AMINE VIANA OMAR. <b>Propriedades Mecânicas e Vibracionais de TMDs 2D com Vacâncias e Dopagem via Potenciais de Aprendizado de Máquina</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2342689826825737">Ana Cláudia da Silva</a>. <b>Simulação computacional de processos de nucleação</b>. Dissertação (Mestrado em Pós-graduação em Ciências - física de materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ANA LUISA BARBOSA MARTINS. <b>Investigação das Propriedades Fotofísicas de Moléculas Orgânicas Fluorescentes em Presença de Aceitadores Não-Fulerenos da Série Y</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ANA LUISA CARVALHO SCHMALTZ. <b>Investigando os Sinos de Ouro Preto utilizando Física de Materiais e impressão 3D Parte 2</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ANA LUISA CARVALHO SCHMALTZ. <b>Monitoria de FIS108 - Fundamentos de Fluidos, oscilações e ondas</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. PROGRAD, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>André Lasnor da Cruz. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ANTONIO NEVES DE SOUSA SARAIVA. <b>Monitoria Fundamentos de Eletromagnetismo</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Pró Reitoria de Graduação UFOP, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Arthur Bernard Ferreira Damasceno. <b>Monitoria FIS110</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>ARTHUR FELIPE ZITO SANTOS. <b>Caracterização fotofísica de sistemas doador?aceitador baseados em moléculas orgânicas fluorescentes e aceitadores não-fulerenos</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Beatriz Sanchez Ferreira. <b>Quantificação de material amorfo em matérias-primas de fármacos usando dados de difração de raios X</b>. Iniciação científica (Graduando em Farmácia) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>BETHINA RIBEIRO RUAS. <b>Estágio Docente em Fundamentos de Mecânica (FIS 106) 2026/2 - Turmas 94 e 99</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>BRENDA VALERIO DE TOLEDO; PEDRO BRAGA. <b>Construção de Biotable para Irradiação de Fotossensibilizadores na Região do Vermelho e Infravermelho Próximo</b>. Iniciação científica (Graduando em Engenharia de Controle e Automação) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Bárbara Belintani Coelho. <b>Modelo de Heisenberg com interação Dzyaloshinski- Moriya com acoplamentos de troca diluídos</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Bárbara Belintani Coelho. <b>"Desafísica" - Vinculado ao projeto de extensão "Pode Desenhar".</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Bárbara Cristina Caldas de Ávila. <b>Epistemologia Social e Desinformação Científica Midiática : um Estudo Etnográfico sobre Confiança Epistêmica e Credibilidade Científica em Interações Escolares Mediadas por Questões Sociocientíficas</b>. Tese (Doutorado em Programa de Pós-Graduação em Educação) - Universidade Federal de Ouro Preto. (Coorientador)., . In&iacute;cio: 2026.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Cauã Marques Silva Sena. <b>TEORIA DE PERTURBAÇÃO MULTI-ESCALA EM SISTEMAS FÍSICOS</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>DANIEL NASCIMENTO MEDEIROS. <b>Tutoria de FIS106 - Fundamentos de Mecânica</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Danúbia Júlia Pedro. <b>Educação ambiental sem veganismo é negacionismo?</b>. Iniciação científica (Graduando em Ciências Biológicas) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Diovana Moreira da Silva. <b>Crescimento de cristais e cristalografia como conteúdo motivacional para o ensino de ciências básicas</b>. Trabalho de Conclusão de Curso (Graduação em Licenciatura em física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Enzo Mazieiro Garcia Fernandes. <b>Monitoramento/Observatório Astronômico da Escola de Minas</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Fundação Gorceix, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>ESTER FERREIRA RAMOS. <b>Análise Computacional de Propriedades Mecânicas e Vibracionais em Materiais 2D via Dinâmica Molecular com Potenciais Otimizados por Aprendizado de Máquina</b>. Iniciação científica (Graduando em Engenharia de Controle e Automação) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>EVELYN ELLEN PEREIRA BATISTA. <b>Influência da fluidodinâmica local na nucleação e formação de bicamadas giradas de MoS₂ por CVD assistido por NaCl: modelagem e experimento</b>. Iniciação científica (Graduando em Engenharia Mecânica) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Felipe Souza de Oliveira. <b>Fronteiras da Tribologia: Ciência, Tecnologia e Divulgação</b>. Iniciação científica (Graduando em Engenharia Metalurgica) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Fellipe Augusto Santiago da Silva. <b>MODELAGEM AB INITIO DAS PROPRIEDADES RAMAN E NANO-ÓPTICAS DE GRAFENO DOPADO COM BORO: DA IDENTIFICAÇÃO DE CENTROS DE ESPALHAMENTO À RESPOSTA ELETRÔNICA LOCAL</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>FELLIPE AVELAR DE MELO. <b>Projeto e Fabricação de Peças Automotivas de Reposição por Meio da Impressão 3D e Técnicas de Otimização Topológicas</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>FELLIPE AVELAR DE MELO. <b>FIS106 - Fundamentos de Mecanica</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. UFOP PROGRAD, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7291195004676609">Gabriel Leandro Alves da Silva</a>. <b>Dinâmica molecular de moléculas aromáticas suspensas em cachaça brasileira: interfaces, volatilização e percepção sensorial</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>GABRIELA CAMARGO SPALETA. <b>PROEXT Bolsista LUMINA ? Núcleo Avançado de Aplicação de Luz na Área da Saúde</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Gabriela Fernanda de Almeida Ambrózio. <b>Sensor colorimétrico orgânico e flexível para monitoramento de metais pesados em água</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Giovanna Maria de Oliveira Andrade. <b>PROEXT_B - Ciência e Sociedade</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. PROEXT-UFOP, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>GLEIDSON SANTOS DA COSTA. <b>Métodos de Óptica de Transformação Aplicada a Análogos Gravitacionais e Fenômenos de Transporte</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Gleidson Santos da Costa. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Hamilton Portela. <b>Análise da adição de elementos de liga no aço manganês austemnítico usado em mandíbulas de britador primário</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Iane Iasmin Rodrigues de Moraes. <b>Estudo de Rastros de Partículas Carregadas em uma Câmara de Nuvens</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Igor Ferreira Curvelo. <b>Uso de Simulação computacional para Análise de Problemas Práticos Ligados a Industria de Mineração.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação Gorceix. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>Januzia Alacoque de Azevedo. <b>Desenvolvimento de sensores colorimétricos para aminas para detecção forense</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>JERONIMO H. PARMA FERREIRA DE FREITAS MENDES DE OURO PRETO. <b>Formalismo de Grupos de Renormalização Aplicado à Descrição Covariante da Gravitação Quântica em Laços</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>JOAO VITOR MACHADO ECCAR. <b>Monitoria de FIS108 - Fundamentos de Fluidos, oscilações e ondas</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. PROGRAD, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2580888005714222">Jorge Gentil Aguiar Calixtro</a>. <b>Estados Magnéticos em Sistemas de Spins com Impurezas</b>. Tese (Doutorado em Área de concentração: Ciência e Tecnologia dos Materiais - CTMA) - Centro de Desenvolvimento de Tecnologia Nuclear, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>JOYCE PASSOS COSTA LOPES PEREIRA. <b>Estudos de tribocorrosão em compósitos com talco de pedra sabão</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>João Gabriel Gonçalves Ferreira. <b>Desenvolvimento de programa computacional para obtenção de padrões Pair Distribution Function diferenciais</b>. Iniciação científica (Graduando em Engenharia Urbana) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>JULIA KARINE FERREIRA DE PAULA. <b>Fotofísica na formação de espécies reativas de oxigênio: desenvolvimento de metodologias espectroscópicas para determinação da eficiência quântica de sensibilizadores</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>Júlia Bianca Carneiro Lima. <b>Luz, Cor e Tecnologia: Investigação das Propriedades Fotofísicas de Moléculas Extraídas de Plantas</b>. Iniciação científica (Graduando em Ensino Médio) - Escola Estadual Dom Silvério, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>Kamila de Fatima Costa da Silva. <b>Monitoramento de Dilatação Térmica em Trilhos Longos Soldados com Sensores</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>Karolaynne Dias Pereira. <b>PROEXT_V - Ciência e Sociedade</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>Kauan Coelho Fernandes. <b>Caracterização de um novo material bidimensional produzido a partir de sulfeto de mercúrio - renovação</b>. Iniciação científica (Graduando em Engenharia Geológica) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>LARISSA GUEDES GOMES. <b>Caracterização fotofísica de bacterioclorinas semissintéticas e de nanoformulações: aplicação em</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>Larissa Hechiman Ferreira Lima. <b>O uso de brinquedos, kits didáticos e experimentos históricos como inovação pedagógica na formação inicial de professores de física.</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>Larissa Pires Belo. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>Lavínia Cristh do Carmo de Paula. <b>Sensor colorimétrico orgânico e flexível para monitoramento de metais pesados em água</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>LEONAN RODRIGUES SENA. <b>Previsão de Estabilidade de Pilhas de Grãos por Meio de Aprendizado de Máquina</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>Leonardo Augusto Pereira Abreu. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>LORENA LANZUOLO NESER. <b>Caracterização Espectroscópica e Fotofísica de Pigmentos Naturais Extraídos de Framboesa Negra (Mysore Raspberry)</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>LOURDES LORENA DINIZ COELHO LOPES. <b>Espécies minerais: nomenclatura e cristalografia na organização do espaço museológico</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>Luana Gabriela Ferreira. <b>Implementação da técnica de Microscopia de Força Lateral no estudo de nanomateriais</b>. Iniciação científica (Graduando em Engenharia Civil) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>LUCAS BESERRA DA SILVA. <b>Os minerais com elementos terras raras e o futuro da tecnologia no Brasil</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>Lucas de Paula Silva. <b>Caracterização de Materiais Aceitadores de Elétrons Não-Fulerenos (NFAs) para Células Solares Orgânicas</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>LUCAS EDUARDO BARBOSA DE JESUS. Coor. <b>IC - Estudo da auto-organização de azo-switches derivados do arilapirazol em água para aplicações em sistemas foto-responsivos</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>LUCAS OLIVEIRA ROCHA DE MAGALHAES. <b>Monitoria de FIS108 - Fundamentos de Fluidos, oscilações e ondas</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. PROGRAD, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>LUIZ AUGUSTO SANTIAGO MATEUS. <b>Monitoria Fundamentos de Eletromagnetismo</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Pró Reitoria de Graduação UFOP, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>Luiz Ravell André Antônio Dias. <b>CARACTERIZAÇÃO DE METEORITOS POR ESPECTROSCOPIA RAMAN E ELABORAÇÃO DE PROCEDIMENTO EXPERIMENTAL PARA O ACERVO DA UFOP</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>Marcus Vinicius Vieira dos Santos. <b>Desenvolvimento de forno inteligente para automação e supervisão do processo de síntese de materiais.</b>. Trabalho de Conclusão de Curso (Graduação em Engenheira de Controle e Automação) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>Maria Ana Clara Amaral. <b>FIS106 - Fundamentos de Mecanica</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>MARIA EDUARDA SILVA ALMEIDA. <b>Funcionalização do talco e esfoliação em fase líquida utilizando novos sistemas de solventes</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, UFOP. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>Maria Fernanda Mota ROdrigues. <b>Extensão - Regência de aulas de Português e Redação no cursinho EducaPET</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Pró Reitoria de Extensão da UFOP, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>Maria Fernanda Pereira de Paula. <b>Uma biografia dos instrumentos científicos do Setor de Física do Museu de Ciência e Técnica da UFOP: inventário, contextualização histórica e preservação do patrimônio científico</b>. Iniciação científica (Graduando em Museologia) - Universidade Federal de Ouro Preto, PIP/UFOP-2S-2026/27-DEFIS. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>Maria Luisa Rodrigues. <b>Correlações espaço-temporais em caminhantes aleatórios quânticos induzidas por defeitos orientacionais localizados</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>Mariana Luiza Souza da Silva Guimarães. <b>Análise da adição de elementos de liga no aço manganês austenítico usado em mandíbulas de britador primário</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>MARINA QUEIROGA VIANA VAZ. <b>FIS105 - Fundamentos de Fisica Experimental</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>Matheus de Jesus Mota. <b>Caracterização acústica de sinos de bronze e proposição de novas tecnologias materiais para fabricação de sinos.</b>. Iniciação científica (Graduando em Música) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>MATHEUS HENRIQUE BESSA FERNANDES PROCOPIO LADEIRA. <b>COMPARANDO A CAPACIDADE DE GENERALIZAÇÃO DE VÍDEOS DE DIVULGAÇÃO CIENTÍFICA COM BASE EM TEORIA DE ENSINO E APRENDIZAGEM EM CIÊNCIAS</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>Matheus Henrique Bessa Fernandes Procópio Ladeira. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial - MEC/FNDE, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>Michele Vitória Saiao Alves. <b>ANÁLISE DE DESINFORMAÇÃO RELACIONADA A ÁREA DA SAÚDE NAS REDES SOCIAIS</b>. Iniciação científica (Graduando em Ciências Biológicas) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>Mila Leite. <b>New signatures in compact objects</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>Moacyr Clemente Junior. <b>Produção a caracterização de fosfatos de cálcio com adição de minerais para regeneração óssea</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto. (Coorientador)., . In&iacute;cio: 2026.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>, <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>NAIARA APARECIDA MARTINS. <b>Luz e Saúde: Investigação Experimental de Processos Fotofísicos Relacionados às Fototerapias</b>. Iniciação científica (Graduando em Física) - Colégio Marista Dom Silvério, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>Paulo Roberto de Aquino. <b>Determinação do Coeficiente Estequiométrico φ na Síntese de Hidroxiapatita por Combustão em Solução</b>. Iniciação científica (Graduando em Medicina) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>PEDRO BRAGA. <b>Desenvolvimento de dispositivo integrado para determinação padronizada da eficiência quântica de formação de oxigênio singleto em sensibilizadores para fotodinâmica</b>. . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>84. &nbsp;</td> <td>Pedro Zanetti de Almeida. <b>Obtenção e caracterização de nanoflocos geogênicos de cinábrio (HgS) do Quadrilátero Ferrífero</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia Geológica) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>85. &nbsp;</td> <td>Rafael Antônio Ferreira Martins. <b>Microscopia de Força Lateral como Ferramenta para Investigação Tribológica em Nanomateriais</b>. Dissertação (Mestrado em Física de Materiais) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).. In&iacute;cio: 2026.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>, <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>86. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3671834043088328">Rafaela Pereira Alvarenga</a>. <b>Desenvolvimento de membranas baseadas em MOFs para processos sustentáveis de purificação de água: um estudo teórico-computacional</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>87. &nbsp;</td> <td>RUAN MACK BRAIAN LOPES DA SILVA. <b>Estabilidade Dinâmica e Colapso Gravitacional em Sistemas Auto-gravitantes</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>88. &nbsp;</td> <td>RUBEM FRANCISCO SILVA BEZERRA. <b>.</b>. Dissertação (Mestrado em Química) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2026.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>89. &nbsp;</td> <td>Samuel Ricardo Vallim. <b>Triki - Uma Ferramenta on-line para Ensino, Aprendizagem e Avaliação de Conceitos Científicos</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Pró Reitoria de Extensão UFOP, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>90. &nbsp;</td> <td>Soffia de Oliveira Andrade. <b>ANÁLISE DA ARGUMENTAÇÃO NEGACIONISTA À LUZ DA GENERALIZAÇÃO DOS CONCEITOS CIENTÍFICOS</b>. Iniciação científica (Graduando em Medicina) - Universidade Federal de Ouro Preto, Universidade Federal de Ouro Preto. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>91. &nbsp;</td> <td>Sávio Henrique de Souza. <b>Produção e caracterização de nanomateriais obtidos a partir de minerais por esfoliação em fase líquida utilizando diferentes fontes de energia mecânica</b>. Iniciação científica (Graduando em Engenharia Civil) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>92. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7453281750736686">Sônia Maria Frade Almeida</a>. <b>O USO DE RECURSOS TECNOLÓGICOS E EXPERIMENTAÇÃO NA CONSTRUÇÃO DO PENSAMENTO CIENTÍFICO EM AULAS DE FÍSICA</b>. Dissertação (Mestrado em Ensino de Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>93. &nbsp;</td> <td>Thiago Rodrigo Gomes da Silva. <b>Produção e caracterização de nanocompósitos para aglomeração a frio de finos de minério de ferro.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2026.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>, <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>94. &nbsp;</td> <td>Théo Amado de Oliveira. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial - MEC/FNDE, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>95. &nbsp;</td> <td>Valeria Ornelas Santos. <b>Estudo de nanotubos de carbono dopados utilizando espectroscopia Raman e Microscopia de Varredura por Sonda</b>. Iniciação científica (Graduando em Engenharia de Controle e Automação) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1641624738512086">Jaqueline dos Santos Soares</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>96. &nbsp;</td> <td>Valéria Ornelas Santos. Coorientação de IC. <b>Estudo de nanotubos de carbono dopados utilizando espectroscopia Raman e Microscopia de Varredura por Sonda (Co-orientação)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>97. &nbsp;</td> <td>VICTOR BHERING FIGUEIREDO. <b>FIS106 - Fundamentos de Mecanica</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>98. &nbsp;</td> <td>Vinicius Henrique do Carmo Oliveira. <b>Demonstrações Experimentais de Eletromagnetismo em Sala de Aula</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2938214220427914">Maria Eugênia Silva Nunes</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>99. &nbsp;</td> <td>Vinícius Alessandro Silva Queiroz. <b>Teorias de Matéria condensada e possíveis análogos astrofísicos</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>100. &nbsp;</td> <td>Vinícius Corrêa Alves. <b>Tribocorrosão de aço submetido a deformação mecânica severa</b>. Dissertação (Mestrado em FIMAT) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>101. &nbsp;</td> <td>Vitoria Luiza Roque. <b>CATALOGAÇÃO DE MINERAIS DO ACERVO DO MUSEU DE CIÊNCIA E TÉCNICA DA ESCOLA DE MINAS DE OURO PRETO (MG)</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>102. &nbsp;</td> <td>Wilinston da Silva Oliveira. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>103. &nbsp;</td> <td>YASMIN RUBIM SOARES BOYER. <b>Estudo de espodumênio e caracterização do teor de lítio</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>104. &nbsp;</td> <td>Yuri Henrique Gomes dos Reis. <b>Classificação computacional de lesões de pele em imagens clínicas com aprendizado de máquina: projeto piloto orientado à população brasileira</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2026.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alison Machado Luiz. <b>Estudo de propriedades optoeletrônicas e morfológicas de semicondutores orgânicos em fase condensada</b>. Dissertação (Mestrado em Mestrado em Ciências: Física de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andreza de Jesus Siqueira. <b>Estudo de sensores a base de nanocelulose e nanotubos de carbono: mecanismos de transporte e aplicações</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. (Coorientador).. In&iacute;cio: 2025.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>, <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ARTHUR FELIPE ZITO SANTOS. <b>Coorientação - Estudo da interação entre moléculas orgânicas e materiais aceitadores de elétrons não-fulerenos para aplicação em células solares</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1785306463926736">Bernardo Oliveira Barbosa Nolasco</a>. <b>Análise de Correlações entre Nanopartículas Suspensas em Membranas Fluídicas via Teoria de Campo Efetivo.</b>. Dissertação (Mestrado em FIMAT) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0942811221929455">Bethina Ribeiro Ruas</a>. <b>Previsão Teórica de Cristais Moleculares Orgânicos com Algoritmos Evolutivos</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAMILE CONTARINI FREITAS. <b>Automontagem de filmes do isômero Z e do E, de um arilazopirazol foto-surfactante, em interface ar-água por simulação com dinâmica molecular atomística</b>. Iniciação científica (Graduando em Engenharia Ambiental) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Carlos Eduardo Fonseca da Silva. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2065665029314289">Carlos Eduardo Lima Estanislau</a>. <b>Agregação de Partículas Dielétricas e Nano-géis Controlada por Radiação Elipticamente Polarizada</b>. Dissertação (Mestrado em FIMAT) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Cristiano Carlos Borges de Assis. <b>Uso de jogos como estratégia de inclusão no ensino de física: Um estudo de caso com aluno com Transtorno do Espectro Autista (TEA)</b>. Dissertação (Mestrado em Ensino de Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0462565031669474">Dione da Costa Oliveira</a>. <b>Caracterização de Derivados inéditos de Benzazól e suas Interações com Aceitadores de Carga para Aplicação em Dispositivos Fotovoltáicos Orgânicos</b>. Tese (Doutorado em Redemat) - Universidade Federal de Ouro Preto. (Coorientador)., . In&iacute;cio: 2025.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>, <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Eduardo Hugo da Mata Melo. <b>A perspectiva do materialismo dialético para a análise da confiabilidade e valor da ciência em uma proposta didática para o ensino de física</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7005754754925754">Cassiano Rezende Pagliarini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7014168702313216">Eric Bartulici</a>. <b>Análise da Evolução Microestrutural, Comportamento Mecânico e Resistência ao Desgaste Abrasivo de um Aço Microligado ao Nb Processado por Deformação Plástica Severa.</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ESNEIDER ENRIQUE CABRERA DÍAZ. <b>Estudo de moléculas auto-organizadas em materiais bidimensionais magnéticos</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4231133231433654">Felipe Martins Brito Aguiar</a>. <b>Efeitos de confinamento e rigidez elástica do DNA no confinamento em capsídeos virais</b>. Dissertação (Mestrado em FIMAT) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Fredi Quispe-Huaynasi. <b></b>. Universidade Federal do Espírito Santo, Fundação de Amparo à Pesquisa do Espírito Santo.. In&iacute;cio: 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Gabriel Carvalho Matoso. <b>Desenvolvimento de Ferramenta para Simulação de Riscos de Ruptura de Taludes</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2025.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/1219153096910234">Américo Tristão Bernardes</a>, <a href="http://lattes.cnpq.br/1461165352197588">Giovanni Decot Galgano</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7295852058833681">Gisele Almeida Silva</a>. <b>Estudo de superfícies superhidrofóbicas com microscopia de varredura por sonda</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Gustavo Henrique SIlvestre. <b></b>. Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais.. In&iacute;cio: 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9835638387117120">Henrique Ferreira da Silva Júnior</a>. <b>Propriedades ópticas do material bidimensional antiferromagnético CrPS4</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>JOAO VICTOR DE ALMEIDA FIGUEIREDO. <b>Modelagem por Dinâmica Molecular de Azul da Prússia para Avanços em Dessalinização Sustentável</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>JOÃO GUILHERME MEGID ANUNCIAÇÃO. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Laura Ferreira e Silva. <b>Caracterização espectral do soro de pacientes com transtorno neurocognitivo maior utilizando espectroscopia Raman</b>. Dissertação (Mestrado em Biotecnologia) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/1641624738512086">Jaqueline dos Santos Soares</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5396645854947287">Leonardo da Silva Araújo</a>. <b>Estudo de dissulfeto de molibdênio utilizando espectroscopia Raman.</b>. Dissertação (Mestrado em Física de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2025.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>, <a href="http://lattes.cnpq.br/1641624738512086">Jaqueline dos Santos Soares</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Lucas Dias Queiroz. <b>Caracterização de fármacos amorfos por difração de raios X e o método de função de distribuição de pares</b>. Dissertação (Mestrado em Pós-graduação em Ciências - física de materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>LUCAS EDUARDO BARBOSA DE JESUS. <b>Estudo da auto-organização de azo-switches derivados do arilapirazol em água para aplicações em sistemas foto-responsivos</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Ludmila Marotta Mapa. <b>Avanços na Manutenção dentro da Mineração: Aplicação da Engenharia de Materiais e Escaneamento 3D para Teste de Novos Materiais</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Luis Antônio Gómez Ojeda. <b>Propriedades eletrônicas de nanofitas</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Luiz Henrique Frass Gouvêa. <b>Estudo de forças de longo alcance</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal do Espírito Santo. (Coorientador)., . In&iacute;cio: 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5978277277690990">Marcelo Henrique Tavares Gomes</a>. <b>Materiais bidimensionais sob pressão na presença de defeitos substitucionais por Primeiros Princípios</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5378034987226859">Marcus Vinícius da Silva Gonçalves</a>. <b>Estudo da interação entre moléculas doadoras e aceitadoras de elétrons (fulerenos e não-fulerenos) para aplicação em células solares orgânicas</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Maria Paula De Freitas Novais. <b>?Relação entre estrutura molecular e propriedades optoeletrônicas de semicondutores orgânicos em fase condensada</b>. Dissertação (Mestrado em Mestrado em Ciências: Física de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5666531784970432">MATHEUS DOS SANTOS BARBOSA</a>. <b>Aplicação da Teoria do Funcional da Densidade para a Análise de Problemas Práticos Ligados a Industria de Mineração</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td><a href="http://lattes.cnpq.br/3017082718743319">Natália Zinato</a>. <b>Caracterização sistemática de falhas por desgaste em correias transportadoras de minério de ferro e correlação com ensaios de laboratório</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7832625519922263">Paulo André Morais Portilho</a>. <b>EFEITOS DA TOPOLOGIA NAS PROPRIEDADES DE NANOESTRUTURAS DE GRAFENO E DE DIAMANTES BIDIMENSIONAIS</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Railson Ferreira de Souza. <b>Estudos de fotoluminescência e espectroscopia Raman de heterobicamadas de dicalcogenetos de metais de transição</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0559001373784925">Juliana Caldeira Brant</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Ranylson Marcello Leal Savedra. <b></b>. Universidade Federal de Ouro Preto., . In&iacute;cio: 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>RUAN MACK BRAIAN LOPES DA SILVA. <b>Implementação da estação EXOSS/UFOP de captura de meteoros</b>. Iniciação científica (Graduando em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Vitória Dias Alexandrino. <b>Aplicação de catalisadores à base de biomassa em síntese orgânica</b>. Dissertação (Mestrado em Química) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).. In&iacute;cio: 2025.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Arthur Carneiro Chaves dos Santos. <b>Fabricação e caracterização topográfica de nanoporos e nanopostes de polímeros luminescentes</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GERSON DOS SANTOS. <b>Estudo das propriedades optoteletrônicas das Moléculas Isoxazolina para Aplicação em Dispositivos Orgânicos</b>. Dissertação (Mestrado em Mestrando em Ciências / Física dos Materiais - FIMAT) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2024.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>, <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>JOAO ANTONIO DE PAIVA ANDRADE. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4389299921044053">Juliana Maria Silva Teles</a>. <b>Deposição e Caracterização de Revestimentos Compósitos de Hidroxiapatita e Nanominerais Inéditos</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LEONARDO VILLEGAS LELOVSKY. <b></b>. Universidade Federal de Ouro Preto., . In&iacute;cio: 2024.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LUCAS EDUARDO BARBOSA DE JESUS. <b>PET - Atividades do grupo PETFísica/UFOP junto ao Programa de Educação Tutorial (PET)</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. Programa de Educação Tutorial PET/FNDE/MEC, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Lucas Muniz. <b>Uso de Obras Cinematográficas por Professores de Ciências Naturais</b>. Dissertação (Mestrado em Ensino de Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7005754754925754">Cassiano Rezende Pagliarini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Lucas Sacramento. <b>Estudo de relação de Hazen-Willians para diferentes materiais em tubos</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Matheus dos Santos Barbosa. <b>Modelagem Computacional Aplicada a Processos de Mineração</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2024.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Maysa Paula Terol. <b>Atuação do extrato de urucum em Terapia fotodinamica</b>. Dissertação (Mestrado em Biotecnologia) - Universidade Tecnológica Federal do Paraná. (Coorientador)., . In&iacute;cio: 2024.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Renato Alves Pereira. <b>Estudo computacional da estrutura de nanopartículas de fosfeto de cobre</b>. Tese (Doutorado em Modelagem Matemática e Computacional) - Centro Federal de Educação Tecnológica de Minas Gerais. (Coorientador)., . In&iacute;cio: 2024.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/6453445416677178">Ana Paula Jeakel</a>. <b>Análise de dados da colaboração J-PAS</b>. Tese (Doutorado em Física) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0791827142440731">Anderson Vital Sales</a>. <b>Caracterização de propriedades física e mineralógicas de ocorrências raras de ouro e paládio na região de Ouro Preto, MG</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2379266923949128">Bárbara Gosziniak Paiva</a>. <b>Polímeros emissores de luz como elemento ativo de sensores colorimétricos aplicados ao tratamento de água</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Cristopher Antonio Martins de Moura. <b>PROPRIEDADES DE CIMENTOS LC3 PRODUZIDOS COM ARGILAS CAULINÍTICAS CALCINADAS, RESÍDUOS DE CERÂMICA VERMELHA E DE PEDRA-SABÃO OBTIDOS EM OURO PRETO, MINAS GERAIS, BRASIL?</b>. Tese (Doutorado em Engenharia Civil) - Universidade Federal de Ouro Preto. (Coorientador)., . In&iacute;cio: 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/9945942332231660">Taíse Matte Manhabosco</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Gabriella Pinheiro Tardelli. <b>As raízes econômicas e sociais da concepção de espaço na revolução científica do século XXVII</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7215497120261203">Marcos Moraes Calazans</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/1736871971720687">Itauany do Nascimento Barroso</a>. <b>Estrutura solitônica de halos de matéria escura</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal do Espírito Santo, Fundação de Amparo à Pesquisa do Espírito Santo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Laura Francisco Vieira da Silva. <b>Os impactos do Novo Ensino Médio no ensino de Física nas escolas de Ouro Preto-MG</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7215497120261203">Marcos Moraes Calazans</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Marcus Vinícius Figueiredo Horta Moreira. <b>Ensino da natureza do movimento relativo em uma abordagem histórico-cultural</b>. Dissertação (Mestrado em Ensino de Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7005754754925754">Cassiano Rezende Pagliarini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td><a href="http://lattes.cnpq.br/9264815633483842">MATHEUS LEITE DUARTE</a>. <b>Investigação e Caracterização de Propriedades Estruturais e Espectroscópicas de Gemas de Ocorrências Raras Brasileiras</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0167311345896956">Marcelo Barbosa de Andrade</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td><a href="http://lattes.cnpq.br/7878909896175446">Rodrigo Duarte Silva</a>. <b>Aprendizagem de máquina aplicada a redshift fotométrico</b>. Tese (Doutorado em Física) - Universidade Federal do Espírito Santo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Suzy Carvalho Oliveira. <b>Estratégia fototerápica para o controle do Schistosoma mansoni e do granuloma hepático/intestinal em modelo experimental</b>. Tese (Doutorado em Infectologia e Medicina Tropical) - Universidade Federal de Minas Gerais. (Coorientador)., . In&iacute;cio: 2023.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Diego Santos de Jesus. <b>Testes astrofísicos e gravidade modificada</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0061727999172556">Eric Ferraz Vieira</a>. <b>Equilíbrio osmótico e estabilidade de capsídeos virais</b>. Dissertação (Mestrado em FIMAT) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3727974604613106">Thiago Escobar Colla</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8394030411797680">Gilton Martins Lopes Júnior</a>. <b>Estudo e caracterização de sensores colorimetricos para radiação UVC</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2245969992938973">Syrios Gomes da Silveira</a>. <b>Observáveis cosmológcos em altos redshifts</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Victória Guimarães Portella. <b>Uma crítica à concepção dos modelos na ciência a partir do materialismo dialético</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7215497120261203">Marcos Moraes Calazans</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8723478636039105">Özgen Tunç Türker</a>. <b>Lensing PDF emulator for future gravitational wave and supernova observations</b>. Tese (Doutorado em ASTROFÍSICA, COSMOLOGIA E GRAVITAÇÃO) - Universidade Federal do Espírito Santo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0644076759149978">JEFFERSON DE PAULA</a>. <b>Grafeno como reforço de concreto de alto desempenho</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td><a href="http://lattes.cnpq.br/2014529480773527">THIAGO DE SOUZA AMARAL</a>. <b>Processamento de Rejeitos da Cadeia do Nióbio</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Wflander Martins de Souza. <b>Utilização de uma plataforma microfluidica para estudo de propriedades de filmes de nanocelulose</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. (Coorientador).. In&iacute;cio: 2021.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>, <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Daniella Cardoso Buzzi. <b></b>. Universidade Federal de Ouro Preto, Fundação Gorceix.. In&iacute;cio: 2019.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Geysa Angelis Abreu Machado. <b></b>. Universidade Federal de Ouro Preto., . In&iacute;cio: 2019.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Paulo André Morais Portilho. <b>EFEITOS DA TOPOLOGIA NAS PROPRIEDADES DE NANOESTRUTURAS DE GRAFENO E DE DIAMANTES BIDIMENSIONAIS</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto. (Coorientador)., . In&iacute;cio: 2019.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/2373454332205980">Alan Barros de Oliveira</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Romario Melquiades Resende. <b>Estudos de Aspectos Matemáticos do Princípio de Noether</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6035125726070491">Armando de Oliveira Brizola</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Eduardo Augusto Gonçalves Barbosa. <b>Tempos de primeira passagem em redes urbanas</b>. Dissertação (Mestrado em Modelagem Matemática e Computacional) - Centro Federal de Educação Tecnológica de Minas Gerais, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. (Coorientador).. In&iacute;cio: 2018.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/7007826993535617">Alcides Volpato Carneiro de Castro e Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fabíola Keesen Ferreira. <b>Simulação em ecologia de habitats fragmentados</b>. Tese (Doutorado em BIODIVERSIDADE E BIOLOGIA EVOLUTIVA) - Universidade Federal do Rio de Janeiro, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).. In&iacute;cio: 2018.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/7007826993535617">Alcides Volpato Carneiro de Castro e Silva</a>, <a href="http://lattes.cnpq.br/0088622411517649">Carlos Felipe Saraiva Pinheiro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Matheus Teles Braga de Oliveira. <b>: Projeto PRO-ATIVA: Desenvolvimento de experimentos para o curso de Física IV (FIS 133): uso de materiais alternativos para utilização em sala de aula</b>. Orientação de outra natureza. Universidade Federal de Ouro Preto. PROGRAD, . In&iacute;cio: 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/8969271836168169">Cristiano Sousa Benício Siqueira</a>. <b>Caracterização e Aplicação do Resíduo de Shredder como Absorvedor Acústico</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Jonatham Fernado de Oliveira Duarte. <b>Estudo da interação entre moléculas orgâncias fluorescentes e nanotubos de carbono em solução</b>. Dissertação (Mestrado em Ciências) - Universidade Federal de Ouro Preto, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Henrique Carvalho da Silva Coelho. <b>Caracterização Tecnológica das Escórias de Aciaria Utilizando Difração de Raios X e o Método de Rietveld</b>. Dissertação (Mestrado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/0578726298057354">Antônio Evangelista de Freitas</a>. <b>Em definição</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, . In&iacute;cio: 2015.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/5609186147558298">Fabiane Leocádia da Silva</a>. <b>Construção de Banco de Dados para a Caracterização Quantitativa Automática de Fases Cerâmicas</b>. Tese (Doutorado em Engenharia de Materiais) - Universidade Federal de Ouro Preto, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2014.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fernando Leopoldo von Krüger. <b></b>. Universidade Federal de Ouro Preto., . In&iacute;cio: 2014.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Elizabeth Berrigan. <b>Schwinger's Quantum Kinematics and Aharonov's Non-local Dynamical Concept</b>. Orientação de outra natureza. Chapman University, . In&iacute;cio: 2013.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6561589467060683">Augusto Cesar Lobo</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Clyffe de Assis Ribeiro. <b>Formulação Covariante para Variáveis Modulares</b>. Tese (Doutorado em Doutorado em Física) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).. In&iacute;cio: 2011.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6561589467060683">Augusto Cesar Lobo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ismael Lucas de Paiva. <b>Informação Quântica Relativística</b>. Dissertação (Mestrado em Mestrado em Física) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).. In&iacute;cio: 2011.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6561589467060683">Augusto Cesar Lobo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Pedro Ruas Dieguez. <b>Computação Quântica via Medidas e Espaço-Tempo Emergente</b>. Dissertação (Mestrado em Mestrado em Física) - Universidade Federal de Minas Gerais, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).. In&iacute;cio: 2011.<br><i><font size=-1>Supervisor: <a href="http://lattes.cnpq.br/6561589467060683">Augusto Cesar Lobo</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LUCAS DE PAULA SILVA ; LORENA LANZUOLO NESER; Ana Luiza. <b>EXTENSÂO - Voluntário LUMINA ? Núcleo Avançado de Aplicação de Luz na Área da Saúde</b>. . In&iacute;cio: 2006.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></i></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

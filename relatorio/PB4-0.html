@@ -1,0 +1,719 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Trabalhos completos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1990,
+1],
+[1994,
+5],
+[1995,
+8],
+[1996,
+7],
+[1997,
+2],
+[1998,
+4],
+[1999,
+7],
+[2000,
+8],
+[2001,
+5],
+[2002,
+9],
+[2003,
+6],
+[2004,
+12],
+[2005,
+12],
+[2006,
+8],
+[2007,
+7],
+[2008,
+17],
+[2009,
+15],
+[2010,
+16],
+[2011,
+16],
+[2012,
+11],
+[2013,
+11],
+[2014,
+4],
+[2015,
+10],
+[2016,
+7],
+[2017,
+8],
+[2018,
+2],
+[2019,
+8],
+[2020,
+4],
+[2021,
+1],
+[2022,
+1],
+[2024,
+5],
+[2025,
+12],
+[2026,
+4]]}]});
+        });
+        </script>
+        
+                <h3>Trabalhos completos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 253<br>
+                    (<b>A1</b>: 0, <b>A2</b>: 1, <b>A3</b>: 0, <b>A4</b>: 0, <b>B1</b>: 0, <b>B2</b>: 1, <b>B3</b>: 0, <b>B4</b>: 3, <b>B5</b>: 0, <b>C</b>: 0, <b>NP</b>: 0, <b>Qualis n&atilde;o identificado</b>: 248)<br><p><b>Legenda Qualis:</b><ul><li> Publica&ccedil;&atilde;o para a qual o nome exato do Qualis foi identificado: <font color="#254117"><b>Qualis &lt;estrato&gt;</b></font><li> Publica&ccedil;&atilde;o para a qual um nome similar (n&atilde;o exato) do Qualis foi identificado: <font color="#F88017"><b>Qualis &lt;estrato&gt;</b></font> (nome similar)<li> Publica&ccedil;&atilde;o para a qual nenhum nome do Qualis foi identificado: <font color="#FDD7E4"><b>Qualis n&atilde;o identificado</b></font> (nome usado na busca)</ul>
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARTULICI, ERIC ; TELES, JULIANA MARIA SILVA ; BORGES, ALEX RODRIGUES ; FLAUSINO, PAULA CIBELY ALVES ; SILVA, NAYARA APARECIDA NERES DA ; MANHABOSCO, TAISE MATTE. <b>Avaliação tribológica e dos mecanismos de desgaste de um aço C-Mn sob diferentes condições de solicitação em ensaio pino-sobre-placa</b>. Em: <font color=#330066>22º Seminário de Moldes</font>, p. 173, 2026. <a href="http://dx.doi.org/10.5151/5463-5463-44064" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (22º Seminário de Moldes)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DE PAULA, KELLY T. ; CAMPOS, GABRIEL O. ; ANDRADE, M. B. ; MENDONÇA, CLEBER RENATO. <b>Femtosecond Laser-Induced Forward Transfer of MXene</b>. Em: <font color=#330066>CLEO: Applications and Technology</font>, p. AM2A.2, 2026. <a href="http://dx.doi.org/10.1364/CLEO_AT.2026.AM2A.2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CLEO: Applications and Technology)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PORTELA, H. S. ; DELAMORE, M. O. ; SOTANI, P. F. B. ; PINTO, M. A. ; MANHABOSCO, TAÍSE M.. <b>ESTUDO COMPARATIVO DE MATERIAIS UTILIZADOS EM MANDÍBULAS DE BRITADOR PRIMÁRIO*</b>. Em: <font color=#330066>ABM Week 10ª edição</font>, 2026.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ABM Week 10ª edição)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>TELES, JULIANA MARIA SILVA ; OLIVEIRA, FELIPE SOUZA DE ; CETLIN, PAULO ROBERTO ; FLAUSINO, PAULA CIBELY ALVES ; MANHABOSCO, TAISE MATTE ; SILVA, NAYARA APARECIDA NERES DA. <b>Influência do forjamento multidirecional no comportamento tribológico do aço eutetoide SAE 1080</b>. Em: <font color=#330066>22º Seminário de Moldes</font>, p. 193, 2026. <a href="http://dx.doi.org/10.5151/5463-5463-44254" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (22º Seminário de Moldes)</td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CALAZANS, M. M.; PAGLIARINI, C. R. ; Rosa, D. D. ; LIMA, Guilherme da Silva ; OSTERMANN, F.. <b>As contribuições da psicologia marxista para a crítica à fragmentação da formação de conceitos científicos e à pseudorreforma do Novo Ensino Médio</b>. Em: <font color=#330066>XV Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>COSTA-FELIX, R. P. B. ; BERNARDES, A. T. ; LANDIM, R. P.. <b>MEDIDA OU MEDIÇÃO: HERMENÊUTICA DA EDIÇÃO LUSO-BRASILEIRA DO VOCABULÁRIO INTERNACIONAL DE METROLOGIA (VIM)</b>. Em: <font color=#330066>Congresso METROLOGIA 2025</font>, v. 1, p. 1-1, 2025. <a href="http://dx.doi.org/10.1081/E-EISA-120050997" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Congresso METROLOGIA 2025)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>JUNIOR, JOSÉ IZABEL LIBERATO ; SANTOS, ANTÔNIO ADEL DOS ; SOUZA, ALTAIR LÚCIO DE ; ARAÚJO, FERNANDO GABRIEL DA SILVA ; SILVEIRA, MARCOS PAULO DA ; ALVES, PAULO AFONSO FERNANDES. <b>CáLCULO DA TAXA DE FORMAçãO DE CAREPA PRIMáRIA EM UM FORNO DE REAQUECIMENTO DE PLACAS WALKING BEAM</b>. Em: <font color=#330066>60º Seminário de Laminação</font>, p. 98, 2025. <a href="http://dx.doi.org/10.5151/2594-5297-41957" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (60º Seminário de Laminação)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARRA, VALERIO. <b>Tensions in Cosmology: Interpreting Them Through Inhomogeneous Models</b>. Em: <font color=#330066>XLVIII Annual Meeting of the Brazilian Astronomical Society</font>, 2025. <a href="http://dx.doi.org/10.1007/978-981-99-0177-7_35" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XLVIII Annual Meeting of the Brazilian Astronomical Society)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, MAYSA LORENA FIGUEIREDO ; ARAUJO, FERNANDO GABRIEL DA SILVA ; BEZERRA, AUGUSTO CESAR DA SILVA. <b>Metassilicato de sódio sólido sintetizado a partir de resíduo cervejeiro para ativação de materiais álcali-ativados one-part</b>. Em: <font color=#330066>IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO</font>, 2025. <a href="http://dx.doi.org/10.46421/enarc.v9i1.7383" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MATOSO, G. C. ; SANTOS, L. L. R. ; SILVA, M. L. ; CARDOSO, M. A. ; FAGUNDES, J. V. ; LOPES, D. H. ; SANTOS, J. G. ; FREITAS, A. P. ; SILVA, M. C. A. ; BRITO, H. ; VASCONCELLOS, G. ; LAGE, R. ; SANTOS, A. E. M. ; Galgano, G. D. ; BERNARDES, A. T. ; SANTOS, T. B.. <b>METODOLOGIA DE PREVISÃO DE ALCANCE DE RUPTURAS EM TALUDES DE SOLO</b>. Em: <font color=#330066>12ª CONGRESSO BRASILEIRO DE MINA A CéU ABERTO E MINA SUBTERRâNEA</font>, v. 1, p. 1-1, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12ª CONGRESSO BRASILEIRO DE MINA A CéU ABERTO E MINA SUBTERRâNEA)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MOURA, C. A. M. ; FERREIRA, M. H. D. C. ; RAMOS, G. D. ; ANDRADE, N. C. C. ; MANHABOSCO, TAÍSE M. ; SILVA, G. J. B.. <b>Caracterização de resíduos de pedras-sabão: prospecção de materiais regionais para desenvolvimento de aglomerantes álcali-ativados</b>. Em: <font color=#330066>IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO /</font>, v. 9, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO /)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, M. M.. <b>Crítica à teoria de modelos para o desenvolvimento do conhecimento científico a partir do materialismo histórico</b>. Em: <font color=#330066>Simpósio Nacional de Ensino de Física</font>, p. 1-8, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, M. M.. <b>A concepção de modelos na controvérsia entre materialistas mecanicistas e energetistas: Uma crítica a partir do materialismo histórico-dialético</b>. Em: <font color=#330066>XV Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SAYURI, L. ; PIVARO, G. F. ; SANTOS, M. de C. <b>Identificando a hiperparticularização dos conceitos científicos em textos sobre a água alcalina que subsidiam desinformação</b>. Em: <font color=#330066>CONGRESO INTERNACIONAL SOBRE INVESTIGACIÓN EN DIDÁCTICA DE LAS CIENCIAS</font>, p. 1792-1795, 2025. <a href="http://dx.doi.org/10.5281/zenodo.7400261" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CONGRESO INTERNACIONAL SOBRE INVESTIGACIÓN EN DIDÁCTICA DE LAS CIENCIAS)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SILVA, L. F. V. ; CALAZANS, M. M. ; Rosa, D. D. ; Pagliarini, C. R.. <b>Uma análise dos impactos da implementação do Novo Ensino Médio no ensino de física em três escolas estaduais de Minas Gerais</b>. Em: <font color=#330066>XV Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>TELES, J. M. S. ; BARTULICI, E. ; BORGES, A. R. ; CETLIN, P. R. ; FLAUSINO, P. C. A. ; MANHABOSCO, TAISE MATTE ; SILVA, N. A. N.. <b>EVOLUÇÃO MICROESTRUTURAL E COMPORTAMENTO MECÂNICO DO AÇO EUTETÓIDE SUBMETIDO A FORJAMENTO MULTIDIRECIONAL COM BAIXA AMPLITUDE DE DEFORMAÇÃO</b>. Em: <font color=#330066>ABM Week 9ª edição</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ABM Week 9ª edição)</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZZON, V. D. N. <b>Princípios básicos de cristalografia e difração de raios X na caraterização de materiais</b>. Em: <font color=#330066>XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais</font>, v. 10, p. 7-13, 2024. <a href="http://dx.doi.org/10.5151/13wcacem-002" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LIMA, A. G. M. ; RIBEIRO, D. H. ; CARVALHO, E. J.. <b>PROPOSTA PARA O ESTUDO DO COMPORTAMENTO DINÂMICO DE CIRCUITOS RC E RLC UTILIZANDO INSTRUMENTOS VIRTUAIS</b>. Em: <font color=#330066>VII Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico (CIM)</font>, 2024.<font color="#F88017"><b>Qualis: B4</b></font> (CIM)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MATOS, A. C. L. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>ENSINO INVESTIGATIVO EM AULAS DE FÍSICA EXPERIMENTAL NO ENSINO SUPERIOR: PROPOSIÇÕES E ANÁLISE DE CASO</b>. Em: <font color=#330066>VII Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico (CIM)</font>, 2024.<font color="#F88017"><b>Qualis: B4</b></font> (CIM)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANTOS, M. V. V. ; BEZZON, V. D. N.. <b>Caracterização da vizinhança molecular do fármaco flubendazol</b>. Em: <font color=#330066>XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais</font>, v. 10, p. 1-6, 2024.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SAYURI, L. ; PIVARO, G. F. ; GIROTTO JR, GILDO. <b>ANÁLISE DE DESINFORMAÇÕES ENVOLVENDO CONTEÚDO CIENTÍFICO COMO SUBSÍDIOS PARA O DESENVOLVIMENTO DE PROPOSTAS DE ENSINO DE QUÍMICA</b>. Em: <font color=#330066>XXXII Congresso de Iniciação Científica da UNICAMP</font>, 2024.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXXII Congresso de Iniciação Científica da UNICAMP)</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERREIRA, B. F. ; BEZERRA, A. C. S. ; SILVA, G. J. B. ; BRANDAO, F. ; MANHABOSCO, TAÍSE M.. <b>Rejeito Magnético de Fosfato do Complexo de Mineração de Tapira/MG em substituição parcial ao agregado miúdo em argamassas</b>. Em: <font color=#330066>III Brazilian Congress of Development</font>, 2022. <a href="http://dx.doi.org/10.51162/dev2022" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (III Brazilian Congress of Development)</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>RODRIGUES, DAVI C ; MARRA, VALERIO. <b>The radial acceleration relation and its emergent nature</b>. Em: <font color=#330066>Galaxy Evolution and Feedback Across Different Environments</font>, v. 15, p. 457, 2021.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Galaxy Evolution and Feedback Across Different Environments)</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GALGANO, G. D. <b>Espectrogramas sonoros da guitarra, do baixo e da bateria</b>. Em: <font color=#330066>XI Encontro Científico de Física Aplicada</font>, v. 7, p. 84-89, 2020. <a href="http://dx.doi.org/10.5151/xiecfa-Galgano" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XI Encontro Científico de Física Aplicada)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>OLIVEIRA, V. S. P. P. ; Z., MONJARDIM E. J. ; GALGANO, G. D.. <b>Interação entre sensores piezoelétricos e microcontroladores para confecção de um tambor eletrônico MIDI</b>. Em: <font color=#330066>XI Encontro Científico de Física Aplicada</font>, p. 118, 2020. <a href="http://dx.doi.org/10.5151/xiecfa-oliveira" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XI Encontro Científico de Física Aplicada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PIVARO, G. F.; GIROTTO JÚNIOR, GILDO. <b>'Sei que a Terra é esférica mas não sei explicar por quê': uma investigação das concepções de estudantes sobre a gravidade e sua relação com o formato dos planetas</b>. Em: <font color=#330066>Encontro de Pesquisa em Ensino de Física</font>, 2020.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro de Pesquisa em Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ribeiro, D. H. ; CALAZANS, M. M.. <b>APONTAMENTOS SOBRE AS PESQUISAS EM HISTÓRIA DA CIÊNCIA APRESENTADAS NO EPEF NA ÚLTIMA DÉCADA</b>. Em: <font color=#330066>XVIII Encontro de Pesquisa em Ensino de Física</font>, 2020.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII Encontro de Pesquisa em Ensino de Física)</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BORGES, M. N. ; SAVEDRA, RANYLSON M. L. ; SIQUEIRA, M. F.. <b>Filmes orgânicos fotovoltaicos: caracterização morfológica de blendas de P3HT:PCBM por simulação com dinâmica molecular</b>. Em: <font color=#330066>Encontro de Saberes</font>, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro de Saberes)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GABRIEL, L. T. ; BIANCHI, R. F. ; GODEFROID, L. B. ; BERNARDES, AMERICO T.. <b>Caracterização de bloco intertravado manufaturado a partir de Resíduos de eletroeletrônicos</b>. Em: <font color=#330066>Metrologia 2019 - X Congresso Brasileiro de Metrologia</font>, v. 1, p. 1-1, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Metrologia 2019 - X Congresso Brasileiro de Metrologia)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PIVARO, G. F. <b>A crença numa Terra plana e os ambientes virtuais: identificando relações e construções de conhecimento</b>. Em: <font color=#330066>Encontro Nacional de Pesquisa em Ensino em Ciências</font>, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro Nacional de Pesquisa em Ensino em Ciências)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PIVARO, G. F. <b>Uma investigação acerca das concepções de jovens mais propensos a crerem em notícias falsas de cunho científico</b>. Em: <font color=#330066>IX SEMINÁRIO INTERNO DO PROGRAMA DE PÓS-GRADUAÇÃO MULTIUNIDADES EM ENSINO DE CIÊNCIAS E MATEMÁTICA</font>, v. 9, p. 100-113, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX SEMINÁRIO INTERNO DO PROGRAMA DE PÓS-GRADUAÇÃO MULTIUNIDADES EM ENSINO DE CIÊNCIAS E MATEMÁTICA)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>A Análise Estatística em Questionários como Forma de Identificar Concepções de Visitantes de Museus de Ciências</b>. Em: <font color=#330066>XXIII Simpósio Nacional de Ensino de Física</font>, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>RODRIGUES, DAVI C. ; MARRA, VALERIO ; DEL POPOLO, ANTONINO ; DAVARI, ZAHRA. <b>Investigating the absence of fundamental acceleration scale in galaxies</b>. Em: <font color=#330066>Conference on Gravitation and Cosmology in 1397</font>, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Conference on Gravitation and Cosmology in 1397)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SILVA, F. L. ; MOREIRA, G. F. ; PIRES, KELLY DE SOUZA ; Araújo, F.G.S.. <b>CARACTERIZAÇÃO QUANTITATIVA ELETRÔNICA DE BLOCOS INTERTRAVADOS COM REJEITO DE MINÉRIO DE FERRO</b>. Em: <font color=#330066>XXVIII Encontro Nacional de Tratamento de Minérios e Metalurgia Extrativa</font>, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXVIII Encontro Nacional de Tratamento de Minérios e Metalurgia Extrativa)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>VIEIRA, G. C. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>LIXO ELETRÔNICO NA INSTRUMENTAÇÃO PARA O ENSINO DE FÍSICA: APLICAÇÃO E ANÁLISE DE UMA ATIVIDADE INVESTIGATIVA SOBRE CINEMÁTICA</b>. Em: <font color=#330066>XXIII Simpósio Nacional de Ensino de Física</font>, 2019.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII Simpósio Nacional de Ensino de Física)</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>APARECIDO, LUCAS FERRARA BARBOSA ; ESCOBAR, DIANA PÉREZ ; BUENO, KARELINE VAZ ; BOLOTA, JOSÉ ROBERTO ; ANDRADE, MARGARETH SPANGLER ; ARAÚJO, FERNANDO GABRIEL DA SILVA. <b>EFEITO DO NB NA TEMPERATURA DE TÊMPERA EM AÇOS TRATADOS POR TÊMPERA E PARTIÇÃO</b>. Em: <font color=#330066>73º Congresso Anual da ABM</font>, v. 73, p. 901-910, 2018. <a href="http://dx.doi.org/10.5151/1516-392X-319012" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (73º Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>E. Arashiro ; UENO, M. H. ; MARCELINI, T. P. ; PEREITA, L. R. ; CASTRO E SILVA, A.. <b>O ensino de Física na Arquitetura, desafios, limitações e possibilidades</b>. Em: <font color=#330066>XVII Encontro de Pesquisa em Ensino de Física</font>, 2018.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVII Encontro de Pesquisa em Ensino de Física)</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO E SILVA, A.; ARASHIRO, E. ; SP Pinheiro ; KEESEN, F.. <b>'Fragmented Penna Model' e metapopulação: estudo de caso para </b>. Em: <font color=#330066>IX Congresso Brasileiro de Mastologia</font>, 2017.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX Congresso Brasileiro de Mastologia)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Fernando Santos Souza ; MATOS, M. J. S. ; ARAPIRACA, A. F. C. ; PINHEIRO, I. P ; SILVA, S. N. ; GALVAO, B. R. L.. <b>Adsorção de CO2 em Fosfato de Cálcio: Experimento e Modelagem Computacional</b>. Em: <font color=#330066>XX Encontro Nacional de Modelagem Computacional (XX ENMC) e VIII Encontro de Ciência e Tecnologia de Materiais (VIII ECTM)</font>, 2017.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XX Encontro Nacional de Modelagem Computacional (XX ENMC) e VIII Encontro de Ciência e Tecnologia de Materiais (VIII ECTM))</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>JARDIM, MARCUS VINÍCIUS DA SILVA ; MACEDO, MARCIANO QUITES ; ARAÚJO, FERNANDO GABRIEL DA SILVA. <b>RECUPERAÇÃO DE HASTE DE SONDAGEM POR MEIO DE PROCESSO DE SOLDAGEM</b>. Em: <font color=#330066>72º Congresso Anual da ABM</font>, p. 3357, 2017. <a href="http://dx.doi.org/10.5151/1516-392X-30890" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (72º Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Leituras de Originais de Cientistas no Ensino Médio: contribuições da discussão mediada</b>. Em: <font color=#330066>XXII Simpósio Nacional de Ensino de Física</font>, 2017.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXII Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>Os visitantes da exposição de ciências 'Cor da Luz' e suas impressões</b>. Em: <font color=#330066>XXII Simpósio Nacional de Ensino de Física</font>, 2017.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXII Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>Uma análise de modelos científicos e alternativos em uma exposição de ciências</b>. Em: <font color=#330066>XI Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2017.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XI Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Souza, S. H. ; CARVALHO, E. J.. <b>INVESTIGAÇÃO SOBRE A PRESENÇA DO CELULAR NA SALA DE AULA</b>. Em: <font color=#330066>l Simpósio Internacional da UFOP: Propostas e desafios na educação contemporânea</font>, 2017.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (l Simpósio Internacional da UFOP: Propostas e desafios na educação contemporânea)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>TEIXEIRA, MOISÉS PAULO ; SILVA, HERIC HENRIQUE SOUZA E ; SILVA, FABIANE LEOCÁDIA DA ; SILVA, ITAVAHN ALVES DA ; ARAUJO, FERNANDO GABRIEL S.. <b>CERÂMICAS ESTRUTURAIS PRODUZIDAS A PARTIR DE REJEITOS DO PROCESSAMENTO DE PEDRA-SABÃO</b>. Em: <font color=#330066>18º Simpósio de Mineração</font>, p. 1, 2017. <a href="http://dx.doi.org/10.5151/2594-357x-30017" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (18º Simpósio de Mineração)</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARROSO, ITAUANY DO NASCIMENTO ; Velten, Hermano. <b>SOLUÇÕES SOLITÔNICAS EM CONDENSADOS DE BOSE-EINSTEIN SUJEITOS A UM POTENCIAL DO TIPO KAPITZA</b>. Em: <font color=#330066>Cadernos de Física do PPGFISUFES 2024/1</font>, p. 10, 2016. <a href="http://dx.doi.org/10.5151/ppgfisufes20241-002" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Cadernos de Física do PPGFISUFES 2024/1)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CALAZANS, M. M. <b>Ciência, mineração e cotidianidade no conflito do rompimento da barragem de Fundão em Mariana-MG</b>. Em: <font color=#330066>I Simpósio Nacional Educação,Marxismo e Socialismo</font>, 2016.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (I Simpósio Nacional Educação,Marxismo e Socialismo)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CALAZANS, M. M. <b>De Ernst Mach e Wittgenstein ao Círculo de Viena: A Recusa gnosiológica à Ontologia</b>. Em: <font color=#330066>15° Seminário Nacional de História da Ciência e da Tecnologia</font>, 2016.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (15° Seminário Nacional de História da Ciência e da Tecnologia)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>DELABRIDA, SAUL ; LOUREIRO, ANTONIO A. F. ; D'ANGELO, THIAGO ; OLIVEIRA, RICARDO A. RABELO ; THOMAS, BRUCE ; CARVALHO, EDSON ; BILLINGHURST, MARK. <b>A Low Cost Optical See-Through HMD - Do-It-Yourself</b>. Em: <font color=#330066>2016 IEEE International Symposium on Mixed and Augmented Reality (ISMARAdjunct)</font>, p. 252, 2016. <a href="http://dx.doi.org/10.1109/ismar-adjunct.2016.0087" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: A2</b></font> (INTERNATIONAL SYMPOSIUM ON MIXED AND AUGMENTED REALITY)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Production Processes of Science Based on Reading a Text on some of the Earliest Notions of Quantum Physics</b>. Em: <font color=#330066>II World Conference on Physics Education</font>, v. 2, p. 1-5, 2016.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II World Conference on Physics Education)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PEREITA, L. R. ; FARACO, C. ; CASTRO E SILVA, A. ; ARASHIRO, E.. <b>Aplicação da Física na Arquitetura Mostrada Através de Experimentos</b>. Em: <font color=#330066>68a Reunião Anual da SBPC</font>, 2016.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (68a Reunião Anual da SBPC)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PIVARO, G. F.; KLEINKE, M. U.. <b>Por Dentro da Física da Cor: uma análise dos visitantes da exposição de ciências Cor da Luz</b>. Em: <font color=#330066>SEMINÁRIO INTERNO DO PROGRAMA DE PÓS-GRADUAÇÃO MULTIUNIDADES EM ENSINO DE CIÊNCIAS E MATEMÁTICA</font>, 2016.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SEMINÁRIO INTERNO DO PROGRAMA DE PÓS-GRADUAÇÃO MULTIUNIDADES EM ENSINO DE CIÊNCIAS E MATEMÁTICA)</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>H.E.S. Velten; Oliveira, Adriano ; WOJNAR, ANETA. <b>A free parametrized TOV: Modified gravity from Newtonian to relativistic stars</b>. Em: <font color=#330066>The Modern Physics of Compact Stars 2015</font>, v. 025, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (The Modern Physics of Compact Stars 2015)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LEITE FILHO, V. F. ; MACHADO, G. ; OLIVEIRA, A. B. ; Batista, Ronaldo J C ; MANHABOSCO, TAÍSE MATTE. <b>Incorporação de nanopartículas em filmes de polianilina eletropolimerizada</b>. Em: <font color=#330066>13˚ Congresso Brasileiro de Polímeros</font>, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (13˚ Congresso Brasileiro de Polímeros)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOBO, P. ; CASTRO E SILVA, A. ; ARASHIRO, E. ; PINHEIRO, CARLOS FELIPE. <b>Modelagem do Processo de Forrageamento de Morcegos Frugívoros por Simulação Computacional</b>. Em: <font color=#330066>VIII ENCONTRO BRASILEIRO PARA O ESTUDO DE QUIRÓPTEROS</font>, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VIII ENCONTRO BRASILEIRO PARA O ESTUDO DE QUIRÓPTEROS)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MAGALHAES, C. E. T. ; DIAS, K. S. ; SAVEDRA, Ranylson Marcello Leal ; RAMOS, RODRIGO ; SIQUEIRA, M. F.. <b>Structural Dependence of Photochromism in MEH-PPV Solutions</b>. Em: <font color=#330066>XVIII Simpósio Brasileiro de Química Teórica ? SBQT 2015</font>, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII Simpósio Brasileiro de Química Teórica ? SBQT 2015)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>O início da Física Quântica numa leitura de divulgação científica no ensino médio</b>. Em: <font color=#330066>XVI Encontro Nacional de Educação em Ciências</font>, p. 377-380, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVI Encontro Nacional de Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Sentidos Produzidos por Estudantes do Ensino Médio na Leitura de um Texto de Cientista do Início da Física Quântica</b>. Em: <font color=#330066>X Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (X Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SANTOS, C. P. S. ; ANDRADE, D. ; Luzzi, F. O. ; Souza, S. H. ; CARVALHO, E. J.. <b>O estabelecimento de um sistema de unidades de medidas, proposta de atividades para uma abordagem no Ensino de Física</b>. Em: <font color=#330066>V ESMEF- Encontro Sul Mineiro de Ensino de Física</font>, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (V ESMEF- Encontro Sul Mineiro de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SILVA, GUILHERME E. ; OLIVEIRA, KAYO V. S. ; Bianchi, Rodrigo F. ; CESTAROLLI, DANE T. ; GUERRA, ELIDIA M.. <b>Comparison of V2O5 and WO3 sandwicheds, via sol-gel, to development as photovoltaics cells</b>. Em: <font color=#330066>2015 IEEE 42nd Photovoltaic Specialists Conference (PVSC)</font>, v. 1, p. 1, 2015. <a href="http://dx.doi.org/10.1109/PVSC.2015.7355917" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (2015 IEEE 42nd Photovoltaic Specialists Conference (PVSC))</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SPINOLA, W. ; CASTRO E SILVA, A.. <b>Simulação de Fluxo de Pessoas em Ambientes Fechados</b>. Em: <font color=#330066>Encontro de Saberes</font>, 2015.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro de Saberes)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Velten, Hermano. <b>Modelling the growth of dissipative dark matter halos</b>. Em: <font color=#330066>II COSMOSUR: COSMOLOGY AND GRAVITATION IN THE SOUTHERN CONE</font>, p. 76, 2015. <a href="http://dx.doi.org/10.1063/1.4913342" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II COSMOSUR: COSMOLOGY AND GRAVITATION IN THE SOUTHERN CONE)</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>H.E.S. Velten; Simone Calogero. <b>Exploring non-linear cosmological matter diffusion coefficients</b>. Em: <font color=#330066>GRACO - Second Argentinian-Brazilian Meeting on Gravitation</font>, v. 7, p. 171, 2014.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (GRACO - Second Argentinian-Brazilian Meeting on Gravitation)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>HENEKA, C. ; POSADA, ALEXANDRE ; MARRA, VALERIO ; AMENDOLA, LUCA. <b>Searching for bias and correlations in a Bayesian way - Example: SN Ia data</b>. Em: <font color=#330066>Statistical Challenges in 21st Century Cosmology</font>, v. 10, p. 19-21, 2014.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Statistical Challenges in 21st Century Cosmology)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MACHADO, M. A. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes. <b>APRENDIZAGEM SIGNIFICATIVA DE AUSUBEL EM LIVROS DIDÁTICOS DO ENSINO MÉDIO</b>. Em: <font color=#330066>XV ENCONTRO DE PAESQUISA EM ENSINO DE FISICA</font>, 2014.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV ENCONTRO DE PAESQUISA EM ENSINO DE FISICA)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M.. <b>Produção de Sentidos numa Leitura de Divulgação Científica sobre Física Quântica no Ensino Médio</b>. Em: <font color=#330066>XV Encontro de Pesquisa em Ensino de Física</font>, 2014.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro de Pesquisa em Ensino de Física)</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CALAZANS, M. M.; AGUIAR, O. G.. <b>ESTRATÉGIAS ENUNCIATIVAS DOS DISCURSOS DIALÓGICO E DE AUTORIDADE NA FORMAÇÃO DE PROFESSORES DE CIÊNCIAS PARA A EDUCAÇÃO DO CAMPO</b>. Em: <font color=#330066>XX Simpósio Nacional de Ensino de Física</font>, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XX Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; KEESEN, F. ; SP Pinheiro ; E. Arashiro. <b>Computer simulation for Sapajus robustus in a fragmented environment</b>. Em: <font color=#330066>Models in Population Dynamics and Ecology - MPDE?13</font>, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Models in Population Dynamics and Ecology - MPDE?13)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>E. Arashiro ; SANTANNA, J. S. ; SILVA JUNIOR, I. O. ; SP Pinheiro ; CASTRO E SILVA, A. <b>Stochastic simulation of people moving in conﬁned spaces</b>. Em: <font color=#330066>XXIII Dynamic Days Europe</font>, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII Dynamic Days Europe)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>F L Silva ; ARAÚJO, F. G. S. ; C G Castro ; KRÜGER, Fernando Leopoldo Von ; J J Mendes. <b>Aproveitamento e Reciclagem de Resíduos de Mineração na Produção de Pavers</b>. Em: <font color=#330066>68 Congresso Internacional ABM</font>, v. 68, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (68 Congresso Internacional ABM)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; Jannotti Jr, N. ; ARAÚJO, F. G. S.. <b>Caracterização Geometalúrgica do Produto Granulado de Manganês de Urucum</b>. Em: <font color=#330066>68 Congresso Anual da ABM</font>, v. 68, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (68 Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; Jannotti Jr, N. ; ARAÚJO, F. G. S.. <b>Comparação Geometalúrgica entre o Produto Granulado e Pelotas do Azul</b>. Em: <font color=#330066>68 Congresso Anual da ABM</font>, v. 68, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (68 Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Henriques, A. B. ; Abramof, E. ; Rappl, P. H. O. ; GALGANO, G. D.. <b>Optically induced magnetic polarons in EuTe</b>. Em: <font color=#330066>THE PHYSICS OF SEMICONDUCTORS: Proceedings of the 31st International Conference on the Physics of Semiconductors (ICPS) 2012</font>, v. 1566, p. 353-354, 2013. <a href="http://dx.doi.org/10.1063/1.4848431" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: B2</b></font> (ICPS)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>J J Mendes ; ARAÚJO, F. G. S. ; SOLE, R. A. L. ; WENDLING, F.. <b>Study on pilot scale for assessing the auality of iron ore pellets</b>. Em: <font color=#330066>19ª IAS Steel Conference 2013</font>, v. 19, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (19ª IAS Steel Conference 2013)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>N L Zinato ; J J Mendes ; L C A Cordeiro ; ARAÚJO, F. G. S.. <b>Caracterização tecnológica por faixas granulométricas do minério de ferro contido em barragens de rejeito gerado no processo de beneficiamento</b>. Em: <font color=#330066>Encontro Nacional de Estudantes de Engenharia Metalúrgica</font>, v. 13, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro Nacional de Estudantes de Engenharia Metalúrgica)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAGLIARINI, C. R.; ALMEIDA, Maria José P. M. ; FONTES, G. S.. <b>Leituras de Sites Relacionados à Energia Nuclear no Ensino Médio</b>. Em: <font color=#330066>IX Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Schimitberger, T. ; FRANCO, M. R. ; Faria, L. O. ; P. S. Curly ; Bianchi, R. F.. <b>New Flexible High Gamma Dose Dosimeter Based on Luminescent and Biodegradable Polymer Blend</b>. Em: <font color=#330066>Material Research Society Meeting</font>, v. 1576, p. Mrss13-1576-ww0-Mrss13-1576-ww0, 2013.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Material Research Society Meeting)</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CALAZANS, M. M.; AGUIAR, O. G.. <b>AS PERGUNTAS DO PROFESSOR DE FÍSICA NO DIÁLOGO/CONFRONTO ENTRE AS CULTURAS DOS ESTUDANTES DO CAMPO E A CULTURA DA CIÊNCIA ESCOLAR</b>. Em: <font color=#330066>XIV Encontro de Pesquisa em Ensino de Física</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV Encontro de Pesquisa em Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>F L Silva ; C G Castro ; KRÜGER, Fernando Leopoldo Von ; da Silva Araujo, F. G. ; J J Mendes. <b>RECICLAGEM DE REJEITOS DA CONCENTRAÇÃO DO MINÉRIO DE FERRO PARA A PRODUÇÃO DE BLOCOS DE CONCRETO (PAVERS)</b>. Em: <font color=#330066>CBECIMAT</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; Jannotti Jr, N. ; ARAÚJO, F. G. S.. <b>Caracterização Geometalúrgica do Produto Granulado de Manganês de Morro da Mina</b>. Em: <font color=#330066>CBECIMAT 2012</font>, v. 20, p. 381-393, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CBECIMAT 2012)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; Jannotti Jr, N. ; ARAÚJO, F. G. S.. <b>Estudo da Degradação Granulométrica do Produto Granulado de Morro da Mina</b>. Em: <font color=#330066>67 Congresso da ABM</font>, v. 67, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (67 Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; REIS, Érica Linhares ; Jannotti Jr, N. ; ARAÚJO, F. G. S.. <b>Estudo Quantitativo de Decomposição Térmica dos Principais Produtos Granulados de Minério de Manganês do Brasil</b>. Em: <font color=#330066>67 Congresso Anual da ABM</font>, v. 67, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (67 Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>L C A Cordeiro ; ARAÚJO, F. G. S. ; J J Mendes ; N L Zinato. <b>Avaliação da susceptibilidade magnética de minerais depositados em barragens de rejeitos de minério de ferro</b>. Em: <font color=#330066>20° CBECIMAT</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (20° CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>N L Zinato ; L C A Cordeiro ; J J Mendes ; ARAÚJO, F. G. S.. <b>Caracterização tecnológica de rejeito ultrafino de minério de ferrro proveniente do processo de beneficiamento</b>. Em: <font color=#330066>20° CBECIMAT</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (20° CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PAGLIARINI, C. R.; PEREIRA, A. G. ; ALMEIDA, Maria José P. M.. <b>O Efeito Fotoelétrico em Livros Didáticos do PNLD 2012</b>. Em: <font color=#330066>XIV Encontro de Pesquisa em Ensino de Física</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV Encontro de Pesquisa em Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Rocha, H. A. ; Savedra, M. F. S. ; de Lima, Roberto B. ; Varela, J. J. G.. <b>ON THE GLYCOLIC ACID OXIDATION: THEORETICAL AND EXPERIMENTAL STUDY (Electrocatalysis)</b>. Em: <font color=#330066>International Symposium on Electrocatalysis: New Concepts and Approaches</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Symposium on Electrocatalysis: New Concepts and Approaches)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROCHA, H. L. R. ; YOSHIOKA, N. A. ; CAZATI, T. ; MANHABOSCO, T.M.. <b>ELETROPOLIMERIZAÇÃO PULSADA DE POLIANILINA (PANI) PARA APLICAÇÃO EM CÉLULAS SOLARES ORGÂNICAS</b>. Em: <font color=#330066>67 Congresso ABM - Internacional</font>, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (67 Congresso ABM - Internacional)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>VIANNA, N. C. ; REIS, Érica Linhares ; FARIA, Geraldo Lúcio de ; ARAÚJO, F. G. S.. <b>Caracterização Mineralógica dos Litotipos de Minério de Manganês Sílico-carbonatado da Mina de Morro da Mina</b>. Em: <font color=#330066>67 Congresso Anual da ABM</font>, v. 67, 2012.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (67 Congresso Anual da ABM)</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Araújo, F.G.S.; ALMEIDA, Jr ; AIRTON, T. ; NOGUEIRA, M. S. ; SANTOS, M. A. P. ; VIEIRA, J. W.. <b>Mass Attenuation Coefficients of X-Ray and Gamma of Materials Used in Radiation Protection as Shielding</b>. Em: <font color=#330066>XII International Symposium</font>, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XII International Symposium)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; FLECHA, A. C.. <b>Medidas de centralidade como parâmetros para se avaliar os atores da rede de turismo: o caso de Ouro Preto</b>. Em: <font color=#330066>XIV Simpósio de Administração da Produção</font>, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV Simpósio de Administração da Produção)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO E SILVA, A; FLECHA, A. C. ; Fusco JPA. <b>Arranjos Produtivos Locais e seus Efeitos Sobre o Turismo</b>. Em: <font color=#330066>XIV Simpósio de Administração da Produção</font>, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV Simpósio de Administração da Produção)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO E SILVA, A; GODINHO, C. ; WEBER, G.. <b>Topolgy of small noncoding RNA similarity networks</b>. Em: <font color=#330066>Simpósio Interdisciplinar Física+Bioinformática</font>, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Simpósio Interdisciplinar Física+Bioinformática)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CASTRO E SILVA, A; PEDRONI, J.. <b>Transposable Elements and their Identity Networks in Evolutionary Characterization of Eukaryotes</b>. Em: <font color=#330066>X-Meeting</font>, 2011.<font color="#254117"><b>Qualis: B4</b></font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; MENDONÇA, Francisco Cesar ; ARAÚJO, F. G. S.. <b>Minerografia: Determinação Estatística do Erro Associado à Amostragem</b>. Em: <font color=#330066>66º Congresso Anual ABM</font>, v. 66, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (66º Congresso Anual ABM)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; REIS, Érica Linhares ; Jannotti Jr, N. ; ARAÚJO, F. G. S.. <b>DECOMPOSIÇÃO TÉRMICA E DEGRADAÇÃO GRANULOMÉTRICA DA TIPOLOGIA DE MINÉRIO DE MANGANÊS URUCUM STANDAR</b>. Em: <font color=#330066>66º Congresso Anual ABM</font>, v. 66, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (66º Congresso Anual ABM)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Galgano, G. D.; Henriques, A B ; BAUER, G. ; SPRINGHOLZ, G.. <b>Optical probing of metamagnetic phases in EuSe</b>. Em: <font color=#330066>International Conference on the Physics of Semiconductors</font>, v. 1399, p. 671-672, 2011. <a href="http://dx.doi.org/10.1063/1.3666555" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Conference on the Physics of Semiconductors)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MAGALHAES, C. E. ; M. F. S. Pinto ; BIANCHI, R. F.. <b>Estudo das propriedades estruturais e eletrônicos em modelos de copolímeros de fluoreno</b>. Em: <font color=#330066>Encontro de Saberes - UFOP</font>, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro de Saberes - UFOP)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MEIRELES, S. P. ; SANTOS, A. M. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes ; GRYNBERG, S. E.. <b>Cell damage from radiation-induced bystander effects for different cell densities simulated by cellular automata</b>. Em: <font color=#330066>AUTOMATA 2011 17 International Workshop on Cellular Automata and Discrete Complex Systems</font>, p. 215-220, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (AUTOMATA 2011 17 International Workshop on Cellular Automata and Discrete Complex Systems)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Pigatto, C. ; Marasca, L. ; KRISCHER, C. A. ; Manhabosco, T. M. ; MALFATTI, C. F. ; Müller, I.L.. <b>INFLUÊNCIA DOS PARÂMETROS OPERACIONAIS DE ELETROPOLIMENTO NA OBTENÇÃO DE SUPERFICIES NANOESTRUTURADAS SOBRE A LIGA Ti6Al4V</b>. Em: <font color=#330066>66 Congresso da ABM</font>, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (66 Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>REIS, Érica Linhares ; FARIA, Geraldo Lúcio de ; ARAÚJO, F. G. S. ; TENÓRIO, J. A. S. ; Jannotti Jr, N.. <b>Estudo preliminar da Decomposição Térmica de Tipologias de Minérios de Manganês da Região de Carajás</b>. Em: <font color=#330066>66º Congresso Anual ABM</font>, v. 66, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (66º Congresso Anual ABM)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>REIS, Érica Linhares ; FARIA, Geraldo Lúcio de ; Araújo, F.G.S. ; TENÓRIO, J. A. S. ; Jannotti Jr, N.. <b>Caracterização de Tipologias de Minérios de Manganês da Região de Carajás</b>. Em: <font color=#330066>XXIV Encontro Nacional de Tratamento de Minérios e Metalurgia Extrativa</font>, v. 24, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIV Encontro Nacional de Tratamento de Minérios e Metalurgia Extrativa)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SILVA, A. C. ; BERNARDES, A. T.. <b>Computer simulation of the direct reduction iron fabrication in Midrex ovens</b>. Em: <font color=#330066>3rd International Symposium on Computational Modelling - Computational Modelling '11</font>, v. 1, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (3rd International Symposium on Computational Modelling - Computational Modelling '11)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SILVA, A. C. ; Elenice Maria Schons Silva ; BERNARDES, A. T. ; freitas, s.o.. <b>Computer simulation of the granular material flow in silos</b>. Em: <font color=#330066>3rd International Symposium on Computational Modelling - Computational Modelling '11</font>, v. 1, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (3rd International Symposium on Computational Modelling - Computational Modelling '11)</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA, A. C. ; LUZ, J. A. M. ; BERNARDES, A. T.. <b>A fractal approach for mineral breakage</b>. Em: <font color=#330066>3rd International Symposium on Computational Modelling - Computational Modelling '11</font>, v. 1, 2011.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (3rd International Symposium on Computational Modelling - Computational Modelling '11)</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Falcade, T. ; Manhabosco, T. M. ; MULLER, I. L.. <b>Resistência à corrosão de filmes de carbono obtidos por eletrodeposição: influência do substrato</b>. Em: <font color=#330066>INTERCORR2010</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERCORR2010)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; VIANNA, N. C. ; Jannotti Jr, N. ; VIEIRA, C. B. ; Araújo, F.G.S.. <b>DECREPITATION OF BRAZILIAN MANGANESE LUMP ORES</b>. Em: <font color=#330066>The Twelfth International Ferroalloys Congress - INFACON XII</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (The Twelfth International Ferroalloys Congress - INFACON XII)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FLECHA, A. C. ; Fusco JPA ; BEERNARDES, A. T. ; CASTRO E SILVA, A. <b>A sustentabilidade dos eventos em centros históricos urbanos o caso de ouro preto, MG</b>. Em: <font color=#330066>4º Congreso Latinoamericano de Investigación Turística</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (4º Congreso Latinoamericano de Investigación Turística)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FLECHA, A. C. ; Fusco JPA ; BEERNARDES, A. T. ; CASTRO E SILVA, A. <b>Medidas de centralidade como parâmetros para se avaliar os atores da rede de turismo</b>. Em: <font color=#330066>XVII Simpósio Nacional de Engenharia de Produção</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVII Simpósio Nacional de Engenharia de Produção)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FLECHA, A. C. ; Fusco JPA ; BERNARDES, A. T. ; CASTRO E SILVA, A. <b>(Des) Arranjos Produtivos Locais no turismo</b>. Em: <font color=#330066>XVII Simpósio Nacional de Engenharia de Produção</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVII Simpósio Nacional de Engenharia de Produção)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Galgano, G. D.; HENRIQUES, A. B. ; ABRAMOF, E.. <b>Magnetic Linear Dichroism Effects in EuTe</b>. Em: <font color=#330066>29th Internationa Conference on the Physics of Semiconductors</font>, v. 1199, p. 439-440, 2010. <a href="http://dx.doi.org/10.1063/1.3295493" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (29th Internationa Conference on the Physics of Semiconductors)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>KAINULAINEN, KIMMO ; MARRA, VALERIO ; ALIMI, JEAN-MICHEL ; FUO'ZFA, ANDRE'. <b>Impact of cosmic inhomogeneities on SNe observations</b>. Em: <font color=#330066>INVISIBLE UNIVERSE: Proceedings of the Conference</font>, v. 1241, p. 1043, 2010. <a href="http://dx.doi.org/10.1063/1.3462598" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INVISIBLE UNIVERSE: Proceedings of the Conference)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Manhabosco, T. M.; TAMBORIM, S. M. ; Jarenkow, A. ; Ilha, M. ; Martins, L.A.M. ; Müller, I. L. ; Guma, F.T.C.R.. <b>Biocompatibilidade e comportamento eletroquímico de titânio eletropolido com e sem filmes de DLC (DiamondLike Carbon)</b>. Em: <font color=#330066>INTERCORR2010</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERCORR2010)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Manhabosco, T. M.; TAMBORIM, S. M. ; MALFATTI, C. F. ; Martins, L.A.M. ; Ilha, M. ; Moema, Q. V. ; Guma, F.T.C.R. ; Müller, I. L.. <b>Biocompatibility of electrodeposited of diamond-like carbon (DLC) on titanium</b>. Em: <font color=#330066>6 Congresso Latino Americano de Órgão Artificiais e Biomateriais (COLAOB)</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (6 Congresso Latino Americano de Órgão Artificiais e Biomateriais (COLAOB))</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARRA, VALERIO. <b>Gravitational lensing and parameter extraction from SNe catalogues</b>. Em: <font color=#330066>45th Rencontres de Moriond</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (45th Rencontres de Moriond)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MENDES FILHO, A. A. ; PEREIRA, Renato Alves ; SOUZA, C. M. ; Araújo, F.G.S.. <b>Recobrimentos de hidroxiapatita reciclada em substrato de aço inoxidável 316L</b>. Em: <font color=#330066>65º Congresso da ABM</font>, p. 3353-2260, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (65º Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MENDES FILHO, A. A. ; PEREIRA, Renato Alves ; SOUZA, C. M. ; GOUVEIA, V. J. P. ; Araújo, F.G.S.. <b>Síntese e caracterização de compósitos de hidroxiapatita natural (reciclada) com titânia</b>. Em: <font color=#330066>65º Congresso da ABM</font>, p. 3439-3444, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (65º Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MENDES FILHO, A. A. ; SOUZA, C. M. ; GOUVEIA, V. J. P. ; Ardisson, José Domingos ; PEREIRA, Renato Alves ; Araújo, F.G.S.. <b>Nanoparticulas a base de óxido de ferro e de cobalto sintetizadas pelo método hidrotérmico</b>. Em: <font color=#330066>VI Congresso Latino Americano de Órgãos Artificiais e Biomateriais (COLAOB 2010)</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VI Congresso Latino Americano de Órgãos Artificiais e Biomateriais (COLAOB 2010))</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Rosa, M. A. ; Manhabosco, T. M. ; Schroeder, R.M. ; Müller, I. L.. <b>COMPORTAMENTO À CORROSÃO E À CORROSÃO SOB TENSÃO DO AÇO INOXIDÁVEL DUPLEX AISI 318 EM MEIO CONTENDO CLORETO, CO2 E pH4</b>. Em: <font color=#330066>INTERCORR2010</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (INTERCORR2010)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Schmitzhaus, T. ; Falcade, T. ; Jarenkow, A. ; Manhabosco, T. M. ; Müller, I. L.. <b>Estudo da resistência à corrosão de alumínio revestido com filmes de carbono obtidos por eletrodeposição</b>. Em: <font color=#330066>65 Congresso Internacional da ABM</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (65 Congresso Internacional da ABM)</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>TAMBORIM, S. M. ; Manhabosco, T. M. ; Müller, I. L.. <b>Caracterização Tribológica, eletroquímica e tribo-eletroquímica da liga de titânio Ti6Al4V nitretada em solução de PBS</b>. Em: <font color=#330066>65 Congresso Internacional da ABM</font>, 2010.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (65 Congresso Internacional da ABM)</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bagdonas, Alexandre ; Florio, V. ; Silva, Cibelle. <b>Discutindo a natureza da ciência a partir de episódios da história da cosmologia: o grande debate</b>. Em: <font color=#330066>Simpósio Nacional de Ensino de Física</font>, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>de Souza, Camila Mateus ; GOUVEIA, V. J. P. ; PINTO, L. C. B. M. ; Araújo, F.G.S. ; Ardisson, José Domingos ; MENDES FILHO, A. A.. <b>NANOPARTÍCULAS MAGNÉTICAS A BASE DE MAGNETITA PROCESSADAS PELO MÉTODO HIDROTÉRMICO</b>. Em: <font color=#330066>64o Congresso da ABM</font>, v. 1, p. 1-8, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (64o Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>de Souza, Camila Mateus ; GOUVEIA, V. J. P. ; PINTO, L. C. B. M. ; Araújo, F.G.S. ; Ardisson, José Domingos ; MENDES FILHO, A. A.. <b>SÍNTESE DE NANOPARTÍCULAS DE MAGHEMITA PELO PROCESSO HIDROTÉRMICO E CARACTERIZAÇÃO</b>. Em: <font color=#330066>64o Congresso da ABM</font>, v. 1, p. 1-9, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (64o Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Fabris, J. C. ; Goncalves, S. V.B. ; H.E.S. Velten ; Zimdahl, W.. <b>Newtonian approach to the matter power spectrum of the generalized chaplygin gas</b>. Em: <font color=#330066>Dark Energy and Dark Matter: Observations</font>, v. 36, p. 17-24, 2009. <a href="http://dx.doi.org/10.1051/eas/0936003" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Dark Energy and Dark Matter: Observations)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; REIS, Érica Linhares ; Araújo, F.G.S. ; VIEIRA, C. B. ; TENÓRIO, J. A. S.. <b>ESTABILIDADE TÉRMICA DE FASES MINERAIS EM DOIS MINÉRIOS DISTINTOS DE MANGANÊS</b>. Em: <font color=#330066>64o Congresso da ABM</font>, v. 1, p. 1-7, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (64o Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA, Carlos R. ; Araújo, F.G.S. ; EISELE, R. ; MACEDO, M. Q.. <b>AVALIAÇÃO DO DESEMPENHO DE COMPÓSITOS DE MATRIZ METÁLICA A BASE DE W EMPREGADOS EM BROCAS DE PERFURAÇÃO PARA SONDAGEM GEOLÓGICA EM QUARTZITO</b>. Em: <font color=#330066>64o Congresso da ABM</font>, v. 1, p. 1-9, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (64o Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Ferreira, G. R. ; DE VASCONCELOS, C. K. B. ; BIANCHI, R. F.. <b>Dosímetro pessoal de radiação azul baseado em sistemas orgânicos luminescentes</b>. Em: <font color=#330066>XIV Congresso Brasileiro de Física Médica</font>, v. 01, p. 01-04, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV Congresso Brasileiro de Física Médica)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Ferreira, G. R. ; DE VASCONCELOS, C. K. B. ; T. Schimitberger ; M. M. Silva ; A. S. DUARTE ; Bianchi, R. F.. <b>Caracterização de filmes de PS/MEH-PPV/Alq3 para aplicação em sensores de acúmulo de radiação azul</b>. Em: <font color=#330066>Anais do 10o Congresso Brasileiro de Polímeros - CBPOL</font>, v. 01, p. 01-08, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Anais do 10o Congresso Brasileiro de Polímeros - CBPOL)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V.; Bagdonas, Alexandre. <b>Vida Longa à Galáxia!</b>. Em: <font color=#330066>61 Reunião da Sociedade Brasileira para o Progresso da Ciência</font>, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (61 Reunião da Sociedade Brasileira para o Progresso da Ciência)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>J. Guerra ; A. S. DUARTE ; Bianchi, R. F. ; Santos, Z. A. S. ; A. G. C. Bianchi. <b>Projeto e desenvolvimento de produto: proposta e desenvolvimento de dispositivo eletrônico orgânico para auxiliar no tratamento da icterícia</b>. Em: <font color=#330066>XIV SIMPEP - Simpósio de Engenharia de Produção</font>, v. 01, p. 1-11, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV SIMPEP - Simpósio de Engenharia de Produção)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MACEDO, M. Q. ; FERREIRA, Carlos R. ; Araújo, F.G.S. ; EISELE, R.. <b>TRATAMENTOS TÉRMICOS POR INDUÇÃO ELETROMAGNÉTICA DE TUBOS DE AÇO SAE 4130 PARA UTILIZAÇÃO COMO HASTES DE SONDAGEM GEOLÓGICA</b>. Em: <font color=#330066>64o Congresso da ABM</font>, v. 1, p. 1-9, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (64o Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Manhabosco, S. M. ; Falcade, T. ; Jarenkow, A. ; Manhabosco, T. M. ; Müller, I. L.. <b>Eletrodeposição de filmes de carbono sobre substrato de alumínio</b>. Em: <font color=#330066>64° Congresso da ABM</font>, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (64° Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>OLIVEIRA, Catiane C. ; IKUNO, Edson. Y. ; SIQUEIRA, M. F.. <b>ESTUDO TEÓRICO SOBRE AS INTERAÇÕES DE INIDORES EM DIFERENTES ESTÁGIOS DO PROCESSO INFLAMÁTORIO DA ARTRITE REUMATÓIDE</b>. Em: <font color=#330066>CIC-UNICEP 2009</font>, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CIC-UNICEP 2009)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SANTOS, M. C. ; F. M. Souza ; F. P. Teixeira ; g. e. c. herculano ; A. G. C. Bianchi ; Bianchi, R. F.. <b>Preparação e caracterização de filmes ultrafinos de PANI/PVS para aplicação como sensores de amônia em galpôes de criação avícola</b>. Em: <font color=#330066>10o. Congresso Brasileiro de Polímeros</font>, v. 01, p. 01-08, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (10o. Congresso Brasileiro de Polímeros)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Tahisa ; SIQUEIRA, M. F.. <b>ESTUDO TEÓRICO SOBRE AS PRINCIPAIS INTERAÇÕES ENTRE O LIGANTE SPD-304 E O FATOR DE NECROSE TUMORAL ALFA (TNF- α) PARA A INIBIÇÃO DA ARTRITE REUMATÓIDE</b>. Em: <font color=#330066>12º Congresso de Iniciação Científica - CIC / UNICEP</font>, 2009.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12º Congresso de Iniciação Científica - CIC / UNICEP)</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Araújo, F.G.S.; ALVES, S. A. ; PEREIRA, Renato Alves ; PINTO, L. C. B. M. ; SILVA, L. M. ; GOUVEIA, V. J. P.. <b>PROCESSAMENTO E CARACTERIZAÇÃO DE COMPÓSITOS DE HIDROXIAPATITA COM ÓXIDOS BIOTOLERÁVEIS</b>. Em: <font color=#330066>COLAOB - 5° Congresso Latino Americano de Órgãos Artificiais e Biomateriais</font>, v. 1, p. 1-7, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (COLAOB - 5° Congresso Latino Americano de Órgãos Artificiais e Biomateriais)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; WEBER, G. ; Guerra-Sá R. ; R. F. MAchado ; WANNER, E.. <b>Redes deIdentidades em Transposons em Drosophila Melanogaster</b>. Em: <font color=#330066>XXXI Encontro Nacional de Física da Matéria Condensada</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXXI Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FAGUNDES-LIMA, D. ; Guerra-Sá R. ; CASTRO E SILVA, A ; R. F. MAchado ; WEBER, G.. <b>Caraterísticas das regiões genômicas vizinhas de microRNAs em \textit{D. melanogaster} e \textit{C. elegans}</b>. Em: <font color=#330066>XXXI Encontro Nacional de Física da Matéria Condensada</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXXI Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FARIA, Geraldo Lúcio de ; REIS, Érica Linhares ; KRÜGER, Fernando Leopoldo Von ; da Silva Araujo, F. G. ; VIEIRA, C. B. ; Jannotti Jr, N.. <b>CARACTERIZAÇÃO E CONCENTRAÇÃO DE FINOS DE LIGAS DE MANGANÊS (FeMnAC e FeSiMn)</b>. Em: <font color=#330066>63° Congresso Anual da ABM</font>, v. 1, p. 3285-3292, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (63° Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>KETTL, J. ; Manhabosco, T. M. ; Galio, A.F. ; MULLER, I. L.. <b>Avaliação de filmes híbridos orgânico/Inorgânicos contendo inibidores de corrosão</b>. Em: <font color=#330066>CBECIMAT</font>, v. 18, p. 7708-7716, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Manhabosco, T. M.; Falcade, T. ; MULLER, I. L.. <b>Formação e Caracterização de Filmes DLC Obtidos por Eletrodeposição</b>. Em: <font color=#330066>63° Congresso Anual da ABM</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (63° Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Manhabosco, T. M.; Falcade, T. ; MULLER, I. L.. <b>Influência do substrato na eletrodeposição de filmes de carbono a partir de líquidos orgânicos</b>. Em: <font color=#330066>8° Congresso Internacional de Metalurgia y Materiales</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (8° Congresso Internacional de Metalurgia y Materiales)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>Tribocorrosão da liga Ti6Al4V em solução PBS</b>. Em: <font color=#330066>2nd International International Corrosion Meeting / 28° Congresso Brasileiro de Corrosão</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (2nd International International Corrosion Meeting / 28° Congresso Brasileiro de Corrosão)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>Tribocorrosão da liga Ti6Al4V nitretada em meio fisiológico</b>. Em: <font color=#330066>CBECIMAT</font>, v. 18, p. 5557-5568, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARRA, VALERIO. <b>On cosmological observables in a swiss-cheese universe</b>. Em: <font color=#330066>43rd Rencontres de Moriond: Cosmology</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (43rd Rencontres de Moriond: Cosmology)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Matheus Matos; JESUS, A. D. C. ; Prado, AFBA. <b>Orbital Continuous transfer under low thrust, n burn arcs and pitch and yaw deviations</b>. Em: <font color=#330066>XIII Coloquio Brasileiro de Dinamica Orbital</font>, v. 1, p. 120-131, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Coloquio Brasileiro de Dinamica Orbital)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MENDES FILHO, Antônio Alves ; PEREIRA, Renato Alves ; GOUVEIA, V. J. P. ; PINTO, L. C. B. M. ; da Silva Araujo, F. G.. <b>PRODUÇÃO DE NANOPARTÍCULAS DE NÍQUEL CATALÍTICO PELO PROCESSO HIDROTÉRMICO</b>. Em: <font color=#330066>63º Congresso Anual da ABM</font>, v. 1, p. 796-804, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (63º Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MENDES FILHO, Antônio Alves ; PEREIRA, Renato Alves ; PINTO, L. C. B. M. ; Araújo, F.G.S.. <b>HIDROXIAPATITA: PROCESSAMENTO E ESTABILIDADE TÉRMICA</b>. Em: <font color=#330066>COLAOB 2008 - 5° Congresso Latino Americano de Órgãos Artificiais e Biomateriais</font>, v. 1, p. A516, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (COLAOB 2008 - 5° Congresso Latino Americano de Órgãos Artificiais e Biomateriais)</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>PEREIRA, Renato Alves ; MENDES FILHO, Antônio Alves ; da Silva Araujo, F. G.. <b>EFEITOS DA DOPAGEM COM MANGANÊS NAS PROPRIEDADES ELÉTRICAS DO TITANATO DE BÁRIO PRODUZIDO POR SÍNTESE HIDROTÉRMICA</b>. Em: <font color=#330066>63° Congresso Anual da ABM</font>, v. 1, p. 662-668, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (63° Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>REIS, Érica Linhares ; FARIA, Geraldo Lúcio de ; da Silva Araujo, F. G. ; VIEIRA, C. B. ; Jannotti Jr, N.. <b>CARACTERIZAÇÃO DAS TIPOLOGIAS DE MINÉRIOS DE MANGANÊS DA UNIDADE MORRO DA MINA/RDM</b>. Em: <font color=#330066>18º CBECiMat - Congresso Brasileiro de Engenharia e Ciência dos Materiais</font>, v. 1, p. 5827-5837, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (18º CBECiMat - Congresso Brasileiro de Engenharia e Ciência dos Materiais)</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA, Cibelle C. ; PAGLIARINI, C. R.. <b>A natureza da ciência em livros didáticos de física</b>. Em: <font color=#330066>XI Encontro de Pesquisa em Ensino de Física</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XI Encontro de Pesquisa em Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>WARDIL, L. ; KAMPHORST LEAL DA SILVA, J ; CASTRO E SILVA, A. <b>A estabilidade dos osciladores circadianos da Drosophila melanogaster e dos mamíferos</b>. Em: <font color=#330066>XXXI Encontro Nacional de Física da Matéria Condensada</font>, 2008.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXXI Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERREIRA, C. R. ; da Silva Araujo, F. G. ; EISELE, R. ; MACEDO, M. Q. ; OLIVEIRA, C. P.. <b>Uso de Pastilhas de Metal Duro como Elemento de Corte Fixadas com Adesivos Poliméricos em Coroas de Perfuração para Sondagem Geológica</b>. Em: <font color=#330066>62° Congresso Anual da ABM</font>, v. 1, p. 572-578, 2007.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (62° Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>HENRIQUES, A. B. ; Galgano, G. D. ; DÍAZ, B. ; RAPPL, P. H. O ; ABRAMOF, E.. <b>Exchange interaction effects on the optical properties of EuxPb1-xTe</b>. Em: <font color=#330066>28th International Conference on the Physics of Semiconductors</font>, v. 893, p. 1233-1234, 2007. <a href="http://dx.doi.org/10.1063/1.2730345" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (28th International Conference on the Physics of Semiconductors)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Henríquez, A ; Prado, O. ; Martínez, M. ; Villalba, E. ; VIEIRA, C. B. ; da Silva Araujo, F. G. ; Avendaño, E.. <b>CARACTERISTICAS DE MINERALES DE HIERRO VENEZOLANOS Y SU INFLUENCIA SOBRE LA CALIDAD FISICA Y METALÚRGICA DE LAS PELLAS DE TERNIUM SIDOR</b>. Em: <font color=#330066>6th IAS Ironmaking Conference</font>, v. 1, p. 363-371, 2007.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (6th IAS Ironmaking Conference)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Manhabosco, T. M.; KETTL, J. ; MULLER, I. L.. <b>ELETRODEPOSIÇÃO DE FILMES TIPO DLC SOBRE Ti</b>. Em: <font color=#330066>CARBONO 2007</font>, 2007.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CARBONO 2007)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Manhabosco, T. M.; SANTOS, C. B. ; MULLER, I. L.. <b>RESISTÊNCIA À TRIBOCORROSÃO DE LIGA DE TI, NITRETADA OU NÂO, REVESTIDA COM DLC</b>. Em: <font color=#330066>CARBONO 2007</font>, 2007.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CARBONO 2007)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PAGLIARINI, C. R.; SILVA, Cibelle C.. <b>History and nature of science in Brazilian physics textbooks: some findings and perspectives</b>. Em: <font color=#330066>Ninth International History</font>, 2007.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Ninth International History)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>VIEIRA, C. B. ; KRÜGER, Fernando Leopoldo Von ; da Silva Araujo, F. G. ; Vieira Filho, J. B.. <b>SECAGEM E TRATAMENTO TÉRMICO DE GRANULADOS DE MINÉRIOS DE FERRO PARA USO EM REATORES DE REDUÇÃO: APLICAÇÃO EM USINAS SIDERÚRGICAS BRASILEIRAS</b>. Em: <font color=#330066>6th IAS Ironmaking Conference</font>, v. 1, p. 395-400, 2007.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (6th IAS Ironmaking Conference)</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AVILA, L. F. ; CARVALHO, E. J. ; Cescato, L.. <b>Estudo da sensibilidade de Materiais Fotossensíveis Utilizando exposições Holográficas</b>. Em: <font color=#330066>XXIX Encontro Nacional de Física da Matéria COndensada</font>, v. 1, p. 120-120, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIX Encontro Nacional de Física da Matéria COndensada)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T. ; PINHEIRO, C. F. S. ; MACHADO, R. F. ; G P Silva ; Flecha, A. C.. <b>Interações dos Atores do Setor do Turismo na Cidade de Ouro Preto</b>. Em: <font color=#330066>IV SEMINÁRIO DE PESQUISA EM TURISMO DO MERCOSUL</font>, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IV SEMINÁRIO DE PESQUISA EM TURISMO DO MERCOSUL)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J.; ALVES, M. A. R. ; Braga, E. S. ; Cescato, L.. <b>Caracterização da emissão de elétrons por efeito de campo em arranjos de alta densidade de ponteiras de silício</b>. Em: <font color=#330066>CBRAVIC-COngresso Brasileiro de de Aplicações de Vácuo na Indústria e Na Ciência</font>, v. 1, p. 27-27, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CBRAVIC-COngresso Brasileiro de de Aplicações de Vácuo na Indústria e Na Ciência)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; SANTOS, Lucas ; FARIA, Roberto. <b>Cathodes Metals Effect on the Photoccinductivity Behavior of Polymeric Light-Emitting Devices</b>. Em: <font color=#330066>V Encontro do Instituto Milênium de Materiais Poliméricos-IMMP</font>, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (V Encontro do Instituto Milênium de Materiais Poliméricos-IMMP)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MENEZES, J. W. ; QUINONEZ, F. ; CARVALHO, E. J. ; Cescato, L.. <b>Multiple Exposure of Interference Patterns for Recording Hexagonal 2D Photonic Crystals</b>. Em: <font color=#330066>ICO Topicaol Meeting on Optoinformatics/Information Photonics</font>, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICO Topicaol Meeting on Optoinformatics/Information Photonics)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Oliveira, S. S. ; Flecha, A. C. ; Knupp, M. G. ; BERNARDES, A. T. ; PINHEIRO, C. F. S.. <b>REDES COMPLEXAS: INTERAÇÕES DOS ATORES DO SETOR DO TURISMO NA CIDADE DE OURO PRETO</b>. Em: <font color=#330066>XIII Simpósio de Engenharia de Producão</font>, v. XIII, p. 236-246, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Simpósio de Engenharia de Producão)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PAGLIARINI, C. R.; SILVA, Cibelle C.. <b>A estrutura dos mitos históricos nos livros de física</b>. Em: <font color=#330066>X Encontro de Pesquisa em Ensino de Física</font>, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (X Encontro de Pesquisa em Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>RANGEL, R. C. C. ; RANGEL, E. C. ; CARVALHO, E. J. ; Cescato, L. ; CRUZ, N. C.. <b>Plasma modification of holographic diffraction gratings</b>. Em: <font color=#330066>Congresso Brasileiro de Aplicações de Vácuo na Indústria e na Ciência</font>, v. 1, p. 60-60, 2006.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Congresso Brasileiro de Aplicações de Vácuo na Indústria e na Ciência)</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; ALBUQUERQUE, E. ; RUIZ, R. M. ; RIBEIRO, L. C.. <b>Modelling the role of National System of Innovation in economical differentiation</b>. Em: <font color=#330066>8th Granada Seminar on Computational and Statistical Physics (Modeling Cooperative Behavior in the Social Sciences)</font>, v. 779, p. 162-165, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (8th Granada Seminar on Computational and Statistical Physics (Modeling Cooperative Behavior in the Social Sciences))</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; KAMPHORST LEAL DA SILVA, J ; MENDES, J. F. F.. <b>Scale-free Network with a Random Boolean Dynamics</b>. Em: <font color=#330066>IV Brazilian Meeting on Simulational Physics</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IV Brazilian Meeting on Simulational Physics)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO E SILVA, A; Silva, J. K .L ; Mendes, J. F. F. <b>Dinâmica Booleana Aleatória em Redes Invariantes de Escala</b>. Em: <font color=#330066>V Encontro Regional da Sociedade Brasileira de Física</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (V Encontro Regional da Sociedade Brasileira de Física)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; GUIMARAES, F. E. G. ; FARIA, Roberto M. <b>Efficient Luminescence Polarization of Conjugated Polymerfilms under low stretching level using transparent and flexible plastic substrate</b>. Em: <font color=#330066>ISE-12. 2005 12th International Symposium on Electrets</font>, 2005. <a href="http://dx.doi.org/10.1109/ISE.2005.1612384" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ISE-12. 2005 12th International Symposium on Electrets)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CAZATI, T.; GUIMARAES, F. E. G. ; FARIA, Roberto M. <b>Efficient Luminescence Polarization of Conjugated Polymerfilms under low stretching level using transparent and flexible plastic substrate</b>. Em: <font color=#330066>ISE-12. 2005 12th International Symposium on Electrets</font>, 2005. <a href="http://dx.doi.org/10.1109/ISE.2005.1612384" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ISE-12. 2005 12th International Symposium on Electrets)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAZATI, T.; SANTOS, L.f. ; REIS, F.t. ; FARIA, R.m.. <b>CATHODES METALS EFFECT ON THE PHOTOCURRENT BEHAVIOR OF POLYMERIC LIGHT-EMITTING DEVICES</b>. Em: <font color=#330066>IV Encontro da SBPMat</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IV Encontro da SBPMat)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CAZATI, T.; SANTOS, Lucas F ; FARIA, Roberto M. <b>Efeito dos Metais Cátodos no Comportamento da Fotocorrente dos Dispositivos Orgânicos Poliméricos (OLED´s)</b>. Em: <font color=#330066>VIII Sicem - Simposio em Ciência e Engenharia de Materiais</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (VIII Sicem - Simposio em Ciência e Engenharia de Materiais)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GONCALVES, G ; Bianchi, R. F. ; MARTINS, R ; FORTUNATO, E ; QUEIROZ, E ; Faria, R M. <b>V and ozone influence on the conductivity of ZnO thin films</b>. Em: <font color=#330066>International Conference on Amorphous and Nanocrystalline Semiconductor - ICANS</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Conference on Amorphous and Nanocrystalline Semiconductor - ICANS)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GONCALVES, G. ; FORTUNATO, E ; MARTINS, R ; QUEIROZ, E ; Bianchi, R. F. ; Faria, R M. <b>UV and ozone influence on the conductivity of ZnO thin films</b>. Em: <font color=#330066>International Conference on Amorphous and Nanocrystalline Semiconductor - ICANS</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Conference on Amorphous and Nanocrystalline Semiconductor - ICANS)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gutierrez-Rivera, L. ; CARVALHO, E. J. ; SILVA, M. A. ; Cescato, L.. <b>Nanosieves fabricated by interference lithography and electroforming</b>. Em: <font color=#330066>International Symposium Microelectronics</font>, v. 6037, p. 271-279, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Symposium Microelectronics)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Manhabosco, T. M.; MULLER, I. L.. <b>CARACTERIZAÇÃO MORFOLÓGICA E ESTRUTURAL DE FILMES DECo DEPOSITADOS GALVANOSTÁTICA E POTENCIOSTÁTICAMENTE</b>. Em: <font color=#330066>XV Simpósio Brasileiro de Eletroquímica e Eletroanalítica</font>, p. 760-762, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Simpósio Brasileiro de Eletroquímica e Eletroanalítica)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>VEGA, M. L. ; MARLETTA, A. ; Bianchi, R. F. ; Faria, R M. <b>Surface morphology, optical and electrical characterizatio n of poly(p-phenylenevinylene)</b>. Em: <font color=#330066>International Symposium on Electrets</font>, 2005.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Symposium on Electrets)</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; Braga, E. S. ; Cescato, L.. <b>Replication of Diffractive Optical Elements by Injection Molding</b>. Em: <font color=#330066>· Iberoamerican Meeting on Optics (RIAO) and Latinoamerican Meeting on Optics Lasers and their Applications (OPTILAS</font>, v. 5622, p. 739-744, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (· Iberoamerican Meeting on Optics (RIAO) and Latinoamerican Meeting on Optics Lasers and their Applications (OPTILAS)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J.; Braga, E. S. ; Cescato, L.. <b>Replication of Diffractive Optical Elements</b>. Em: <font color=#330066>Encontro Nacional De Física da Matéria Condensada</font>, p. 226-230, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro Nacional De Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, E. J.; Cescato, L. ; Braga, E. S.. <b>Optical Properties of a Polarizing Holographic Optical Element</b>. Em: <font color=#330066>Frontiers in Optics (FiO) and Diffractive Optics and Micro-Optics (DOMO),</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Frontiers in Optics (FiO) and Diffractive Optics and Micro-Optics (DOMO),)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CARVALHO, E. J.; Cescato, L. ; Cordeiro, C. M. B. ; Freschi, A. A. ; Li, L.. <b>Phases of Difracted Waves and Energy Conservation</b>. Em: <font color=#330066>· Frontiers in Optics (FiO) and Diffractive Optics and Micro-Optics (DOMO)</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (· Frontiers in Optics (FiO) and Diffractive Optics and Micro-Optics (DOMO))</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J.; Cescato, L. ; Gutierrez-Rivera, L.. <b>Holographic Litography for Electroforming of Submicrometric Structures</b>. Em: <font color=#330066>· Iberoamerican Meeting on Optics (RIAO) and Latinoamerican Meeting on Optics Lasers and their Applications (OPTILAS)</font>, v. 5622, p. 755-759, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (· Iberoamerican Meeting on Optics (RIAO) and Latinoamerican Meeting on Optics Lasers and their Applications (OPTILAS))</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAZATI, T.; GUIMARAES, F. E. G. ; FARIA, Roberto Mendonça. <b>Efficient Lumiminescence Polarization in Conjugated Polymer under low Streching Levels</b>. Em: <font color=#330066>III SBPMat</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (III SBPMat)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CAZATI, T.; MOLINARI, E. ; BUSSI, G. ; CALDAS, M. J. ; GUIMARAES, F. E. G. ; FARIA, Roberto Mendonça. <b>Efficient luminescence polarization in conjugated polymers under low stretching levels</b>. Em: <font color=#330066>ICSM 2004</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICSM 2004)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CAZATI, T.; REIS, F. T. ; SANTOS, L. F. ; FARIA, Roberto Mendonça ; MIRANDA, P.. <b>ELECTRODE CONFIGURATION DEPENDENCE OF THE PHOTOCONDUCTIVITY IN POLYMERIC LIGHT-EMITTING DIODES</b>. Em: <font color=#330066>XXVII Encontro Nacional de Física da Matéria Condensada</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXVII Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Ferreira, A. V. ; RODRIGUES, P. R. ; Espinosa, D. C. R. ; ARAUJO, FERNANDO GABRIEL S. ; TENÓRIO, J. A. S.. <b>Efeitos de Adições de Cromo, Níquel e Zinco sobre a Mineralogia do Clínquer de Cimento Portland</b>. Em: <font color=#330066>ICTR 2004 - Congresso Brasileiro de Ciência e Tecnologia em Resíduos e Desenvolvimento Sustentável</font>, p. 3959-3968, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICTR 2004 - Congresso Brasileiro de Ciência e Tecnologia em Resíduos e Desenvolvimento Sustentável)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Manhabosco, T. M.; CARPENTER, D. ; ENGLERT, G. ; MULLER, I. L.. <b>CARACTERIZAÇÃO DE FILMES FINOS DE COBALTO ELETRODEPOSITADO SOBRE SILÍCIO DE DIFERENTES RESISTIVIDADES</b>. Em: <font color=#330066>59° CONGRESSO ANUAL DA ABM - INTERNACIONAL</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (59° CONGRESSO ANUAL DA ABM - INTERNACIONAL)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Manhabosco, T. M.; ENGLERT, G. ; MULLER, I. L.. <b>Eletrodeposição de Filmes Finos de Cobalto em n-Si(100)</b>. Em: <font color=#330066>XIV SIBEE - XIV Simpósio Brasileiro de Eletroquímica e Eletroanalítica</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIV SIBEE - XIV Simpósio Brasileiro de Eletroquímica e Eletroanalítica)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Manhabosco, T. M.; ENGLERT, G. ; MULLER, I. L.. <b>OBTENÇÃO E CARACTERIZAÇÃO DE FILMES FINOS DE COBALTO</b>. Em: <font color=#330066>CBECIMAT - XVI Congresso Brasileiro de Engenharia e Ciência dos Materiais</font>, 2004.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CBECIMAT - XVI Congresso Brasileiro de Engenharia e Ciência dos Materiais)</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO E SILVA, A; MENDES, J. F.. <b>A Scale Free Network with Boolean Dynamics as a Function of Connectivity</b>. Em: <font color=#330066>III Brazilian Meeting on Simulational Physics</font>, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (III Brazilian Meeting on Simulational Physics)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CAZATI, T.; GUIMARAES, F. E. G. ; FARIA, Roberto Mendonça. <b>Estudo da Correlação entre a Morfologia e a Polarização da Luz Emitida pelos Filmes de PPV</b>. Em: <font color=#330066>XXVI Encontro Nacional de Física da Matéria Condensada</font>, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXVI Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CAZATI, T.; GUIMARAES, F. E. G. ; FARIA, Roberto Mendonça. <b>Correlation between polarized emission light and morphology of the poli (p- phenylene vinylene) films</b>. Em: <font color=#330066>II SBPMat</font>, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II SBPMat)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>COTA, A. B. ; LACERDA, Cássio Antônio Mendes ; OLIVEIRA, Fernando Lucas Gonçalves e ; da Silva Araujo, F. G.. <b>Evolução microestrutural de um aço microligado com Nb: efeito da temperatura de austenitização</b>. Em: <font color=#330066>58° Congresso Anual da ABM</font>, v. 1, p. 2765-2773, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (58° Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>REIS, Francoise Toledo ; SANTOS, Lucas ; CAZATI, T. ; FARIA, Roberto Mendonça. <b>Steady-state photocurrent spectroscopy in polymeric light emission diodes</b>. Em: <font color=#330066>II ENCONTRO DA SBPMAT</font>, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II ENCONTRO DA SBPMAT)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SILVA, Carlos Eduardo Almeida da ; SOUZA JÚNIOR, Paulo Antônio de ; CANEIRO, Rogério Tales Silva ; VIEIRA, C. B. ; da Silva Araujo, F. G. ; KRÜGER, Fernando Leopoldo Von ; KRÜGER, Paulo Von. <b>O PROJETO DE GEOSIDERURGIA NA PELOTIZAÇÃO DA COMPANHIA VALE DO RIO DOCE</b>. Em: <font color=#330066>IV Simpósio Brasileiro de Minério de Ferro da ABM</font>, v. 1, p. 1-10, 2003.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IV Simpósio Brasileiro de Minério de Ferro da ABM)</td></tr>
+            </table></div><div id="dv-year-2002"><h3 class="year">2002</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; Cescato, L. ; GOMES, P. F.. <b>Gravação de Microlentes em Fotorresina e Confecção de Matrizes Metálicas para Replicação</b>. Em: <font color=#330066>Encontro Nacional de Física da Matéria Condensada</font>, p. 323-326, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J.; Freschi, A. A.. <b>Distorções Harmônicas em Interferometria de Fase Modulada</b>. Em: <font color=#330066>Encontro Nacional de Física da Matéria Condensada</font>, p. 320-323, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CAZATI, T.; MARLETTA, Alexandre ; FARIA, Roberto M. <b>Estudo do Efeito do Ordenamento Molecular nas Propriedades Ópitcas de Filmesde poli (fenilieno vinileno)</b>. Em: <font color=#330066>XV CBCIMAT</font>, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV CBCIMAT)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; MARLETTTA, A. ; GONCALVES, D. ; GUIMARAES, F. E. G. ; FARIA, Roberto Mendonça. <b>Estudo do Efeito do Ordenamento Molecular nas Propriedades Ópiticas de Filmes de PPV</b>. Em: <font color=#330066>XXV Encontro Nacional da Física da Matéria Condensada</font>, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXV Encontro Nacional da Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MACHADO, Romuel F.; BAPTISTA, M. S. ; GREBOGI, C.. <b>School on Fundamental ans Perspectives of Non-Linear Dynamics</b>. Em: <font color=#330066>School on Fundamentals and Perspectives of Non-Linear Dynamics</font>, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (School on Fundamentals and Perspectives of Non-Linear Dynamics)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MENDES FILHO, A. A. ; PINTO, L. C. B. M. ; da Silva Araujo, F. G.. <b>Titanato de Bário Produzido por Síntese Hidrotérmica</b>. Em: <font color=#330066>46° Congresso Brasileiro de Cerâmica</font>, v. 1, p. 1-10, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (46° Congresso Brasileiro de Cerâmica)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>OLIVATI, C. A. ; BALOGH, D ; Bianchi, R. F. ; MARCONI, F. M. ; Faria, R M. <b>Photoconduction effect on PPV and MH-PPV structures</b>. Em: <font color=#330066>International Conference on Frontiers of Polymers and Advanced Materials - ICMS 2001</font>, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Conference on Frontiers of Polymers and Advanced Materials - ICMS 2001)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SOUZA, E. L. ; da Silva Araujo, F. G. ; TENÓRIO, J. A. S. ; GOMES, J. E. L. ; OLIVEIRA, C. P.. <b>Tratamento de Lamas Siderúrgicas com o Objetivo de Recuperar seu Teor Metálico</b>. Em: <font color=#330066>57º Congresso Anual da ABM</font>, v. 1, p. 1-10, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (57º Congresso Anual da ABM)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>VEGA, Maria Leticia ; CAZATI, T. ; BIANCHI, Rodrigo ; FARIA, Roberto Mendonça. <b>Morphological Characterrization of PPV Multiplayer by AFM Technique</b>. Em: <font color=#330066>XXV Encontro Nacional da Física da Matéria Condensada</font>, 2002.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXV Encontro Nacional da Física da Matéria Condensada)</td></tr>
+            </table></div><div id="dv-year-2001"><h3 class="year">2001</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO E SILVA, A; BERNARDES, A. T.. <b>Um Modelo para os Estágios Iniciais de Morfogênese Dentária</b>. Em: <font color=#330066>School on Computational Physics</font>, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (School on Computational Physics)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CAZATI, T.; BIANCHI, Rodrigo ; FARIA, Roberto Mendonça. <b>Influência na Dopagem na Energia Média de Salto dos Portadores da PANI</b>. Em: <font color=#330066>XXIV Encontro Nacional de Física da Matéria Condensada</font>, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIV Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Faria, R M ; SOUZA, P. H. ; DAHMOUCHE, K. ; Bianchi, R. F. ; JUDEINSTEIN, P. ; BONAGAMBA, T. J.. <b>Solid-State NMR, ionic conductivity, and DSC studies siloxane /PPG nanocomposities doped with lithium</b>. Em: <font color=#330066>International Symposium on Non-Crystaline Solids in Brazil</font>, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (International Symposium on Non-Crystaline Solids in Brazil)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Manhabosco, T. M.; MALFATTI, C. F. ; FERREIRA, J. Z.. <b>Resistência à corrosão de revestimentos compósitos Ni-Al2O3 e Ni-SiC em NaCl 0,6N e (NH4)2SO4 0,25M</b>. Em: <font color=#330066>XII Simpósio Brasileiro de Eletroquímica e Eletroanalítica</font>, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XII Simpósio Brasileiro de Eletroquímica e Eletroanalítica)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MENDES FILHO, A. A. ; da Silva Araujo, F. G. ; PINTO, L. C. B. M. ; SOUZA, V. F.. <b>Processamento Hidrotérmico de Pós de BaTi4O9 e Ba2Ti9O20</b>. Em: <font color=#330066>45° Congresso Brasileiro de Cerâmica</font>, v. CD ROM, p. 01-08, 2001.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (45° Congresso Brasileiro de Cerâmica)</td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; BALOGH, D. T. ; IRENE, E. A. ; Faria, R M. <b>Estudo da fotoxidação do poli(2-metoxi, 5-hexiloxi) pfenilenovinileno)</b>. Em: <font color=#330066>Simpósio Interunidades de Ciência e Engenharia de Materiais - Sicem 3</font>, v. 3, p. 185-186, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Simpósio Interunidades de Ciência e Engenharia de Materiais - Sicem 3)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; BERNARDES, A. T.. <b>The Role of Morphogenic in Embryo Gastrulation</b>. Em: <font color=#330066>XXIII Encontro Nacional de Física da Matéria Condensada</font>, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO E SILVA, A; BERNARDES, A. T.. <b>O Papel dos Morfogênicos na Gastrulação</b>. Em: <font color=#330066>II Semana de Pós Graduação da UFMG</font>, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II Semana de Pós Graduação da UFMG)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; FARIA, Roberto Mendonça ; BIANCHI, Rodrigo ; BALOG, D.. <b>Propriedades Elétricas de Blenda PANI-Pai em Diferentes Temperaturas</b>. Em: <font color=#330066>XXIII Encontro de Física da Matéria Condensada</font>, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXIII Encontro de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>COELHO, L. H. ; KANEDO, K. M. ; LIBANEO, C. A. F. ; ALVES, S. A. ; VIEIRA, C. B. ; da Silva Araujo, F. G.. <b>Classificação Geosiderúrgica dos Principais Tipos de Minérios de Ferro Brasileiros - sua Gênese e seus produtos</b>. Em: <font color=#330066>XXXI Seminário de Minérios de Ferro da ABM</font>, p. 01-08, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXXI Seminário de Minérios de Ferro da ABM)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Manhabosco, T. M.; KLEIN, C. ; MALFATTI, C. F. ; FERREIRA, J. Z.. <b>Estudo das Propriedades de Revestimentos de níquel eletrodepositado com incorporação de partículas</b>. Em: <font color=#330066>X Encontro e Exposição Brasileira de Tratamento de Superfícies - X EBRATS</font>, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (X Encontro e Exposição Brasileira de Tratamento de Superfícies - X EBRATS)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Manhabosco, T. M.; KLEIN, C. ; MALFATTI, C. F. ; FERREIRA, J. Z.. <b>Avaliação da resisência à corrosão de níquel químico com incroporação de partículas</b>. Em: <font color=#330066>55° Congresso da ABM</font>, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (55° Congresso da ABM)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PINHEIRO, C. F. S.; GONZALEZ, E. R.. <b>TÉCNICAS DE SPM NA INVESTIGAÇÃO DE ELETROCATALISADORES PARA CÉLULAS A COMBUSTÍVEL ALIMENTADAS POR METANOL</b>. Em: <font color=#330066>III Simpósio em Ciência e Engenharia de Materiais</font>, 2000.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (III Simpósio em Ciência e Engenharia de Materiais)</td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BALOGH, D. T. ; BIANCHI, R. F. ; ONMORI, R. K. ; FARIA, R. M.. <b>Photovoltaic effect on MH-PPV strucutures</b>. Em: <font color=#330066>ICMP'99 - International Conference on Microelectronics and Packaging</font>, v. 01, p. 232-234, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ICMP'99 - International Conference on Microelectronics and Packaging)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; BERNARDES, A. T.. <b>Computer Simulation of Embryonic Formation with Cell Diferentiation</b>. Em: <font color=#330066>XXII Encontro Nacional de Física da Matéria Condensada</font>, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXII Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO E SILVA, A; BERNARDES, A. T.. <b>Computer Simulation of Embryonic Formation with Cell Differentiation</b>. Em: <font color=#330066>II Brazilian Meeting on Simulational Physics</font>, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (II Brazilian Meeting on Simulational Physics)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T.; BIANCHI, R. F. ; FARIA, Roberto Mendonça ; BALOG, D.. <b>Condutividade Elétrica de Blendas Pani-Pai</b>. Em: <font color=#330066>XXII Encontro Nacional de Físicas da Matéria Condensada</font>, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXII Encontro Nacional de Físicas da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CAZATI, T.; BIANCHI, Rodrigo F ; FARIA, Roberto M. <b>Estudo da Condutiviade Elétrica de Blenda de Polianilina/Poli (amido-imida)</b>. Em: <font color=#330066>1º Simpósio Internacional de Iniciação Científica da USP</font>, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (1º Simpósio Internacional de Iniciação Científica da USP)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MELLO, S. V. ; BIANCHI, R. F. ; BALOGH, D. T. ; OLIVEIRA JUNIOR, O. N. ; FARIA, R. M.. <b>Characterization of MH-PPV films by atomic force and brewster angle microscopy</b>. Em: <font color=#330066>5o Congresso Brasileiro de Polímeros</font>, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (5o Congresso Brasileiro de Polímeros)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>OLIVATI, C. A. ; BIANCHI, R. F. ; SANTOS, L. F. ; BALOGH, D. T. ; ANDRADE, A. M. ; FARIA, R. M.. <b>Photovoltaic effect on MH-PPV structures</b>. Em: <font color=#330066>5o Congresso Brasileiro de Polímeros</font>, 1999.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (5o Congresso Brasileiro de Polímeros)</td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO E SILVA, A; BERNARDES, A. T.. <b>Analysis of Chaotic Behaviour in Population Dynamics</b>. Em: <font color=#330066>XXI Encontro Nacional de Física da Matéria Condensada</font>, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXI Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>da Silva Araujo, F. G. <b>Computational Modeling of Silica Structures</b>. Em: <font color=#330066>9th CIMTEC - World Ceramics Congress and Forum on New Materials</font>, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (9th CIMTEC - World Ceramics Congress and Forum on New Materials)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LOBO, A. C. <b>Time Dependent Dynamics on Quantum Projective Spaces</b>. Em: <font color=#330066>Resumo apresentado no Latin American School of Chaos and Quantum Mechanics</font>, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Resumo apresentado no Latin American School of Chaos and Quantum Mechanics)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MENEZES-SOBRINHO, I. L. ; MOREIRA, J. G. ; BERNARDES, A. T.. <b>Brittle-Ductile Transition In Fiber-Reinforced Composites</b>. Em: <font color=#330066>I Brazilian Meeting on Simulational Physics</font>, v. 9, p. 851-856, 1998.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (I Brazilian Meeting on Simulational Physics)</td></tr>
+            </table></div><div id="dv-year-1997"><h3 class="year">1997</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T. ; MOREIRA, J. G. ; CASTRO E SILVA, A. <b>Simulation of Chaotic Behaviour in Population Dynamics</b>. Em: <font color=#330066>V Latin American Workshop on Nonlinear Phenomena</font>, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (V Latin American Workshop on Nonlinear Phenomena)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BIANCHI, R. F.; FERREIRA, G. F. L. ; FARIA, R. M.. <b>Alternate conductivity in polyanilines films for different temperature</b>. Em: <font color=#330066>4o Congresso Brasileiro de Polímeros</font>, 1997.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (4o Congresso Brasileiro de Polímeros)</td></tr>
+            </table></div><div id="dv-year-1996"><h3 class="year">1996</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T. ; BRANCO, J. R. T. ; da Silva Araujo, F. G.. <b>Simulação computacional da deposição de pós por aspersão térmica</b>. Em: <font color=#330066>XII CONG. BRAS. EM CIENCIAS DE MATERIAIS</font>, v. 1, p. 314-317, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XII CONG. BRAS. EM CIENCIAS DE MATERIAIS)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.; STAUFFER, D. ; OLIVEIRA, P. M. C. ; OLIVEIRA, S. M. ; SANTOS, R. M. Z.. <b>Sex And The Single Bit</b>. Em: <font color=#330066>8th JOINT EPS-APS INT CONF ON PHYSICS COMPUTING</font>, p. 423-426, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (8th JOINT EPS-APS INT CONF ON PHYSICS COMPUTING)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>da Silva Araujo, F. G.; VASCONCELOS, W. L.. <b>Molecular orbital calculations of sol-gel silica structures part I: AM1 results</b>. Em: <font color=#330066>12° Congresso Brasileiro de Ciência e Engenharia de Materiais</font>, v. 1, p. 302-305, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12° Congresso Brasileiro de Ciência e Engenharia de Materiais)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>da Silva Araujo, F. G.; VASCONCELOS, W. L.. <b>Molecular orbital calculations of sol-gel silica structures part II: PM3 results</b>. Em: <font color=#330066>12° CBECIMAT</font>, v. 1, p. 306-309, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12° CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>da Silva Araujo, F. G.; VASCONCELOS, W. L.. <b>Molecular orbital calculations of sol-gel silica structures, part III: vibrational spectra</b>. Em: <font color=#330066>12° CBECIMAT</font>, v. 1, p. 310-313, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12° CBECIMAT)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MORAES, W. A. ; GODEFROID, L. B. ; BERNARDES, A. T.. <b>Computational Simulation Of Translaminar Fracture By Tensile And Fatigue Stresses In Comp0osite Materials Reinforced With Unidirectional Fibers</b>. Em: <font color=#330066>SIXTH INTERNATIONAL FATIGUE CONGRESS</font>, v. III, p. 1499-1504, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SIXTH INTERNATIONAL FATIGUE CONGRESS)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SANTOS, R. M. Z. ; BERNARDES, A. T.. <b>Immunology In Simulations At The Edge Of Chaos</b>. Em: <font color=#330066>8th JOINT EPS-APS INT. CONF. ON PHYSICS COMPUTING</font>, p. 375-378, 1996.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (8th JOINT EPS-APS INT. CONF. ON PHYSICS COMPUTING)</td></tr>
+            </table></div><div id="dv-year-1995"><h3 class="year">1995</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BERNARDES, A. T.; GODEFROID, L. B. ; BASTIAN, F. L.. <b>Modern Aluminum Alloys for Aeronautical Applications - The role of the Al/Li system</b>. Em: <font color=#330066>V Seminário de Tecnologia da Insdústria do Alum\'inio</font>, p. 691-704, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (V Seminário de Tecnologia da Insdústria do Alum\'inio)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO E SILVA, A; MOREIRA, J. G.. <b>Time Series from Chaotic Maps</b>. Em: <font color=#330066>XVIII Encontro Nacional de Física da Matéria Condensada</font>, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVIII Encontro Nacional de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO E SILVA, A; MOREIRA, J. G.. <b>Roughness Exponents to Calculate Multi-Affine Fractal Exponents</b>. Em: <font color=#330066>XIII Simpósio Latino Americano de Física da Matéria Condensada</font>, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Simpósio Latino Americano de Física da Matéria Condensada)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GODEFROID, L. B. ; BERNARDES, A. T. ; BASTIAN, F. L.. <b>Modern Aluminium Alloys For Aeronautical Applications - The Roleof The Al/Li System</b>. Em: <font color=#330066>14th INT. SCI. CONF. ADVANCED MATERIALS & TECHNOLOGIES</font>, p. 119-132, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (14th INT. SCI. CONF. ADVANCED MATERIALS & TECHNOLOGIES)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MACHADO, Romuel F.; SILVA, J. K. L.. <b>Fragmentation-inactivation models with mass loss</b>. Em: <font color=#330066>XIII Latin American Symposium on Solid State Physics</font>, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Latin American Symposium on Solid State Physics)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MORAES, W. A. ; BERNARDES, A. T. ; GODEFROID, L. B.. <b>Simulação Computacional do comportamento mecânico em tração de materiais compósitos fibrosos unidirecionais</b>. Em: <font color=#330066>XVI Congresso Ibero-Latinoamericano sobre Aplicações e Métodos Computacionais em Engenharia - CILAMCE</font>, p. 205-214, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XVI Congresso Ibero-Latinoamericano sobre Aplicações e Métodos Computacionais em Engenharia - CILAMCE)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MORAES, W. A. ; GODEFROID, L. B. ; BERNARDES, A. T.. <b>Simulação Computacional de Fratura Translaminar Por Tração Monotônica e Por Fadiga Em Materiais Compósitos Reforçados Por Fibras Unidirecionais</b>. Em: <font color=#330066>50 CONGRESSO DA ASSOCIAÇÃO BRASILEIRA DE METALURGIA</font>, p. 713-730, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (50 CONGRESSO DA ASSOCIAÇÃO BRASILEIRA DE METALURGIA)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MORAES, W. A. ; GODEFROID, L. B. ; BERNARDES, A. T.. <b>Simulação Computacional de Fratura por Tração Monotônica e por Fadiga em Materiais Compósitos fibrosos</b>. Em: <font color=#330066>XIII Congresso Brasileiro e II Congresso Ibero-Americano de Engenharia Mecânica</font>, 1995.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Congresso Brasileiro e II Congresso Ibero-Americano de Engenharia Mecânica)</td></tr>
+            </table></div><div id="dv-year-1994"><h3 class="year">1994</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ABREU, A. L. T. ; MORAES, W. A. ; GODEFROID, L. B. ; LIMA, S. A. A. ; BERNARDES, A. T.. <b>Simulação Computacional de Fratura Translaminar Por Tração Monotônica e Por Fadiga Em Materiais Compósitos Reforçados Por Fibras Unidirecionais</b>. Em: <font color=#330066>49 CONGRESSO DA ABM</font>, 1994.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (49 CONGRESSO DA ABM)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T.; HENRIQUES, V. B.. <b>Estudo da Transição Homogêneo-Micelar Numa Simulação de Monte Carlo de Modelo Para Micelização</b>. Em: <font color=#330066>SEMINÁRIO DE SUPER-COMPUTAÇÃO APLICADA</font>, 1994.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SEMINÁRIO DE SUPER-COMPUTAÇÃO APLICADA)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BERNARDES, A. T.; MOREIRA, J. G.. <b>Criticalidade Auto-Organizada Em Modelo de Fraturas Em Materiais Fibrosos</b>. Em: <font color=#330066>SEMINÁRIO DE SUPER-COMPUTAÇÃO APLICADA</font>, 1994.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (SEMINÁRIO DE SUPER-COMPUTAÇÃO APLICADA)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BERNARDES, A. T.; MOREIRA, J. G.. <b>Simulação Computacional de Modelo Para Fratura Translaminar Em Materiais Fibrosos Unidirecionais</b>. Em: <font color=#330066>XV CONG. IBERO-LATINOAMERICANO SOBRE APLICAÇÕES E MÉTODOS COMPUTACIONAIS EM ENGENHARIA</font>, 1994.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV CONG. IBERO-LATINOAMERICANO SOBRE APLICAÇÕES E MÉTODOS COMPUTACIONAIS EM ENGENHARIA)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LIMA, S. A. A. ; MORAES, W. A. ; ABREU, A. L. T. ; BERNARDES, A. T.. <b>Simulação Computacional de Fraturas Por Fadiga Em Materiais Compósitos Unidirecionais</b>. Em: <font color=#330066>XV CONGRESSO IBERO-LATINO AMERICANO SOBRE APLICAÇÕES E MÉTODOS COMPUTACIONAIS EM ENGENHARIA</font>, 1994.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV CONGRESSO IBERO-LATINO AMERICANO SOBRE APLICAÇÕES E MÉTODOS COMPUTACIONAIS EM ENGENHARIA)</td></tr>
+            </table></div><div id="dv-year-1990"><h3 class="year">1990</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>da Silva Araujo, F. G.; FUJII, I. ; CETLIN, P. R. ; COELHO, A. R. ; MANSUR, R. A. ; GONZALEZ, B. M.. <b>Efeitos do Envelhecimento Intermediário na Cinética de Envelhecimento por Deformação de Arames de Aço Perlítico</b>. Em: <font color=#330066>45º Congresso Anual da ABM</font>, v. 2, p. 369-381, 1990.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (45º Congresso Anual da ABM)</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

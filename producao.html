@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produção científica — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Artigos, livros, congressos e produção técnica do Departamento de Física da UFOP, com busca e filtros.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="producao">
+<main id="conteudo">
+
+<header class="cab"><div class="wrap">
+  <h1>Produção científica</h1>
+  <p class="lede">Artigos, livros, trabalhos em congressos e produção técnica registrados pelos docentes. Escolha o período e, se quiser, um docente: todos os painéis da página respondem ao filtro.</p>
+</div></header>
+<div class="wrap">
+  <form class="filtros" onsubmit="return false" aria-label="Filtros da página">
+    <label>De <select id="fDe"></select></label>
+    <label>Até <select id="fAte"></select></label>
+    <label class="cresce">Docente <select id="fDoc"></select></label>
+  </form>
+</div>
+<section class="sec" style="border-top:0;padding-top:0"><div class="wrap grade g2">
+  <div class="painel"><div class="painel-cab"><div><h3>Artigos em periódicos por ano</h3><p class="sub">Artigos únicos, separados pela presença de coautores no exterior</p></div><span class="selo selo-pre">Preliminar</span></div><div class="grafico alto"><canvas id="cArtigos" role="img" aria-label="Artigos em periódicos por ano"></canvas></div><p class="nota" id="artigosNota"></p></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Estrato Qualis dos periódicos</h3><p class="sub">Artigos únicos do recorte</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico alto"><canvas id="cQualis" role="img" aria-label="Estrato Qualis dos periódicos"></canvas></div><p class="nota" id="qualisNota"></p></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Onde o departamento publica</h2><p>Os vinte periódicos com mais artigos no recorte. A coluna de docentes indica quantos professores diferentes publicaram no veículo.</p></div>
+  <div class="grade g2">
+    <div class="tabela-wrap"><table><caption class="sr-only">Periódicos mais utilizados</caption>
+      <thead><tr><th scope="col">Periódico</th><th scope="col" class="n">Artigos</th><th scope="col" class="n">Docentes</th><th scope="col">Qualis</th></tr></thead>
+      <tbody id="periodicos"></tbody></table></div>
+    <div class="grade" style="align-content:start">
+      <div class="painel"><div class="painel-cab"><div><h3>Acesso aberto e citações</h3><p class="sub">Artigos com DOI localizados na OpenAlex</p></div><span class="selo selo-pre">Preliminar</span></div><div id="abertos"></div></div>
+      <div class="painel"><div class="painel-cab"><div><h3>Produção por tipo</h3><p class="sub">Itens no recorte</p></div><span class="selo selo-ok">Lattes</span></div><div id="tipos"></div><p class="nota" id="tiposNota"></p></div>
+    </div>
+  </div>
+</div></section>
+<section class="sec" id="explorador"><div class="wrap">
+  <div class="sec-cab"><h2>Buscar na produção</h2><p>Artigos, livros, capítulos, trabalhos completos e produção técnica. Resumos e apresentações estão no <a href="relatorio/index.html">relatório completo</a>.</p></div>
+  <form class="filtros" onsubmit="return false" aria-label="Busca na produção">
+    <label class="cresce">Palavras do título, autor, periódico ou DOI <input type="search" id="eBusca" placeholder="Ex.: grafeno, cosmologia, Raman"></label>
+    <label>Tipo <select id="eTipo"></select></label>
+    <label>Qualis <select id="eQualis"><option value="">Todos</option><option value="A">A1 a A4</option><option>A1</option><option>A2</option><option>A3</option><option>A4</option><option>B1</option><option>B2</option><option>B3</option><option>B4</option><option value="ND">Não identificado</option></select></label>
+    <label>Ordem <select id="eOrdem"><option value="recente">Mais recentes</option><option value="antigo">Mais antigos</option><option value="cit">Mais citados</option></select></label>
+  </form>
+  <div class="resumo-busca" id="eResumo" aria-live="polite"></div>
+  <ol class="itens" id="eLista"></ol>
+  <nav class="paginacao" id="ePag" aria-label="Páginas de resultados"></nav>
+</div></section>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

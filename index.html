@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visão geral — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Produção científica, formação de pesquisadores e colaborações do Departamento de Física da UFOP, a partir dos currículos Lattes.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="inicio">
+<main id="conteudo">
+
+<section class="hero"><div class="wrap">
+  <h1>Pesquisa no Departamento de Física</h1>
+  <p class="lede" id="lede"></p>
+  <figure class="espectro" aria-labelledby="espectroLeitura">
+    <div class="espectro-topo" id="espectroTopo"></div>
+    <svg id="espectro" role="img" aria-label="Artigos em periódicos por ano, desenhados como linhas de um espectro de emissão"></svg>
+    <figcaption class="leitura" id="espectroLeitura" aria-live="polite"></figcaption>
+  </figure>
+  <dl class="numeros" id="numeros"></dl>
+</div></section>
+
+<section class="sec" style="margin-top:2.5rem"><div class="wrap">
+  <div class="sec-cab"><h2>O que o departamento publica</h2>
+  <p>Itens únicos por ano e por natureza, nos últimos vinte anos. Um trabalho assinado por vários docentes conta uma vez.</p></div>
+  <div class="grade g2">
+    <div class="painel"><div class="painel-cab"><div><h3>Produção por natureza e ano</h3><p class="sub">Contagem do scriptLattes, sem dupla contagem entre docentes</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico alto"><canvas id="cNatureza" role="img" aria-label="Produção por natureza e ano"></canvas></div></div>
+    <div class="painel"><div class="painel-cab"><div><h3>Temas mais frequentes</h3><p class="sub">Subárea principal dos artigos</p></div><span class="selo selo-pre">Preliminar</span></div>
+      <div id="temas"></div><p class="nota" id="temasNota"></p></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Explore os dados</h2></div>
+  <nav class="atalhos" aria-label="Páginas do portal">
+    <a href="producao.html"><b>Produção</b><span>Artigos por ano, Qualis, periódicos, acesso aberto e busca em todos os itens.</span></a>
+    <a href="formacao.html"><b>Formação</b><span>Orientações de iniciação científica ao pós-doutorado e o fomento declarado.</span></a>
+    <a href="projetos.html"><b>Projetos e prêmios</b><span>Projetos ativos, financiadores, estudantes envolvidos, prêmios e eventos.</span></a>
+    <a href="colaboracao.html"><b>Colaboração</b><span>Rede de coautoria entre docentes e mapa das parcerias internacionais.</span></a>
+    <a href="docentes.html"><b>Docentes</b><span>Quem faz a pesquisa: áreas, temas e links para cada currículo.</span></a>
+    <a href="relatorio/index.html"><b>Relatório completo</b><span>Todos os registros item a item, na saída original do scriptLattes.</span></a>
+  </nav>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Atualização dos currículos</h2>
+  <p>O portal só é tão atual quanto os currículos. Os números abaixo ajudam a acompanhar o preenchimento do Lattes no departamento.</p></div>
+  <div id="frescor"></div>
+  <p class="nota">Detalhes sobre fontes, conferências e o que não é publicado estão em <a href="metodologia.html">Metodologia</a>.</p>
+</div></section>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/vendor/d3.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

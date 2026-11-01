@@ -1,0 +1,363 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de prêmios e títulos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[1998,
+1],
+[1999,
+1],
+[2000,
+2],
+[2003,
+1],
+[2004,
+3],
+[2005,
+3],
+[2006,
+2],
+[2007,
+2],
+[2008,
+6],
+[2009,
+2],
+[2010,
+2],
+[2011,
+5],
+[2012,
+1],
+[2013,
+4],
+[2014,
+5],
+[2015,
+7],
+[2016,
+6],
+[2017,
+4],
+[2018,
+4],
+[2019,
+2],
+[2020,
+2],
+[2021,
+2],
+[2022,
+3],
+[2023,
+3],
+[2024,
+3],
+[2025,
+1],
+[2026,
+4]]}]});
+        });
+        </script>
+        
+                <h3>Total de prêmios e títulos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 81<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>3º lugar na categoria de Iniciação Científica durante o VIII CONCIFOP & II SimCiFOP, Programa de Educação Tutorial de Farmácia (PET Farmácia) e pelo Programa de Pós-Graduação em Ciência.. 2026.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Capa da The Journal of Physical Chemistry C, The Journal of Physical Chemistry C.. 2026.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Honorable mention in the Materials Physics poster session of the 2026 Autumn Meeting of the Brazilian Physical Society - Trabalho de Igor Ferreira Curvelo, Sociedade Brasileira de Física.. 2026.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6221953730638193">Matheus Josué de Souza Matos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Outstanding Referee APS, American Physical Society.. 2026.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0282590467459210">Hermano Endlich Schneider Velten</a>.</font></td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Prêmio Destaque em Física, SBF/ES.. 2025.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Honra ao Mérito, Câmara Municipal de Vitória.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Prêmio CAPES de Tese - área Ensino, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>World?s Top 2% Scientists list, Stanford, EUA.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ICTP-SAIFR Prize in Classical Gravity and Applications - Orientação, ICTP-SAIFR.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Menção Honrosa no Prêmio CAPES de Tese - Orientação, CAPES.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio José Leite Lopes de Melhor Tese de Doutoramento - Orientação, SBF.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Garrafa com dispositivo fotoelétrico para tornar a água adequada para consumo humano, Razões para acreditar.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Grant in aid American Institute of Physics., American Institute of Physics (AIP).. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Melhor trabalho na área de Ciências Exatas e da Terra (CET) apresentado no XXX Seminário de Iniciação Científica durante o ENCONTRO DE SABERES ? UFOP,, Universidade Federal de Ouro Preto.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Melhor trabalho na área de Ciências Exatas e da Terra (CET), VI Mostra dos Programas de Pós Graduação - Encontro de Saberes 2021 da UFOP.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Red Bull Basement Brasil 2021, Red Bull.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Homenageada pelos formandos ProFIS, Unicamp.. 2020.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/9458093350303071">Gabriela Fasolo Pivaro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Melhor trabalho na área de Ciências Exatas e da Terra (CET), V Mostra dos Programas de Pós Graduação - Encontro de Saberes 2021 da UFOP.. 2020.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Paraninfa da turma de formandos Engenharia Civil 2018, IFMG campus Santa Luzia.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6547688274068001">Mariana de Castro Prado</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Prêmio de melhor apresentação oral da aluna de mestrado Marlene Notélio de Morais do Simpósio F - Organic Electronics and Bioelectronics: Fundamentals, Applications and Emerging Technologies., Brazilian Materials Research Society (B-MRS).. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção honrosa em apresentação oral categoria pós-doutorado do trabalho "Finding structural order in disordered systems: amorphous solid dispersions characterized by Pair Distribution Function method", XXIII Semana Farmacêutica de Ciência e Tecnologia, Faculdade de Ciência Farmacêuticas, USP.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Menção Honrosa entre os trabalhos de Pós-Graduação da UFOP, Área: Ciências Exatas e da Terra, Pró-reitoria de Pesquisa e de Pós-Graduação da Universidade Federal de Ouro Preto.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Menção Honrosa Prêmio de melhor Tese da SBHC, Sociedade Brasileira de História da Ciência.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Prêmio L'ORÉAL - UNESCO - ABC "Para Mulheres na Ciência" (área de Física), L'ORÉAL/UNESCO/Academia Brasileira de Ciências.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1641624738512086">Jaqueline dos Santos Soares</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Campeão Brasileiro de Trekking - Equipe Reumatismo _ Categoria trekker, Iron adventure - http://www.brasileiraodetrekking.com.br/2017/index.htm.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6705532687184556">Bruna Bueno Postacchini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Certificado de Mérito - Finalista do II desafio de Startups IDEAS FOR MILK, EMBRAPA., Embrapa.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Empreenda em ação, 2º Colocação - Momlight: dispositivo para fototerapia neonatal, Universidade Federal de Ouro Preto.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Menção Honrosa - Prêmio Professor Padre Magela, Centro Universitário Una.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8756368667136851">Ive Silvestre de Almeida</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>24a Edição do Prêmio da Sociedade Mineira de Engenheiros 201, Primeira Colocação, Projeto Neofocus, com Eduardo Quaresma, Marcella Rocha, João Henrique e Marcello Ranylson, Sociedade Mineira de Engenheiros - SME.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Crowd Favorities at 28th Anual at CSU Biotechnology Simposium, California State University - CSU, United States.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>First Place in the Spring 2016 Future Four & More Business Concept Competition, California State University - CSU, Chico - United States.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Judges´ Special Award (Evaluation Panel´s Special Recognition) at 28th Anual at CSU Biotechnology Simposium, California State University - CSU, United States.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Movimento 100 Open Startups 2015 - 25a Posição, de 1.500 startups, Startups Brasil.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Prêmio Inventores, categoria Patente Concedida, Agência de Inovação Inova Unicamp.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Business Idea Competition from Biomedical Instrument for measuring the bilirubin concentration in neonates, CSU Center for Entrepreneurship and the Sacramento Association of Collegiate Entrepreneurs, USA.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DiamanTech - Prêmio Henrique Dumont, Centro de Inovação Tecnológica da Universidade Federal dos Vales do Jequitinhonha e Mucuri (UFVJM).. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Finalista do Prêmio Santander. Categoria Empreendedorismo. Projeto Neosticker, Santander.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Grant-in-aid American Institute of Physics., American Institute of Physics (AIP).. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4641243150947071">Victória Flório Pires de Andrade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Movimento 100 Open Startups 2015 - 4a Posição, de 1.500 startups, Startups Brasil.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Product Concept from Portable Biomedical Instrument for measuring the bilirubin concentration in neonates noninvasively using spectrophotometric techniques, California State University - CSU I-Corps.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Prêmio Mineiro de Inovação - Categoria Produto. Segundo Lugar, Governo de Minas Gerais, Fiemg e Câmera Italiana de Comércio de Minas Gerais.. 2015.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>1o. Lugar no Desafio Brasil de Inovação - Categoria e-health, Wenovate - Fleury Medicina e Saúde - Hospital Israelita Albert Einstein.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>1o. Lugar no Primeiro Concurso de Ideias para Criação de Negócios Inovadores, Universidade Federal de Vicosa.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>3o. Lugar na Premiação Especial de Melhores Resumos do XXIV Congresso Brasileiro de Ciência e Tecnologia de Alimentos, XXIV Congresso Brasileiro de Ciência e Tecnologia de Alimentos.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Finalista Geral do Desafio Brasil de Inovação, Wenovate.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Semifinalista do Prêmio Santander, Categoria Empreendedorismo. Projeto: Sunsticker, Santander.. 2014.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Grande Prêmio UFMG de Teses, UFMG.. 2013.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Prêmio de Inovação Tecnológica - UFOP/ Fundação Gorceix (Medalha H. Gorceix), Fundação GORCEIX/UFOP.. 2013.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio Fundação Gorceix de Inovação Tecnológia, Fundação Gorceix e Universidade Federal de Ouro Preto.. 2013.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Prêmio UFMG de Teses, UFMG.. 2013.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4012812193989993">Ana Paula Moreira Barboza</a>.</font></td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa - Modalidade Pôster ao trabalho "Sensor de radiação à base de CdWO4/MEH-PPV". Estudante M.M. Silva, III Workshop da Rede Nanobiomed - Capes.. 2012.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bolsa Produtividade - Nivel 2, CNPq, CNPq.. 2011.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Medalha de Prata - III Seminário de Iniciação Científica da Fapemig. M. R. Franco, M. M. Silva, G. R. Ferreira, F. Lopes, F. Magela, R. F. Bianchi, Fapemig, em https://issuu.com/fapemig/docs/mfc_47/44.. 2011.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Prêmio de Melhor Trabalho entre os trabalhos orais do PIBIC/CNPq/UFOP, da área de ciências Exatas e da Terra. Estudantes: Lucas M. Viana e Mirela C. Santos, XIX Seminário de Iniciação Científica - Universidade Federal de Ouro Preto.. 2011.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Prêmio Destaque Científico de 2010. Categoria Docente, Instituto de Ciências Exatas e Biológicas da Universidade Federal de Ouro Preto.. 2011.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PRÊMIO MELHOR TRABALHO entre as apresentações em pôsteres da área de CIÊNCIAS EXATAS E DA TERRA - XIX Seminário de Iniciação Científica, UFOP.. 2011.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4363201901271566">Melissa Fabíola Siqueira Savedra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>19a Edição do Prêmio da Sociedade Mineira de Engenheiros 2010, Segunda colocação. EstudantesLucas Machado Viana, Igor José Moreira Marques e Augusto Matheus dos Santos Alonso., Sociedade Mineira de Engenheiros... 2010.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Destaque no Processo de Selecao de Incubacao de Empresas. Estudante Hugo de Carvalho Silveira, Centro de Referencia em Incubacao de Empresas e Projetos de Ouro Preto - Incultec.. 2010.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção honrosa para o trabalho "Desenvolvimento de porta-amostra giratório de baixo custo para difratômetro de raios-x", Faculdade de Engenharia de Ilha Solteira - Unesp (XV Reunião de Iniciação Científica).. 2009.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8711723831656721">Vinicius Danilo Nonato Bezzon</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Prêmio de Melhor Poster na 1a. Escola de Verão em Física dos Materiais. Mestranda G. R. Ferreira, Instituto de Física de São Carlos.. 2009.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>3o. Prêmio Werner von Siemens de Inovação Tecnológica - Respostas para o Brasil. Modalidade Saúde, Categoria Estudante - Novas Idéias., Siemens Ltda... 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Concurso para professor adjunto, Departamento de Física - Universidade federal de Ouro Preto.. 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0088622411517649">Carlos Felipe Saraiva Pinheiro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Doutor em Ciencias e Engenharia de Materiais, Instituto de Fisica de Sao Carlos-Universidade de Sao Paulo.. 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Professor voluntário Eletromagnetismo A, DEFIS-UFOP.. 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Prêmio de Incentivo em Ciência e Tecnologia para o SUS 2008 - Edição 20 anos do SUS. Categoria Trabalho Publicado, Secretaria de Ciência, Tecnologia e Insumos Estratégicos do Ministério da Saúde.. 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Prêmio Nacional INFN, Instituto Nacional de Física Nuclear, Itàlia.. 2008.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>16ª Edição do Prêmio da Sociedade Mineira de Engenheiros (SME) em Ciência e Tecnologia. 2a. Colocação., Sociedade Mineira de Engenheiros - SME.. 2007.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alexander Von Humboldt Fellowship, Alexander Von Humboldt Foundation.. 2007.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Paritcipation award for 56th Meeting of Nobel Laureats in Lindaul, Meetings of Nobel Laureats in Lindau.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4374918656241879">Ronaldo Junio Campos Batista</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Prêmio Melhor Trabalho do XIV Seminário de Iniciação Científica. ?USO DE POLÍMEROS LUMINESCENTES NO MONITORAMENTO DE RADIAÇÃO: TRATAMENTO DE HIPERBILIRRUBINEMIA NEONATAL?, CKB Vasconcelos e RF Bianchi, Universidade Federal de Ouro Preto.. 2006.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0576192110271130">Rodrigo Fernando Bianchi</a>.</font></td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa recebida pelo trabalho ??Fabrication and Replication of periodic submicrometric structures using interferometric lithography?, apresentado no Workshop Seminatec, 2005., CCS / UNICAMP.. 2005.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Monitoria Física Laboratório II, PAE - Programa Aperfeiçoamento Ensino.. 2005.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Professor Homenageado da Turma de Formandos em Ciências da Computação Jul/2005, Universidade de Itaúna.. 2005.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7007826993535617">Alcides Volpato Carneiro de Castro e Silva</a>.</font></td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Monitoria de Física II, Instituto de Física de São Carlos-USP.. 2004.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Professor Homenageado da Turma de Formandos em Ciências da Computação Dez/2004, Universidade de Itaúna.. 2004.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7007826993535617">Alcides Volpato Carneiro de Castro e Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Título de Mestre obtido com Menção honrosa (Magna cum Laude), Universidade de Padova, Itália.. 2004.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1066345355131928">Valerio Marra</a>.</font></td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Mestre em Ciência e Engenharia de Materiais, IFSC.. 2003.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0873693558323059">Thiago Cazati</a>.</font></td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa recebida pelo trabalho ?Gravação de Hologramas em Montagens Ópticas Ativamente Estabilizadas? apresentado no XII C.I.C. da UNESP, 2000., UNESP.. 2000.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3107871334302251">Edson José de Carvalho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>título de DESTAQUE EM EDUCAÇÃO, Associação de Professores Públicos de Minas Gerais e Universidade do Estado de Minas Gerais.. 2000.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8915679278888857">Fernando Gabriel da Silva Araujo</a>.</font></td></tr>
+            </table></div><div id="dv-year-1999"><h3 class="year">1999</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Menção Honrosa-VII Seminário de Iniciação Científica, Universidade Federal de Ouro Preto.. 1999.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0147622167511467">Romuel Figueiredo Machado</a>.</font></td></tr>
+            </table></div><div id="dv-year-1998"><h3 class="year">1998</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Um Orientando meu recebeu o prêmio de melhor trabalho na área de Ciências Exatas e da Terra no VI seminário de Iniciação Científica da UFOP, UFOP.. 1998.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6561589467060683">Augusto Cesar Lobo</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

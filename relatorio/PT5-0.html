@@ -1,0 +1,323 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Demais tipos de produção técnica'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2000,
+1],
+[2003,
+2],
+[2004,
+1],
+[2005,
+1],
+[2009,
+3],
+[2010,
+2],
+[2011,
+3],
+[2012,
+11],
+[2013,
+5],
+[2014,
+3],
+[2016,
+1],
+[2017,
+3],
+[2018,
+2],
+[2019,
+1],
+[2020,
+3],
+[2021,
+2],
+[2022,
+4],
+[2023,
+6],
+[2024,
+9],
+[2025,
+2],
+[2026,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Demais tipos de produção técnica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 67<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Para onde vai o passado</b>. 2026. Elaboração de texto curatorial de exposição</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SIQUEIRA, M. F.; WESTPHAL, E. ; PHILADELPHI, L. O. P. ; HIDALGO, A. A. ; SANTOS, L. F. ; OLIVEIRA JUNIOR, O. N. ; CREMONA, M. ; WOHNRATH, K. ; CALDAS, MARILIA J. ; FERREIRA, M. ; LIMA, F. C. D. A. ; FARIA, R. M.. <b>Anais do Worshop INEO 2026</b>. 2026. Editoração de Anais de Evento Científico</td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J. <b>EDUCA PET ? CURSINHO PRÉ-ENEM</b>. 2025. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DE MORAIS, MARLENE NOTÉLIO B.L. ; SIQUEIRA, M. F. ; SAVEDRA, R. M. L.. <b>CARACTERIZAÇÃO MORFOLÓGICA DA HETEROJUNÇÃO DE VOLUME DE TIOFENO:FULERENO POR SIMULAÇÃO MOLECULAR</b>. 2025. Desenvolvimento de material didático ou instrucional - Orientação de pesquisa publicada como livro</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARAÚJO, FERNANDO GABRIEL DA SILVA; DE TOMI, G. ; GAMEIRO, M. M. ; SANTOS, C. A. S. ; SANTOS, M. P. ; FARIAS, V. ; GOTO, M. ; SZNELWAR, J. J. ; TRIGUEIRO, W.. <b>Estudos para o Plano Nacional de Mineração 2050 PNM 2050 - Caderno 2. Pesquisa e Produção Mineral - Volume II</b>. 2024. Editoração/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ARAÚJO, FERNANDO GABRIEL DA SILVA; DE TOMI, G. ; GAMEIRO, M. M. ; SZNELWAR, J. J. ; DOMPIERI, M. ; SANTOS, C. A. S. ; SANTOS, M. P. ; TAINA, M.. <b>Estudos para o Plano Nacional de Mineração 2050 PNM 2050 - Caderno 2. Pesquisa e Produção Mineral - Volume III</b>. 2024. Editoração/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ARAÚJO, FERNANDO GABRIEL DA SILVA; DE TOMI, G. ; MENDES, JEFFERSON J. ; VIANNA, M. T. ; KRÜGER, Paulo Von ; COSTA, E. R. ; DOMPIERI, M. ; GOTO, M. ; SZNELWAR, J. J. ; SANTOS, C. A. S. ; SANTOS, M. P.. <b>Estudos para o Plano Nacional de Mineração 2050 PNM 2050 - Caderno 2. Pesquisa e Produção Mineral - Volume I</b>. 2024. Editoração/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ARAÚJO, FERNANDO GABRIEL DA SILVA; KRÜGER, Paulo Von ; TENÓRIO, JORGE ALBERTO SOARES ; ESPINOSA, Denise Crocce Romano ; SIQUEIRA, V. ; ALCANTARA, E. ; COSTA, ADILSON R. ; LANDGRAF, F. ; WENDHAUSEN, P. ; GOTO, M. ; LAMEIRAS, F. S.. <b>Estudos para o Plano Nacional de Mineração 2050 PNM 2050 - Caderno 3. Cadeias Produtivas dos Minerais para a Transição Energética</b>. 2024. Editoração/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, E. J. <b>Apresentando, o Mathematica!</b>. 2024. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CARVALHO, E. J.; GALGANO, G. D. ; BELO, T. S.. <b>A física e a guitarra elétrica: 2a Edição</b>. 2024. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PERES, L. ; WESTPHAL, E. ; FUGIKAWA-SANTOS, L. ; CALDAS, M. J. ; FARIA, R. M. ; BECHTOLD, I. H. ; HIDALGO, A. A. ; FERREIRA, M. ; OLIVEIRA, R. F. ; Siqueira, Melissa F.. <b>Anais - Worshop INEO 2024</b>. 2024. Editoração/Anais</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PIVARO, G. F. <b>Um olhar sobre a propagação de desinformação científica nos ambientes virtuais</b>. 2024. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SIQUEIRA, M.F.; WESTPHAL, E. ; PHILADELPHI, L. O. P. ; FUGIKAWA-SANTOS, L. ; FARIA, R. M. ; HIDALGO, A. A. ; FERREIRA, M. ; CALDAS, M. J.. <b>Anais do Workshop do INEO 2024</b>. 2024. Editoração de Anais de Evento Científico</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amé ; André ; Bruna Bueno Postacchini ; Djalma Nardy Domingues ; SOARES J. S. ; Mariana de Castro Prado. <b>Roteiros de Práticas para FIS105 - Fundamentos de Física Experimental</b>. 2023. Física - Roteiros de Práticas</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BERNARDES, A. T. ; GOMES, A. H. ; POSTACCHINI, B. B. ; DOMINGUES, D. N. ; SOARES, J. S. ; PRADO, MARIANA C. <b>Roteiros de Práticas para FIS105 ? Fundamentos de Física Experimental : versão 2023/II</b>. 2023. Desenvolvimento de material didático ou instrucional - Ensino - Livro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GALGANO, G. D. ; BELO, T. S. ; CARVALHO, E. J.. <b>A física e a guitarra elétrica</b>. 2023. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MATOS, A. C. L. ; CARVALHO, E. J.. <b>Sequência de Ensino Investigativa (SEI) Aerodinâmica</b>. 2023. Desenvolvimento de material didático ou instrucional - Desenvolvimentodematerialdidáticoouinstrucional</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Pinto, Melissa F. S.; PERES, L. ; SANTOS, L. F. ; HIDALGO, A. A. ; CALDAS, M. J. ; FARIA, R. M. ; Faria, G. C. ; WESTPHAL, E.. <b>Anais - Worshop INEO 2023</b>. 2023. Editoração/Anais</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SIQUEIRA, M. F.; SANTOS, L. F. ; PHILADELPHI, L. O. P. ; HIDALGO, A. A. ; FARIA, ROBERTO M. ; WESTPHAL, E. ; CALDAS, M. J.. <b>Anais do Worshop INEO 2023</b>. 2023. Editoração de Anais de Evento Científico</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J. <b>Holografia</b>. 2022. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DIAS, L. R. A. A. ; CARVALHO, E. J.. <b>Óptica Geomátrica e Instrumentos Ópticos</b>. 2022. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SIQUEIRA, M. F.; PERES, L. ; HIDALGO, A. A. ; FARIA, R. M. ; CALDAS, M. J. ; SANTOS, L. F. ; BECHTOLD, I. H.. <b>Anais - Worshop INEO 2022</b>. 2022. Editoração/Anais</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SIQUEIRA, M. F.; PHILADELPHI, L. O. P. ; BECHTOLD, I. H. ; SANTOS, L. F. ; FARIA, ROBERTO M. ; HIDALGO, A. A.. <b>Anais do Worshop INEO 2022</b>. 2022. Editoração de Anais de Evento Científico</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Material de Apoio a Professoras(es) Livro Infantil Bafo de Brilho</b>. 2021. Desenvolvimento de material didático ou instrucional - Material Apoio</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>JORGE, R. A. ; PAGLIARINI, C. R. ; CARVALHO, E. J.. <b>ROBÓTICA E CINEMÁTICA</b>. 2021. Desenvolvimento de material didático ou instrucional - Desenvolvimento de material didático ou instrucional</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V.; SANTOS, K. K. P. ; MARTINS, A. D.. <b>Clubinho Astronomia no MAST</b>. 2020. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>RIBEIRO, L. C. ; BERNARDES, AMERICO T.. <b>Atualização da Estimativa de Subnotificação em Casos de Hospitalização por Síndrome Respiratória Aguda e Confirmados por Infecção por Covid-19 no Brasil e Estimativa para Minas Gerais</b>. 2020. Nota Técnica</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ribeiro, Leonardo Costa ; BERNARDES, A. T.. <b>Estimate of underreporting of COVID-19 in Brazil by Acute Respiratory Syndrome hospitalization reports</b>. 2020. Nota Técnica</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; VIEIRA, G. C. ; CABRAL, L. D. M.. <b>REAPROVEITAMENTO DO LIXO ELETRÔNICO NA INSTRUMENTAÇÃO PARA O ENSINO DE FÍSICA Propostas de experimentos e atividades</b>. 2019. Desenvolvimento de material didático ou instrucional - Sequência didática e materiais complementares</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B. <b>Workshop: Raman spectroscopy and its role in the new mineral characterization</b>. 2018. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Evangelista, W. L. ; CARVALHO NETO, J. F. ; PEREIRA, M. V. V. ; PARK, J. A. ; PRADO, M. C.. <b>PROJETO PEDAGÓGICO DO CURSO SUPERIOR EM ENGENHARIA CIVIL</b>. 2018. Projeto Político Pedagógico</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARVALHO, E. J.; Luzzi, F. O.. <b>Óptica da Fotografia</b>. 2017. Desenvolvimento de material didático ou instrucional - Sequência didática e materiais complementares</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, E. J.; Souza, S. H.. <b>Celular em sala de aula, construção de atividades no contexto CTS</b>. 2017. Desenvolvimento de material didático ou instrucional - Cartilha e roteiros de atividades</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PRADO, M. C. <b>ROTEIROS DE PRÁTICA LABORATÓRIO DE FÍSICA</b>. 2017. Desenvolvimento de material didático ou instrucional - Apostila</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Aprender a empreender</b>. 2016. Curso de curta duração ministrado/Outra</td></tr>
+            </table></div><div id="dv-year-2014"><h3 class="year">2014</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Um Brasil empreendedor é um país que depende de nós</b>. 2014. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>'Fora da casca de noz: divulgação de ciência'</b>. 2014. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Bases, possibilidades e limites para a História e Filosofia da Ciência no ensino de ciências</b>. 2014. Curso de curta duração ministrado/Extensão</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZZON, V. D. N.; SALVI, S. T. B. ; TITA, D. L.. <b>Cristalografia básica e método de Rietveld</b>. 2013. Mini-curso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bianchi, R. F. <b>Espectroscopia de Impedância aplicada na análise de materiais desordenados</b>. 2013. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CALAZANS, M. M.; DUARTE, M.. <b>O uso de Simulações no ensino de Física</b>. 2013. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PAGLIARINI, C. R. <b>Virando a física de cabeça para baixo</b>. 2013. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PAGLIARINI, C. R.; OLIVEIRA, J. M. L.. <b>Uma proposta para a abordagem do Paradoxo Einstein-Podolski-Rosen (EPR) no ensino médio e seus debates científicos no desenvolvimento da física quântica</b>. 2013. Curso de curta duração ministrado/Extensão</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V. <b>Laboratório de Física Experimental</b>. 2012. Desenvolvimento de material didático ou instrucional - Apostila</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>The Brazilian Indigenous Sky</b>. 2012. Desenvolvimento de material didático ou instrucional - Livro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V. <b>The Brazilian Indigenous Sky - Livreto</b>. 2012. Editoração/Outra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Florio, V. <b>The Brazilian Indigenous Sky</b>. 2012. Design de capas de livros</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Florio, V. <b>Booklet</b>. 2012. Design de capas de livros</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Florio, V. <b>Tupi e Guarani</b>. 2012. Questão prova olimpiada linguística</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Florio, V. <b>Going to the moon</b>. 2012. Questão prova olimpiada de astronomia</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Florio, V.; L". <b>6th IOAA Booklet</b>. 2012. Editoração/Catálogo</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Florio, V.; L". <b>Jaci Newsletter (número 1 ao número 6)</b>. 2012. Editoração/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Florio, V.; L". <b>Papiamento</b>. 2012. Questões Olimpíada Brasileira de Linguística</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Florio, V.; L'ASTORINA, B. L. A.. <b>Jaci - Boletim</b>. 2012. Design de capas de boletim</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Processos de condução elétrica em polímeros conjugados - Teoria e prática</b>. 2011. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V. <b>La bestoj</b>. 2011. Questão prova olimpiada linguística</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Florio, V.; L". <b>Carioquês</b>. 2011. Questão prova olimpiada linguística</td></tr>
+            </table></div><div id="dv-year-2010"><h3 class="year">2010</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F. <b>Medidas de propriedades elétricas e mecanismos de condução ac em polimeros conjugados</b>. 2010. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>L'ASTORINA, B. L. A. ; Bagdonas, Alexandre ; Florio, V.. <b>Curso de Astronomia Geral - OBA - Volume V - Universo</b>. 2010. Desenvolvimento de material didático ou instrucional - Material didático ou instrucional</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Florio, V.; Bagdonas, Alexandre. <b>Uma Breve História da Galáxia</b>. 2009. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Florio, V.; Bagdonas, Alexandre. <b>Vida Longa à Galáxia!</b>. 2009. Desenvolvimento de material didático ou instrucional - Apostila do curso de história da astronomia</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>TRSIC, Milan ; SIQUEIRA, M. F.. <b>Química Quântica - Fundamentos e Aplicações</b>. 2009. Editoração/Livro</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PERES, H. E. M. ; ANDRADE, M. B. ; FERRARINI, L. A.. <b>Material didatico - Física - Ensino Médio</b>. 2005. Desenvolvimento de material didático ou instrucional</td></tr>
+            </table></div><div id="dv-year-2004"><h3 class="year">2004</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>JESUS, A. D. C. ; MATOS, M. J. S.. <b>Transferências Orbitais Contínuas a Baixo Empuxo com Desvios e N Arcos de Queima & "Formation Flying"</b>. 2004. Relatório de pesquisa</td></tr>
+            </table></div><div id="dv-year-2003"><h3 class="year">2003</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Marcelo B Andrade; CAMARGO, M. L. ; LIMA, S. L. F.. <b>Conceitos físicos envolvidos na fisiologia do olho humano e a prevenção e detecção das deficiências visuais</b>. 2003. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Marcelo B Andrade; GIUSEPONE JUNIOR, G. A.. <b>Experimentos nas aulas de física</b>. 2003. Curso de curta duração ministrado/Outra</td></tr>
+            </table></div><div id="dv-year-2000"><h3 class="year">2000</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PERES, H. E. M. ; ANDRADE, M. B. ; FERRARINI, L. A.. <b>Material didatico - Física</b>. 2000. Desenvolvimento de material didático ou instrucional</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

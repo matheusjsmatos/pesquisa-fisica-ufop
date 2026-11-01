@@ -1,0 +1,229 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 29/10/2026 16:09:51</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Produtos tecnológicos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2005,
+1],
+[2006,
+1],
+[2007,
+1],
+[2008,
+1],
+[2009,
+1],
+[2011,
+1],
+[2012,
+1],
+[2013,
+1],
+[2015,
+1],
+[2016,
+1],
+[2017,
+4],
+[2018,
+7],
+[2019,
+3],
+[2021,
+1],
+[2023,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Produtos tecnológicos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 26<br>
+                    
+                    
+                    <div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MATOS, A. C. L. ; CARVALHO, E. J.. <b>Sequência de Ensino Investigativa (SEI) Aerodinâmica: Forças de Arrasto e Sustentação</b>. 2023.</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>JORGE, R. <b>A. ; PAGLIARINI, C. R. ; CARVALHO, E. J. . ROBÓTICA E CINEMÁTICA</b>. 2021.</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; CALHEIRO, D. S. ; GOLIN, A. F. ; SOUZA, W. M. ; KELMER, A. C.. <b>Sensor flexível para detecção de baixos níveis de amônia</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LACERDA, P. C. C. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes. <b>O LÚDICO NO ENSINO DE FÍSICA: ELETROSTÁTICA VIA QUADRINHOS</b>. 2019.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>VIEIRA, G. C. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>Reaproveitamento do Lixo Eletrônico na Instrumentação para o Ensino de Física: Propostas de Experimentos e Atividades</b>. 2019.</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARAUJO, G. S. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes. <b>ENSINO DA DUALIDADE ONDA-PARTÍCULA POR MEIO DE VÍDEOS DE EXPERIMENTOS</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LACERDA, G. ; Bianchi, R. F.. <b>Momlight: fonte vestível para fototerapia neonatal</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MAPA, L. M. ; Bianchi, R. F.. <b>Luva eletrônica à base de sensores poliméricos</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SILVA, C. R. ; I.J.B. Santos ; Bianchi, R. F.. <b>Selo colorimétrico para detecção de glifosato em frutas</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Soares, J S; Eduardo Pacheco. <b>Ciência para a Redução das Desigualdades. 2018. (Programa de rádio ou TV/Mesa</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Soares, J. S.; Eduardo Pacheco. <b>Ciência para a redução de desigualdades. 2018. (Programa de rádio ou TV/Mesa</b>. 2018.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Soares, J. S.; MANHABOSCO, T. M. ; AQUINO, S. F. ; GUIMARAES, M. H. U. ; SABIONI, A. C. S.. <b>Desafios no Desenvolvimento de Ciências e Tecnologias no País. 2018. (Programa de rádio ou TV/Mesa</b>. 2018.</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FRANCO, M. R. ; Bianchi, R. F.. <b>Qualisticker: sensor para controle de frescor de carnes</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luzzi, F. <b>O. ; CARVALHO, E. J. . Óptica da Fotografia</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SILVA, W. C. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes. <b>RADIAÇÃO ULTRAVIOLETA: INSERÇÃO DE FÍSICA MODERNA NO ENSINO MÉDIO POR MEIO DE EFEITOS BIOLÓGICOS DA RADIAÇÃO UV</b>. 2017.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Souza, S. H. ; CARVALHO, E. J.. <b>Cartilha de Orientações e Atividades. Ccelular na sala de aula: do vilão à solução. Construção de atividades no contexto CTS</b>. 2017.</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MURASE, M. S. W. ; SANTOS, O. D. H. ; MANTOVANI, G. L. ; Bianchi, R. F.. <b>Colorímero polimérico e luminescente para dosimetria 3D</b>. 2016.</td></tr>
+            </table></div><div id="dv-year-2015"><h3 class="year">2015</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MACHADO, M. A. ; NUNES, Maria Eugênia Silva/ M. E. S. Nunes. <b>UMA PROPOSTA PARA O ENSINO DE CALORIMETRIA NO ENSINO MÉDIO VIA APRENDIZAGEM SIGNIFICATIVA</b>. 2015.</td></tr>
+            </table></div><div id="dv-year-2013"><h3 class="year">2013</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>E.G. Quaresma ; Bianchi, R. F.. <b>Neofocus: aparelho de fototerapia com feixe e/ou alvo luminosos</b>. 2013.</td></tr>
+            </table></div><div id="dv-year-2012"><h3 class="year">2012</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. F.; A. D. Barbosa ; S. A. L. da Silva ; R. N. dal Col. <b>Equipamento de ejeção eletrônica de líquidos para máquina de impressão</b>. 2012.</td></tr>
+            </table></div><div id="dv-year-2011"><h3 class="year">2011</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DA FONSECA, F. G. ; ASTIGARRAGA, R. G. ; VERSIANI, A. F. ; Jorio, A. ; LADEIRA, L. O. ; Soares, J. S.. <b>Composições imunogênicas contra Dengue virus, processo, produto e uso</b>. 2011.</td></tr>
+            </table></div><div id="dv-year-2009"><h3 class="year">2009</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; Ferreira, G. R. ; A. S. DUARTE ; Bianchi, R. F.. <b>Sensor de acúmulo de dose de radiação azul</b>. 2009.</td></tr>
+            </table></div><div id="dv-year-2008"><h3 class="year">2008</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MENDES FILHO, A. A. ; da Silva Araujo, F. G.. <b>Hidroxiapatita de Matérias-Primas Recicladas</b>. 2008.</td></tr>
+            </table></div><div id="dv-year-2007"><h3 class="year">2007</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DE VASCONCELOS, C. K. B. ; Bianchi, R. F.. <b>Neosticker: dosímetro de radiação não ionizante construído com polímeros conjugados</b>. 2007.</td></tr>
+            </table></div><div id="dv-year-2006"><h3 class="year">2006</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GRAEFF, C. F. O. ; BORIN, J. F. ; BRITO, E. S. ; Bianchi, R. F.. <b>Dosimetro de radiação ionizante e método de utilização</b>. 2006.</td></tr>
+            </table></div><div id="dv-year-2005"><h3 class="year">2005</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianchi, R. <b>F.; PANSSIERA, M. . Spin Coater HD-05</b>. 2005.</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 29/10/2026 16:09:51<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

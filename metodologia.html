@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologia — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Fontes, conferências e limites dos dados do portal de pesquisa do Departamento de Física da UFOP.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css">
+</head>
+<body data-page="metodologia">
+<main id="conteudo">
+
+<header class="cab"><div class="wrap">
+  <h1>Metodologia</h1>
+  <p class="lede">De onde vem cada número, como ele é conferido e o que este portal deliberadamente não publica.</p>
+</div></header>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Fontes</h2></div>
+  <div class="tabela-wrap"><table><thead><tr><th>Fonte</th><th>Uso no portal</th><th>Coleta</th><th>Status</th></tr></thead><tbody id="mFontes"></tbody></table></div>
+  <div class="texto" style="margin-top:1.5rem">
+    <h3>Status dos dados</h3>
+    <ul>
+      <li><span class="selo selo-ok">Lattes</span> Contagem direta do scriptLattes sobre os currículos, sem transformação além da deduplicação de itens.</li>
+      <li><span class="selo selo-pre">Preliminar</span> Dado derivado por classificação automática (agência de fomento, financiador) ou vindo de fonte complementar (OpenAlex). Útil para tendências; não substitui conferência documental.</li>
+      <li><span class="selo selo-nd">Indisponível</span> Quando não há dado validado, o portal mostra "Dado em processo de atualização". Nenhum valor é estimado.</li>
+    </ul>
+  </div>
+</div></section>
+<section class="sec"><div class="wrap grade g2">
+  <div class="texto">
+    <h2>Como os números são produzidos</h2>
+    <p>O scriptLattes lê os currículos da lista de docentes do departamento e gera um relatório com cada item registrado. Itens assinados por mais de um docente são deduplicados: o artigo escrito por três professores conta uma vez nos totais do departamento.</p>
+    <p>Um programa próprio (<code>build_site.py</code>) lê esse relatório, confere os totais de cada seção contra o índice do scriptLattes, associa cada item aos docentes que o registraram e consulta a OpenAlex pelo DOI dos artigos para obter afiliações, citações e acesso aberto. O resultado é publicado como site estático.</p>
+    <p>O ano em curso é sempre parcial. Mudanças de um ano para outro podem refletir também o preenchimento dos currículos, e não apenas a produção.</p>
+    <h3>O que este portal não publica</h3>
+    <ul>
+      <li>Ranking, pontuação ou comparação de desempenho entre docentes.</li>
+      <li>Endereço, telefone ou e-mail pessoal — essas informações são removidas também das páginas do relatório scriptLattes.</li>
+      <li>Planilhas e análises internas de comissões e da chefia, mesmo que estejam na pasta do scriptLattes.</li>
+      <li>Estimativas para preencher dados ausentes.</li>
+    </ul>
+    <h3>Ciclo de atualização</h3>
+    <p>Os docentes atualizam o Lattes; a chefia roda o scriptLattes e o pipeline do portal; o site é republicado com a nova data. A seção abaixo guarda os totais de cada atualização.</p>
+  </div>
+  <div>
+    <div class="painel-cab" style="margin-bottom:.75rem"><h3>Conferência da última extração</h3><span id="mAlertas"></span></div>
+    <div class="tabela-wrap"><table><thead><tr><th>Seção do scriptLattes</th><th class="n">Itens</th></tr></thead><tbody id="mValidacao"></tbody></table></div>
+  </div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Histórico de atualizações</h2></div>
+  <div class="tabela-wrap"><table><thead><tr><th>Publicação</th><th>Extração do scriptLattes</th><th class="n">Docentes</th><th class="n">Artigos</th><th class="n">Orientações concluídas</th><th class="n">Projetos</th></tr></thead><tbody id="mHistorico"></tbody></table></div>
+</div></section>
+<section class="sec"><div class="wrap texto">
+  <h2>Dados abertos</h2>
+  <p>Arquivos da última extração, para uso em gerenciadores de referência e análises próprias:</p>
+  <ul>
+    <li><a href="dados-abertos/defis-publicacoes.ris">Publicações em formato RIS</a> (Zotero, Mendeley, EndNote)</li>
+    <li><a href="dados-abertos/defis-publicacoesDoGrupo.csv">Publicações do grupo em CSV</a> (separado por tabulação)</li>
+    <li><a href="dados-abertos/defis-rede.json">Rede de colaborações em JSON</a></li>
+    <li><a href="data/defis-data.json">Todos os dados do portal em JSON</a></li>
+  </ul>
+</div></section>
+</main>
+<script src="data/defis-data.js"></script>
+<script src="data/historico.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
