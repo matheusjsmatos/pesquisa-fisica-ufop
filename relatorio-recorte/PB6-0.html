@@ -1,0 +1,393 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 18/11/2026 09:54:46</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Resumos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2024,
+44],
+[2025,
+48],
+[2026,
+28]]}]});
+        });
+        </script>
+        
+                <h3>Resumos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 120<br>
+                    
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Andrade, M.B.; SILVA JUNIOR, H. F.. <b>Properties of 2D Magnets - Investigation by Spectroscopic Methods</b>. Em: XXIV B-MRS Meeting 2026, 2026, Curitiba. Resumos. Curitiba: SBPMat, p. 4GVR P.PS3.17, 2026. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CAMPOS JUNIOR, F. A. ; STADTLOBER, C. H. ; SANTOS, A. F. Z. ; Cazati, T ; BECHTOLD, IVAN ; ECCHER, J. ; A. A. Vieira ; Andy Monkman. <b>Quantum Yield of Perylene-Derived Emitters Improved by Crystalline Liquid Host Alignment</b>. Em: 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026, Rio de Janeiro - RJ. 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, A. B. ; MELLO, M. V. P. ; SOUZA, P. N. ; ABE, S. H. M. ; BALENA FILHO, O. ; Andrade, M.B. ; CORREA, R. S. ; ELLENA, J. A.. <b>Copper(II)-5-Chloro-2-Hydroxybenzophenone Complexes with N?N Donors: Structural Insights and Antitumor Activity Against A2780 Human Ovarian Cancer Cells of a Bathophen Derivative</b>. Em: XXIV B-MRS Meeting 2026, 2026, Curitiba. Resumos. Curitiba: SBPMat, p. 4DYD OS.J.3.3, 2026. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAZATI, T. <b>Static Fluorescence Quenching in Perylene Donor?Y18 Systems Driven by Ground-State Noncovalent Complex Formation</b>. Em: XXIV B-MRS Meeting, 2026, Curitiba-PR. https://www.sbpmat.org.br/24encontro/, 2026. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CAZATI, T. <b>Photophysical Behavior and Fullerene-Induced Quenching in Difluoroboron Flavanone β- Diketonates</b>. Em: XXIV B-MRS Meeting, 2026, Curitiba-PR. https://www.sbpmat.org.br/24encontro/, 2026. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>OLIVEIRA, D. C. ; Bruna Bueno Postacchini ; VIEIRA, A. A. ; Taise Matte Manhabosco ; Matos, M J S ; DIAZ, E. E. C. ; CAZATI, T.. <b>Influence of Fullerene and Non-Fullerene Electron Acceptors on the Fluorescence of Benzazole- Based Fluorophores</b>. Em: XXIV B-MRS Meeting, 2026, Curitiba-PR. https://www.sbpmat.org.br/24encontro/, 2026. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Cazati, T; MARTINS, A. L. B. ; Postacchini B. ; A. A. Vieira ; OLIVEIRA, D. C.. <b>Interaction Between Benzothiadiazolyl triazole Molecules and the Non-Fullerene Acceptor Y18</b>. Em: 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026, Rio de Janeiro - RJ. 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CUNHA, R. S. ; PAULA, K. T. ; Andrade, M.B. ; FALEIROS, R. R. ; TEOFILO, A. F. ; CASSANJES, F. C. ; POIRIER, G. ; MISOGUTI, L. ; MENDONCA, C. R.. <b>Femtosecond-laser-written waveguides in lanthanum fluorogermanate glass for telecom nonlinear photonics</b>. Em: XXIV B-MRS Meeting 2026, 2026, Curitiba. Resumos. Curitiba: SBPMat, p. 4HDN OS.D.11.7, 2026. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CUNHA, R. S. ; PAULA, K. T. ; Andrade, M.B. ; PIMENTA, A. C. S. ; MISOGUTI, L. ; MENDONCA, C. R.. <b>Femtosecond laser-induced micromachining and color centers in silicon carbide</b>. Em: XXIV B-MRS Meeting 2026, 2026, Curitiba. Resumos. Curitiba: SBPMat, p. 4HQZ S.PS3.40, 2026. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DOS SANTOS, GERSON ; Postacchini B. ; MERLO, ALOIR ; MATOS, M. J. S. ; SILVESTRE, G. H. ; Cazati, T. <b>Photoinduced Enhancement of Fluorescence Quantum Yield in an Isoxazoline?Carbazole Derivative</b>. Em: 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026, Rio de Janeiro - RJ. 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>AVALIAÇÃO ELETROQUÍMICA DA LIDOCAÍNA EM SORO FISIOLÓGICO E URINA SINTÉTICA UTILIZANDO ELETRODO DE GRAFITE</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>COMPARAÇÃO ELETROQUÍMICA ENTRE BENZOCAÍNA E LIDOCAÍNA COMO ADULTERANTES FORENSES EM URINA SINTÉTICA USANDO ELETRODO DE GRAFITE</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>DISCRIMINAÇÃO COLORIMÉTRICA DE AMINAS UTILIZANDO COMPLEXOS METAL-TIOCIANATO COM APLICAÇÃO EM TRIAGEM FORENSE</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>ANÁLISE ELETROQUÍMICA DE BENZOCAÍNA EM SORO FISIOLÓGICO UTILIZANDO ELETRODO DE GRAFITE COM APLICAÇÃO FORENSE</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>COMPARAÇÃO DA RESPOSTA ELETROQUÍMICA DA BENZOCAÍNA EM SORO FISIOLÓGICO E URINA SINTÉTICA PARA APLICAÇÕES FORENSES</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>EXPERIMENTO DIDÁTICO DE QUÍMICA FORENSE PARA DISCRIMINAÇÃO DE AMINAS UTILIZANDO TESTES COLORIMÉTRICOS</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>ESTUDO ELETROQUIMICO DA FENACETINA EM DIFERENTES MEIOS PARA ESTUDOS FORENSES</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>AVALIAÇÃO DA SELETIVIDADE DO ELETRODO DE GRAFITE PARA ADULTERANTES DE INTERESSE FORENSE POR VOLTAMETRIA DE ONDA QUADRADA</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>ELETRODO DE GRAFITE APLICADO À DETECÇÃO ELETROQUÍMICA DE BENZOCAÍNA EM URINA SINTÉTICA PARA FINS DE ANÁLISE FORENSE</b>. Em: 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026, Belo Horizonte, MG. 10° Encontro Nacional de Química Forense (ENQFor) e o 7º Encontro da Sociedade Brasileira de Ciências Forenses (SBCF), 2026. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>FACUNDES, N. F. S. ; COUTINHO, D. J. ; VIVAS, M. P. T. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>EVALUATION OF REACTIVE OXYGEN SPECIES GENERATION BY ANNATTO (BIXA ORELLANA) EXTRACT USING URIC ACID AS A CHEMICAL PROBE</b>. Em: Inter-American Photochemical Society (IAPs), 55th Annual Meeting of the Brazilian Society of Biochemistry and Molecular Biology (SBBq), held in conjunction with the Society for Redox Biology & Medicine (SfRBM), 2026, Águas de Lindoia. EVALUATION OF REACTIVE OXYGEN SPECIES GENERATION BY ANNATTO (BIXA ORELLANA) EXTRACT USING URIC ACID AS A CHEMICAL PROBE, 2026. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MAGALHAES, B. M. G. ; Soares, J. S. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>Fluorescence of lumirubin as a probe for the photodegradation of bilirubin</b>. Em: Inter-American Photochemical Society (IAPs) - 55th Annual Meeting of the Brazilian Society of Biochemistry and Molecular Biology (SBBq), held in conjunction with the Society for Redox Biology & Medicine (SfRBM) and the, 2026, Águas de Lindóia. Fluorescence of Lumirubin as a Probe for the Photodegradation of Bilirubin, 2026. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MARTINS, A. L. B. ; OLIVEIRA, DIONE DA COSTA ; A. A. Vieira ; CAZATI, T.. <b>Exploring the Interaction between Benzothiadiazolyl Triazole Derivatives and the Non- Fullerene Acceptor Y18</b>. Em: XXIV B-MRS Meeting, 2026, Curitiba-PR. https://www.sbpmat.org.br/24encontro/, 2026. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MENDONÇA, CLEBER R. ; TASSO DE PAULA, KELLY ; FACURE, MURILO ; ANDRADE, MARCELO ; CORREA, DANIEL. <b>Femtosecond laser patterning of Ti3C2T" MXene for high-precision micro-supercapacitor electrodes</b>. Em: Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026, 2026, San Francisco. Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026, p. 6, 2026. <a href="http://dx.doi.org/10.1117/12.3081086" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>OLIVEIRA, DIONE DA COSTA ; A. A. Vieira ; Cazati, T ; MATOS, M. J. S. ; DIAZ, E. E. C.. <b>Modulation of Photoinduced Electron Transfer by Sulfur-to-Selenium Substitution in Benzazole Systems: A Fluorescence Quenching Study</b>. Em: 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026, Rio de Janeiro - RJ. 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>OLIVEIRA, DIONE DA COSTA ; RUAS, B. R. ; BARBOSA, M. S. ; MATOS, M. J. S. ; Postacchini B. ; A. A. Vieira ; Cazati, T ; T. M. Manhabosco. <b>Solvent and Solid-State Effects on the Photophysical Properties of Benzothiadiazole and Benzoselenadiazole Derivatives</b>. Em: 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026, Rio de Janeiro - RJ. 27th International Conference on Science and Technology of Synthetic Electronic Materials (ICSM 2026), 2026. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PRADO, M. C. <b>Production and Quality Control of Clay Nanomaterials via Liquid Phase Exfoliation</b>. Em: XXIV B-MRS Meeting 2026, 2026, Curitiba. XXIV B-MRS Meeting 2026, 2026. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>SANTOS, G. ; SILVESTRE, G. H. ; BARBOSA, M. S. ; MATOS, MATHEUS JOSUE DE SOUZA ; MERLO, ALOIR A. ; T. Cazati ; Bruna Bueno Postacchini. <b>Photoinduced Fluorescence Enhancement in Isoxazoline–Carbazole Derivatives</b>. Em: XXIV B-MRS Meeting, 2026, Curitiba. XXIV B-MRS Meeting. SP: SBPMAT, 2026. </td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Soares, J. S.; Leonardo da Silva Araujo ; Sabrina Fuzer Gonçalves ; Matheus Farias Menezes ; Aline Cristina Lopes de Sousa ; PIMENTA, M. A. ; Carlos Eurico Fernandes. <b>Avaliação da presença de microplásticos de polietileno em lambari-do- rabo-amarelo utilizando espectroscopia Raman</b>. Em: XII Encontro Mineiro de Física, 2026, Juiz de Fora / MG. XII Encontro Mineiro de Física, 2026. </td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>D. ALEXANDRINO, Vitória ; Soares, J. S. ; VINÍCIUS ALVES GURGEL, LEANDRO ; DE CASTRO PRADO, Mariana ; CATONE SOARES, LILIANE. <b>CATALISADORES À BASE DE BIOMASSA E MATERIAIS ESFOLIADOS PARA APLICAÇÃO EM SÍNTESE ORGÂNICA</b>. Em: V Encontro da Rede 2D ? FAPEMIG, 2025, Belo Horizonte. Rede Mineira de Pesquisa em Materiais Bidimensionais e suas Aplicações - Rede 2D, 2025. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, G. ; SOARES, R. ; MILAGRES, G. ; NEVES, BERNARDO R A ; Prado, Mariana C.. <b>ESTUDO DE SUPERFÍCIES SUPERHIDROFÓBICAS COM MICROSCOPIA DE VARREDURA POR SONDA</b>. Em: Encontro de Saberes 2025, 2025, Ouro Preto. Anais - SEMINÁRIO DE INICIAÇÃO CIENTÍFICA, 2025. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALMEIDA, G. ; VIANA, G. M. ; SOARES, R. ; NEVES, B. R. A. ; PINTO, E. S. ; Prado, Mariana C.. <b>ESTUDO DE SUPERFÍCIES SUPERHIDROFÓBICAS COM MICROSCOPIA DE VARREDURA POR SONDA</b>. Em: V Encontro da Rede 2D ? FAPEMIG, 2025, Belo Horizonte. Rede Mineira de Pesquisa em Materiais Bidimensionais e suas Aplicações - Rede 2D, 2025. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANDRADE, J. A. P. ; BARROS, V. M. ; MARTINS, A. L. B. ; JESUS, L. E. B. ; QUEIROZ, V. A. S. ; SENA, C. M. S. ; DIAS, L. R. A. A. ; ANUNCIACAO, J. G. M. ; CARVALHO, E. J.. <b>ARTICULANDO OS PILARES NORTEADORES NA FORMAÇÃO DISCENTE E ATUAÇÃO DO PET FÍSICA EM 2025</b>. Em: Encontro de Saberes UFOP - Mostra PET, 2025, Ouro Preto. Anais do Encontro de Saberes - Mostra PET. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANUNCIACAO, J. G. M. ; CALAZANS, M. M.. <b>Aproximações entre a concepção de causalidade na mecânica quântica de David Bohm e o materialismo histórico dialético</b>. Em: IV Congresso Internacional de História da Ciência no Ensino, 2025, Online. Anais do IV Congresso Internacional de História da Ciência no Ensino, 2025. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAMPOS, M. M. ; NEVES, B. R. A. ; Prado, Mariana C.. <b>Produção de nanomateriais por esfoliação em fase líquida a partir de minerais estratégicos</b>. Em: Encontro de Saberes 2025, 2025, Ouro Preto. Anais - SEMINÁRIO DE INICIAÇÃO CIENTÍFICA, 2025. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CUNHA, L. M. B. R. ; ABREU, V. E. ; SILVA, N. A. ; CAMPOS, W. G. ; MARQUES, R. A. ; CARVALHO, E. J.. <b>EDUCAPET - ENGENHARIA GEOLÓGICA: O ENSINO DAS GEOCIÊNCIAS EM CURSOS PREPARATÓRIOS PARA O ENEM NA CIDADE DE OURO PRETO E ADJACÊNCIAS</b>. Em: VI Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, 2025, Diamantina (on line). Anais do Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, 2025. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CUNHA, RENAN ; TASSO, KELLY ; ANDRADE, MARCELO ; MENDONÇA, CLEBER R.. <b>Femtosecond laser-induced micromachining and defect formation in silicon carbide</b>. Em: Laserbased Micro and Nanoprocessing XIX, 2025, San Francisco. Laser-based Micro- and Nanoprocessing XIX. San Francisco: SPIE, p. 33, 2025. <a href="http://dx.doi.org/10.1117/12.3040935" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CUSTODIO, L. A. ; CARVALHO, E. J.. <b>EDUCA PET ? CURSINHO PRÉ-ENEM</b>. Em: Encontro de Saberes - Seminário de Extensão, 2025, Ouro Preto. Anais do Encontro de Saberes - Seminários de Extensão. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DIAS, L. R. A. A. ; MARTINS, A. L. B. ; CARVALHO, E. J. ; VELTEN, H. E. S.. <b>INTRODUÇÃO ÀS TÉCNICAS DE ASTROFOTOGRAFIA</b>. Em: Encontro de Saberes UFOP - Mostra PET, 2025, Ouro Preto. Anais do Encontro de Saberes - Mostra PET. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DINIZ, G. O. ; GALGANO, G. D. ; Andrade, M.B.. <b>Investigando os Sinos de Ouro Preto utilizando Física de Materiais e impressão 3D</b>. Em: Encontro de Saberes - XXXIII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DINIZ, H. J. S. ; Andrade, M.B.. <b>Caracterização e Investigação de Britas Utilizadas na Região de Ouro Preto</b>. Em: Encontro de Saberes - XXXIII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>DUARTE JUNIOR, L. A. ; TALVANI, ANDRÉ ; Bianchi, RF. <b>Terapia de luz azul como estratégia modulatória para redução da liberação de cercárias por Biomphalaria glabrata</b>. Em: 60º Congresso da Sociedade Brasileira de Medicina Tropical, 2025, João Pessoa, PB. 60º Congresso da Sociedade Brasileira de Medicina Tropical, 2025. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>DUARTE JUNIOR, L. A. ; TALVANI, ANDRÉ ; Bianchi, RF. <b>Blue light-emitting diode phototherapy presents in vitro efficacy against distinct Leishmania species and is therapeutic against tegumentary leishmaniasis in BALB/c mice</b>. Em: 60º Congresso da Sociedade Brasileira de Medicina Tropical, 2025. 60º Congresso da Sociedade Brasileira de Medicina Tropical, 2025. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Detecção eletroquímica do paracetamol em eletrodos de dióxido de vanádio e óxido de grafeno</b>. Em: 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025, Ouro Preto, MG. 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Estudo da sensibilidade na detecção de lidocaína usando diferentes técnicas eletroquímicas</b>. Em: 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025, Ouro Preto, MG. 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Estudos eletroquímicos utilizando eletrodo à base de carbono para análise de sensibilidade do adulterante procaína no campo forense</b>. Em: 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025, Ouro Preto, MG. 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Perfil analítico do levamisol via abordagem eletroquímica para estudos em química forense</b>. Em: 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025, Ouro Preto, MG. 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Estudo eletroquímico de seletividade de aminas alifáticas e aromática para abordagem forense</b>. Em: 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025, Ouro Preto, MG. 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Perfil analítico de etilamina, difenilamina e trietilamina via abordagem eletroquímica implicações para contextos forenses</b>. Em: 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025, Ouro Preto, MG. 37º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2025. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>FERNANDES, A. A. F. ; Andrade, Marcelo B.. <b>Caracterização de apatitas de diferentes fontes através de métodos espectrométricos</b>. Em: Encontro de Saberes - XXXIII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>FERREIRA, N. F. ; BEZZON, V. D. N. ; Andrade, M.B.. <b>OTIMIZANDO O ENTENDIMENTO E MATERIAIS NA CONFECÇÃO DE PEÇAS UTILIZANDO CRISTALOGRAFIA E IMPRESSÃO 3D</b>. Em: Encontro de Saberes - XXXIII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>FREITAS, C. C. ; SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa Fabíola. <b>Auto-organização do z-arilazopirazol em Solução Aquosa: Um Surfactante Fotocomutável</b>. Em: Encontro de Saberes 2025 - Universidade Federal de Ouro Preto, 2025, Ouro Preto. Encontro de Saberes 2025, 2025. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>JESUS, L. E. B. ; BARROS, V. M. ; MARTINS, A. L. B. ; DIAS, L. R. A. A. ; CARVALHO, E. J.. <b>A PESQUISA COMO PRÁTICA DE APRENDIZAGEM E FORMAÇÃO DOS GRADUANDOS MEMBROS DO GRUPO PET FÍSICA</b>. Em: Encontro de Saberes UFOP - Mostra PET, 2025, Ouro Preto. Anais do Encontro de Saberes - Mostra PET. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Leonardo da Silva Araujo ; Ive Silvestre de Almeida ; Alexander Jesus da Rocha Reis ; PIMENTA, M. A. ; Soares, J. S.. <b>Síntese e caracterização por espectroscopia Raman do dissulfeto de molibdênio (MoS2)</b>. Em: V Encontro da Rede 2D - FAPEMIG, 2025, Belo Horizonte. Crescimento, caracterização e aplicações de Materiais 2D Teoria e Experimento, 2025. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>LOPES, E. G. M ; PIVARO, G. F.. <b>Luz. Câmera e... Ciência</b>. Em: Encontro de Saberes, 2025, Ouro Preto. Anais - SEMINÁRIO DE EXTENSÃO, 2025. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>LOPES, G. A. C. ; SOUSA, L. D. A. ; Atencio, D. ; ELLENA, J. A. ; Andrade, M.B.. <b>TEMPERATURE-DEPENDENT XRD CHARACTERIZATION OF RED CLAY USED IN TRADITIONAL POTTERY OF MARUANUM COMMUNITY, AMAPÁ, BRAZIL</b>. Em: Encontro de Outono da Sociedade Brasileira de Física - EOSBF, 2025, Belém. Anais EOSBF 2025. São Paulo: Sociedade Brasileira de Física, 2025. </td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>MARTINS, RAFAEL ; Soares, J. S. ; SILVESTRE, IVE ; Barboza, Ana Paula. <b>Investigação do efeito das interações entre compostos oticamente ativos e materiais bidimensionais</b>. Em: V Encontro da Rede 2D - FAPEMIG, 2025, Belo Horizonte. Crescimento, caracterização e aplicações de Materiais 2D Teoria e Experimento, 2025. </td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>MOURA, C. A. M. ; MANHABOSCO, TAÍSE M. ; SILVA, G. J. B.. <b>Difração de raios X aplicada à determinação da composição mineralógica de resíduos de esteatito: propriedades e perspectivas de uso na construção civil</b>. Em: X MOSTRA DOS PROGRAMAS DE PÓS-GRADUAÇÃO, 2025, Ouro Preto. X MOSTRA DOS PROGRAMAS DE PÓS-GRADUAÇÃO, 2025. </td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>THAIZY CARLOS NOSSA ; PIMENTA, M. A. ; Mariana de Castro Prado ; Soares, J. S.. <b>Estudo de nanotubos de carbono dopados utilizando espectroscopia Raman e microscopia de força atômica</b>. Em: Encontro de Saberes 2025 - X Mostra dos Programas de Pós-Graduação, 2025, Ouro Preto. X Mostra dos Programas de Pós-Graduação, 2025. </td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>THAIZY CARLOS NOSSA ; Soares, J. S. ; PIMENTA, M. A. ; Mariana de Castro Prado ; Indhira Oliveira Maciel. <b>Estudo de nanotubos de carbono dopados utilizando espectroscopia Raman e microscopia de força atômica</b>. Em: Encontro de Saberes 2025 - X Mostra dos Programas de Pós-Graduação, 2025, Belo Horizonte. Crescimento, caracterização e aplicações de Materiais 2D Teoria e Experimento, 2025. </td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>OLIVEIRA, D. C. ; A. A. Vieira ; Cazati, T. <b>Fluorescence Quenching in Benzazole-Fullerene Systems: Electronic and Structural Effects on Charge Transfer</b>. Em: XXIII B-MRS Meeting, 2025, Salvador, BA. XXIII B-MRS Meeting, 2025. </td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>OLIVEIRA, D. C. ; POSTACCHINI, B. B. ; MATOS, M. J. S. ; Vieira A. ; Cazati, Thiago. <b>Photophysical Properties of Benzothiadiazole and Benzoselenodiazole Derivatives: Solvent Effects, Aggregation, and Optoelectronic Applications</b>. Em: XXIII B-MRS Meeting 2025, 2025, Salvador. Photophysical Properties of Benzothiadiazole and Benzoselenodiazole Derivatives: Solvent Effects, Aggregation, and Optoelectronic Applications, 2025. </td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>OLIVEIRA, G. R. L. ; MARQUES, E. D. ; Andrade, M.B.. <b>DESVENDANDO AS PROPRIEDADES FÍSICAS E ESTRUTURAIS DE MINERAIS ESTRATÉGICOS CONTENDO LÍTIO - PARTE 2 ANÁLISE QUANTITATIVA E CRISTALOQUÍMICA</b>. Em: Encontro de Saberes - XXXIII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>OLIVEIRA, M. M. ; ASSIS, J. ; ANDRADE, J. H. N. ; SALES, R. P. ; GALGANO, G. D. ; CARVALHO, E. J. ; ANDRADE, M. B. ; BELO, T. S. A.. <b>Os sinos de Ouro Preto</b>. Em: Encontro de Saberes - Seminário de Extensão, 2025, Ouro Preto. Anais do Encontro de Saberes - Seminários de Extensão. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>PEREIRA, P. G. ; DUARTE JUNIOR, L. A. ; TALVANI, ANDRÉ ; Bianchi, RF. <b>Desenvolvimento de sistemas de iluminação com selos poliméricos de aferição para controle de esquistossomose</b>. Em: 60º Congresso da Sociedade Brasileira de Medicina Tropical, 2025, João Pessoa, PB. 60º Congresso da Sociedade Brasileira de Medicina Tropical, 2025. </td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, M. M.. <b>Uso de modelos na Educação em Ciências: Discussão espistemológica sobre a controvérsia entre representacionismo e presentacionismo</b>. Em: IV Congresso Internacional de História da Ciência no Ensino, 2025, Online. Anais do IV Congresso Internacional de História da Ciência no Ensino, 2025. </td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>PROCOPIO FILHO, F. M. ; Prado, Mariana C.. <b>Produção e caracterização de nanomateriais bidimensionais obtidos por esfoliação em fase líquida utilizando diferentes fontes de energia mecânica</b>. Em: Encontro de Saberes 2025, 2025, Ouro Preto. Anais - SEMINÁRIO DE INICIAÇÃO CIENTÍFICA, 2025. </td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>PROCOPIO FILHO, F. M. ; Prado, Mariana C.. <b>SISTEMA DE AQUISIÇÃO DE DADOS PARA PROCESSO DE ESFOLIAÇÃO EM FASE LÍQUIDA</b>. Em: V Encontro da Rede 2D ? FAPEMIG, 2025, Belo Horizonte. Rede Mineira de Pesquisa em Materiais Bidimensionais e suas Aplicações - Rede 2D, 2025. </td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>SILVA, D. M. ; Andrade, M.B. ; BEZZON, V. D. N.. <b>Crescimento de monocristais e produção de modelos estruturais correlatos via impressão 3D</b>. Em: Encontro de Saberes - XXXIII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2025. </td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SILVA, P. F. ; SAVEDRA, Ranylson Marcello Leal ; SIQUEIRA, M. F.. <b>Agregação espontânea da E-arilazopirazol em água ? um material fotorresponsivo</b>. Em: Encontro de Saberes 2025 - Universidade Federal de Ouro Preto, 2025, Ouro Preto. Encontro de Saberes 2025, 2025. </td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SIQUEIRA, M. F.; FREITAS, C. C. ; SILVA, P. F. ; SAVEDRA, RANYLSON MARCELLO L.. <b>Arylazopyrazole-Based Molecular Photoswitches: SelfAssembly of Responsive Materials</b>. Em: B-MRS Meeting 2025, 2025, Salvador. Proceedings - XXIII B-MRS Meeting 2025, p. 833, 2025. </td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>Siqueira, Melissa F.; FREITAS, C. C. ; SILVA, P. F. ; SAVEDRA, RANYLSON M. L.. <b>Arylazopyrazole-Based Molecular Photoswitches: Self-Assembly of Responsive Materials</b>. Em: XXIII B-MRS Meeting 2025, 2025, Salvador. XXIII B-MRS Meeting 2025, 2025. </td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>Siqueira, Melissa F.; SAVEDRA, RANYLSON M. L.. <b>Molecular Modeling Approaches for Bulks and Interfaces of Organic Semiconductors</b>. Em: XXIII B-MRS Meeting 2025, 2025, Salvador. XXIII B-MRS Meeting 2025, 2025. </td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>Siqueira, Melissa F.; SAVEDRA, RANYLSON MARCELLO L.. <b>Molecular Modeling Approaches for Bulks and Interfaces of Organic Semiconductors</b>. Em: B-MRS Meeting 2025, 2025, Salvador. Proceedings - XXIII B-MRS Meeting 2025, p. 899, 2025. </td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>TARDELLI, G. P. ; CALAZANS, M. M.. <b>As raízes econômicas e sociais na controvérsia científica entre newtonianos e cartesianos</b>. Em: IV Congresso Internacional de História da Ciência no Ensino, 2025, online. Anais do IV Congresso Internacional de História da Ciência no Ensino, 2025. </td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>Marcela Fernanda Cardoso Timiraos ; Pedro Zanetti de Almeida ; Ariete Righi ; PIMENTA, M. A. ; Soares, J. S. ; Mariana de Castro Prado. <b>CARACTERIZAÇÃO DE UM NOVO MATERIAL BIDIMENSIONAL PRODUZIDO A PARTIR DE SULFETO DE MERCÚRIO</b>. Em: V Encontro da Rede 2D ? FAPEMIG, 2025, Belo Horizonte. Rede Mineira de Pesquisa em Materiais Bidimensionais e suas Aplicações - Rede 2D, 2025. </td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>VITAL, J. V. T. P. ; Prado, Mariana C. ; NEVES, BERNARDO R A. <b>Viabilidade da Produção de Nanomateriais a partir de Minerais Abundantes</b>. Em: V Encontro da Rede 2D ? FAPEMIG, 2025, Belo Horizonte. Rede Mineira de Pesquisa em Materiais Bidimensionais e suas Aplicações - Rede 2D, 2025. </td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, G. ; SOARES, R. ; MILAGRES, G. ; NEVES, B. R. A. ; PINTO, E. S. ; Prado, Mariana C.. <b>ESTUDO DE SUPERFÍCIES SUPERHIDROFÓBICAS POR MICROSCOPIA DE VARREDURA POR SONDA: APLICAÇÕES NA CARACTERIZAÇÃO DE NANOMATERIAIS 2D</b>. Em: Encontro de Saberes 2024, 2024, Ouro Preto. XXXII Seminário de Iniciação Científica, 2024. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, G. ; VIANA, G. M. ; SOARES, R. ; NEVES, B. R. A. ; PINTO, E. S. ; Prado, Mariana C.. <b>ESTUDO DE SUPERFÍCIES SUPERHIDROFÓBICAS POR MICROSCOPIA DE VARREDURA POR SONDA: APLICAÇÕES NA CARACTERIZAÇÃO DE NANOMATERIAIS 2D</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. Resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALVES, K. ; RODRIGUES, M. L. ; I.Silvestre ; MATOS, MATHEUS J. S. ; BARBOZA, A. P. M.. <b>MODULAÇÃO DE PROPRIEDADES ELÉTRICAS DE DISSULFETO DE MOLIBIDÊNIO COM TRANS-RESVERATROL: UM ESTUDO TEÓRICO-EXPERIMENTAL</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. https://www.inctnanocarbono.com/resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAMPOS, M. M. ; NEVES, B. R. A. ; Prado, Mariana C.. <b>PRODUÇÃO DE NANOMATERIAIS POR ESFOLIAÇÃO EM FASE LÍQUIDA A PARTIR DE MINERAIS</b>. Em: Encontro de Saberes 2024, 2024, Ouro Preto. XXXII Seminário de Iniciação Científica, 2024. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CAMPOS, M. M. ; PINTO, E. S. ; NEVES, B. R. A. ; Prado, Mariana C.. <b>PRODUÇÃO DE NANOMATERIAIS POR ESFOLIAÇÃO EM FASE LÍQUIDA A PARTIR DE MINERAIS</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. Resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAVALINI, C. ; RIBAHI, C. ; LEE, E. ; BRITO, C. S. ; TOLEDO, J. R. ; CAZETTA, F. F. ; OLIVEIRA, R. B. F. ; Andrade, M.B. ; HENINI, MOHAMED ; ZHANG, Y. ; KIM, JEONGYONG ; BARCELOS, I. D. ; GOBATO, Y. G.. <b>Optical and magneto-optical properties of monolayer WSe2 /β-Ga2O3</b>. Em: XXII Brazilian Materials Research Society B-MRS Meeting, 2024, Santos. Proceedings of the XXII B-MRS Meeting. Santos: Brazilian Materials Research Society, p. 1421-1421, 2024. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CAVALINI, CAMILA ; RIBAHI, C. ; BRITO, C. S. ; LEE, E. ; TOLEDO, J. R. ; CAZETTA, F. F. ; OLIVEIRA, R. B. F. ; Andrade, M.B. ; HENINI, MOHAMED ; ZHANG, Y. ; KIM, J. ; BARCELOS, INGRID D. ; GOBATO, YARA GALVÃO. <b>Optical properties of localized excitons in WSe2/βGa2O3</b>. Em: 21st Brazilian Workshop on Semiconductor Physics (BWSP), 2024, Campinas. Abstract Book. Campinas: CNPEM, p. 162-162, 2024. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CLAUDIO, E. C. ; Cazati, Thiago ; POSTACCHINI, B. B. ; VIEIRA, ANDRÉ ALEXANDRE. <b>STUDY OF THE INTERACTION BETWEEN ORGANIC ELECTRON DONOR AND ACCEPTOR MOLECULES USING FLUORESCENCE TECHNIQUES</b>. Em: Workshop do INEO 2024, 2024, Nazaré Paulista. Anais do Workshop INEO 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DINIZ, G. O. ; Andrade, M.B.. <b>DESVENDANDO A CRISTALOGRAFIA DOS MATERIAIS EM 3D</b>. Em: Encontro de Saberes 2024 - XXXII Seminário de Iniciação Científica, 2024, Ouro Preto. Anais. Ouro Preto: UFOP, 2024. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DINIZ, H. J. S. ; Andrade, M.B.. <b>O DESAFIO DE CARACTERIZAR COMPOSTOS INORGÂNICOS ESTRUTURALMENTE COM DIFRAÇÃO DE RAIOS X</b>. Em: Encontro de Saberes 2024 - XXXII Seminário de Iniciação Científica, 2024, Ouro Preto. Anais. UFOP: UFOP, 2024. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DUARTE, M. L. ; Andrade, M.B.. <b>CARACTERIZAÇÃO DE PROPRIEDADES ESTRUTURAIS E ESPECTROSCÓPICAS DE TOPÁZIOS DAS LOCALIDADES DE OURO PRETO</b>. Em: Encontro de Saberes 2024 - IX Mostra dos Programas de Pós-Graduação, 2024, Ouro Preto. Anais. Ouro Preto: UFOP, 2024. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Electrochemical determination of different amines using VO2/GO for forensic application</b>. Em: XXI Brazilian Meeting on Inorganic Chemistry, 2024, Belo Horizonte, MG. XXI Brazilian Meeting on Inorganic Chemistry, 2024. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>Evaluation of change color as a function of time of amines using cobalt (II) thiocyanate for forensic applications</b>. Em: XXI Brazilian Meeting on Inorganic Chemistry, 2024, Belo Horizonte, MG. XXI Brazilian Meeting on Inorganic Chemistry, 2024. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>COLOR CHANGE AS A FUNCTION OF TIME OF AMINES USING IRON (II) THIOCYANATE FOR FORENSIC APPLICATIONS</b>. Em: 36º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2024, Diamantina, MG. 36º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2024. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>E. M. Guerra ; D. Cestarolli ; Bianchi, RF. <b>ELECTROCHEMICAL DETERMINATION OF DIFFERENT AMINES USING Au ELECTRODE FOR FORENSIC APPLICATION</b>. Em: 36º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2023, Diamantina, MG. 36º Encontro Regional da Sociedade Brasileira de Química de Minas Gerais, 2024. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>GALETI, HELDER VINICIUS AVANÇO ; DE GODOY, MARCIO PERON FRANCO ; Andrade, M.B. ; SOUTO, SÉRGIO ; HENINI, MOHAMED ; GOBATO, YARA GALVÃO. <b>The impact of thermal annealing treatment on the optical properties of β-Ga2O3 crystals</b>. Em: 21st Brazilian Workshop on Semiconductor Physics (BWSP), 2024, Campinas. Abstract Book. Campinas, SP, Brazil: CNPEM, 2024. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>GONCALVES, I. L. ; MERLO, ALOIR ; Postacchini B. ; CAZATI, T.. <b>Illuminating mesophases: Isoxazolines with carbazole moiety</b>. Em: 29th International Liquid Crystal Conference (ILCC 2024), 2024, Rio de Janeiro/RJ. 29th International Liquid Crystal Conference (ILCC 2024), 2024. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MARTINS, RAFAEL ; ARAUJO, F. G. S. ; SOARES, JAQUELINE S. ; BARBOZA, A. P. M. ; I.Silvestre. <b>USO DO OURO COMO AGENTE NUCLEADOR NA SÍNTESE CVD DE MOS2 MONOCAMADA</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. https://www.inctnanocarbono.com/resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MATOS, R. O. ; SIQUEIRA, A. ; CORSINI, H. ; Cláudio Laudares Passos da Silva ; REZENDE, N. P. ; ORNELAS, V. ; BARBOZA, A. P. M. ; I.Silvestre. <b>INVESTIGAÇÃO DO USO DE TINTA DE NANOCELULOSE E NANOTUBOS DE CARBONO NÃO FUNCIONALIZADOS COMO SENSOR DE UMIDADE</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. https://www.inctnanocarbono.com/resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MERCIER, G. M. O. D. ; ORLANDO, MARCOS TADEU D´AZEREDO ; D. N. BEZZON, VINICIUS. <b>Development of a filament extruder for the production of parts with monazite sand</b>. Em: XIV Encontro Científico de Física Aplicada, 2024, Vitória, 2024. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>NELVAM, V. B. ; Andrade, M.B. ; MARQUES, E. D.. <b>DESVENDANDO AS PROPRIEDADES FÍSICAS E ESTRUTURAIS DE MINERAIS ESTRATÉGICOS CONTENDO LÍTIO</b>. Em: Encontro de Saberes 2024 - XXXII Seminário de Iniciação Científica, 2025, Ouro Preto. Anais. Ouro Preto: UFOP, 2024. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>NELVAM, V. B. ; MARQUES, E. D. ; Andrade, M.B.. <b>DESVENDANDO AS PROPRIEDADES FÍSICAS E ESTRUTURAIS DE MINERAIS ESTRATÉGICOS CONTENDO LÍTIO</b>. Em: 51 Congresso Brasileiro de Geologia, 2024, Belo Horizonte. Resumos. Belo Horizonte: Sociedade Brasileira de Geologia, p. P-272-P-272, 2024. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>NOLASCO, L.K. ; FLORES, G.A. ; SANTOS, S.N.C. ; ANDRADE, M. B. ; RODRIGUES, J. ; MENDONÇA, C.R.. <b>Damage threshold and incubation of L-threonine amino acid crystal in the ultrafast regime</b>. Em: SPIE Photonics West 2024, 2024, San Francisco. Abstracts. Bellingham: SPIE, p. 12873-71, 2024. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>OLIVEIRA, D. C. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>PHOTOPHYSICAL PROPERTIES OF NEW ORGANIC FLUOROPHORES DERIVED FROM BENZAZOL</b>. Em: Workshop do INEO 2024, 2024, Nazaré Paulista. Anais do Workshop INEO 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>OLIVEIRA, D. C. ; POSTACCHINI, B. B. ; A. A. Vieira ; Cazati, T. <b>Propriedades FotofísicasDe Novos FluoróforosOrg NicosDerivados De Benzazol</b>. Em: XI Encontro Mineiro de Física, 2024, Lavras/MG. XI Encontro Mineiro de Física, 2024. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PERUCCI, T. A. ; CAZATI, T. ; POSTACCHINI, B. B.. <b>SYSTEMATIC CHARACTERIZATION OF COUMARIN 6: FLUORESCENCE QUANTUM EFFICIENCY AND EXCITED STATE LIFETIMES IN VARIOUS SOLVENTS</b>. Em: Workshop do INEO 2024, 2024, Nazaré Paulista. Anais do Workshop INEO 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PERUCCI, T. A. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>PHOTOPHYSICAL CHARACTERIZATION OF COUMARIN 6: SOLVENT EFFECTS, QUANTUM EFFICIENCY, AND ITS APPLICATIONS IN NANOCARRIERS AND BIOLOGICAL SENSORS</b>. Em: II Simpósio Brasileiro de Engenharia da Nanotecnologia, 2024, Hibrido RJ. Proceedings of the 2nd Brazilian Symposium on Nanotechnology Engineering (SiBEN 2024). Recife PE: Even3, 2024. </td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>POSTACCHINI, B. B.; MAGALHAES, B. M. G. ; CAZATI, T.. <b>PHOTOPHYSICAL CHARACTERIZATION AND DEGRADATION STUDIES OF BILIRUBIN: INSIGHTS INTO NANOBIOTECHNOLOGY APPLICATIONS</b>. Em: II Simpósio Brasileiro de Engenharia da Nanotecnologia, 2024, Rio de Janeiro. Proceedings of the 2nd Brazilian Symposium on Nanotechnology Engineering (SiBEN 2024), 2024. </td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>POSTACCHINI, B. B.; VIEIRA, D. L. M. ; Cazati, Thiago. <b>EXPLORING THE EFFECTS OF ENVIRONMENTAL CONDITIONS ON THE PHOTOPHYSICAL PROPERTIES OF METHYLENE BLUE: IMPLICATIONS FOR NANOCAPSULE APPLICATIONS</b>. Em: II Simpósio Brasileiro de Engenharia da Nanotecnologia, 2024, Hibrido RJ. Proceedings of the 2nd Brazilian Symposium on Nanotechnology Engineering (SiBEN 2024), 2024. </td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>RAMOS, T. S. ; ANDRADE, M. B. ; QUEIROZ, A. A. A. E. ; ELLENA, J. A.. <b>Redes Neurais Artificiais aplicadas ao Estudo de Fármacos por Espectroscopia Raman</b>. Em: Simpósio Internacional de Iniciação Científica e Tecnológica da Universidade de São Paulo (SIICUSP), 2024, São Paulo. Resumos. São Paulo: USP, 2024. </td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>RODRIGUES, M. L. ; ALVES, V. F. ; MARTINS, RAFAEL ; SOARES, JAQUELINE S. ; I.Silvestre ; MATOS, MATHEUS J. S.. <b>Investigação teórico-experimental da ressulfurização de amostras de MoS2 CVD</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. https://www.inctnanocarbono.com/resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SALES, A. V. ; Andrade, M.B. ; CIPRIANO, R. A. S.. <b>OURO E SUAS IMPUREZAS: UMA PERSPECTIVA MULTIDISCIPLINAR NO MUSEU DE CIÊNCIA E TÉCNICA DA ESCOLA DE MINAS / UFOP</b>. Em: Encontro de Saberes 2024 - IX Mostra dos Programas de Pós-Graduação, 2024, Ouro Preto. Anais, 2024. </td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SANTOS, G. ; MANHABOSCO, TAISE M. ; VIEIRA, ANDRÉ ALEXANDRE ; BECHTOLD, IVAN H. ; Cazati, Thiago ; POSTACCHINI, B. B.. <b>PHOTOPHYSICAL AND ELECTROCHEMICAL CHARACTERIZATION OF 2,1,3-BENZOXADIAZOLE: BUILDING BLOCKS FOR OPTOELECTRONIC DEVICES</b>. Em: Workshop do INEO 2024, 2024, Nazaré Paulista. Anais do Workshop INEO 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SANTOS, M. V. V. ; D. N. BEZZON, VINICIUS. <b>Caracterização estrutural do fármaco flubendazol</b>. Em: XIV Encontro Científico de Física Aplicada, 2024, Vitória, 2024. </td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SAVEDRA, Ranylson Marcello Leal ; Siqueira, Melissa F.. <b>Supramolecular profile of bilirubin in water</b>. Em: XXII B-MRS Meeting 2024, 2024, Santos. Booklet - XXII BMRS 2024, v. XX, 2024. </td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SILVA, F. A. S. ; BARBOZA, A. P. M. ; Prado, Mariana C. ; NEVES, B. R. A. ; PINTO, E. S.. <b>PRODUÇÃO E CARACTERIZAÇÃO DE NOVOS MINERAIS BIDIMENSIONAIS OBTIDOS POR ESFOLIAÇÃO EM MEIO LÍQUIDO</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. Resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>SIQUEIRA, A. ; MATOS, R. O. ; Cláudio Laudares Passos da Silva ; I.Silvestre ; BARBOZA, A. P. M.. <b>PRODUÇÃO E CARACTERIZAÇÃO DE FILMES DE MWCNT DISPERSOS EM TOCNF PARA APLICAÇÃO EM SENSORES</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. https://www.inctnanocarbono.com/resumos, 2024. </td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>SIQUEIRA, M. F. <b>ASSISTED SOLVENT EVAPORATION: AN APPROACH TO MODEL NON- CRYSTALLINE ORGANIC SEMICONDUCTORS</b>. Em: Workshop do INEO 2024, 2024. Anais do Workshop INEO 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>SIQUEIRA, M. F. <b>ASSISTED SOLVENT EVAPORATION: AN APPROACH TO MODEL NON- CRYSTALLINE ORGANIC SEMICONDUCTORS</b>. Em: Workshop INEO 2024, 2024, Atibainha. Anais do Workshop INEO 2024, p. 230, 2024. </td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Soares, J. S. <b>Rapid and facile identification tool to detect microcalcifications in breast needle biopsies</b>. Em: Latin American Photodiagnosis Symposium (LAPS - 2024), 2024, Campo Grande. Latin American Photodiagnosis Symposium (LAPS - 2024), 2024. </td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SOARES, J. S. ; BARBOZA, ANA PAULA M. ; Prado, Mariana C. ; SILVESTREALMEIDA, I. ; MANHABOSCO, T. M. ; PIMENTA, M. A.. <b>Trabalhos desenvolvidos nos Laboratórios Experimentais do Grupo Nano do Departamento de Física da Universidade Federal de Ouro Preto</b>. Em: 9o Encontro do INCT Nanocarbono e 4o Encontro da Rede 2D, 2024, Belo Horizonte. 9o Encontro do INCT Nanocarbono e 4o Encontro da Rede 2D, 2024. </td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>Soares, J. S.; TELES, J. M. S. ; CARNEIRO, L. S. ; SOUSA, E. M. B. ; BARBOZA, A. P. M. ; RIGHI, A. ; OLIVEIRA, A. B. ; BATISTA, R. J. C. ; MANHABOSCO, S. M. ; MANHABOSCO, T. M.. <b>Revestimento de hidroxiapatita com incorporação de nanoestruturas</b>. Em: XI Encontro Mineiro de Física, 2024, Lavras. XI Encontro Mineiro de Física, 2024. </td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>ZANETTI, P. ; PIMENTA, M. A. ; RIGHI, A. ; SOARES, J. S. ; Prado, Mariana C.. <b>PRODUÇÃO E CARACTERIZAÇÃO DE NANOMATERIAIS BIDIMENSIONAIS OBTIDOS POR ESFOLIAÇÃO EM FASE LÍQUIDA</b>. Em: Encontro de Saberes 2024, 2024, Ouro Preto. XXXII Seminário de Iniciação Científica, 2024. </td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>ZANETTI, P. ; SOARES, J. S. ; RIGHI, A. ; PIMENTA, M. A. ; NEVES, B. R. A. ; Prado, Mariana C.. <b>PRODUÇÃO E CARACTERIZAÇÃO DE NANOCAMADAS BIDIMENSIONAIS DE SULFETO DE MERCÚRIO</b>. Em: 9o Encontro INCT Nanocarbono - 4to Encontro Rede2D, 2024, Belo Horizonte. Resumos, 2024. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 18/11/2026 09:54:46<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

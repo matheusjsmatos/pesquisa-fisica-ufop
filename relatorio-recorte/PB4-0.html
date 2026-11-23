@@ -1,0 +1,199 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>Departamento de Física — UFOP</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script></head><body><div style="font:600 14px/1.4 system-ui,sans-serif;background:#1d2a36;color:#fff;padding:.6rem 1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center"><a href="../index.html" style="color:#fff;text-decoration:none">&larr; Portal de pesquisa do DEFIS</a><span style="font-weight:400;opacity:.8">Relatório completo gerado pelo scriptLattes &mdash; dados dos currículos Lattes, processados em 18/11/2026 09:54:46</span></div><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>Departamento de Física — UFOP</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="./js/highcharts.js"></script>
+        <script src="./js/drilldown.js"></script>
+        <script src="./js/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Trabalhos completos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2024,
+5],
+[2025,
+12],
+[2026,
+6]]}]});
+        });
+        </script>
+        
+                <h3>Trabalhos completos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 23<br>
+                    (<b>A1</b>: 0, <b>A2</b>: 0, <b>A3</b>: 0, <b>A4</b>: 0, <b>B1</b>: 0, <b>B2</b>: 0, <b>B3</b>: 0, <b>B4</b>: 2, <b>B5</b>: 0, <b>C</b>: 0, <b>NP</b>: 0, <b>Qualis n&atilde;o identificado</b>: 21)<br><p><b>Legenda Qualis:</b><ul><li> Publica&ccedil;&atilde;o para a qual o nome exato do Qualis foi identificado: <font color="#254117"><b>Qualis &lt;estrato&gt;</b></font><li> Publica&ccedil;&atilde;o para a qual um nome similar (n&atilde;o exato) do Qualis foi identificado: <font color="#F88017"><b>Qualis &lt;estrato&gt;</b></font> (nome similar)<li> Publica&ccedil;&atilde;o para a qual nenhum nome do Qualis foi identificado: <font color="#FDD7E4"><b>Qualis n&atilde;o identificado</b></font> (nome usado na busca)</ul>
+                    
+                    <div id="dv-year-2026"><h3 class="year">2026</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARTULICI, ERIC ; TELES, JULIANA MARIA SILVA ; BORGES, ALEX RODRIGUES ; FLAUSINO, PAULA CIBELY ALVES ; SILVA, NAYARA APARECIDA NERES DA ; MANHABOSCO, TAISE MATTE. <b>Avaliação tribológica e dos mecanismos de desgaste de um aço C-Mn sob diferentes condições de solicitação em ensaio pino-sobre-placa</b>. Em: <font color=#330066>22º Seminário de Moldes</font>, p. 173, 2026. <a href="http://dx.doi.org/10.5151/5463-5463-44064" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (22º Seminário de Moldes)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>DE PAULA, KELLY T. ; CAMPOS, GABRIEL O. ; ANDRADE, M. B. ; MENDONÇA, CLEBER RENATO. <b>Femtosecond Laser-Induced Forward Transfer of MXene</b>. Em: <font color=#330066>CLEO: Applications and Technology</font>, p. AM2A.2, 2026. <a href="http://dx.doi.org/10.1364/CLEO_AT.2026.AM2A.2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CLEO: Applications and Technology)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FLAUSINO, ARNALDO JOSE ; VIEIRA, CLAUDIO BATISTA ; ARAUJO, FERNANDO GABRIEL SILVA ; XIMENES, FLAVIO GUSTAVO CORREIA ; NASCIMENTO, RICARDO CARVALHO. <b>Aplicação da tecnologia de extrusão rígida à vácuo como alternativa de aglomeração de materiais não argilosos a partir do uso de extrusora de laboratorio</b>. Em: <font color=#330066>12º Seminário de Aglomeração de Minérios</font>, p. 1, 2026. <a href="http://dx.doi.org/10.5151/2594-357X-42994" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12º Seminário de Aglomeração de Minérios)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PORTELA, H. S. ; DELAMORE, M. O. ; SOTANI, P. F. B. ; PINTO, M. A. ; MANHABOSCO, TAÍSE M.. <b>ESTUDO COMPARATIVO DE MATERIAIS UTILIZADOS EM MANDÍBULAS DE BRITADOR PRIMÁRIO*</b>. Em: <font color=#330066>ABM Week 10ª edição</font>, 2026.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ABM Week 10ª edição)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, K. F. C. ; MATOSO, G. C. ; BORTOLETO, E. M. ; PRETTI, E. ; BERNARDES, A. T.. <b>RESPOSTA TERMOMECÂNICA DE TRILHOS LONGOS SOLDADOS: UMA ANÁLISE EXPERIMENTAL</b>. Em: <font color=#330066>40º Congresso de Pesquisa e Ensino em Transportes</font>, 2026. <a href="http://dx.doi.org/10.1081/E-EISA-120050997" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (40º Congresso de Pesquisa e Ensino em Transportes)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>TELES, JULIANA MARIA SILVA ; OLIVEIRA, FELIPE SOUZA DE ; CETLIN, PAULO ROBERTO ; FLAUSINO, PAULA CIBELY ALVES ; MANHABOSCO, TAISE MATTE ; SILVA, NAYARA APARECIDA NERES DA. <b>Influência do forjamento multidirecional no comportamento tribológico do aço eutetoide SAE 1080</b>. Em: <font color=#330066>22º Seminário de Moldes</font>, p. 193, 2026. <a href="http://dx.doi.org/10.5151/5463-5463-44254" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (22º Seminário de Moldes)</td></tr>
+            </table></div><div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CALAZANS, M. M.; PAGLIARINI, C. R. ; Rosa, D. D. ; LIMA, Guilherme da Silva ; OSTERMANN, F.. <b>As contribuições da psicologia marxista para a crítica à fragmentação da formação de conceitos científicos e à pseudorreforma do Novo Ensino Médio</b>. Em: <font color=#330066>XV Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>COSTA-FELIX, R. P. B. ; BERNARDES, A. T. ; LANDIM, R. P.. <b>MEDIDA OU MEDIÇÃO: HERMENÊUTICA DA EDIÇÃO LUSO-BRASILEIRA DO VOCABULÁRIO INTERNACIONAL DE METROLOGIA (VIM)</b>. Em: <font color=#330066>Congresso METROLOGIA 2025</font>, v. 1, p. 1-1, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Congresso METROLOGIA 2025)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>JUNIOR, JOSÉ IZABEL LIBERATO ; SANTOS, ANTÔNIO ADEL DOS ; SOUZA, ALTAIR LÚCIO DE ; ARAÚJO, FERNANDO GABRIEL DA SILVA ; SILVEIRA, MARCOS PAULO DA ; ALVES, PAULO AFONSO FERNANDES. <b>CáLCULO DA TAXA DE FORMAçãO DE CAREPA PRIMáRIA EM UM FORNO DE REAQUECIMENTO DE PLACAS WALKING BEAM</b>. Em: <font color=#330066>60º Seminário de Laminação</font>, p. 98, 2025. <a href="http://dx.doi.org/10.5151/2594-5297-41957" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (60º Seminário de Laminação)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MARRA, VALERIO. <b>Tensions in Cosmology: Interpreting Them Through Inhomogeneous Models</b>. Em: <font color=#330066>XLVIII Annual Meeting of the Brazilian Astronomical Society</font>, 2025. <a href="http://dx.doi.org/10.1007/978-981-99-0177-7_35" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XLVIII Annual Meeting of the Brazilian Astronomical Society)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, MAYSA LORENA FIGUEIREDO ; ARAUJO, FERNANDO GABRIEL DA SILVA ; BEZERRA, AUGUSTO CESAR DA SILVA. <b>Metassilicato de sódio sólido sintetizado a partir de resíduo cervejeiro para ativação de materiais álcali-ativados one-part</b>. Em: <font color=#330066>IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO</font>, 2025. <a href="http://dx.doi.org/10.46421/enarc.v9i1.7383" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO)</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MATOSO, G. C. ; SANTOS, L. L. R. ; SILVA, M. L. ; CARDOSO, M. A. ; FAGUNDES, J. V. ; LOPES, D. H. ; SANTOS, J. G. ; FREITAS, A. P. ; SILVA, M. C. A. ; BRITO, H. ; VASCONCELLOS, G. ; LAGE, R. ; SANTOS, A. E. M. ; Galgano, G. D. ; BERNARDES, A. T. ; SANTOS, T. B.. <b>METODOLOGIA DE PREVISÃO DE ALCANCE DE RUPTURAS EM TALUDES DE SOLO</b>. Em: <font color=#330066>12ª CONGRESSO BRASILEIRO DE MINA A CéU ABERTO E MINA SUBTERRâNEA</font>, v. 1, p. 1-1, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (12ª CONGRESSO BRASILEIRO DE MINA A CéU ABERTO E MINA SUBTERRâNEA)</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MOURA, C. A. M. ; FERREIRA, M. H. D. C. ; RAMOS, G. D. ; ANDRADE, N. C. C. ; MANHABOSCO, TAÍSE M. ; SILVA, G. J. B.. <b>Caracterização de resíduos de pedras-sabão: prospecção de materiais regionais para desenvolvimento de aglomerantes álcali-ativados</b>. Em: <font color=#330066>IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO /</font>, v. 9, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (IX ENCONTRO NACIONAL DE APROVEITAMENTO DE RESÍDUOS NA CONSTRUÇÃO /)</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, M. M.. <b>Crítica à teoria de modelos para o desenvolvimento do conhecimento científico a partir do materialismo histórico</b>. Em: <font color=#330066>Simpósio Nacional de Ensino de Física</font>, p. 1-8, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (Simpósio Nacional de Ensino de Física)</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Portella, Victória Guimarães ; CALAZANS, M. M.. <b>A concepção de modelos na controvérsia entre materialistas mecanicistas e energetistas: Uma crítica a partir do materialismo histórico-dialético</b>. Em: <font color=#330066>XV Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SAYURI, L. ; PIVARO, G. F. ; SANTOS, M. de C. <b>Identificando a hiperparticularização dos conceitos científicos em textos sobre a água alcalina que subsidiam desinformação</b>. Em: <font color=#330066>CONGRESO INTERNACIONAL SOBRE INVESTIGACIÓN EN DIDÁCTICA DE LAS CIENCIAS</font>, p. 1792-1795, 2025. <a href="http://dx.doi.org/10.5281/zenodo.7400261" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (CONGRESO INTERNACIONAL SOBRE INVESTIGACIÓN EN DIDÁCTICA DE LAS CIENCIAS)</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SILVA, L. F. V. ; CALAZANS, M. M. ; Rosa, D. D. ; Pagliarini, C. R.. <b>Uma análise dos impactos da implementação do Novo Ensino Médio no ensino de física em três escolas estaduais de Minas Gerais</b>. Em: <font color=#330066>XV Encontro Nacional de Pesquisa em Educação em Ciências</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XV Encontro Nacional de Pesquisa em Educação em Ciências)</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>TELES, J. M. S. ; BARTULICI, E. ; BORGES, A. R. ; CETLIN, P. R. ; FLAUSINO, P. C. A. ; MANHABOSCO, TAISE MATTE ; SILVA, N. A. N.. <b>EVOLUÇÃO MICROESTRUTURAL E COMPORTAMENTO MECÂNICO DO AÇO EUTETÓIDE SUBMETIDO A FORJAMENTO MULTIDIRECIONAL COM BAIXA AMPLITUDE DE DEFORMAÇÃO</b>. Em: <font color=#330066>ABM Week 9ª edição</font>, 2025.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (ABM Week 9ª edição)</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BEZZON, V. D. N. <b>Princípios básicos de cristalografia e difração de raios X na caraterização de materiais</b>. Em: <font color=#330066>XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais</font>, v. 10, p. 7-13, 2024. <a href="http://dx.doi.org/10.5151/13wcacem-002" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais)</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LIMA, A. G. M. ; RIBEIRO, D. H. ; CARVALHO, E. J.. <b>PROPOSTA PARA O ESTUDO DO COMPORTAMENTO DINÂMICO DE CIRCUITOS RC E RLC UTILIZANDO INSTRUMENTOS VIRTUAIS</b>. Em: <font color=#330066>VII Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico (CIM)</font>, 2024.<font color="#F88017"><b>Qualis: B4</b></font> (CIM)</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MATOS, A. C. L. ; CABRAL, L. D. M. ; CARVALHO, E. J.. <b>ENSINO INVESTIGATIVO EM AULAS DE FÍSICA EXPERIMENTAL NO ENSINO SUPERIOR: PROPOSIÇÕES E ANÁLISE DE CASO</b>. Em: <font color=#330066>VII Congresso de Inovação e Metodologias no Ensino Superior e Tecnológico (CIM)</font>, 2024. <a href="http://dx.doi.org/10.47573/aya.6228.3.60.22" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a><font color="#F88017"><b>Qualis: B4</b></font> (CIM)</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANTOS, M. V. V. ; BEZZON, V. D. N.. <b>Caracterização da vizinhança molecular do fármaco flubendazol</b>. Em: <font color=#330066>XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais</font>, v. 10, p. 1-6, 2024.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XIII Workshop de Cristalografia Aplicada a Ciências e Engenharia de Materiais)</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SAYURI, L. ; PIVARO, G. F. ; GIROTTO JR, GILDO. <b>ANÁLISE DE DESINFORMAÇÕES ENVOLVENDO CONTEÚDO CIENTÍFICO COMO SUBSÍDIOS PARA O DESENVOLVIMENTO DE PROPOSTAS DE ENSINO DE QUÍMICA</b>. Em: <font color=#330066>XXXII Congresso de Iniciação Científica da UNICAMP</font>, 2024.<font color="#FDD7E4"><b>Qualis: N&atilde;o identificado</b></font> (XXXII Congresso de Iniciação Científica da UNICAMP)</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 1980 até HOJE
+<br>Data de processamento: 18/11/2026 09:54:46<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:matheusmatos@ufop.edu.br">matheusmatos@ufop.edu.br</a>         </div> </body></html>
+              

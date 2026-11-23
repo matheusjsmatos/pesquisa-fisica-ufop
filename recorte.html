@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produção recente — Pesquisa no Departamento de Física da UFOP</title>
+<meta name="description" content="Produção científica, formação e projetos do Departamento de Física da UFOP nos últimos anos.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/defis.css?v=202611231744">
+</head>
+<body data-page="recorte">
+<main id="conteudo">
+<header class="cab"><div class="wrap">
+  <h1 id="rTitulo">Produção recente</h1>
+  <p class="lede" id="rLede"></p>
+  <div class="filtros" style="margin:1.5rem 0 0;align-items:center" role="group" aria-label="Ano do recorte"><span style="font-size:.8rem;font-weight:600;color:var(--ink-mid)">Mostrar</span><div id="rAnos" style="display:flex;gap:.5rem;flex-wrap:wrap"></div></div>
+  <dl class="numeros" id="rNumeros"></dl>
+</div></header>
+<div id="rConteudo">
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Produção por tipo e ano</h2><p>Itens únicos registrados pelos docentes. A última coluna indica quantos docentes têm ao menos um item do tipo no recorte. * ano em curso.</p></div>
+  <div class="tabela-wrap"><table id="rTabela"></table></div>
+  <p class="nota"><button class="btn" id="rTabCsv" type="button">Baixar tabela (CSV)</button> <a class="btn" href="relatorio-recorte/index.html">Relatório scriptLattes do período</a></p>
+</div></section>
+<section class="sec"><div class="wrap grade g2">
+  <div class="painel"><div class="painel-cab"><div><h3>Artigos em periódicos por ano</h3><p class="sub">Separados pela presença de coautores no exterior</p></div><span class="selo selo-pre">Preliminar</span></div><div class="grafico"><canvas id="rArtigos" role="img" aria-label="Artigos por ano"></canvas></div></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Estrato Qualis</h3><p class="sub">Artigos do período selecionado</p></div><span class="selo selo-ok">Lattes</span></div><div class="grafico"><canvas id="rQualis" role="img" aria-label="Qualis dos artigos"></canvas></div></div>
+</div></section>
+<section class="sec"><div class="wrap grade g2">
+  <div><div class="sec-cab"><h2>Periódicos mais usados</h2></div>
+    <div class="tabela-wrap"><table><thead><tr><th>Periódico</th><th class="n">Artigos</th><th class="n">Docentes</th><th>Qualis</th></tr></thead><tbody id="rPeriodicos"></tbody></table></div></div>
+  <div><div class="sec-cab"><h2>Temas</h2></div>
+    <div class="painel"><div class="painel-cab"><div><h3>Subáreas mais frequentes</h3><p class="sub">Classificação da OpenAlex (em inglês)</p></div><span class="selo selo-pre">Preliminar</span></div><div id="rTemas"></div></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Formação de pesquisadores</h2><p>Orientações concluídas em cada ano do recorte e orientações em andamento que começaram no período. Orientações iniciadas antes do recorte e ainda em curso aparecem na página <a href="formacao.html">Formação</a>.</p></div>
+  <div class="tabela-wrap"><table id="rForm"></table></div>
+  <div class="painel" style="margin-top:1.25rem"><div class="painel-cab"><div><h3>Bolsas declaradas nas orientações concluídas</h3><p class="sub">"Sem bolsa informada" indica campo vazio no Lattes</p></div><span class="selo selo-pre">Preliminar</span></div><div id="rFomento"></div></div>
+</div></section>
+<section class="sec"><div class="wrap grade g2">
+  <div class="painel"><div class="painel-cab"><div><h3>Financiadores</h3><p class="sub">Projetos iniciados no recorte que seguem em andamento</p></div><span class="selo selo-pre">Preliminar</span></div><div id="rFin"></div></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Estudantes nos projetos</h3><p class="sub">Campo "alunos envolvidos" do Lattes</p></div><span class="selo selo-pre">Preliminar</span></div><div id="rAlunos"></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Colaboração</h2><p id="rColabNota"></p></div>
+  <div class="painel"><div class="painel-cab"><div><h3>Países com mais artigos em coautoria</h3><p class="sub">Afiliações dos coautores segundo a OpenAlex</p></div><span class="selo selo-pre">Preliminar</span></div><div id="rPaises"></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-cab"><h2>Prêmios e títulos</h2></div>
+  <ol class="itens" id="rPremios"></ol>
+</div></section>
+<section class="sec" id="explorador"><div class="wrap">
+  <div class="sec-cab"><h2>Buscar na produção do período</h2><p>Todos os itens bibliográficos e técnicos do recorte, inclusive resumos e apresentações.</p></div>
+  <form class="filtros" onsubmit="return false" aria-label="Busca na produção do período">
+    <label class="cresce">Palavras do título, autor, periódico ou DOI <input type="search" id="eBusca" placeholder="Ex.: grafeno, cosmologia, Raman"></label>
+    <label>Tipo <select id="eTipo"></select></label>
+    <label>Qualis <select id="eQualis"><option value="">Todos</option><option value="A">A1 a A4</option><option>A1</option><option>A2</option><option>A3</option><option>A4</option><option>B1</option><option>B2</option><option value="ND">Não identificado</option></select></label>
+    <label>Ordem <select id="eOrdem"><option value="recente">Mais recentes</option><option value="antigo">Mais antigos</option><option value="cit">Mais citados</option></select></label>
+  </form>
+  <div class="resumo-busca" id="eResumo" aria-live="polite"></div>
+  <ol class="itens" id="eLista"></ol>
+  <nav class="paginacao" id="ePag" aria-label="Páginas de resultados"></nav>
+</div></section>
+</div>
+</main>
+<script src="data/defis-data.js?v=202611231744"></script>
+<script src="data/defis-recorte.js?v=202611231744" onerror="window.DEFIS_R=null"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/js/app.js?v=202611231744"></script>
+</body>
+</html>

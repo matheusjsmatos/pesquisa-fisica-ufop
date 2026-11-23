@@ -1,0 +1,73 @@
+nodedef> name VARCHAR, idLattes VARCHAR, label VARCHAR, rotulo VARCHAR, lat DOUBLE, lon DOUBLE, collaborationRank DOUBLE, producaoBibliografica DOUBLE, artigoEmPeriodico DOUBLE, livro DOUBLE, capituloDeLivro DOUBLE, trabalhoEmCongresso DOUBLE, resumoExpandido DOUBLE, resumo DOUBLE, posDoutorado DOUBLE, dutorado DOUBLE, mestrado DOUBLE, ic DOUBLE, color VARCHAR
+0,2373454332205980,Alan Barros de Oliveira,Professor,,,1.4449507,7,7,0,0,0,0,0,0,0,0,1,'10,110,164'
+1,7007826993535617,Alcides Volpato Carneiro de Castro e Silva,Professor,,,0.48037195,1,1,0,0,0,0,0,0,0,0,0,'10,110,164'
+2,1219153096910234,Américo Tristão Bernardes,Professor,,,0.5584416,5,2,0,0,3,0,0,0,1,5,5,'10,110,164'
+3,4012812193989993,Ana Paula Moreira Barboza,Professora,,,1.5170612,15,15,0,0,0,0,0,0,0,2,4,'10,110,164'
+4,6035125726070491,Armando de Oliveira Brizola,Professor,,,0.15,1,1,0,0,0,0,0,0,0,0,0,'10,110,164'
+5,6561589467060683,Augusto Cesar Lobo,Professor,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'10,110,164'
+6,6705532687184556,Bruna Bueno Postacchini,Professora,,,1.3749728,16,6,0,0,0,0,10,0,0,1,10,'10,110,164'
+7,0088622411517649,Carlos Felipe Saraiva Pinheiro,Professor,,,0.15,0,0,0,0,0,0,0,0,0,1,0,'10,110,164'
+8,7005754754925754,Cassiano Rezende Pagliarini,Professor,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'10,110,164'
+9,3107871334302251,Edson José de Carvalho,Professor,,,1.4415585,14,0,0,3,2,3,6,0,0,0,0,'10,110,164'
+10,8915679278888857,Fernando Gabriel da Silva Araujo,Professor,,,0.15,5,2,0,0,3,0,0,0,2,4,0,'10,110,164'
+11,9458093350303071,Gabriela Fasolo Pivaro,Professora,,,0.15,7,3,0,1,2,0,1,0,0,0,2,'10,110,164'
+12,1461165352197588,Giovanni Decot Galgano,Professor,,,1.4415585,4,1,0,2,1,0,0,0,0,1,3,'10,110,164'
+13,0282590467459210,Hermano Endlich Schneider Velten,Professor,,,0.3254583,15,13,1,1,0,0,0,0,3,3,1,'10,110,164'
+14,8756368667136851,Ive Silvestre de Almeida,Professora,,,0.98043036,9,3,0,0,0,0,6,0,0,2,5,'10,110,164'
+15,1641624738512086,Jaqueline dos Santos Soares,Professora,,,1.3679879,13,2,0,0,0,0,11,0,0,1,2,'10,110,164'
+16,0559001373784925,Juliana Caldeira Brant,Professora,,,0.37247226,2,2,0,0,0,0,0,0,0,0,1,'10,110,164'
+17,6622284509610818,Julio Cesar Siqueira Rocha,Professor,,,0.15,4,4,0,0,0,0,0,0,0,0,0,'10,110,164'
+18,7215497120261203,Marcos Moraes Calazans,Professor,,,0.15,9,2,0,0,4,0,3,0,0,0,2,'10,110,164'
+19,0167311345896956,Marcelo Barbosa de Andrade,Professor,,,0.5584416,39,13,0,0,1,0,25,0,1,0,8,'10,110,164'
+20,2938214220427914,Maria Eugênia Silva Nunes,Professora,,,0.15,3,3,0,0,0,0,0,0,0,0,1,'10,110,164'
+21,6547688274068001,Mariana de Castro Prado,Professora,,,1.1773775,21,2,0,0,0,0,19,0,0,2,8,'10,110,164'
+22,6221953730638193,Matheus Josué de Souza Matos,Professor,,,1.510608,20,17,1,0,0,0,2,2,2,3,4,'10,110,164'
+23,4363201901271566,Melissa Fabíola Siqueira Savedra,Professora,,,0.15,12,3,0,0,0,0,9,0,0,0,2,'10,110,164'
+24,0576192110271130,Rodrigo Fernando Bianchi,Professor,,,0.15,32,6,2,2,0,0,22,0,1,2,1,'10,110,164'
+25,0147622167511467,Romuel Figueiredo Machado,Professor,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'10,110,164'
+26,4374918656241879,Ronaldo Junio Campos Batista,Professor,,,0.84165233,9,9,0,0,0,0,0,0,0,3,0,'10,110,164'
+27,9945942332231660,Taíse Matte Manhabosco,Professora,,,1.1801192,21,15,0,0,5,0,1,0,2,2,2,'10,110,164'
+28,0873693558323059,Thiago Cazati,Professor,,,1.3029135,21,8,0,0,0,0,13,0,0,1,8,'10,110,164'
+29,3727974604613106,Thiago Escobar Colla,Professor,,,0.346278,6,6,0,0,0,0,0,0,0,1,0,'10,110,164'
+30,1066345355131928,Valerio Marra,Professor,,,0.15,25,23,0,1,1,0,0,1,2,1,3,'10,110,164'
+31,4641243150947071,Victória Flório Pires de Andrade,Professora,,,0.15,3,0,2,1,0,0,0,0,0,0,2,'10,110,164'
+32,8711723831656721,Vinicius Danilo Nonato Bezzon,Professor,,,0.7773458,16,12,0,0,2,0,2,0,0,0,5,'10,110,164'
+edgedef> node1 VARCHAR, node2 VARCHAR, weight DOUBLE
+0,3,2.0
+0,13,1.0
+0,22,3.0
+0,26,3.0
+0,27,2.0
+1,32,1.0
+2,12,1.0
+3,6,1.0
+3,14,3.0
+3,15,1.0
+3,16,1.0
+3,21,1.0
+3,22,2.0
+3,26,2.0
+3,27,2.0
+3,29,1.0
+3,32,1.0
+6,14,1.0
+6,15,1.0
+6,16,1.0
+6,22,2.0
+6,27,1.0
+6,28,4.0
+6,32,1.0
+9,12,2.0
+9,19,1.0
+14,15,2.0
+14,16,1.0
+14,21,1.0
+14,29,1.0
+14,32,1.0
+15,21,5.0
+16,32,1.0
+21,27,1.0
+22,26,1.0
+22,28,3.0
+26,27,2.0
+27,28,2.0
